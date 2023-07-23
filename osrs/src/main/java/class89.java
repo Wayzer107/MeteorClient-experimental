@@ -50,7 +50,6 @@ public enum class89 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field884;
 	}
@@ -122,7 +121,6 @@ public enum class89 implements class372 {
 		descriptor = "(I)V",
 		garbageValue = "-1018323278"
 	)
-	@Export("addCancelMenuEntry")
 	static void addCancelMenuEntry() {
 		Client.menuOptionsCount = 0;
 		Client.isMenuOpen = false;

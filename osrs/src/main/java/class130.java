@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("fm")
 public class class130 {
 	@ObfuscatedName("qb")
-	@Export("widgetDragDuration")
 	static int widgetDragDuration;
 	@ObfuscatedName("aw")
 	boolean field1228;

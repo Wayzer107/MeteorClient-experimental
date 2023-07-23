@@ -12,18 +12,15 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 		descriptor = "(Lol;Lol;I)I",
 		garbageValue = "693078358"
 	)
-	@Export("compare_bridged")
 	int compare_bridged(GrandExchangeEvent var1, GrandExchangeEvent var2) {
 		return var1.grandExchangeOffer.unitPrice < var2.grandExchangeOffer.unitPrice ? -1 : (var2.grandExchangeOffer.unitPrice == var1.grandExchangeOffer.unitPrice ? 0 : 1);
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compare_bridged((GrandExchangeEvent)var1, (GrandExchangeEvent)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
@@ -43,7 +40,6 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 		descriptor = "([BI)V",
 		garbageValue = "-890105680"
 	)
-	@Export("ByteArrayPool_release")
 	public static synchronized void ByteArrayPool_release(byte[] var0) {
 		if (var0.length == 100 && ByteArrayPool.ByteArrayPool_smallCount < ByteArrayPool.field3735) {
 			ByteArrayPool.ByteArrayPool_small[++ByteArrayPool.ByteArrayPool_smallCount - 1] = var0;

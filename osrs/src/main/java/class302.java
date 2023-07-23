@@ -12,12 +12,10 @@ public final class class302 {
 	@ObfuscatedSignature(
 		descriptor = "[Lts;"
 	)
-	@Export("JagexCache_idxFiles")
 	public static BufferedFile[] JagexCache_idxFiles;
 	@ObfuscatedName("kk")
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("scrollBarSprites")
 	static IndexedSprite[] scrollBarSprites;
 }

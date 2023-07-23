@@ -11,19 +11,16 @@ public class IterableDualNodeQueueIterator implements Iterator {
 	@ObfuscatedSignature(
 		descriptor = "Loz;"
 	)
-	@Export("queue")
 	IterableDualNodeQueue queue;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lsh;"
 	)
-	@Export("head")
 	DualNode head;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lsh;"
 	)
-	@Export("last")
 	DualNode last;
 
 	@ObfuscatedSignature(
@@ -36,7 +33,6 @@ public class IterableDualNodeQueueIterator implements Iterator {
 		this.last = null;
 	}
 
-	@Export("next")
 	@ObfuscatedName("next")
 	public Object next() {
 		DualNode var1 = this.head;
@@ -51,13 +47,11 @@ public class IterableDualNodeQueueIterator implements Iterator {
 		return var1;
 	}
 
-	@Export("hasNext")
 	@ObfuscatedName("hasNext")
 	public boolean hasNext() {
 		return this.queue.sentinel != this.head;
 	}
 
-	@Export("remove")
 	@ObfuscatedName("remove")
 	public void remove() {
 		this.last.removeDual();

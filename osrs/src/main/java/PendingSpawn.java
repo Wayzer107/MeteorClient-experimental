@@ -10,45 +10,34 @@ public final class PendingSpawn extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lew;"
 	)
-	@Export("varcs")
 	static Varcs varcs;
 	@ObfuscatedName("aw")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("ay")
-	@Export("type")
 	int type;
 	@ObfuscatedName("ar")
-	@Export("x")
 	int x;
 	@ObfuscatedName("am")
-	@Export("y")
 	int y;
 	@ObfuscatedName("as")
-	@Export("objectId")
 	int objectId;
 	@ObfuscatedName("aj")
 	int field945;
 	@ObfuscatedName("ag")
 	int field943;
 	@ObfuscatedName("az")
-	@Export("id")
 	int id;
 	@ObfuscatedName("av")
-	@Export("rotation")
 	int rotation;
 	@ObfuscatedName("ap")
-	@Export("objectType")
 	int objectType;
 	@ObfuscatedName("aq")
 	int field948;
 	@ObfuscatedName("ah")
 	int field944;
 	@ObfuscatedName("ax")
-	@Export("startCycle")
 	int startCycle;
 	@ObfuscatedName("aa")
-	@Export("endCycle")
 	int endCycle;
 
 	PendingSpawn() {
@@ -84,7 +73,6 @@ public final class PendingSpawn extends Node {
 		descriptor = "(I)[Lnw;",
 		garbageValue = "-1780334162"
 	)
-	@Export("PlayerType_values")
 	public static PlayerType[] PlayerType_values() {
 		return new PlayerType[]{PlayerType.PlayerType_jagexModerator, PlayerType.PlayerType_normal, PlayerType.field3484, PlayerType.field3472, PlayerType.field3473, PlayerType.PlayerType_hardcoreIronman, PlayerType.PlayerType_ironman, PlayerType.field3483, PlayerType.field3474, PlayerType.PlayerType_ultimateIronman, PlayerType.field3475, PlayerType.field3479, PlayerType.PlayerType_playerModerator, PlayerType.field3482, PlayerType.field3486, PlayerType.field3488, PlayerType.field3478};
 	}
@@ -94,7 +82,6 @@ public final class PendingSpawn extends Node {
 		descriptor = "(IIIIIILiz;Lij;I)V",
 		garbageValue = "235941196"
 	)
-	@Export("addObjects")
 	static final void addObjects(int var0, int var1, int var2, int var3, int var4, int var5, Scene var6, CollisionMap var7) {
 		if (!Client.isLowDetail || (Tiles.Tiles_renderFlags[0][var1][var2] & 2) != 0 || (Tiles.Tiles_renderFlags[var0][var1][var2] & 16) == 0) {
 			if (var0 < Tiles.Tiles_minPlane) {
@@ -472,7 +459,6 @@ public final class PendingSpawn extends Node {
 		descriptor = "(IZZZZS)Lny;",
 		garbageValue = "-12533"
 	)
-	@Export("newArchive")
 	static Archive newArchive(int var0, boolean var1, boolean var2, boolean var3, boolean var4) {
 		ArchiveDisk var5 = null;
 		if (JagexCache.JagexCache_dat2File != null) {

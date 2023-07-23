@@ -9,7 +9,6 @@ final class class504 implements class499 {
 		descriptor = "(Ljava/lang/Object;Lty;I)V",
 		garbageValue = "-791895690"
 	)
-	@Export("vmethod8274")
 	public void vmethod8274(Object var1, Buffer var2) {
 		this.method2476((String)var1, var2);
 	}
@@ -19,7 +18,6 @@ final class class504 implements class499 {
 		descriptor = "(Lty;I)Ljava/lang/Object;",
 		garbageValue = "1270618633"
 	)
-	@Export("vmethod8273")
 	public Object vmethod8273(Buffer var1) {
 		return var1.readStringCp1252NullTerminated();
 	}

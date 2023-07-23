@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("fi")
 public class class155 extends class159 {
 	@ObfuscatedName("jy")
-	@Export("regionLandArchives")
 	static byte[][] regionLandArchives;
 	@ObfuscatedName("aw")
 	String field1388;
@@ -17,7 +16,6 @@ public class class155 extends class159 {
 	@ObfuscatedSignature(
 		descriptor = "Lgs;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class160 this$0;
 
@@ -34,7 +32,6 @@ public class class155 extends class159 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-43"
 	)
-	@Export("vmethod3238")
 	void vmethod3238(Buffer var1) {
 		if (var1.readUnsignedByte() != 255) {
 			--var1.offset;
@@ -52,7 +49,6 @@ public class class155 extends class159 {
 		descriptor = "(Lgh;I)V",
 		garbageValue = "-2132107044"
 	)
-	@Export("vmethod3239")
 	void vmethod3239(ClanChannel var1) {
 		ClanChannelMember var2 = new ClanChannelMember();
 		var2.username = new Username(this.field1388);

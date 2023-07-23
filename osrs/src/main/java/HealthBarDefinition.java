@@ -10,7 +10,6 @@ public class HealthBarDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("HealthBarDefinition_archive")
 	public static AbstractArchive HealthBarDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
@@ -21,41 +20,31 @@ public class HealthBarDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("HealthBarDefinition_cached")
 	public static EvictingDualNodeHashTable HealthBarDefinition_cached;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("HealthBarDefinition_cachedSprites")
 	static EvictingDualNodeHashTable HealthBarDefinition_cachedSprites;
 	@ObfuscatedName("as")
 	public int field1541;
 	@ObfuscatedName("az")
-	@Export("int1")
 	public int int1;
 	@ObfuscatedName("av")
-	@Export("int2")
 	public int int2;
 	@ObfuscatedName("ap")
-	@Export("int3")
 	public int int3;
 	@ObfuscatedName("aq")
 	public int field1540;
 	@ObfuscatedName("at")
-	@Export("int5")
 	public int int5;
 	@ObfuscatedName("ah")
-	@Export("frontSpriteID")
 	int frontSpriteID;
 	@ObfuscatedName("ax")
-	@Export("backSpriteID")
 	int backSpriteID;
 	@ObfuscatedName("aa")
-	@Export("width")
 	public int width;
 	@ObfuscatedName("au")
-	@Export("widthPadding")
 	public int widthPadding;
 
 	static {
@@ -80,7 +69,6 @@ public class HealthBarDefinition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "-1925241492"
 	)
-	@Export("decode")
 	public void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -97,7 +85,6 @@ public class HealthBarDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-562332706"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			var1.readUnsignedShort();
@@ -130,7 +117,6 @@ public class HealthBarDefinition extends DualNode {
 		descriptor = "(S)Lud;",
 		garbageValue = "5771"
 	)
-	@Export("getFrontSprite")
 	public SpritePixels getFrontSprite() {
 		if (this.frontSpriteID < 0) {
 			return null;
@@ -154,7 +140,6 @@ public class HealthBarDefinition extends DualNode {
 		descriptor = "(B)Lud;",
 		garbageValue = "44"
 	)
-	@Export("getBackSprite")
 	public SpritePixels getBackSprite() {
 		if (this.backSpriteID < 0) {
 			return null;

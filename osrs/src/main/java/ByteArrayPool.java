@@ -9,13 +9,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ByteArrayPool")
 public class ByteArrayPool {
 	@ObfuscatedName("as")
-	@Export("ByteArrayPool_smallCount")
 	static int ByteArrayPool_smallCount;
 	@ObfuscatedName("aj")
-	@Export("ByteArrayPool_mediumCount")
 	static int ByteArrayPool_mediumCount;
 	@ObfuscatedName("ag")
-	@Export("ByteArrayPool_largeCount")
 	static int ByteArrayPool_largeCount;
 	@ObfuscatedName("az")
 	static int field3736;
@@ -28,18 +25,14 @@ public class ByteArrayPool {
 	@ObfuscatedName("at")
 	static int field3734;
 	@ObfuscatedName("ah")
-	@Export("ByteArrayPool_small")
 	static byte[][] ByteArrayPool_small;
 	@ObfuscatedName("ax")
-	@Export("ByteArrayPool_medium")
 	static byte[][] ByteArrayPool_medium;
 	@ObfuscatedName("aa")
-	@Export("ByteArrayPool_large")
 	static byte[][] ByteArrayPool_large;
 	@ObfuscatedName("au")
 	static byte[][] field3727;
 	@ObfuscatedName("ae")
-	@Export("ByteArrayPool_alternativeSizes")
 	public static int[] ByteArrayPool_alternativeSizes;
 	@ObfuscatedName("ab")
 	static String[] field3737;
@@ -73,7 +66,6 @@ public class ByteArrayPool {
 		descriptor = "(IZI)[B",
 		garbageValue = "-1680084006"
 	)
-	@Export("ByteArrayPool_getArrayBool")
 	public static synchronized byte[] ByteArrayPool_getArrayBool(int var0, boolean var1) {
 		byte[] var2;
 		if ((var0 == 100 || var0 < 100 && var1) && ByteArrayPool_smallCount > 0) {

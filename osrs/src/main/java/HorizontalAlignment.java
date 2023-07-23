@@ -15,7 +15,6 @@ public enum HorizontalAlignment implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lhz;"
 	)
-	@Export("HorizontalAlignment_centered")
 	HorizontalAlignment_centered(0, 1),
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
@@ -24,10 +23,8 @@ public enum HorizontalAlignment implements class372 {
 	field1557(2, 2);
 
 	@ObfuscatedName("am")
-	@Export("value")
 	public final int value;
 	@ObfuscatedName("as")
-	@Export("id")
 	final int id;
 
 	HorizontalAlignment(int var3, int var4) {
@@ -40,7 +37,6 @@ public enum HorizontalAlignment implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

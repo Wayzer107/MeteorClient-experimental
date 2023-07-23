@@ -13,13 +13,11 @@ public class class486 {
 		this.field4037 = var2;
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.field4036 + ", " + this.field4037;
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (var1 != null && var1 instanceof class486) {
@@ -46,7 +44,6 @@ public class class486 {
 		}
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		int var1 = 0;

@@ -10,13 +10,11 @@ public class ArchiveLoader {
 	@ObfuscatedSignature(
 		descriptor = "[[Lmt;"
 	)
-	@Export("Widget_interfaceComponents")
 	public static Widget[][] Widget_interfaceComponents;
 	@ObfuscatedName("bb")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("Widget_archive")
 	public static AbstractArchive Widget_archive;
 	@ObfuscatedName("cf")
 	@ObfuscatedSignature(
@@ -27,13 +25,10 @@ public class ArchiveLoader {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive")
 	final Archive archive;
 	@ObfuscatedName("ar")
-	@Export("groupCount")
 	final int groupCount;
 	@ObfuscatedName("am")
-	@Export("loadedCount")
 	int loadedCount;
 
 	@ObfuscatedSignature(
@@ -50,7 +45,6 @@ public class ArchiveLoader {
 		descriptor = "(I)Z",
 		garbageValue = "-1342854003"
 	)
-	@Export("isLoaded")
 	boolean isLoaded() {
 		this.loadedCount = 0;
 

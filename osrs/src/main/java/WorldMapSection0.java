@@ -7,46 +7,32 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapSection0")
 public class WorldMapSection0 implements WorldMapSection {
 	@ObfuscatedName("aw")
-	@Export("oldZ")
 	int oldZ;
 	@ObfuscatedName("ay")
-	@Export("newZ")
 	int newZ;
 	@ObfuscatedName("ar")
-	@Export("oldX")
 	int oldX;
 	@ObfuscatedName("am")
-	@Export("oldY")
 	int oldY;
 	@ObfuscatedName("as")
-	@Export("newX")
 	int newX;
 	@ObfuscatedName("aj")
-	@Export("newY")
 	int newY;
 	@ObfuscatedName("ag")
-	@Export("oldChunkXLow")
 	int oldChunkXLow;
 	@ObfuscatedName("az")
-	@Export("oldChunkYLow")
 	int oldChunkYLow;
 	@ObfuscatedName("av")
-	@Export("oldChunkXHigh")
 	int oldChunkXHigh;
 	@ObfuscatedName("ap")
-	@Export("oldChunkYHigh")
 	int oldChunkYHigh;
 	@ObfuscatedName("aq")
-	@Export("newChunkXLow")
 	int newChunkXLow;
 	@ObfuscatedName("at")
-	@Export("newChunkYLow")
 	int newChunkYLow;
 	@ObfuscatedName("ah")
-	@Export("newChunkXHigh")
 	int newChunkXHigh;
 	@ObfuscatedName("ax")
-	@Export("newChunkYHigh")
 	int newChunkYHigh;
 
 	WorldMapSection0() {
@@ -57,7 +43,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(Ljs;I)V",
 		garbageValue = "104966018"
 	)
-	@Export("expandBounds")
 	public void expandBounds(WorldMapArea var1) {
 		if (var1.regionLowX > this.newX) {
 			var1.regionLowX = this.newX;
@@ -82,7 +67,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(IIIB)Z",
 		garbageValue = "37"
 	)
-	@Export("containsCoord")
 	public boolean containsCoord(int var1, int var2, int var3) {
 		if (var1 >= this.oldZ && var1 < this.oldZ + this.newZ) {
 			return var2 >= (this.oldX << 6) + (this.oldChunkXLow << 3) && var2 <= (this.oldX << 6) + (this.oldChunkXHigh << 3) + 7 && var3 >= (this.oldY << 6) + (this.oldChunkYLow << 3) && var3 <= (this.oldY << 6) + (this.oldChunkYHigh << 3) + 7;
@@ -96,7 +80,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(III)Z",
 		garbageValue = "-1055724816"
 	)
-	@Export("containsPosition")
 	public boolean containsPosition(int var1, int var2) {
 		return var1 >= (this.newX << 6) + (this.newChunkXLow << 3) && var1 <= (this.newX << 6) + (this.newChunkXHigh << 3) + 7 && var2 >= (this.newY << 6) + (this.newChunkYLow << 3) && var2 <= (this.newY << 6) + (this.newChunkYHigh << 3) + 7;
 	}
@@ -106,7 +89,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(IIII)[I",
 		garbageValue = "1968685542"
 	)
-	@Export("getBorderTileLengths")
 	public int[] getBorderTileLengths(int var1, int var2, int var3) {
 		if (!this.containsCoord(var1, var2, var3)) {
 			return null;
@@ -121,7 +103,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(IIB)Lmr;",
 		garbageValue = "119"
 	)
-	@Export("coord")
 	public Coord coord(int var1, int var2) {
 		if (!this.containsPosition(var1, var2)) {
 			return null;
@@ -137,7 +118,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(Lty;I)V",
 		garbageValue = "706418314"
 	)
-	@Export("read")
 	public void read(Buffer var1) {
 		this.oldZ = var1.readUnsignedByte();
 		this.newZ = var1.readUnsignedByte();
@@ -161,7 +141,6 @@ public class WorldMapSection0 implements WorldMapSection {
 		descriptor = "(B)V",
 		garbageValue = "-33"
 	)
-	@Export("postRead")
 	void postRead() {
 	}
 }

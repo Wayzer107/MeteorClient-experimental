@@ -9,7 +9,6 @@ class class423 implements Comparator {
 	@ObfuscatedSignature(
 		descriptor = "Lql;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class424 this$0;
 
@@ -33,13 +32,11 @@ class class423 implements Comparator {
 		}
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.method2142((class425)var1, (class425)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);

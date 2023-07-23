@@ -9,43 +9,31 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapArea")
 public class WorldMapArea {
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("internalName")
 	String internalName;
 	@ObfuscatedName("ar")
-	@Export("externalName")
 	String externalName;
 	@ObfuscatedName("am")
-	@Export("backGroundColor")
 	int backGroundColor;
 	@ObfuscatedName("as")
-	@Export("zoom")
 	int zoom;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lmr;"
 	)
-	@Export("origin")
 	Coord origin;
 	@ObfuscatedName("ag")
-	@Export("regionLowX")
 	int regionLowX;
 	@ObfuscatedName("az")
-	@Export("regionHighX")
 	int regionHighX;
 	@ObfuscatedName("av")
-	@Export("regionLowY")
 	int regionLowY;
 	@ObfuscatedName("ap")
-	@Export("regionHighY")
 	int regionHighY;
 	@ObfuscatedName("aq")
-	@Export("isMain")
 	boolean isMain;
 	@ObfuscatedName("at")
-	@Export("sections")
 	LinkedList sections;
 
 	public WorldMapArea() {
@@ -65,7 +53,6 @@ public class WorldMapArea {
 		descriptor = "(Lty;II)V",
 		garbageValue = "1472949028"
 	)
-	@Export("read")
 	public void read(Buffer var1, int var2) {
 		this.id = var2;
 		this.internalName = var1.readStringCp1252NullTerminated();
@@ -90,7 +77,6 @@ public class WorldMapArea {
 		descriptor = "(Lty;I)Lkz;",
 		garbageValue = "2141604791"
 	)
-	@Export("readWorldMapSection")
 	WorldMapSection readWorldMapSection(Buffer var1) {
 		int var2 = var1.readUnsignedByte();
 		WorldMapSectionType[] var3 = new WorldMapSectionType[]{WorldMapSectionType.WORLDMAPSECTIONTYPE3, WorldMapSectionType.WORLDMAPSECTIONTYPE1, WorldMapSectionType.WORLDMAPSECTIONTYPE0, WorldMapSectionType.WORLDMAPSECTIONTYPE2};
@@ -122,7 +108,6 @@ public class WorldMapArea {
 		descriptor = "(IIII)Z",
 		garbageValue = "2035965907"
 	)
-	@Export("containsCoord")
 	public boolean containsCoord(int var1, int var2, int var3) {
 		Iterator var4 = this.sections.iterator();
 
@@ -143,7 +128,6 @@ public class WorldMapArea {
 		descriptor = "(III)Z",
 		garbageValue = "-1924447461"
 	)
-	@Export("containsPosition")
 	public boolean containsPosition(int var1, int var2) {
 		int var3 = var1 / 64;
 		int var4 = var2 / 64;
@@ -174,7 +158,6 @@ public class WorldMapArea {
 		descriptor = "(IIIB)[I",
 		garbageValue = "-40"
 	)
-	@Export("position")
 	public int[] position(int var1, int var2, int var3) {
 		Iterator var4 = this.sections.iterator();
 
@@ -195,7 +178,6 @@ public class WorldMapArea {
 		descriptor = "(III)Lmr;",
 		garbageValue = "322661377"
 	)
-	@Export("coord")
 	public Coord coord(int var1, int var2) {
 		Iterator var3 = this.sections.iterator();
 
@@ -216,7 +198,6 @@ public class WorldMapArea {
 		descriptor = "(I)V",
 		garbageValue = "-2141810509"
 	)
-	@Export("setBounds")
 	void setBounds() {
 		Iterator var1 = this.sections.iterator();
 
@@ -232,7 +213,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "-104"
 	)
-	@Export("getId")
 	public int getId() {
 		return this.id;
 	}
@@ -242,7 +222,6 @@ public class WorldMapArea {
 		descriptor = "(B)Z",
 		garbageValue = "12"
 	)
-	@Export("getIsMain")
 	public boolean getIsMain() {
 		return this.isMain;
 	}
@@ -252,7 +231,6 @@ public class WorldMapArea {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "-1427046787"
 	)
-	@Export("getInternalName")
 	public String getInternalName() {
 		return this.internalName;
 	}
@@ -262,7 +240,6 @@ public class WorldMapArea {
 		descriptor = "(B)Ljava/lang/String;",
 		garbageValue = "7"
 	)
-	@Export("getExternalName")
 	public String getExternalName() {
 		return this.externalName;
 	}
@@ -272,7 +249,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "-128"
 	)
-	@Export("getBackGroundColor")
 	int getBackGroundColor() {
 		return this.backGroundColor;
 	}
@@ -282,7 +258,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "16"
 	)
-	@Export("getZoom")
 	public int getZoom() {
 		return this.zoom;
 	}
@@ -292,7 +267,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "-77"
 	)
-	@Export("getRegionLowX")
 	public int getRegionLowX() {
 		return this.regionLowX;
 	}
@@ -302,7 +276,6 @@ public class WorldMapArea {
 		descriptor = "(I)I",
 		garbageValue = "1981016427"
 	)
-	@Export("getRegionHighX")
 	public int getRegionHighX() {
 		return this.regionHighX;
 	}
@@ -312,7 +285,6 @@ public class WorldMapArea {
 		descriptor = "(I)I",
 		garbageValue = "-389390805"
 	)
-	@Export("getRegionLowY")
 	public int getRegionLowY() {
 		return this.regionLowY;
 	}
@@ -322,7 +294,6 @@ public class WorldMapArea {
 		descriptor = "(I)I",
 		garbageValue = "-155817671"
 	)
-	@Export("getRegionHighY")
 	public int getRegionHighY() {
 		return this.regionHighY;
 	}
@@ -332,7 +303,6 @@ public class WorldMapArea {
 		descriptor = "(I)I",
 		garbageValue = "-1352292707"
 	)
-	@Export("getOriginX")
 	public int getOriginX() {
 		return this.origin.x;
 	}
@@ -342,7 +312,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "-101"
 	)
-	@Export("getOriginPlane")
 	public int getOriginPlane() {
 		return this.origin.plane;
 	}
@@ -352,7 +321,6 @@ public class WorldMapArea {
 		descriptor = "(B)I",
 		garbageValue = "32"
 	)
-	@Export("getOriginY")
 	public int getOriginY() {
 		return this.origin.y;
 	}
@@ -362,7 +330,6 @@ public class WorldMapArea {
 		descriptor = "(B)Lmr;",
 		garbageValue = "117"
 	)
-	@Export("getOrigin")
 	public Coord getOrigin() {
 		return new Coord(this.origin);
 	}
@@ -381,7 +348,6 @@ public class WorldMapArea {
 		descriptor = "(III)V",
 		garbageValue = "-1581255918"
 	)
-	@Export("resumePauseWidget")
 	static void resumePauseWidget(int var0, int var1) {
 		PacketBufferNode var2 = class503.getPacketBufferNode(ClientPacket.CONTINUE, Client.packetWriter.isaacCipher);
 		var2.packetBuffer.writeShortAddLE(var1);

@@ -40,7 +40,6 @@ public class class371 {
 		descriptor = "(II)Lhm;",
 		garbageValue = "238508398"
 	)
-	@Export("getEnum")
 	public static EnumComposition getEnum(int var0) {
 		EnumComposition var1 = (EnumComposition)EnumComposition.EnumDefinition_cached.get((long)var0);
 		if (var1 != null) {

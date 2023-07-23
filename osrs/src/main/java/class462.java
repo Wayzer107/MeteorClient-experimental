@@ -10,7 +10,6 @@ public interface class462 {
 		descriptor = "(I)Lrs;",
 		garbageValue = "186741716"
 	)
-	@Export("vmethod2213")
 	class461 vmethod2213();
 
 	@ObfuscatedName("ay")
@@ -18,6 +17,5 @@ public interface class462 {
 		descriptor = "(I)[B",
 		garbageValue = "-587379873"
 	)
-	@Export("vmethod7797")
 	byte[] vmethod7797() throws UnsupportedEncodingException;
 }

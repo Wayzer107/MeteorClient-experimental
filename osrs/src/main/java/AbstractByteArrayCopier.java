@@ -14,7 +14,6 @@ public abstract class AbstractByteArrayCopier {
 		descriptor = "(I)[B",
 		garbageValue = "-2134030911"
 	)
-	@Export("get")
 	abstract byte[] get();
 
 	@ObfuscatedName("am")
@@ -22,6 +21,5 @@ public abstract class AbstractByteArrayCopier {
 		descriptor = "([BI)V",
 		garbageValue = "-379413774"
 	)
-	@Export("set")
 	public abstract void set(byte[] var1);
 }

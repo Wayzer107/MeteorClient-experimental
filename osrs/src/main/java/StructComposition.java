@@ -10,19 +10,16 @@ public class StructComposition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("StructDefinition_archive")
 	static AbstractArchive StructDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("StructDefinition_cached")
 	static EvictingDualNodeHashTable StructDefinition_cached;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lsa;"
 	)
-	@Export("params")
 	IterableNodeHashTable params;
 
 	static {
@@ -37,7 +34,6 @@ public class StructComposition extends DualNode {
 		descriptor = "(I)V",
 		garbageValue = "448946158"
 	)
-	@Export("postDecode")
 	void postDecode() {
 	}
 
@@ -46,7 +42,6 @@ public class StructComposition extends DualNode {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -63,7 +58,6 @@ public class StructComposition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "595587202"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 249) {
 			this.params = class141.readStringIntParameters(var1, this.params);
@@ -76,7 +70,6 @@ public class StructComposition extends DualNode {
 		descriptor = "(III)I",
 		garbageValue = "-154725242"
 	)
-	@Export("getIntParam")
 	public int getIntParam(int var1, int var2) {
 		return FileSystem.method904(this.params, var1, var2);
 	}
@@ -86,7 +79,6 @@ public class StructComposition extends DualNode {
 		descriptor = "(ILjava/lang/String;B)Ljava/lang/String;",
 		garbageValue = "-86"
 	)
-	@Export("getStringParam")
 	public String getStringParam(int var1, String var2) {
 		IterableNodeHashTable var4 = this.params;
 		String var3;

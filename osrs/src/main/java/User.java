@@ -13,13 +13,11 @@ public class User implements Comparable {
 	@ObfuscatedSignature(
 		descriptor = "Lui;"
 	)
-	@Export("username")
 	Username username;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lui;"
 	)
-	@Export("previousUsername")
 	Username previousUsername;
 
 	User() {
@@ -30,7 +28,6 @@ public class User implements Comparable {
 		descriptor = "(Lqe;B)I",
 		garbageValue = "114"
 	)
-	@Export("compareTo_user")
 	public int compareTo_user(User var1) {
 		return this.username.compareToTyped(var1.username);
 	}
@@ -40,7 +37,6 @@ public class User implements Comparable {
 		descriptor = "(I)Lui;",
 		garbageValue = "-157442645"
 	)
-	@Export("getUsername")
 	public Username getUsername() {
 		return this.username;
 	}
@@ -50,7 +46,6 @@ public class User implements Comparable {
 		descriptor = "(B)Ljava/lang/String;",
 		garbageValue = "7"
 	)
-	@Export("getName")
 	public String getName() {
 		return this.username == null ? "" : this.username.getName();
 	}
@@ -60,7 +55,6 @@ public class User implements Comparable {
 		descriptor = "(B)Ljava/lang/String;",
 		garbageValue = "8"
 	)
-	@Export("getPreviousName")
 	public String getPreviousName() {
 		return this.previousUsername == null ? "" : this.previousUsername.getName();
 	}
@@ -70,7 +64,6 @@ public class User implements Comparable {
 		descriptor = "(Lui;Lui;I)V",
 		garbageValue = "-1440171953"
 	)
-	@Export("set")
 	void set(Username var1, Username var2) {
 		if (var1 == null) {
 			throw new NullPointerException();
@@ -80,7 +73,6 @@ public class User implements Comparable {
 		}
 	}
 
-	@Export("compareTo")
 	@ObfuscatedName("compareTo")
 	public int compareTo(Object var1) {
 		return this.compareTo_user((User)var1);

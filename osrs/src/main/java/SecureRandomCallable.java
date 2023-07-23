@@ -13,13 +13,11 @@ public class SecureRandomCallable implements Callable {
 	@ObfuscatedSignature(
 		descriptor = "Lbe;"
 	)
-	@Export("pcmStreamMixer")
 	static PcmStreamMixer pcmStreamMixer;
 
 	SecureRandomCallable() {
 	}
 
-	@Export("call")
 	@ObfuscatedName("call")
 	public Object call() {
 		return WorldMapSection2.method1377();
@@ -30,7 +28,6 @@ public class SecureRandomCallable implements Callable {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "2007772558"
 	)
-	@Export("addImageTag")
 	static String addImageTag(int var0) {
 		return "<img=" + var0 + ">";
 	}

@@ -17,18 +17,14 @@ public class Varcs {
 	)
 	static Archive field1130;
 	@ObfuscatedName("ar")
-	@Export("intsPersistence")
 	boolean[] intsPersistence;
 	@ObfuscatedName("am")
-	@Export("map")
 	Map map;
 	/** @deprecated */
 	@Deprecated
 	@ObfuscatedName("as")
-	@Export("strings")
 	String[] strings;
 	@ObfuscatedName("aj")
-	@Export("unwrittenChanges")
 	boolean unwrittenChanges;
 	@ObfuscatedName("ag")
 	long field1135;
@@ -59,7 +55,6 @@ public class Varcs {
 		descriptor = "(III)V",
 		garbageValue = "-1961854581"
 	)
-	@Export("setInt")
 	void setInt(int var1, int var2) {
 		this.map.put(var1, var2);
 		if (this.intsPersistence[var1]) {
@@ -73,7 +68,6 @@ public class Varcs {
 		descriptor = "(II)I",
 		garbageValue = "-33672218"
 	)
-	@Export("getInt")
 	int getInt(int var1) {
 		Object var2 = this.map.get(var1);
 		return var2 instanceof Integer ? (Integer)var2 : -1;
@@ -84,7 +78,6 @@ public class Varcs {
 		descriptor = "(ILjava/lang/String;B)V",
 		garbageValue = "31"
 	)
-	@Export("setString")
 	void setString(int var1, String var2) {
 		this.map.put(var1, var2);
 	}
@@ -94,7 +87,6 @@ public class Varcs {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "91278440"
 	)
-	@Export("getString")
 	String getString(int var1) {
 		Object var2 = this.map.get(var1);
 		return var2 instanceof String ? (String)var2 : "";
@@ -107,7 +99,6 @@ public class Varcs {
 		descriptor = "(ILjava/lang/String;B)V",
 		garbageValue = "-22"
 	)
-	@Export("setStringOld")
 	void setStringOld(int var1, String var2) {
 		this.strings[var1] = var2;
 	}
@@ -119,7 +110,6 @@ public class Varcs {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "573236545"
 	)
-	@Export("getStringOld")
 	String getStringOld(int var1) {
 		return this.strings[var1];
 	}
@@ -129,7 +119,6 @@ public class Varcs {
 		descriptor = "(I)V",
 		garbageValue = "488791013"
 	)
-	@Export("clearTransient")
 	void clearTransient() {
 		int var1;
 		for (var1 = 0; var1 < this.intsPersistence.length; ++var1) {
@@ -149,7 +138,6 @@ public class Varcs {
 		descriptor = "(ZB)Ltn;",
 		garbageValue = "-68"
 	)
-	@Export("getPreferencesFile")
 	AccessFile getPreferencesFile(boolean var1) {
 		return Decimator.getPreferencesFile("2", KeyHandler.field72.name, var1);
 	}
@@ -159,7 +147,6 @@ public class Varcs {
 		descriptor = "(B)V",
 		garbageValue = "65"
 	)
-	@Export("write")
 	void write() {
 		AccessFile var1 = this.getPreferencesFile(true);
 
@@ -220,7 +207,6 @@ public class Varcs {
 		descriptor = "(I)V",
 		garbageValue = "-908905971"
 	)
-	@Export("read")
 	void read() {
 		AccessFile var1 = this.getPreferencesFile(false);
 
@@ -312,7 +298,6 @@ public class Varcs {
 		descriptor = "(I)V",
 		garbageValue = "2109482276"
 	)
-	@Export("tryWrite")
 	void tryWrite() {
 		if (this.unwrittenChanges && this.field1135 < class113.clockNow() - 60000L) {
 			this.write();
@@ -325,7 +310,6 @@ public class Varcs {
 		descriptor = "(B)Z",
 		garbageValue = "75"
 	)
-	@Export("hasUnwrittenChanges")
 	boolean hasUnwrittenChanges() {
 		return this.unwrittenChanges;
 	}

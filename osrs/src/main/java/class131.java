@@ -38,13 +38,11 @@ public class class131 implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "[Lud;"
 	)
-	@Export("worldSelectBackSprites")
 	static SpritePixels[] worldSelectBackSprites;
 	@ObfuscatedName("ff")
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive10")
 	static Archive archive10;
 	@ObfuscatedName("ag")
 	final int field1257;
@@ -82,7 +80,6 @@ public class class131 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field1259;
 	}

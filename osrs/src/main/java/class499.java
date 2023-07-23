@@ -9,7 +9,6 @@ public interface class499 {
 		descriptor = "(Ljava/lang/Object;Lty;I)V",
 		garbageValue = "-791895690"
 	)
-	@Export("vmethod8274")
 	void vmethod8274(Object var1, Buffer var2);
 
 	@ObfuscatedName("ay")
@@ -17,6 +16,5 @@ public interface class499 {
 		descriptor = "(Lty;I)Ljava/lang/Object;",
 		garbageValue = "1270618633"
 	)
-	@Export("vmethod8273")
 	Object vmethod8273(Buffer var1);
 }

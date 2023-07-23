@@ -98,7 +98,6 @@ public class class146 {
 		descriptor = "(Ljava/lang/String;ZB)V",
 		garbageValue = "0"
 	)
-	@Export("findItemDefinitions")
 	static void findItemDefinitions(String var0, boolean var1) {
 		var0 = var0.toLowerCase();
 		short[] var2 = new short[16];

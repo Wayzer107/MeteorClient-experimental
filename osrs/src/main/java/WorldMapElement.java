@@ -11,40 +11,31 @@ public class WorldMapElement extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("WorldMapElement_archive")
 	public static AbstractArchive WorldMapElement_archive;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("WorldMapElement_cachedSprites")
 	public static EvictingDualNodeHashTable WorldMapElement_cachedSprites;
 	@ObfuscatedName("as")
-	@Export("objectId")
 	public final int objectId;
 	@ObfuscatedName("aj")
-	@Export("sprite1")
 	public int sprite1;
 	@ObfuscatedName("ag")
-	@Export("sprite2")
 	int sprite2;
 	@ObfuscatedName("az")
-	@Export("name")
 	public String name;
 	@ObfuscatedName("av")
 	public int field1513;
 	@ObfuscatedName("ap")
-	@Export("textSize")
 	public int textSize;
 	@ObfuscatedName("at")
 	public boolean field1507;
 	@ObfuscatedName("ah")
 	public boolean field1506;
 	@ObfuscatedName("ax")
-	@Export("menuActions")
 	public String[] menuActions;
 	@ObfuscatedName("aa")
-	@Export("menuTargetName")
 	public String menuTargetName;
 	@ObfuscatedName("au")
 	int[] field1505;
@@ -60,20 +51,17 @@ public class WorldMapElement extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lhz;"
 	)
-	@Export("horizontalAlignment")
 	public HorizontalAlignment horizontalAlignment;
 	@ObfuscatedName("ak")
 	@ObfuscatedSignature(
 		descriptor = "Lhl;"
 	)
-	@Export("verticalAlignment")
 	public VerticalAlignment verticalAlignment;
 	@ObfuscatedName("an")
 	int[] field1504;
 	@ObfuscatedName("af")
 	byte[] field1498;
 	@ObfuscatedName("ai")
-	@Export("category")
 	public int category;
 
 	static {
@@ -102,7 +90,6 @@ public class WorldMapElement extends DualNode {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-65"
 	)
-	@Export("decode")
 	public void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -119,7 +106,6 @@ public class WorldMapElement extends DualNode {
 		descriptor = "(Lty;IB)V",
 		garbageValue = "-112"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.sprite1 = var1.method2543();
@@ -233,7 +219,6 @@ public class WorldMapElement extends DualNode {
 		descriptor = "(ZI)Lud;",
 		garbageValue = "1803263735"
 	)
-	@Export("getSpriteBool")
 	public SpritePixels getSpriteBool(boolean var1) {
 		int var2 = this.sprite1 * -148742303 * 179602593;
 		return this.getSprite(var2);
@@ -244,7 +229,6 @@ public class WorldMapElement extends DualNode {
 		descriptor = "(II)Lud;",
 		garbageValue = "-858203054"
 	)
-	@Export("getSprite")
 	SpritePixels getSprite(int var1) {
 		if (var1 < 0) {
 			return null;
@@ -268,7 +252,6 @@ public class WorldMapElement extends DualNode {
 		descriptor = "(B)I",
 		garbageValue = "119"
 	)
-	@Export("getObjectId")
 	public int getObjectId() {
 		return this.objectId;
 	}

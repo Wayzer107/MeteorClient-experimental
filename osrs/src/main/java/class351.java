@@ -11,7 +11,6 @@ public class class351 {
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("scriptActiveWidget")
 	static Widget scriptActiveWidget;
 
 	static {

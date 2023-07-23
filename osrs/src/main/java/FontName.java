@@ -10,54 +10,45 @@ public class FontName {
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_plain11")
 	public static final FontName FontName_plain11;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_plain12")
 	public static final FontName FontName_plain12;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_bold12")
 	public static final FontName FontName_bold12;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_verdana11")
 	public static final FontName FontName_verdana11;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_verdana13")
 	public static final FontName FontName_verdana13;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lsg;"
 	)
-	@Export("FontName_verdana15")
 	public static final FontName FontName_verdana15;
 	@ObfuscatedName("dd")
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("worldSelectRightSprite")
 	static IndexedSprite worldSelectRightSprite;
 	@ObfuscatedName("fe")
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive13")
 	static Archive archive13;
 	@ObfuscatedName("un")
 	static int cameraLookAtHeight;
 	@ObfuscatedName("ag")
-	@Export("name")
 	String name;
 
 	static {
@@ -166,7 +157,6 @@ public class FontName {
 		descriptor = "(III)I",
 		garbageValue = "-1946858719"
 	)
-	@Export("ItemContainer_getCount")
 	static int ItemContainer_getCount(int var0, int var1) {
 		ItemContainer var2 = (ItemContainer)ItemContainer.itemContainers.get((long)var0);
 		if (var2 == null) {

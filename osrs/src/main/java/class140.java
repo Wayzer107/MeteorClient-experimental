@@ -8,7 +8,6 @@ public class class140 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("ItemDefinition_modelArchive")
 	static AbstractArchive ItemDefinition_modelArchive;
 	@ObfuscatedName("jh")
 	static int field1314;
@@ -24,7 +23,6 @@ public class class140 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -41,7 +39,6 @@ public class class140 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1318 = var1.readUnsignedShort();
 		this.field1319 = var1.readInt();
@@ -54,7 +51,6 @@ public class class140 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method817(this.field1318, this.field1319, this.field1317, this.field1316);
 	}

@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("sn")
 public class class492 {
 	@ObfuscatedName("am")
-	@Export("SpriteBuffer_xOffsets")
 	public static int[] SpriteBuffer_xOffsets;
 
 	@ObfuscatedName("ay")

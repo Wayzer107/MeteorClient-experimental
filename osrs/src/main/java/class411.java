@@ -12,7 +12,6 @@ public class class411 {
 	@ObfuscatedName("am")
 	int field3719;
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		boolean var1 = true;

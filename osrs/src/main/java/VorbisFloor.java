@@ -9,12 +9,10 @@ public class VorbisFloor {
 	@ObfuscatedName("aw")
 	static final int[] field173;
 	@ObfuscatedName("ay")
-	@Export("VorbisFloor_decibelStatics")
 	static final float[] VorbisFloor_decibelStatics;
 	@ObfuscatedName("ar")
 	int[] field177;
 	@ObfuscatedName("am")
-	@Export("multiplier")
 	int multiplier;
 	@ObfuscatedName("as")
 	int[] field178;

@@ -10,19 +10,16 @@ public class MusicPatchPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "Llc;"
 	)
-	@Export("superStream")
 	MidiPcmStream superStream;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lod;"
 	)
-	@Export("queue")
 	NodeDeque queue;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lbe;"
 	)
-	@Export("mixer")
 	PcmStreamMixer mixer;
 
 	@ObfuscatedSignature(
@@ -117,7 +114,6 @@ public class MusicPatchPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("firstSubStream")
 	protected PcmStream firstSubStream() {
 		MusicPatchNode var1 = (MusicPatchNode)this.queue.last();
 		if (var1 == null) {
@@ -131,7 +127,6 @@ public class MusicPatchPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("nextSubStream")
 	protected PcmStream nextSubStream() {
 		MusicPatchNode var1;
 		do {
@@ -145,13 +140,11 @@ public class MusicPatchPcmStream extends PcmStream {
 	}
 
 	@ObfuscatedName("az")
-	@Export("vmethod5648")
 	protected int vmethod5648() {
 		return 0;
 	}
 
 	@ObfuscatedName("av")
-	@Export("fill")
 	protected void fill(int[] var1, int var2, int var3) {
 		this.mixer.fill(var1, var2, var3);
 
@@ -177,7 +170,6 @@ public class MusicPatchPcmStream extends PcmStream {
 	}
 
 	@ObfuscatedName("aq")
-	@Export("skip")
 	protected void skip(int var1) {
 		this.mixer.skip(var1);
 
@@ -242,7 +234,6 @@ public class MusicPatchPcmStream extends PcmStream {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "-1653228105"
 	)
-	@Export("colorStartTag")
 	static String colorStartTag(int var0) {
 		return "<col=" + Integer.toHexString(var0) + ">";
 	}

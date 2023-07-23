@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("rn")
 public abstract class class456 extends class282 implements class521 {
 	@ObfuscatedName("kj")
-	@Export("cameraYaw")
 	static int cameraYaw;
 
 	@ObfuscatedSignature(
@@ -20,7 +19,6 @@ public abstract class class456 extends class282 implements class521 {
 		descriptor = "(II)Lrc;",
 		garbageValue = "-1481639468"
 	)
-	@Export("vmethod8207")
 	protected abstract class458 vmethod8207(int var1);
 
 	@ObfuscatedName("ay")
@@ -37,7 +35,6 @@ public abstract class class456 extends class282 implements class521 {
 		descriptor = "(II)Ljava/lang/Object;",
 		garbageValue = "-692946397"
 	)
-	@Export("vmethod8697")
 	public Object vmethod8697(int var1) {
 		class458 var2 = this.vmethod8207(var1);
 		return var2 != null && var2.method2305() ? var2.method2306() : null;

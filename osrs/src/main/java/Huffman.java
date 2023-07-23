@@ -7,13 +7,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Huffman")
 public class Huffman {
 	@ObfuscatedName("aw")
-	@Export("masks")
 	int[] masks;
 	@ObfuscatedName("ay")
-	@Export("bits")
 	byte[] bits;
 	@ObfuscatedName("ar")
-	@Export("keys")
 	int[] keys;
 
 	public Huffman(byte[] var1) {
@@ -104,7 +101,6 @@ public class Huffman {
 		descriptor = "([BII[BIS)I",
 		garbageValue = "-4227"
 	)
-	@Export("compress")
 	int compress(byte[] var1, int var2, int var3, byte[] var4, int var5) {
 		int var6 = 0;
 		int var7 = var5 << 3;
@@ -155,7 +151,6 @@ public class Huffman {
 		descriptor = "([BI[BIIB)I",
 		garbageValue = "-90"
 	)
-	@Export("decompress")
 	int decompress(byte[] var1, int var2, byte[] var3, int var4, int var5) {
 		if (var5 == 0) {
 			return 0;
@@ -299,7 +294,6 @@ public class Huffman {
 		descriptor = "(I)I",
 		garbageValue = "-873357491"
 	)
-	@Export("getWindowedMode")
 	static int getWindowedMode() {
 		return Client.isResizable ? 2 : 1;
 	}

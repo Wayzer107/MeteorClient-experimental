@@ -17,13 +17,11 @@ public class class522 {
 		this.field4169 = var2;
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		return super.hashCode();
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof class522)) {

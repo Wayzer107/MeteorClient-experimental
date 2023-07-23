@@ -26,7 +26,6 @@ public class class129 implements Callable {
 	@ObfuscatedSignature(
 		descriptor = "Lfz;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class137 this$0;
 
@@ -41,7 +40,6 @@ public class class129 implements Callable {
 		this.field1224 = var5;
 	}
 
-	@Export("call")
 	@ObfuscatedName("call")
 	public Object call() {
 		this.field1223.method710();
@@ -61,7 +59,6 @@ public class class129 implements Callable {
 		descriptor = "(IB)V",
 		garbageValue = "-68"
 	)
-	@Export("updateGameState")
 	static void updateGameState(int var0) {
 		if (var0 != Client.gameState) {
 			if (Client.gameState == 30) {

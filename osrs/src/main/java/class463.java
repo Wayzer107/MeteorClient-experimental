@@ -40,7 +40,6 @@ public class class463 implements class462 {
 		descriptor = "(I)[B",
 		garbageValue = "-587379873"
 	)
-	@Export("vmethod7797")
 	public byte[] vmethod7797() throws UnsupportedEncodingException {
 		return this.field3892 == null ? new byte[0] : this.field3892.toString().getBytes("UTF-8");
 	}

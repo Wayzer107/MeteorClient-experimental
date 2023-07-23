@@ -10,25 +10,20 @@ public final class EvictingDualNodeHashTable {
 	@ObfuscatedSignature(
 		descriptor = "Lsh;"
 	)
-	@Export("dualNode")
 	DualNode dualNode;
 	@ObfuscatedName("ay")
-	@Export("capacity")
 	int capacity;
 	@ObfuscatedName("ar")
-	@Export("remainingCapacity")
 	int remainingCapacity;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lsa;"
 	)
-	@Export("hashTable")
 	IterableNodeHashTable hashTable;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Loz;"
 	)
-	@Export("deque")
 	IterableDualNodeQueue deque;
 
 	public EvictingDualNodeHashTable(int var1) {
@@ -48,7 +43,6 @@ public final class EvictingDualNodeHashTable {
 	@ObfuscatedSignature(
 		descriptor = "(J)Lsh;"
 	)
-	@Export("get")
 	public DualNode get(long var1) {
 		DualNode var3 = (DualNode)this.hashTable.get(var1);
 		if (var3 != null) {
@@ -59,7 +53,6 @@ public final class EvictingDualNodeHashTable {
 	}
 
 	@ObfuscatedName("ay")
-	@Export("remove")
 	public void remove(long var1) {
 		DualNode var3 = (DualNode)this.hashTable.get(var1);
 		if (var3 != null) {
@@ -74,7 +67,6 @@ public final class EvictingDualNodeHashTable {
 	@ObfuscatedSignature(
 		descriptor = "(Lsh;J)V"
 	)
-	@Export("put")
 	public void put(DualNode var1, long var2) {
 		if (this.remainingCapacity == 0) {
 			DualNode var4 = this.deque.removeLast();
@@ -94,7 +86,6 @@ public final class EvictingDualNodeHashTable {
 	}
 
 	@ObfuscatedName("am")
-	@Export("clear")
 	public void clear() {
 		this.deque.clear();
 		this.hashTable.clear();

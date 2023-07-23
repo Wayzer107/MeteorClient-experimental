@@ -12,13 +12,10 @@ public class WorldMapAreaData extends WorldMapArea {
 	@ObfuscatedName("wi")
 	static List field2453;
 	@ObfuscatedName("ah")
-	@Export("worldMapData0Set")
 	HashSet worldMapData0Set;
 	@ObfuscatedName("ax")
-	@Export("worldMapData1Set")
 	HashSet worldMapData1Set;
 	@ObfuscatedName("aa")
-	@Export("iconList")
 	List iconList;
 
 	WorldMapAreaData() {
@@ -29,7 +26,6 @@ public class WorldMapAreaData extends WorldMapArea {
 		descriptor = "(Lty;Lty;IZB)V",
 		garbageValue = "-92"
 	)
-	@Export("init")
 	void init(Buffer var1, Buffer var2, int var3, boolean var4) {
 		this.read(var1, var3);
 		int var5 = var2.readUnsignedShort();
@@ -71,7 +67,6 @@ public class WorldMapAreaData extends WorldMapArea {
 		descriptor = "(Lty;ZB)V",
 		garbageValue = "7"
 	)
-	@Export("initIconsList")
 	void initIconsList(Buffer var1, boolean var2) {
 		this.iconList = new LinkedList();
 		int var3 = var1.readUnsignedShort();
@@ -92,7 +87,6 @@ public class WorldMapAreaData extends WorldMapArea {
 		descriptor = "(Ldf;IIIS)V",
 		garbageValue = "10482"
 	)
-	@Export("addPlayerToMenu")
 	static final void addPlayerToMenu(Player var0, int var1, int var2, int var3) {
 		if (class136.localPlayer != var0) {
 			if (Client.menuOptionsCount < 400) {

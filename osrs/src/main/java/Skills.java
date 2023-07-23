@@ -6,10 +6,8 @@ import net.runelite.mapping.ObfuscatedName;
 @Implements("Skills")
 public class Skills {
 	@ObfuscatedName("ay")
-	@Export("Skills_enabled")
 	public static final boolean[] Skills_enabled;
 	@ObfuscatedName("ar")
-	@Export("Skills_experienceTable")
 	public static int[] Skills_experienceTable;
 
 	static {

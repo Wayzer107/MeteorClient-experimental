@@ -12,18 +12,15 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		descriptor = "(Lol;Lol;I)I",
 		garbageValue = "19401628"
 	)
-	@Export("compare_bridged")
 	int compare_bridged(GrandExchangeEvent var1, GrandExchangeEvent var2) {
 		return var1.getOfferName().compareTo(var2.getOfferName());
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compare_bridged((GrandExchangeEvent)var1, (GrandExchangeEvent)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
@@ -34,7 +31,6 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		descriptor = "(Ltc;II)V",
 		garbageValue = "1015918827"
 	)
-	@Export("readPlayerUpdate")
 	static void readPlayerUpdate(PacketBuffer var0, int var1) {
 		boolean var2 = var0.readBits(1) == 1;
 		if (var2) {
@@ -243,7 +239,6 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		descriptor = "(II)V",
 		garbageValue = "64983376"
 	)
-	@Export("clearItemContainer")
 	static void clearItemContainer(int var0) {
 		ItemContainer var1 = (ItemContainer)ItemContainer.itemContainers.get((long)var0);
 		if (var1 != null) {
@@ -260,7 +255,6 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		descriptor = "(Ldf;ZI)V",
 		garbageValue = "-226318338"
 	)
-	@Export("addPlayerToScene")
 	static void addPlayerToScene(Player var0, boolean var1) {
 		if (var0 != null && var0.isVisible() && !var0.isHidden) {
 			var0.isUnanimated = false;

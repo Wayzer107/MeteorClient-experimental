@@ -8,7 +8,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("mf")
 class class313 implements Callable {
 	@ObfuscatedName("ag")
-	@Export("gameCyclesToDo")
 	static int gameCyclesToDo;
 	@ObfuscatedName("bj")
 	@ObfuscatedSignature(
@@ -55,7 +54,6 @@ class class313 implements Callable {
 		descriptor = "(CB)B",
 		garbageValue = "90"
 	)
-	@Export("charToByteCp1252")
 	public static byte charToByteCp1252(char var0) {
 		byte var1;
 		if (var0 > 0 && var0 < 128 || var0 >= 160 && var0 <= 255) {

@@ -201,7 +201,6 @@ public final class class424 {
 		descriptor = "(IB)Ltu;",
 		garbageValue = "78"
 	)
-	@Export("getDbRowType")
 	public static DbRowType getDbRowType(int var0) {
 		DbRowType var1 = (DbRowType)DbRowType.DBRowType_cache.get((long)var0);
 		if (var1 != null) {

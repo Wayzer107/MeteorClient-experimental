@@ -21,7 +21,6 @@ public class class1 implements Callable {
 	@ObfuscatedSignature(
 		descriptor = "Laz;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class7 this$0;
 
@@ -34,7 +33,6 @@ public class class1 implements Callable {
 		this.field1 = var3;
 	}
 
-	@Export("call")
 	@ObfuscatedName("call")
 	public Object call() {
 		return this.field1.vmethod12(this.field2);

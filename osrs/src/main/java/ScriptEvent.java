@@ -7,7 +7,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ScriptEvent")
 public class ScriptEvent extends Node {
 	@ObfuscatedName("aw")
-	@Export("args")
 	Object[] args;
 	@ObfuscatedName("ay")
 	boolean field859;
@@ -15,36 +14,27 @@ public class ScriptEvent extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("widget")
 	Widget widget;
 	@ObfuscatedName("am")
-	@Export("mouseX")
 	int mouseX;
 	@ObfuscatedName("as")
-	@Export("mouseY")
 	int mouseY;
 	@ObfuscatedName("aj")
-	@Export("opIndex")
 	int opIndex;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("dragTarget")
 	Widget dragTarget;
 	@ObfuscatedName("az")
-	@Export("keyTyped")
 	int keyTyped;
 	@ObfuscatedName("av")
-	@Export("keyPressed")
 	int keyPressed;
 	@ObfuscatedName("ap")
-	@Export("targetName")
 	String targetName;
 	@ObfuscatedName("aq")
 	int field862;
 	@ObfuscatedName("at")
-	@Export("type")
 	int type;
 
 	public ScriptEvent() {
@@ -56,7 +46,6 @@ public class ScriptEvent extends Node {
 		descriptor = "([Ljava/lang/Object;I)V",
 		garbageValue = "-720294865"
 	)
-	@Export("setArgs")
 	public void setArgs(Object[] var1) {
 		this.args = var1;
 	}
@@ -66,7 +55,6 @@ public class ScriptEvent extends Node {
 		descriptor = "(II)V",
 		garbageValue = "2065386179"
 	)
-	@Export("setType")
 	public void setType(int var1) {
 		this.type = var1;
 	}
@@ -85,7 +73,6 @@ public class ScriptEvent extends Node {
 		descriptor = "(Lty;IIIIIIB)V",
 		garbageValue = "1"
 	)
-	@Export("loadTerrain")
 	static final void loadTerrain(Buffer var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		boolean var7 = var1 >= 0 && var1 < 4 && var2 >= 0 && var2 < 104 && var3 >= 0 && var3 < 104;
 		int var8;

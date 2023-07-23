@@ -26,13 +26,11 @@ public class class392 implements Iterator {
 		this.field3654 = var1;
 	}
 
-	@Export("hasNext")
 	@ObfuscatedName("hasNext")
 	public boolean hasNext() {
 		return this.field3653 < this.field3654.field3655;
 	}
 
-	@Export("next")
 	@ObfuscatedName("next")
 	public Object next() {
 		if (this.field3654.field3656 != this.field3652) {
@@ -46,7 +44,6 @@ public class class392 implements Iterator {
 		}
 	}
 
-	@Export("remove")
 	@ObfuscatedName("remove")
 	public void remove() {
 		throw new UnsupportedOperationException();

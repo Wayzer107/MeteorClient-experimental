@@ -7,25 +7,18 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("SceneTilePaint")
 public final class SceneTilePaint {
 	@ObfuscatedName("aw")
-	@Export("swColor")
 	int swColor;
 	@ObfuscatedName("ay")
-	@Export("seColor")
 	int seColor;
 	@ObfuscatedName("ar")
-	@Export("neColor")
 	int neColor;
 	@ObfuscatedName("am")
-	@Export("nwColor")
 	int nwColor;
 	@ObfuscatedName("as")
-	@Export("texture")
 	int texture;
 	@ObfuscatedName("aj")
-	@Export("isFlat")
 	boolean isFlat;
 	@ObfuscatedName("ag")
-	@Export("rgb")
 	int rgb;
 
 	SceneTilePaint(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {

@@ -10,31 +10,26 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Widget")
 public class Widget extends Node {
 	@ObfuscatedName("bd")
-	@Export("Widget_loadedInterfaces")
 	public static boolean[] Widget_loadedInterfaces;
 	@ObfuscatedName("bs")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("Widget_cachedSprites")
 	static EvictingDualNodeHashTable Widget_cachedSprites;
 	@ObfuscatedName("bp")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("Widget_cachedModels")
 	static EvictingDualNodeHashTable Widget_cachedModels;
 	@ObfuscatedName("bv")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("Widget_cachedFonts")
 	static EvictingDualNodeHashTable Widget_cachedFonts;
 	@ObfuscatedName("bq")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("Widget_cachedSpriteMasks")
 	static EvictingDualNodeHashTable Widget_cachedSpriteMasks;
 	@ObfuscatedName("bo")
 	@ObfuscatedSignature(
@@ -49,95 +44,66 @@ public class Widget extends Node {
 	@ObfuscatedName("bw")
 	public static boolean field2926;
 	@ObfuscatedName("be")
-	@Export("isIf3")
 	public boolean isIf3;
 	@ObfuscatedName("bc")
-	@Export("id")
 	public int id;
 	@ObfuscatedName("bi")
-	@Export("childIndex")
 	public int childIndex;
 	@ObfuscatedName("bu")
-	@Export("type")
 	public int type;
 	@ObfuscatedName("bk")
-	@Export("buttonType")
 	public int buttonType;
 	@ObfuscatedName("bz")
-	@Export("contentType")
 	public int contentType;
 	@ObfuscatedName("bx")
-	@Export("xAlignment")
 	public int xAlignment;
 	@ObfuscatedName("bh")
-	@Export("yAlignment")
 	public int yAlignment;
 	@ObfuscatedName("bm")
-	@Export("widthAlignment")
 	public int widthAlignment;
 	@ObfuscatedName("bl")
-	@Export("heightAlignment")
 	public int heightAlignment;
 	@ObfuscatedName("bt")
-	@Export("rawX")
 	public int rawX;
 	@ObfuscatedName("by")
-	@Export("rawY")
 	public int rawY;
 	@ObfuscatedName("bg")
-	@Export("rawWidth")
 	public int rawWidth;
 	@ObfuscatedName("bj")
-	@Export("rawHeight")
 	public int rawHeight;
 	@ObfuscatedName("ct")
-	@Export("x")
 	public int x;
 	@ObfuscatedName("cf")
-	@Export("y")
 	public int y;
 	@ObfuscatedName("cz")
-	@Export("width")
 	public int width;
 	@ObfuscatedName("cb")
-	@Export("height")
 	public int height;
 	@ObfuscatedName("cs")
 	public int field2990;
 	@ObfuscatedName("cj")
 	public int field2981;
 	@ObfuscatedName("cn")
-	@Export("parentId")
 	public int parentId;
 	@ObfuscatedName("cw")
-	@Export("isHidden")
 	public boolean isHidden;
 	@ObfuscatedName("ce")
-	@Export("scrollX")
 	public int scrollX;
 	@ObfuscatedName("cq")
-	@Export("scrollY")
 	public int scrollY;
 	@ObfuscatedName("cm")
-	@Export("scrollWidth")
 	public int scrollWidth;
 	@ObfuscatedName("ca")
-	@Export("scrollHeight")
 	public int scrollHeight;
 	@ObfuscatedName("cx")
-	@Export("color")
 	public int color;
 	@ObfuscatedName("co")
-	@Export("color2")
 	public int color2;
 	@ObfuscatedName("cu")
-	@Export("mouseOverColor")
 	public int mouseOverColor;
 	@ObfuscatedName("cr")
-	@Export("mouseOverColor2")
 	public int mouseOverColor2;
 	@ObfuscatedName("cd")
-	@Export("fill")
 	public boolean fill;
 	@ObfuscatedName("cy")
 	@ObfuscatedSignature(
@@ -145,83 +111,58 @@ public class Widget extends Node {
 	)
 	public FillMode fillMode;
 	@ObfuscatedName("ck")
-	@Export("transparencyTop")
 	public int transparencyTop;
 	@ObfuscatedName("cl")
-	@Export("transparencyBot")
 	public int transparencyBot;
 	@ObfuscatedName("cp")
-	@Export("lineWid")
 	public int lineWid;
 	@ObfuscatedName("ch")
 	public boolean field2943;
 	@ObfuscatedName("cg")
-	@Export("spriteId2")
 	public int spriteId2;
 	@ObfuscatedName("ci")
-	@Export("spriteId")
 	public int spriteId;
 	@ObfuscatedName("cv")
 	public String field3073;
 	@ObfuscatedName("cc")
-	@Export("spriteAngle")
 	public int spriteAngle;
 	@ObfuscatedName("dc")
-	@Export("spriteTiling")
 	public boolean spriteTiling;
 	@ObfuscatedName("dq")
-	@Export("outline")
 	public int outline;
 	@ObfuscatedName("dg")
-	@Export("spriteShadow")
 	public int spriteShadow;
 	@ObfuscatedName("dj")
-	@Export("spriteFlipV")
 	public boolean spriteFlipV;
 	@ObfuscatedName("dy")
-	@Export("spriteFlipH")
 	public boolean spriteFlipH;
 	@ObfuscatedName("dr")
-	@Export("modelType")
 	public int modelType;
 	@ObfuscatedName("do")
-	@Export("modelId")
 	public int modelId;
 	@ObfuscatedName("dk")
-	@Export("modelType2")
 	int modelType2;
 	@ObfuscatedName("dn")
-	@Export("modelId2")
 	int modelId2;
 	@ObfuscatedName("di")
-	@Export("sequenceId")
 	public int sequenceId;
 	@ObfuscatedName("de")
-	@Export("sequenceId2")
 	public int sequenceId2;
 	@ObfuscatedName("dd")
-	@Export("modelOffsetX")
 	public int modelOffsetX;
 	@ObfuscatedName("dt")
-	@Export("modelOffsetY")
 	public int modelOffsetY;
 	@ObfuscatedName("df")
-	@Export("modelAngleX")
 	public int modelAngleX;
 	@ObfuscatedName("dm")
-	@Export("modelAngleY")
 	public int modelAngleY;
 	@ObfuscatedName("du")
-	@Export("modelAngleZ")
 	public int modelAngleZ;
 	@ObfuscatedName("dz")
-	@Export("modelZoom")
 	public int modelZoom;
 	@ObfuscatedName("dx")
-	@Export("modelRotation")
 	public int modelRotation;
 	@ObfuscatedName("dp")
-	@Export("rotationKey")
 	public int rotationKey;
 	@ObfuscatedName("ds")
 	@ObfuscatedSignature(
@@ -229,34 +170,24 @@ public class Widget extends Node {
 	)
 	public PlayerComposition field3081;
 	@ObfuscatedName("da")
-	@Export("modelOrthog")
 	public boolean modelOrthog;
 	@ObfuscatedName("dv")
-	@Export("modelTransparency")
 	public boolean modelTransparency;
 	@ObfuscatedName("dh")
-	@Export("itemQuantityMode")
 	public int itemQuantityMode;
 	@ObfuscatedName("dl")
-	@Export("fontId")
 	public int fontId;
 	@ObfuscatedName("db")
-	@Export("text")
 	public String text;
 	@ObfuscatedName("dw")
-	@Export("text2")
 	public String text2;
 	@ObfuscatedName("et")
-	@Export("textLineHeight")
 	public int textLineHeight;
 	@ObfuscatedName("em")
-	@Export("textXAlignment")
 	public int textXAlignment;
 	@ObfuscatedName("ec")
-	@Export("textYAlignment")
 	public int textYAlignment;
 	@ObfuscatedName("el")
-	@Export("textShadowed")
 	public boolean textShadowed;
 	@ObfuscatedName("er")
 	@ObfuscatedSignature(
@@ -275,7 +206,6 @@ public class Widget extends Node {
 	)
 	class328 field2940;
 	@ObfuscatedName("ei")
-	@Export("flags")
 	public int flags;
 	@ObfuscatedName("en")
 	public boolean field2951;
@@ -288,175 +218,126 @@ public class Widget extends Node {
 	@ObfuscatedName("eg")
 	public int[] field3029;
 	@ObfuscatedName("ef")
-	@Export("dataText")
 	public String dataText;
 	@ObfuscatedName("ev")
-	@Export("actions")
 	public String[] actions;
 	@ObfuscatedName("ez")
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("parent")
 	public Widget parent;
 	@ObfuscatedName("ek")
-	@Export("dragZoneSize")
 	public int dragZoneSize;
 	@ObfuscatedName("eu")
-	@Export("dragThreshold")
 	public int dragThreshold;
 	@ObfuscatedName("ep")
-	@Export("isScrollBar")
 	public boolean isScrollBar;
 	@ObfuscatedName("fm")
-	@Export("spellActionName")
 	public String spellActionName;
 	@ObfuscatedName("fa")
-	@Export("hasListener")
 	public boolean hasListener;
 	@ObfuscatedName("fg")
-	@Export("onLoad")
 	public Object[] onLoad;
 	@ObfuscatedName("fq")
-	@Export("onClick")
 	public Object[] onClick;
 	@ObfuscatedName("fy")
-	@Export("onClickRepeat")
 	public Object[] onClickRepeat;
 	@ObfuscatedName("fw")
-	@Export("onRelease")
 	public Object[] onRelease;
 	@ObfuscatedName("fp")
-	@Export("onHold")
 	public Object[] onHold;
 	@ObfuscatedName("fz")
-	@Export("onMouseOver")
 	public Object[] onMouseOver;
 	@ObfuscatedName("fj")
-	@Export("onMouseRepeat")
 	public Object[] onMouseRepeat;
 	@ObfuscatedName("fb")
-	@Export("onMouseLeave")
 	public Object[] onMouseLeave;
 	@ObfuscatedName("fl")
-	@Export("onDrag")
 	public Object[] onDrag;
 	@ObfuscatedName("fd")
-	@Export("onDragComplete")
 	public Object[] onDragComplete;
 	@ObfuscatedName("fh")
-	@Export("onTargetEnter")
 	public Object[] onTargetEnter;
 	@ObfuscatedName("fc")
-	@Export("onTargetLeave")
 	public Object[] onTargetLeave;
 	@ObfuscatedName("fu")
-	@Export("onVarTransmit")
 	public Object[] onVarTransmit;
 	@ObfuscatedName("fv")
-	@Export("varTransmitTriggers")
 	public int[] varTransmitTriggers;
 	@ObfuscatedName("fr")
-	@Export("onInvTransmit")
 	public Object[] onInvTransmit;
 	@ObfuscatedName("fs")
-	@Export("invTransmitTriggers")
 	public int[] invTransmitTriggers;
 	@ObfuscatedName("fn")
-	@Export("onStatTransmit")
 	public Object[] onStatTransmit;
 	@ObfuscatedName("ff")
-	@Export("statTransmitTriggers")
 	public int[] statTransmitTriggers;
 	@ObfuscatedName("fk")
-	@Export("onTimer")
 	public Object[] onTimer;
 	@ObfuscatedName("ft")
-	@Export("onOp")
 	public Object[] onOp;
 	@ObfuscatedName("fe")
 	public Object[] field3042;
 	@ObfuscatedName("fo")
-	@Export("onScroll")
 	public Object[] onScroll;
 	@ObfuscatedName("fx")
-	@Export("onChatTransmit")
 	public Object[] onChatTransmit;
 	@ObfuscatedName("fi")
-	@Export("onKey")
 	public Object[] onKey;
 	@ObfuscatedName("gc")
 	public Object[] field3061;
 	@ObfuscatedName("gp")
 	public Object[] field3068;
 	@ObfuscatedName("ga")
-	@Export("onFriendTransmit")
 	public Object[] onFriendTransmit;
 	@ObfuscatedName("gg")
-	@Export("onClanTransmit")
 	public Object[] onClanTransmit;
 	@ObfuscatedName("gs")
 	public Object[] field3070;
 	@ObfuscatedName("ge")
 	public Object[] field3062;
 	@ObfuscatedName("go")
-	@Export("onMiscTransmit")
 	public Object[] onMiscTransmit;
 	@ObfuscatedName("gh")
-	@Export("onDialogAbort")
 	public Object[] onDialogAbort;
 	@ObfuscatedName("gj")
-	@Export("onSubChange")
 	public Object[] onSubChange;
 	@ObfuscatedName("gm")
-	@Export("onResize")
 	public Object[] onResize;
 	@ObfuscatedName("gx")
-	@Export("onStockTransmit")
 	public Object[] onStockTransmit;
 	@ObfuscatedName("gr")
 	public Object[] field3069;
 	@ObfuscatedName("gy")
 	public Object[] field3072;
 	@ObfuscatedName("gt")
-	@Export("cs1Instructions")
 	public int[][] cs1Instructions;
 	@ObfuscatedName("gq")
-	@Export("cs1Comparisons")
 	public int[] cs1Comparisons;
 	@ObfuscatedName("gv")
-	@Export("cs1ComparisonValues")
 	public int[] cs1ComparisonValues;
 	@ObfuscatedName("gl")
-	@Export("mouseOverRedirect")
 	public int mouseOverRedirect;
 	@ObfuscatedName("gd")
 	public String field3078;
 	@ObfuscatedName("gf")
-	@Export("buttonText")
 	public String buttonText;
 	@ObfuscatedName("gk")
-	@Export("itemIds")
 	public int[] itemIds;
 	@ObfuscatedName("gz")
 	public int[] field3036;
 	@ObfuscatedName("gi")
-	@Export("itemId")
 	public int itemId;
 	@ObfuscatedName("gb")
-	@Export("itemQuantity")
 	public int itemQuantity;
 	@ObfuscatedName("gn")
-	@Export("modelFrame")
 	public int modelFrame;
 	@ObfuscatedName("gu")
-	@Export("modelFrameCycle")
 	public int modelFrameCycle;
 	@ObfuscatedName("gw")
 	@ObfuscatedSignature(
 		descriptor = "[Lmt;"
 	)
-	@Export("children")
 	public Widget[] children;
 	@ObfuscatedName("hf")
 	public boolean field2954;
@@ -471,21 +352,16 @@ public class Widget extends Node {
 	@ObfuscatedName("ho")
 	public int field3025;
 	@ObfuscatedName("he")
-	@Export("rootIndex")
 	public int rootIndex;
 	@ObfuscatedName("hx")
-	@Export("cycle")
 	public int cycle;
 	@ObfuscatedName("ha")
 	public int[] field3037;
 	@ObfuscatedName("hr")
-	@Export("noClickThrough")
 	public boolean noClickThrough;
 	@ObfuscatedName("hm")
-	@Export("noScrollThrough")
 	public boolean noScrollThrough;
 	@ObfuscatedName("hz")
-	@Export("prioritizeMenuEntry")
 	public boolean prioritizeMenuEntry;
 
 	static {
@@ -599,7 +475,6 @@ public class Widget extends Node {
 		descriptor = "(Lty;I)V",
 		garbageValue = "765391590"
 	)
-	@Export("decodeLegacy")
 	void decodeLegacy(Buffer var1) {
 		this.isIf3 = false;
 		this.type = var1.readUnsignedByte();
@@ -773,7 +648,6 @@ public class Widget extends Node {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1963555900"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		var1.readUnsignedByte();
 		this.isIf3 = true;
@@ -915,7 +789,6 @@ public class Widget extends Node {
 		descriptor = "(Lty;B)[Ljava/lang/Object;",
 		garbageValue = "122"
 	)
-	@Export("readListener")
 	Object[] readListener(Buffer var1) {
 		int var2 = var1.readUnsignedByte();
 		if (var2 == 0) {
@@ -942,7 +815,6 @@ public class Widget extends Node {
 		descriptor = "(Lty;I)[I",
 		garbageValue = "-2000592706"
 	)
-	@Export("readListenerTriggers")
 	int[] readListenerTriggers(Buffer var1) {
 		int var2 = var1.readUnsignedByte();
 		if (var2 == 0) {
@@ -963,7 +835,6 @@ public class Widget extends Node {
 		descriptor = "(ZLej;B)Lud;",
 		garbageValue = "-22"
 	)
-	@Export("getSprite")
 	public SpritePixels getSprite(boolean var1, UrlRequester var2) {
 		field2926 = false;
 		if (this.field3073 != null) {
@@ -1090,7 +961,6 @@ public class Widget extends Node {
 		descriptor = "(I)Lpc;",
 		garbageValue = "-2062099082"
 	)
-	@Export("getFont")
 	public Font getFont() {
 		field2926 = false;
 		if (this.fontId == -1) {
@@ -1117,7 +987,6 @@ public class Widget extends Node {
 		descriptor = "(Lig;IZLmb;Lhi;Lhs;I)Ljo;",
 		garbageValue = "-1139082268"
 	)
-	@Export("getModel")
 	public Model getModel(SequenceDefinition var1, int var2, boolean var3, PlayerComposition var4, NPCComposition var5, NewShit var6) {
 		field2926 = false;
 		int var7;
@@ -1201,7 +1070,6 @@ public class Widget extends Node {
 		descriptor = "(ZB)Lmi;",
 		garbageValue = "-1"
 	)
-	@Export("getSpriteMask")
 	public SpriteMask getSpriteMask(boolean var1) {
 		if (this.spriteId == -1) {
 			var1 = false;
@@ -1260,7 +1128,6 @@ public class Widget extends Node {
 		descriptor = "(ILjava/lang/String;I)V",
 		garbageValue = "-1432445957"
 	)
-	@Export("setAction")
 	public void setAction(int var1, String var2) {
 		if (this.actions == null || this.actions.length <= var1) {
 			String[] var3 = new String[var1 + 1];

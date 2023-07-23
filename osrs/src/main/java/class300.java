@@ -14,7 +14,6 @@ public class class300 {
 		descriptor = "(III)V",
 		garbageValue = "-1871273953"
 	)
-	@Export("changeWorldSelectSorting")
 	static void changeWorldSelectSorting(int var0, int var1) {
 		int[] var2 = new int[4];
 		int[] var3 = new int[4];

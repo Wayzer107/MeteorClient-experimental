@@ -11,19 +11,14 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GrandExchangeEvents")
 public class GrandExchangeEvents {
 	@ObfuscatedName("ay")
-	@Export("GrandExchangeEvents_ageComparator")
 	public static Comparator GrandExchangeEvents_ageComparator;
 	@ObfuscatedName("ar")
-	@Export("GrandExchangeEvents_priceComparator")
 	public static Comparator GrandExchangeEvents_priceComparator;
 	@ObfuscatedName("am")
-	@Export("GrandExchangeEvents_nameComparator")
 	public static Comparator GrandExchangeEvents_nameComparator;
 	@ObfuscatedName("as")
-	@Export("GrandExchangeEvents_quantityComparator")
 	public static Comparator GrandExchangeEvents_quantityComparator;
 	@ObfuscatedName("aw")
-	@Export("events")
 	public final List events;
 
 	static {
@@ -62,7 +57,6 @@ public class GrandExchangeEvents {
 		descriptor = "(Ljava/util/Comparator;ZI)V",
 		garbageValue = "97179778"
 	)
-	@Export("sort")
 	public void sort(Comparator var1, boolean var2) {
 		if (var2) {
 			Collections.sort(this.events, var1);
@@ -77,7 +71,6 @@ public class GrandExchangeEvents {
 		descriptor = "(B)V",
 		garbageValue = "-93"
 	)
-	@Export("savePreferences")
 	static void savePreferences() {
 		AccessFile var0 = null;
 
@@ -102,7 +95,6 @@ public class GrandExchangeEvents {
 		descriptor = "(IB)V",
 		garbageValue = "40"
 	)
-	@Export("forceDisconnect")
 	static final void forceDisconnect(int var0) {
 		WorldMapScaleHandler.logOut();
 		switch(var0) {

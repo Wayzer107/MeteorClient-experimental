@@ -12,7 +12,6 @@ public class class244 extends class229 {
 	}
 
 	@ObfuscatedName("aj")
-	@Export("vmethod1374")
 	void vmethod1374(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12) {
 		int var13 = var5 - var4;
 		int var14 = var2 - var1;
@@ -521,7 +520,6 @@ public class class244 extends class229 {
 	}
 
 	@ObfuscatedName("ag")
-	@Export("vmethod1366")
 	void vmethod1366(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10) {
 		int var11 = 0;
 		if (var2 != var1) {

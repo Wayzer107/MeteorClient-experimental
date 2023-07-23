@@ -10,25 +10,18 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("BufferedSource")
 public class BufferedSource implements Runnable {
 	@ObfuscatedName("aw")
-	@Export("thread")
 	Thread thread;
 	@ObfuscatedName("ay")
-	@Export("inputStream")
 	InputStream inputStream;
 	@ObfuscatedName("ar")
-	@Export("capacity")
 	int capacity;
 	@ObfuscatedName("am")
-	@Export("buffer")
 	byte[] buffer;
 	@ObfuscatedName("as")
-	@Export("position")
 	int position;
 	@ObfuscatedName("aj")
-	@Export("limit")
 	int limit;
 	@ObfuscatedName("ag")
-	@Export("exception")
 	IOException exception;
 
 	BufferedSource(InputStream var1, int var2) {
@@ -47,7 +40,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "(II)Z",
 		garbageValue = "-1308813308"
 	)
-	@Export("isAvailable")
 	boolean isAvailable(int var1) throws IOException {
 		if (var1 == 0) {
 			return true;
@@ -81,7 +73,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "(I)I",
 		garbageValue = "647536706"
 	)
-	@Export("available")
 	int available() throws IOException {
 		synchronized(this) {
 			int var2;
@@ -105,7 +96,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "(I)I",
 		garbageValue = "1535921504"
 	)
-	@Export("readUnsignedByte")
 	int readUnsignedByte() throws IOException {
 		synchronized(this) {
 			if (this.position == this.limit) {
@@ -128,7 +118,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "([BIII)I",
 		garbageValue = "-1691910602"
 	)
-	@Export("read")
 	int read(byte[] var1, int var2, int var3) throws IOException {
 		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
 			synchronized(this) {
@@ -169,7 +158,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "(I)V",
 		garbageValue = "-1404907821"
 	)
-	@Export("close")
 	void close() {
 		synchronized(this) {
 			if (this.exception == null) {
@@ -186,7 +174,6 @@ public class BufferedSource implements Runnable {
 
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		while (true) {
@@ -241,7 +228,6 @@ public class BufferedSource implements Runnable {
 		descriptor = "(IIIILjava/lang/String;B)V",
 		garbageValue = "9"
 	)
-	@Export("widgetDefaultMenuAction")
 	static void widgetDefaultMenuAction(int var0, int var1, int var2, int var3, String var4) {
 		Widget var5 = MouseRecorder.getWidgetChild(var1, var2);
 		if (var5 != null) {

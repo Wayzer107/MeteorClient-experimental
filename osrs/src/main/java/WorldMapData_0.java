@@ -14,7 +14,6 @@ public class WorldMapData_0 extends AbstractWorldMapData {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1035251675"
 	)
-	@Export("init")
 	void init(Buffer var1) {
 		int var2 = var1.readUnsignedByte();
 		super.field2410 = var1.readUnsignedByte();
@@ -32,7 +31,6 @@ public class WorldMapData_0 extends AbstractWorldMapData {
 		descriptor = "(Lty;B)V",
 		garbageValue = "81"
 	)
-	@Export("readGeography")
 	void readGeography(Buffer var1) {
 		super.planes = Math.min(super.planes, 4);
 		super.floorUnderlayIds = new short[1][64][64];
@@ -55,7 +53,6 @@ public class WorldMapData_0 extends AbstractWorldMapData {
 		}
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof WorldMapData_0)) {
@@ -66,7 +63,6 @@ public class WorldMapData_0 extends AbstractWorldMapData {
 		}
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		return super.regionX | super.regionY << 8;

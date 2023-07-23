@@ -33,7 +33,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(Ljs;I)V",
 		garbageValue = "104966018"
 	)
-	@Export("expandBounds")
 	public void expandBounds(WorldMapArea var1) {
 		if (var1.regionLowX > this.field2366) {
 			var1.regionLowX = this.field2366;
@@ -58,7 +57,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(IIIB)Z",
 		garbageValue = "37"
 	)
-	@Export("containsCoord")
 	public boolean containsCoord(int var1, int var2, int var3) {
 		if (var1 >= this.field2368 && var1 < this.field2368 + this.field2369) {
 			return var2 >= (this.field2365 << 6) + (this.field2361 << 3) && var2 <= (this.field2365 << 6) + (this.field2361 << 3) + 7 && var3 >= (this.field2363 << 6) + (this.field2370 << 3) && var3 <= (this.field2363 << 6) + (this.field2370 << 3) + 7;
@@ -72,7 +70,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(III)Z",
 		garbageValue = "-1055724816"
 	)
-	@Export("containsPosition")
 	public boolean containsPosition(int var1, int var2) {
 		return var1 >= (this.field2366 << 6) + (this.field2367 << 3) && var1 <= (this.field2366 << 6) + (this.field2367 << 3) + 7 && var2 >= (this.field2362 << 6) + (this.field2364 << 3) && var2 <= (this.field2362 << 6) + (this.field2364 << 3) + 7;
 	}
@@ -82,7 +79,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(IIII)[I",
 		garbageValue = "1968685542"
 	)
-	@Export("getBorderTileLengths")
 	public int[] getBorderTileLengths(int var1, int var2, int var3) {
 		if (!this.containsCoord(var1, var2, var3)) {
 			return null;
@@ -97,7 +93,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(IIB)Lmr;",
 		garbageValue = "119"
 	)
-	@Export("coord")
 	public Coord coord(int var1, int var2) {
 		if (!this.containsPosition(var1, var2)) {
 			return null;
@@ -113,7 +108,6 @@ public class class261 implements WorldMapSection {
 		descriptor = "(Lty;I)V",
 		garbageValue = "706418314"
 	)
-	@Export("read")
 	public void read(Buffer var1) {
 		this.field2368 = var1.readUnsignedByte();
 		this.field2369 = var1.readUnsignedByte();

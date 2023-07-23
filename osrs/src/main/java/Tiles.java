@@ -7,22 +7,16 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Tiles")
 public final class Tiles {
 	@ObfuscatedName("aw")
-	@Export("Tiles_heights")
 	static int[][][] Tiles_heights;
 	@ObfuscatedName("ay")
-	@Export("Tiles_renderFlags")
 	static byte[][][] Tiles_renderFlags;
 	@ObfuscatedName("ar")
-	@Export("Tiles_minPlane")
 	static int Tiles_minPlane;
 	@ObfuscatedName("am")
-	@Export("Tiles_underlays")
 	static short[][][] Tiles_underlays;
 	@ObfuscatedName("as")
-	@Export("Tiles_overlays")
 	static short[][][] Tiles_overlays;
 	@ObfuscatedName("at")
-	@Export("Tiles_lightness")
 	static int[] Tiles_lightness;
 	@ObfuscatedName("ad")
 	static final int[] field840;
@@ -37,10 +31,8 @@ public final class Tiles {
 	@ObfuscatedName("af")
 	static final int[] field841;
 	@ObfuscatedName("ai")
-	@Export("rndHue")
 	static int rndHue;
 	@ObfuscatedName("al")
-	@Export("rndLightness")
 	static int rndLightness;
 
 	static {

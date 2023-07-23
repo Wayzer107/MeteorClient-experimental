@@ -12,7 +12,6 @@ public final class class344 {
 	@ObfuscatedSignature(
 		descriptor = "Ltp;"
 	)
-	@Export("HitSplatDefinition_cached")
 	static class498 HitSplatDefinition_cached;
 
 	@ObfuscatedName("kk")
@@ -20,7 +19,6 @@ public final class class344 {
 		descriptor = "(III)V",
 		garbageValue = "-512665068"
 	)
-	@Export("updateItemPile")
 	static final void updateItemPile(int var0, int var1) {
 		NodeDeque var2 = Client.groundItems[class36.Client_plane][var0][var1];
 		if (var2 == null) {

@@ -54,7 +54,6 @@ public enum class90 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field895;
 	}
@@ -64,7 +63,6 @@ public enum class90 implements class372 {
 		descriptor = "(II)Lhb;",
 		garbageValue = "-1281408867"
 	)
-	@Export("getObjectDefinition")
 	public static ObjectComposition getObjectDefinition(int var0) {
 		ObjectComposition var1 = (ObjectComposition)ObjectComposition.ObjectDefinition_cached.get((long)var0);
 		if (var1 != null) {

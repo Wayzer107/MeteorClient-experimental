@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("ti")
 final class class502 implements class499 {
 	@ObfuscatedName("az")
-	@Export("ItemDefinition_inMembersWorld")
 	static boolean ItemDefinition_inMembersWorld;
 
 	@ObfuscatedName("aw")
@@ -13,7 +12,6 @@ final class class502 implements class499 {
 		descriptor = "(Ljava/lang/Object;Lty;I)V",
 		garbageValue = "-791895690"
 	)
-	@Export("vmethod8274")
 	public void vmethod8274(Object var1, Buffer var2) {
 		this.method2465((Long)var1, var2);
 	}
@@ -23,7 +21,6 @@ final class class502 implements class499 {
 		descriptor = "(Lty;I)Ljava/lang/Object;",
 		garbageValue = "1270618633"
 	)
-	@Export("vmethod8273")
 	public Object vmethod8273(Buffer var1) {
 		return var1.readLong();
 	}

@@ -8,10 +8,8 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("JagexCache")
 public class JagexCache {
 	@ObfuscatedName("wt")
-	@Export("foundItemIdCount")
 	static int foundItemIdCount;
 	@ObfuscatedName("as")
-	@Export("cacheDir")
 	static File cacheDir;
 	@ObfuscatedName("aj")
 	public static int field1450;
@@ -19,19 +17,16 @@ public class JagexCache {
 	@ObfuscatedSignature(
 		descriptor = "Lts;"
 	)
-	@Export("JagexCache_randomDat")
 	public static BufferedFile JagexCache_randomDat;
 	@ObfuscatedName("ah")
 	@ObfuscatedSignature(
 		descriptor = "Lts;"
 	)
-	@Export("JagexCache_dat2File")
 	public static BufferedFile JagexCache_dat2File;
 	@ObfuscatedName("ax")
 	@ObfuscatedSignature(
 		descriptor = "Lts;"
 	)
-	@Export("JagexCache_idx255File")
 	public static BufferedFile JagexCache_idx255File;
 
 	static {
@@ -45,7 +40,6 @@ public class JagexCache {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;IIIIB)V",
 		garbageValue = "-50"
 	)
-	@Export("insertMenuItemNoShift")
 	public static final void insertMenuItemNoShift(String var0, String var1, int var2, int var3, int var4, int var5) {
 		class7.insertMenuItem(var0, var1, var2, var3, var4, var5, -1, false);
 	}

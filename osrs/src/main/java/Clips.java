@@ -16,7 +16,6 @@ public class Clips {
 	@ObfuscatedSignature(
 		descriptor = "Ljy;"
 	)
-	@Export("Rasterizer3D_textureLoader")
 	public TextureLoader Rasterizer3D_textureLoader;
 	@ObfuscatedName("ah")
 	int field2246;
@@ -35,7 +34,6 @@ public class Clips {
 	@ObfuscatedName("ao")
 	int field2247;
 	@ObfuscatedName("ac")
-	@Export("Rasterizer3D_rowOffsets")
 	int[] Rasterizer3D_rowOffsets;
 
 	Clips() {

@@ -8,7 +8,6 @@ public class class303 {
 	@ObfuscatedSignature(
 		descriptor = "Lgu;"
 	)
-	@Export("js5SocketTask")
 	static Task js5SocketTask;
 
 	@ObfuscatedName("az")
@@ -74,7 +73,6 @@ public class class303 {
 		descriptor = "(Ldx;IIIIII)V",
 		garbageValue = "-219666701"
 	)
-	@Export("drawActor2d")
 	static final void drawActor2d(Actor var0, int var1, int var2, int var3, int var4, int var5) {
 		if (var0 != null && var0.isVisible()) {
 			if (var0 instanceof NPC) {
@@ -687,7 +685,6 @@ public class class303 {
 		descriptor = "(ZLtc;B)V",
 		garbageValue = "46"
 	)
-	@Export("loadRegions")
 	static final void loadRegions(boolean var0, PacketBuffer var1) {
 		Client.isInInstance = var0;
 		int var2;

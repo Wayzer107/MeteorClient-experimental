@@ -8,7 +8,6 @@ public class class211 implements class29 {
 	@ObfuscatedSignature(
 		descriptor = "[Lud;"
 	)
-	@Export("crossSprites")
 	static SpritePixels[] crossSprites;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
@@ -31,7 +30,6 @@ public class class211 implements class29 {
 		descriptor = "(II)Z",
 		garbageValue = "-1364202239"
 	)
-	@Export("vmethod3949")
 	public boolean vmethod3949(int var1) {
 		if (this.field1852 == null) {
 			return false;
@@ -65,7 +63,6 @@ public class class211 implements class29 {
 		descriptor = "(II)Z",
 		garbageValue = "1960624058"
 	)
-	@Export("vmethod3989")
 	public boolean vmethod3989(int var1) {
 		switch(var1) {
 		case 81:
@@ -84,7 +81,6 @@ public class class211 implements class29 {
 		descriptor = "(CI)Z",
 		garbageValue = "932068520"
 	)
-	@Export("vmethod3951")
 	public boolean vmethod3951(char var1) {
 		if (this.field1852 == null) {
 			return false;
@@ -137,7 +133,6 @@ public class class211 implements class29 {
 		descriptor = "(ZB)Z",
 		garbageValue = "-93"
 	)
-	@Export("vmethod3953")
 	public boolean vmethod3953(boolean var1) {
 		return false;
 	}

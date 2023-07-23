@@ -9,6 +9,5 @@ public interface class174 {
 		descriptor = "(I)I",
 		garbageValue = "496669737"
 	)
-	@Export("useRotation")
 	int useRotation();
 }

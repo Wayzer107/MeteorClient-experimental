@@ -20,13 +20,11 @@ public class LoginPacket implements class294 {
 	@ObfuscatedSignature(
 		descriptor = "Llx;"
 	)
-	@Export("NEW_LOGIN_CONNECTION")
 	public static final LoginPacket NEW_LOGIN_CONNECTION;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Llx;"
 	)
-	@Export("RECONNECT_LOGIN_CONNECTION")
 	public static final LoginPacket RECONNECT_LOGIN_CONNECTION;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
@@ -44,7 +42,6 @@ public class LoginPacket implements class294 {
 	)
 	static final LoginPacket[] field2728;
 	@ObfuscatedName("ag")
-	@Export("id")
 	public final int id;
 
 	static {

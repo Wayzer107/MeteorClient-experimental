@@ -8,7 +8,6 @@ public class class333 {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("SequenceDefinition_animationsArchive")
 	static AbstractArchive SequenceDefinition_animationsArchive;
 
 	@ObfuscatedName("aa")

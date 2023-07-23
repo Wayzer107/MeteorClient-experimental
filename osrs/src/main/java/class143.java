@@ -12,7 +12,6 @@ public abstract class class143 extends Node {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	abstract void vmethod3254(Buffer var1);
 
 	@ObfuscatedName("ay")
@@ -20,7 +19,6 @@ public abstract class class143 extends Node {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	abstract void vmethod3248(ClanSettings var1);
 
 	@ObfuscatedName("am")
@@ -28,7 +26,6 @@ public abstract class class143 extends Node {
 		descriptor = "(Ljava/lang/CharSequence;II[BII)I",
 		garbageValue = "-92101383"
 	)
-	@Export("encodeStringCp1252")
 	public static int encodeStringCp1252(CharSequence var0, int var1, int var2, byte[] var3, int var4) {
 		int var5 = var2 - var1;
 

@@ -10,41 +10,31 @@ public class Script extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("Script_cached")
 	static EvictingDualNodeHashTable Script_cached;
 	@ObfuscatedName("an")
-	@Export("loginBoxCenter")
 	static int loginBoxCenter;
 	@ObfuscatedName("gi")
 	static String field807;
 	@ObfuscatedName("ay")
 	String field815;
 	@ObfuscatedName("ar")
-	@Export("opcodes")
 	int[] opcodes;
 	@ObfuscatedName("am")
-	@Export("intOperands")
 	int[] intOperands;
 	@ObfuscatedName("as")
-	@Export("stringOperands")
 	String[] stringOperands;
 	@ObfuscatedName("aj")
-	@Export("localIntCount")
 	int localIntCount;
 	@ObfuscatedName("ag")
-	@Export("localStringCount")
 	int localStringCount;
 	@ObfuscatedName("az")
-	@Export("intArgumentCount")
 	int intArgumentCount;
 	@ObfuscatedName("av")
-	@Export("stringArgumentCount")
 	int stringArgumentCount;
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
 		descriptor = "[Lsa;"
 	)
-	@Export("switches")
 	IterableNodeHashTable[] switches;
 
 	static {
@@ -59,7 +49,6 @@ public class Script extends DualNode {
 		descriptor = "(II)[Lsa;",
 		garbageValue = "1100527320"
 	)
-	@Export("newIterableNodeHashTable")
 	IterableNodeHashTable[] newIterableNodeHashTable(int var1) {
 		return new IterableNodeHashTable[var1];
 	}

@@ -13,7 +13,6 @@ public class class200 extends DualNode {
 		descriptor = "(Lmt;I)V",
 		garbageValue = "937591187"
 	)
-	@Export("invalidateWidget")
 	public static void invalidateWidget(Widget var0) {
 		if (var0 != null && var0.cycle == Client.field525) {
 			Client.field403[var0.rootIndex] = true;

@@ -60,16 +60,12 @@ public class VorbisSample extends Node {
 	@ObfuscatedName("aw")
 	byte[][] field283;
 	@ObfuscatedName("ay")
-	@Export("sampleRate")
 	int sampleRate;
 	@ObfuscatedName("ar")
-	@Export("sampleCount")
 	int sampleCount;
 	@ObfuscatedName("am")
-	@Export("start")
 	int start;
 	@ObfuscatedName("as")
-	@Export("end")
 	int end;
 	@ObfuscatedName("aj")
 	boolean field280;
@@ -84,7 +80,6 @@ public class VorbisSample extends Node {
 	@ObfuscatedName("ac")
 	float[] field284;
 	@ObfuscatedName("ba")
-	@Export("samples")
 	byte[] samples;
 	@ObfuscatedName("bf")
 	int field292;
@@ -101,7 +96,6 @@ public class VorbisSample extends Node {
 	}
 
 	@ObfuscatedName("ay")
-	@Export("read")
 	void read(byte[] var1) {
 		Buffer var2 = new Buffer(var1);
 		this.sampleRate = var2.readInt();
@@ -393,7 +387,6 @@ public class VorbisSample extends Node {
 	@ObfuscatedSignature(
 		descriptor = "([I)Lbi;"
 	)
-	@Export("toRawSound")
 	RawSound toRawSound(int[] var1) {
 		if (var1 != null && var1[0] <= 0) {
 			return null;
@@ -444,7 +437,6 @@ public class VorbisSample extends Node {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("float32Unpack")
 	static float float32Unpack(int var0) {
 		int var1 = var0 & 2097151;
 		int var2 = var0 & Integer.MIN_VALUE;
@@ -583,7 +575,6 @@ public class VorbisSample extends Node {
 	@ObfuscatedSignature(
 		descriptor = "(Lnd;II)Lcz;"
 	)
-	@Export("readMusicSample")
 	static VorbisSample readMusicSample(AbstractArchive var0, int var1, int var2) {
 		if (!method303(var0)) {
 			var0.tryLoadFile(var1, var2);

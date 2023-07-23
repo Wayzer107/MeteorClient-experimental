@@ -9,10 +9,8 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("InterfaceParent")
 public class InterfaceParent extends Node {
 	@ObfuscatedName("aw")
-	@Export("group")
 	int group;
 	@ObfuscatedName("ay")
-	@Export("type")
 	int type;
 	@ObfuscatedName("ar")
 	boolean field856;

@@ -7,10 +7,8 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("ao")
 public class class19 implements Callable {
 	@ObfuscatedName("aj")
-	@Export("Tiles_shapes")
 	static byte[][][] Tiles_shapes;
 	@ObfuscatedName("ks")
-	@Export("cameraPitch")
 	static int cameraPitch;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
@@ -21,7 +19,6 @@ public class class19 implements Callable {
 	@ObfuscatedSignature(
 		descriptor = "Laa;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class14 this$0;
 
@@ -33,7 +30,6 @@ public class class19 implements Callable {
 		this.field57 = var2;
 	}
 
-	@Export("call")
 	@ObfuscatedName("call")
 	public Object call() throws Exception {
 		try {

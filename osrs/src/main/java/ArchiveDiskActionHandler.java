@@ -10,13 +10,11 @@ public class ArchiveDiskActionHandler implements Runnable {
 	@ObfuscatedSignature(
 		descriptor = "Lod;"
 	)
-	@Export("ArchiveDiskActionHandler_requestQueue")
 	static final NodeDeque ArchiveDiskActionHandler_requestQueue;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lod;"
 	)
-	@Export("ArchiveDiskActionHandler_responseQueue")
 	static NodeDeque ArchiveDiskActionHandler_responseQueue;
 	@ObfuscatedName("ar")
 	static int field3499;
@@ -25,7 +23,6 @@ public class ArchiveDiskActionHandler implements Runnable {
 	@ObfuscatedName("as")
 	static Object field3500;
 	@ObfuscatedName("aj")
-	@Export("ArchiveDiskActionHandler_thread")
 	static Thread ArchiveDiskActionHandler_thread;
 
 	static {
@@ -39,7 +36,6 @@ public class ArchiveDiskActionHandler implements Runnable {
 	ArchiveDiskActionHandler() {
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		try {

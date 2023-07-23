@@ -7,7 +7,6 @@ public class class157 extends class143 {
 	@ObfuscatedName("ae")
 	static String[] field1396;
 	@ObfuscatedName("ko")
-	@Export("cameraX")
 	static int cameraX;
 	@ObfuscatedName("ur")
 	static int cameraLookAtAcceleration;
@@ -17,7 +16,6 @@ public class class157 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -34,7 +32,6 @@ public class class157 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1397 = var1.readUnsignedShort();
 	}
@@ -44,7 +41,6 @@ public class class157 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method812(this.field1397);
 	}
@@ -54,7 +50,6 @@ public class class157 extends class143 {
 		descriptor = "(II)Ljm;",
 		garbageValue = "1014345527"
 	)
-	@Export("getFrames")
 	static Frames getFrames(int var0) {
 		Frames var1 = (Frames)SequenceDefinition.SequenceDefinition_cachedFrames.get((long)var0);
 		if (var1 != null) {

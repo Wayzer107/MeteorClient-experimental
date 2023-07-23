@@ -111,7 +111,6 @@ public class Timer {
 		descriptor = "(Lty;B)V",
 		garbageValue = "22"
 	)
-	@Export("write")
 	public void write(Buffer var1) {
 		Message.method345(var1, this.field3744);
 		Message.method345(var1, this.field3743);

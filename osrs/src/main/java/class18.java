@@ -6,7 +6,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("ad")
 public class class18 {
 	@ObfuscatedName("je")
-	@Export("xteaKeys")
 	static int[][] xteaKeys;
 	@ObfuscatedName("uj")
 	static int cameraLookAtSpeed;

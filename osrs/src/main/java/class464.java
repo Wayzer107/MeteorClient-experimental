@@ -21,7 +21,6 @@ public class class464 implements class462 {
 		descriptor = "(I)Lrs;",
 		garbageValue = "186741716"
 	)
-	@Export("vmethod2213")
 	public class461 vmethod2213() {
 		return null;
 	}
@@ -31,7 +30,6 @@ public class class464 implements class462 {
 		descriptor = "(I)[B",
 		garbageValue = "-587379873"
 	)
-	@Export("vmethod7797")
 	public byte[] vmethod7797() throws UnsupportedEncodingException {
 		return this.method2319().getBytes("UTF-8");
 	}

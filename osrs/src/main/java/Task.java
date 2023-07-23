@@ -10,22 +10,16 @@ public class Task {
 	@ObfuscatedSignature(
 		descriptor = "Lgu;"
 	)
-	@Export("next")
 	Task next;
 	@ObfuscatedName("am")
-	@Export("status")
 	public volatile int status;
 	@ObfuscatedName("as")
-	@Export("type")
 	int type;
 	@ObfuscatedName("aj")
-	@Export("intArgument")
 	public int intArgument;
 	@ObfuscatedName("ag")
-	@Export("objectArgument")
 	Object objectArgument;
 	@ObfuscatedName("az")
-	@Export("result")
 	public volatile Object result;
 
 	Task() {

@@ -14,7 +14,6 @@ public class class7 {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive11")
 	static Archive archive11;
 	@ObfuscatedName("aw")
 	ExecutorService field10;
@@ -87,7 +86,6 @@ public class class7 {
 		descriptor = "(Ljava/lang/String;I)Ljava/io/File;",
 		garbageValue = "-8386743"
 	)
-	@Export("getFile")
 	static File getFile(String var0) {
 		if (!FileSystem.FileSystem_hasPermissions) {
 			throw new RuntimeException("");
@@ -171,7 +169,6 @@ public class class7 {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;IIIIIZI)V",
 		garbageValue = "-670080014"
 	)
-	@Export("insertMenuItem")
 	static final void insertMenuItem(String var0, String var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
 		if (!Client.isMenuOpen) {
 			if (Client.menuOptionsCount < 500) {
@@ -194,7 +191,6 @@ public class class7 {
 		descriptor = "(IIIIIIIIB)V",
 		garbageValue = "-59"
 	)
-	@Export("drawWidgets")
 	static final void drawWidgets(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (Login.loadInterface(var0)) {
 			WorldMapDecoration.field2419 = null;

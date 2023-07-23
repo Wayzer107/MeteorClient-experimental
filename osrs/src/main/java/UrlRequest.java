@@ -16,7 +16,6 @@ public class UrlRequest {
 	@ObfuscatedName("am")
 	volatile int field1165;
 	@ObfuscatedName("as")
-	@Export("response0")
 	volatile byte[] response0;
 
 	static {
@@ -34,7 +33,6 @@ public class UrlRequest {
 		descriptor = "(I)Z",
 		garbageValue = "-1097483800"
 	)
-	@Export("isDone")
 	public boolean isDone() {
 		return this.field1165 != field1162;
 	}
@@ -44,7 +42,6 @@ public class UrlRequest {
 		descriptor = "(I)[B",
 		garbageValue = "114961803"
 	)
-	@Export("getResponse")
 	public byte[] getResponse() {
 		return this.response0;
 	}

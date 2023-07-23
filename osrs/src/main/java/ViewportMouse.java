@@ -8,16 +8,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ViewportMouse")
 public class ViewportMouse {
 	@ObfuscatedName("aw")
-	@Export("ViewportMouse_isInViewport")
 	public static boolean ViewportMouse_isInViewport;
 	@ObfuscatedName("ay")
-	@Export("ViewportMouse_x")
 	public static int ViewportMouse_x;
 	@ObfuscatedName("ar")
-	@Export("ViewportMouse_y")
 	public static int ViewportMouse_y;
 	@ObfuscatedName("am")
-	@Export("ViewportMouse_false0")
 	public static boolean ViewportMouse_false0;
 	@ObfuscatedName("as")
 	static int field2228;
@@ -28,10 +24,8 @@ public class ViewportMouse {
 	@ObfuscatedName("ah")
 	public static short[] field2226;
 	@ObfuscatedName("ax")
-	@Export("ViewportMouse_entityCount")
 	public static int ViewportMouse_entityCount;
 	@ObfuscatedName("aa")
-	@Export("ViewportMouse_entityTags")
 	public static long[] ViewportMouse_entityTags;
 
 	static {

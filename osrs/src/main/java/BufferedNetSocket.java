@@ -11,19 +11,16 @@ public class BufferedNetSocket extends AbstractSocket {
 	@ObfuscatedName("aa")
 	static int[][][] field3806;
 	@ObfuscatedName("aw")
-	@Export("socket")
 	Socket socket;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lqy;"
 	)
-	@Export("source")
 	BufferedSource source;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lrh;"
 	)
-	@Export("sink")
 	BufferedSink sink;
 
 	BufferedNetSocket(Socket var1, int var2, int var3) throws IOException {
@@ -41,7 +38,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "(II)Z",
 		garbageValue = "1802443781"
 	)
-	@Export("isAvailable")
 	public boolean isAvailable(int var1) throws IOException {
 		return this.source.isAvailable(var1);
 	}
@@ -51,7 +47,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "(I)I",
 		garbageValue = "-1927697779"
 	)
-	@Export("available")
 	public int available() throws IOException {
 		return this.source.available();
 	}
@@ -61,7 +56,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "(B)I",
 		garbageValue = "59"
 	)
-	@Export("readUnsignedByte")
 	public int readUnsignedByte() throws IOException {
 		return this.source.readUnsignedByte();
 	}
@@ -71,7 +65,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "([BIII)I",
 		garbageValue = "435794101"
 	)
-	@Export("read")
 	public int read(byte[] var1, int var2, int var3) throws IOException {
 		return this.source.read(var1, var2, var3);
 	}
@@ -81,7 +74,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "([BIII)V",
 		garbageValue = "1992519516"
 	)
-	@Export("write")
 	public void write(byte[] var1, int var2, int var3) throws IOException {
 		this.sink.write(var1, var2, var3);
 	}
@@ -91,7 +83,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "(I)V",
 		garbageValue = "1268085940"
 	)
-	@Export("close")
 	public void close() {
 		this.sink.close();
 
@@ -103,7 +94,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		this.source.close();
 	}
 
-	@Export("finalize")
 	@ObfuscatedName("finalize")
 	protected void finalize() {
 		this.close();
@@ -114,7 +104,6 @@ public class BufferedNetSocket extends AbstractSocket {
 		descriptor = "(IIIZII)J",
 		garbageValue = "-139142803"
 	)
-	@Export("calculateTag")
 	public static long calculateTag(int var0, int var1, int var2, boolean var3, int var4) {
 		long var5 = (long)((var0 & 127) << 0 | (var1 & 127) << 7 | (var2 & 3) << 14) | ((long)var4 & 4294967295L) << 17;
 		if (var3) {

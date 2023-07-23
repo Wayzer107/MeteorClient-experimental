@@ -10,7 +10,6 @@ public class class135 {
 	@ObfuscatedSignature(
 		descriptor = "Lrt;"
 	)
-	@Export("varclan")
 	static class455 varclan;
 
 	@ObfuscatedName("ay")
@@ -18,7 +17,6 @@ public class class135 {
 		descriptor = "(II)Lig;",
 		garbageValue = "-825741403"
 	)
-	@Export("SequenceDefinition_get")
 	public static SequenceDefinition SequenceDefinition_get(int var0) {
 		SequenceDefinition var1 = (SequenceDefinition)SequenceDefinition.SequenceDefinition_cached.get((long)var0);
 		if (var1 != null) {

@@ -10,7 +10,6 @@ public abstract class PcmStream extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lby;"
 	)
-	@Export("after")
 	PcmStream after;
 	@ObfuscatedName("ae")
 	int field248;
@@ -18,10 +17,8 @@ public abstract class PcmStream extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lcm;"
 	)
-	@Export("sound")
 	AbstractSound sound;
 	@ObfuscatedName("ad")
-	@Export("active")
 	volatile boolean active;
 
 	protected PcmStream() {
@@ -32,36 +29,29 @@ public abstract class PcmStream extends Node {
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("firstSubStream")
 	protected abstract PcmStream firstSubStream();
 
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("nextSubStream")
 	protected abstract PcmStream nextSubStream();
 
 	@ObfuscatedName("az")
-	@Export("vmethod5648")
 	protected abstract int vmethod5648();
 
 	@ObfuscatedName("av")
-	@Export("fill")
 	protected abstract void fill(int[] var1, int var2, int var3);
 
 	@ObfuscatedName("aq")
-	@Export("skip")
 	protected abstract void skip(int var1);
 
 	@ObfuscatedName("by")
-	@Export("vmethod1019")
 	int vmethod1019() {
 		return 255;
 	}
 
 	@ObfuscatedName("gy")
-	@Export("update")
 	final void update(int[] var1, int var2, int var3) {
 		if (this.active) {
 			this.fill(var1, var2, var3);

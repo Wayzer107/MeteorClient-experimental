@@ -9,10 +9,8 @@ class class309 implements ThreadFactory {
 	@ObfuscatedSignature(
 		descriptor = "Lbj;"
 	)
-	@Export("pcmPlayerProvider")
 	public static class51 pcmPlayerProvider;
 	@ObfuscatedName("ju")
-	@Export("timeOfPreviousKeyPress")
 	static int timeOfPreviousKeyPress;
 	// $FF: synthetic field
 	@ObfuscatedSignature(

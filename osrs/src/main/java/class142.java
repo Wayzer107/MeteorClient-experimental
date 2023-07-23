@@ -10,7 +10,6 @@ public class class142 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -27,7 +26,6 @@ public class class142 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1322 = var1.readUnsignedShort();
 	}
@@ -37,7 +35,6 @@ public class class142 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method809(this.field1322);
 	}
@@ -154,7 +151,6 @@ public class class142 extends class143 {
 		descriptor = "([Lmt;II)V",
 		garbageValue = "-535637665"
 	)
-	@Export("drawModelComponents")
 	static final void drawModelComponents(Widget[] var0, int var1) {
 		for (int var2 = 0; var2 < var0.length; ++var2) {
 			Widget var3 = var0[var2];

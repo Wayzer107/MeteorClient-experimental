@@ -13,15 +13,12 @@ public class ObjTypeCustomisation {
 	@ObfuscatedName("av")
 	public static int field1482;
 	@ObfuscatedName("ht")
-	@Export("secureRandom")
 	static SecureRandom secureRandom;
 	@ObfuscatedName("ut")
 	static int cameraLookAtY;
 	@ObfuscatedName("ar")
-	@Export("recol")
 	public short[] recol;
 	@ObfuscatedName("am")
-	@Export("retex")
 	public short[] retex;
 
 	public ObjTypeCustomisation(int var1) {
@@ -319,7 +316,6 @@ public class ObjTypeCustomisation {
 		descriptor = "(Ltc;IB)Z",
 		garbageValue = "-18"
 	)
-	@Export("updateExternalPlayer")
 	static boolean updateExternalPlayer(PacketBuffer var0, int var1) {
 		int var2 = var0.readBits(2);
 		int var3;
@@ -435,7 +431,6 @@ public class ObjTypeCustomisation {
 		descriptor = "(IIIIIIIII)V",
 		garbageValue = "-1851987184"
 	)
-	@Export("addPendingSpawnToScene")
 	static final void addPendingSpawnToScene(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (var2 >= 1 && var3 >= 1 && var2 <= 102 && var3 <= 102) {
 			if (Client.isLowDetail && var0 != class36.Client_plane) {

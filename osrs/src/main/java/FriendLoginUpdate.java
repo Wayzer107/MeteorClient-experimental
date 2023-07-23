@@ -12,10 +12,8 @@ public class FriendLoginUpdate extends Link {
 	@ObfuscatedSignature(
 		descriptor = "Lui;"
 	)
-	@Export("friendUsername")
 	public Username friendUsername;
 	@ObfuscatedName("ar")
-	@Export("worldId")
 	public short worldId;
 
 	@ObfuscatedSignature(

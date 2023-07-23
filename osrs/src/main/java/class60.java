@@ -199,7 +199,6 @@ public class class60 {
 		descriptor = "(IIIIILjava/lang/String;Ljava/lang/String;IIB)V",
 		garbageValue = "14"
 	)
-	@Export("menuAction")
 	static final void menuAction(int param0, int param1, int var2, int var3_item_npc_index, int var4, String var5, String var6, int var7, int var8) {
 		if (var2 >= 2000) {
 			var2 -= 2000;

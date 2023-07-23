@@ -20,7 +20,6 @@ public class class176 {
 	@ObfuscatedSignature(
 		descriptor = "Lgq;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class170 this$0;
 

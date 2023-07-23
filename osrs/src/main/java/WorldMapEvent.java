@@ -7,19 +7,16 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapEvent")
 public class WorldMapEvent {
 	@ObfuscatedName("aw")
-	@Export("mapElement")
 	public int mapElement;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lmr;"
 	)
-	@Export("coord1")
 	public Coord coord1;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lmr;"
 	)
-	@Export("coord2")
 	public Coord coord2;
 
 	@ObfuscatedSignature(

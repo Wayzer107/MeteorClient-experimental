@@ -7,37 +7,26 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Occluder")
 public final class Occluder {
 	@ObfuscatedName("aw")
-	@Export("minTileX")
 	int minTileX;
 	@ObfuscatedName("ay")
-	@Export("maxTileX")
 	int maxTileX;
 	@ObfuscatedName("ar")
-	@Export("minTileY")
 	int minTileY;
 	@ObfuscatedName("am")
-	@Export("maxTileY")
 	int maxTileY;
 	@ObfuscatedName("as")
-	@Export("type")
 	int type;
 	@ObfuscatedName("aj")
-	@Export("minX")
 	int minX;
 	@ObfuscatedName("ag")
-	@Export("maxX")
 	int maxX;
 	@ObfuscatedName("az")
-	@Export("minZ")
 	int minZ;
 	@ObfuscatedName("av")
-	@Export("maxZ")
 	int maxZ;
 	@ObfuscatedName("ap")
-	@Export("minY")
 	int minY;
 	@ObfuscatedName("aq")
-	@Export("maxY")
 	int maxY;
 	@ObfuscatedName("at")
 	int field2110;

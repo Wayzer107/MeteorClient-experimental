@@ -13,16 +13,13 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ClanChannelMember")
 public class ClanChannelMember {
 	@ObfuscatedName("aw")
-	@Export("rank")
 	public byte rank;
 	@ObfuscatedName("ay")
-	@Export("world")
 	public int world;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lui;"
 	)
-	@Export("username")
 	public Username username;
 
 	ClanChannelMember() {
@@ -89,7 +86,6 @@ public class ClanChannelMember {
 		descriptor = "([Lmt;IIIIIIIB)V",
 		garbageValue = "14"
 	)
-	@Export("updateInterface")
 	static final void updateInterface(Widget[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for (int var8 = 0; var8 < var0.length; ++var8) {
 			Widget var9 = var0[var8];

@@ -7,16 +7,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapData_1")
 public class WorldMapData_1 extends AbstractWorldMapData {
 	@ObfuscatedName("aw")
-	@Export("chunkXLow")
 	int chunkXLow;
 	@ObfuscatedName("ay")
-	@Export("chunkYLow")
 	int chunkYLow;
 	@ObfuscatedName("ar")
-	@Export("chunkX")
 	int chunkX;
 	@ObfuscatedName("am")
-	@Export("chunkY")
 	int chunkY;
 
 	WorldMapData_1() {
@@ -27,7 +23,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(Lty;B)V",
 		garbageValue = "5"
 	)
-	@Export("init")
 	void init(Buffer var1) {
 		int var2 = var1.readUnsignedByte();
 		super.field2410 = var1.readUnsignedByte();
@@ -49,7 +44,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(Lty;B)V",
 		garbageValue = "81"
 	)
-	@Export("readGeography")
 	void readGeography(Buffer var1) {
 		super.planes = Math.min(super.planes, 4);
 		super.floorUnderlayIds = new short[1][64][64];
@@ -79,7 +73,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(S)I",
 		garbageValue = "-6628"
 	)
-	@Export("getChunkXLow")
 	int getChunkXLow() {
 		return this.chunkXLow;
 	}
@@ -89,7 +82,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(I)I",
 		garbageValue = "-2089356918"
 	)
-	@Export("getChunkYLow")
 	int getChunkYLow() {
 		return this.chunkYLow;
 	}
@@ -99,7 +91,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(B)I",
 		garbageValue = "91"
 	)
-	@Export("getChunkX")
 	int getChunkX() {
 		return this.chunkX;
 	}
@@ -109,12 +100,10 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		descriptor = "(I)I",
 		garbageValue = "-972374199"
 	)
-	@Export("getChunkY")
 	int getChunkY() {
 		return this.chunkY;
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof WorldMapData_1)) {

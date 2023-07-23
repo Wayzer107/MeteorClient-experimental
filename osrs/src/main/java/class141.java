@@ -12,7 +12,6 @@ public class class141 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -30,7 +29,6 @@ public class class141 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		if (var1.readUnsignedByte() != 255) {
 			--var1.offset;
@@ -45,7 +43,6 @@ public class class141 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method808(this.field1321, this.field1320, 0);
 	}
@@ -55,7 +52,6 @@ public class class141 extends class143 {
 		descriptor = "(Lty;Lsa;B)Lsa;",
 		garbageValue = "-36"
 	)
-	@Export("readStringIntParameters")
 	static final IterableNodeHashTable readStringIntParameters(Buffer var0, IterableNodeHashTable var1) {
 		int var2 = var0.readUnsignedByte();
 		int var3;

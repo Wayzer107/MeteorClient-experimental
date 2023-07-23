@@ -15,7 +15,6 @@ public class DirectByteArrayCopier extends AbstractByteArrayCopier {
 	@ObfuscatedName("ix")
 	static int field3095;
 	@ObfuscatedName("aw")
-	@Export("directBuffer")
 	ByteBuffer directBuffer;
 
 	@ObfuscatedName("ar")
@@ -23,7 +22,6 @@ public class DirectByteArrayCopier extends AbstractByteArrayCopier {
 		descriptor = "(I)[B",
 		garbageValue = "-2134030911"
 	)
-	@Export("get")
 	byte[] get() {
 		byte[] var1 = new byte[this.directBuffer.capacity()];
 		this.directBuffer.position(0);
@@ -36,7 +34,6 @@ public class DirectByteArrayCopier extends AbstractByteArrayCopier {
 		descriptor = "([BI)V",
 		garbageValue = "-379413774"
 	)
-	@Export("set")
 	public void set(byte[] var1) {
 		this.directBuffer = ByteBuffer.allocateDirect(var1.length);
 		this.directBuffer.position(0);

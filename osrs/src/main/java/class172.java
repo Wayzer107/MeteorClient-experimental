@@ -5,10 +5,8 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("gl")
 public class class172 {
 	@ObfuscatedName("aj")
-	@Export("SpriteBuffer_spriteWidths")
 	public static int[] SpriteBuffer_spriteWidths;
 	@ObfuscatedName("ap")
-	@Export("Tiles_hue")
 	static int[] Tiles_hue;
 
 	@ObfuscatedName("ay")

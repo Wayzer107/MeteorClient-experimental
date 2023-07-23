@@ -15,7 +15,6 @@ public abstract class class159 extends Node {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-43"
 	)
-	@Export("vmethod3238")
 	abstract void vmethod3238(Buffer var1);
 
 	@ObfuscatedName("ay")
@@ -23,7 +22,6 @@ public abstract class class159 extends Node {
 		descriptor = "(Lgh;I)V",
 		garbageValue = "-2132107044"
 	)
-	@Export("vmethod3239")
 	abstract void vmethod3239(ClanChannel var1);
 
 	@ObfuscatedName("bu")

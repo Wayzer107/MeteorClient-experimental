@@ -11,16 +11,13 @@ public class Fonts {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("spritesArchive")
 	AbstractArchive spritesArchive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("fontsArchive")
 	AbstractArchive fontsArchive;
 	@ObfuscatedName("ar")
-	@Export("map")
 	HashMap map;
 
 	@ObfuscatedSignature(
@@ -37,7 +34,6 @@ public class Fonts {
 		descriptor = "([Lsg;I)Ljava/util/HashMap;",
 		garbageValue = "-631729363"
 	)
-	@Export("createMap")
 	public HashMap createMap(FontName[] var1) {
 		HashMap var2 = new HashMap();
 		FontName[] var3 = var1;

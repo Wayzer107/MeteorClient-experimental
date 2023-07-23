@@ -18,7 +18,6 @@ public class DesktopPlatformInfoProvider implements class476 {
 		descriptor = "(I)Lsy;",
 		garbageValue = "1568411855"
 	)
-	@Export("get")
 	public PlatformInfo get() {
 		byte var1;
 		if (CollisionMap.field1871.startsWith("win")) {

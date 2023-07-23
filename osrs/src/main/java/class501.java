@@ -16,7 +16,6 @@ public class class501 {
 		descriptor = "(Ljava/lang/String;I)I",
 		garbageValue = "2140596796"
 	)
-	@Export("stringCp1252NullTerminatedByteSize")
 	public static int stringCp1252NullTerminatedByteSize(String var0) {
 		return var0.length() + 1;
 	}

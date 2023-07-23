@@ -8,28 +8,23 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("IterableNodeHashTable")
 public final class IterableNodeHashTable implements Iterable {
 	@ObfuscatedName("aw")
-	@Export("size")
 	int size;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "[Lsb;"
 	)
-	@Export("buckets")
 	Node[] buckets;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lsb;"
 	)
-	@Export("currentGet")
 	Node currentGet;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lsb;"
 	)
-	@Export("current")
 	Node current;
 	@ObfuscatedName("as")
-	@Export("index")
 	int index;
 
 	public IterableNodeHashTable(int var1) {
@@ -49,7 +44,6 @@ public final class IterableNodeHashTable implements Iterable {
 	@ObfuscatedSignature(
 		descriptor = "(J)Lsb;"
 	)
-	@Export("get")
 	public Node get(long var1) {
 		Node var3 = this.buckets[(int)(var1 & (long)(this.size - 1))];
 
@@ -69,7 +63,6 @@ public final class IterableNodeHashTable implements Iterable {
 	@ObfuscatedSignature(
 		descriptor = "(Lsb;J)V"
 	)
-	@Export("put")
 	public void put(Node var1, long var2) {
 		if (var1.next != null) {
 			var1.remove();
@@ -84,7 +77,6 @@ public final class IterableNodeHashTable implements Iterable {
 	}
 
 	@ObfuscatedName("ar")
-	@Export("clear")
 	public void clear() {
 		for (int var1 = 0; var1 < this.size; ++var1) {
 			Node var2 = this.buckets[var1];
@@ -107,7 +99,6 @@ public final class IterableNodeHashTable implements Iterable {
 	@ObfuscatedSignature(
 		descriptor = "()Lsb;"
 	)
-	@Export("first")
 	public Node first() {
 		this.index = 0;
 		return this.next();
@@ -117,7 +108,6 @@ public final class IterableNodeHashTable implements Iterable {
 	@ObfuscatedSignature(
 		descriptor = "()Lsb;"
 	)
-	@Export("next")
 	public Node next() {
 		Node var1;
 		if (this.index > 0 && this.buckets[this.index - 1] != this.current) {
@@ -138,7 +128,6 @@ public final class IterableNodeHashTable implements Iterable {
 		}
 	}
 
-	@Export("iterator")
 	@ObfuscatedName("iterator")
 	public Iterator iterator() {
 		return new IterableNodeHashTableIterator(this);

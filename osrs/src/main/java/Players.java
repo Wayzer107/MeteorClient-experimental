@@ -7,46 +7,34 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Players")
 public class Players {
 	@ObfuscatedName("ar")
-	@Export("activityFlags")
 	static byte[] activityFlags;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "[Lio;"
 	)
-	@Export("playerMovementSpeeds")
 	static MoveSpeed[] playerMovementSpeeds;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "[Lty;"
 	)
-	@Export("cachedAppearanceBuffer")
 	static Buffer[] cachedAppearanceBuffer;
 	@ObfuscatedName("aj")
-	@Export("Players_count")
 	static int Players_count;
 	@ObfuscatedName("ag")
-	@Export("Players_indices")
 	static int[] Players_indices;
 	@ObfuscatedName("az")
-	@Export("Players_emptyIdxCount")
 	static int Players_emptyIdxCount;
 	@ObfuscatedName("av")
-	@Export("Players_emptyIndices")
 	static int[] Players_emptyIndices;
 	@ObfuscatedName("ap")
-	@Export("Players_regions")
 	static int[] Players_regions;
 	@ObfuscatedName("aq")
-	@Export("Players_orientations")
 	static int[] Players_orientations;
 	@ObfuscatedName("at")
-	@Export("Players_targetIndices")
 	static int[] Players_targetIndices;
 	@ObfuscatedName("ah")
-	@Export("Players_pendingUpdateCount")
 	static int Players_pendingUpdateCount;
 	@ObfuscatedName("ax")
-	@Export("Players_pendingUpdateIndices")
 	static int[] Players_pendingUpdateIndices;
 	@ObfuscatedName("aa")
 	@ObfuscatedSignature(

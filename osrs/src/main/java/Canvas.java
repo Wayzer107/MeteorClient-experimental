@@ -12,21 +12,17 @@ public final class Canvas extends java.awt.Canvas {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive9")
 	static Archive archive9;
 	@ObfuscatedName("nx")
-	@Export("menuX")
 	static int menuX;
 	@ObfuscatedName("sm")
 	@ObfuscatedSignature(
 		descriptor = "Lqk;"
 	)
-	@Export("friendsChat")
 	static FriendsChat friendsChat;
 	@ObfuscatedName("um")
 	static int cameraLookAtX;
 	@ObfuscatedName("aw")
-	@Export("component")
 	Component component;
 
 	Canvas(Component var1) {
@@ -57,7 +53,6 @@ public final class Canvas extends java.awt.Canvas {
 		descriptor = "(CI)Z",
 		garbageValue = "-1227105827"
 	)
-	@Export("isCharAlphabetic")
 	public static boolean isCharAlphabetic(char var0) {
 		return var0 >= 'A' && var0 <= 'Z' || var0 >= 'a' && var0 <= 'z';
 	}

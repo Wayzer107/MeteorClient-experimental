@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 
 @ObfuscatedName("hu")
 final class class203 implements ThreadFactory {
-	@Export("newThread")
 	@ObfuscatedName("newThread")
 	public Thread newThread(Runnable var1) {
 		return new Thread(var1, "OSRS Maya Anim Load");

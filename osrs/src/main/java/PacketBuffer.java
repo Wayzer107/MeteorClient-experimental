@@ -12,10 +12,8 @@ public class PacketBuffer extends Buffer {
 	@ObfuscatedSignature(
 		descriptor = "Luy;"
 	)
-	@Export("isaacCipher")
 	IsaacCipher isaacCipher;
 	@ObfuscatedName("ar")
-	@Export("bitIndex")
 	int bitIndex;
 
 	static {
@@ -31,7 +29,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "([IB)V",
 		garbageValue = "-15"
 	)
-	@Export("newIsaacCipher")
 	public void newIsaacCipher(int[] var1) {
 		this.isaacCipher = new IsaacCipher(var1);
 	}
@@ -41,7 +38,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(Luy;I)V",
 		garbageValue = "643801392"
 	)
-	@Export("setIsaacCipher")
 	public void setIsaacCipher(IsaacCipher var1) {
 		this.isaacCipher = var1;
 	}
@@ -51,7 +47,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(II)V",
 		garbageValue = "-388593426"
 	)
-	@Export("writeByteIsaac")
 	public void writeByteIsaac(int var1) {
 		super.array[++super.offset - 1] = (byte)(var1 + this.isaacCipher.nextInt());
 	}
@@ -61,7 +56,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(B)I",
 		garbageValue = "-116"
 	)
-	@Export("readByteIsaac")
 	public int readByteIsaac() {
 		return super.array[++super.offset - 1] - this.isaacCipher.nextInt() & 255;
 	}
@@ -81,7 +75,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(I)I",
 		garbageValue = "1742041211"
 	)
-	@Export("readSmartByteShortIsaac")
 	public int readSmartByteShortIsaac() {
 		int var1 = super.array[++super.offset - 1] - this.isaacCipher.nextInt() & 255;
 		return var1 < 128 ? var1 : (var1 - 128 << 8) + (super.array[++super.offset - 1] - this.isaacCipher.nextInt() & 255);
@@ -104,7 +97,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(B)V",
 		garbageValue = "-91"
 	)
-	@Export("importIndex")
 	public void importIndex() {
 		this.bitIndex = super.offset * 8;
 	}
@@ -114,7 +106,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(II)I",
 		garbageValue = "298906303"
 	)
-	@Export("readBits")
 	public int readBits(int var1) {
 		int var2 = this.bitIndex >> 3;
 		int var3 = 8 - (this.bitIndex & 7);
@@ -139,7 +130,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(I)V",
 		garbageValue = "793482014"
 	)
-	@Export("exportIndex")
 	public void exportIndex() {
 		super.offset = (this.bitIndex + 7) / 8;
 	}
@@ -149,7 +139,6 @@ public class PacketBuffer extends Buffer {
 		descriptor = "(II)I",
 		garbageValue = "376984714"
 	)
-	@Export("bitsRemaining")
 	public int bitsRemaining(int var1) {
 		return var1 * 8 - this.bitIndex;
 	}

@@ -19,7 +19,6 @@ public class Friend extends Buddy {
 		descriptor = "(Lqi;I)I",
 		garbageValue = "-1755487366"
 	)
-	@Export("compareToFriend")
 	int compareToFriend(Friend var1) {
 		if (super.world == Client.worldId && Client.worldId != var1.world) {
 			return -1;
@@ -47,7 +46,6 @@ public class Friend extends Buddy {
 		descriptor = "(Lqe;B)I",
 		garbageValue = "114"
 	)
-	@Export("compareTo_user")
 	public int compareTo_user(User var1) {
 		return this.compareToFriend((Friend)var1);
 	}

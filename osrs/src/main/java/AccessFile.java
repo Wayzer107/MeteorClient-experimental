@@ -12,13 +12,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("AccessFile")
 public final class AccessFile {
 	@ObfuscatedName("aw")
-	@Export("file")
 	RandomAccessFile file;
 	@ObfuscatedName("ay")
-	@Export("maxSize")
 	final long maxSize;
 	@ObfuscatedName("ar")
-	@Export("offset")
 	long offset;
 
 	public AccessFile(File var1, String var2, long var3) throws IOException {
@@ -43,7 +40,6 @@ public final class AccessFile {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("seek")
 	final void seek(long var1) throws IOException {
 		this.file.seek(var1);
 		this.offset = var1;
@@ -54,7 +50,6 @@ public final class AccessFile {
 		descriptor = "([BIII)V",
 		garbageValue = "1244483443"
 	)
-	@Export("write")
 	public final void write(byte[] var1, int var2, int var3) throws IOException {
 		if (this.offset + (long)var3 > this.maxSize) {
 			this.file.seek(this.maxSize);
@@ -71,7 +66,6 @@ public final class AccessFile {
 		descriptor = "(I)V",
 		garbageValue = "1963983809"
 	)
-	@Export("close")
 	public final void close() throws IOException {
 		this.closeSync(false);
 	}
@@ -81,7 +75,6 @@ public final class AccessFile {
 		descriptor = "(ZI)V",
 		garbageValue = "-1007418662"
 	)
-	@Export("closeSync")
 	public final void closeSync(boolean var1) throws IOException {
 		if (this.file != null) {
 			if (var1) {
@@ -102,7 +95,6 @@ public final class AccessFile {
 		descriptor = "(I)J",
 		garbageValue = "-611739643"
 	)
-	@Export("length")
 	public final long length() throws IOException {
 		return this.file.length();
 	}
@@ -112,7 +104,6 @@ public final class AccessFile {
 		descriptor = "([BIII)I",
 		garbageValue = "-1161755198"
 	)
-	@Export("read")
 	public final int read(byte[] var1, int var2, int var3) throws IOException {
 		int var4 = this.file.read(var1, var2, var3);
 		if (var4 > 0) {
@@ -122,7 +113,6 @@ public final class AccessFile {
 		return var4;
 	}
 
-	@Export("finalize")
 	@ObfuscatedName("finalize")
 	protected void finalize() throws Throwable {
 		if (this.file != null) {

@@ -10,6 +10,5 @@ public class class293 {
 	@ObfuscatedSignature(
 		descriptor = "Ltp;"
 	)
-	@Export("HitSplatDefinition_cachedSprites")
 	static class498 HitSplatDefinition_cachedSprites;
 }

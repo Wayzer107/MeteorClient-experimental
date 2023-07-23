@@ -10,13 +10,11 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("aa")
 public class class14 {
 	@ObfuscatedName("bn")
-	@Export("loginScreenFontMetrics")
 	static FontMetrics loginScreenFontMetrics;
 	@ObfuscatedName("so")
 	@ObfuscatedSignature(
 		descriptor = "Lut;"
 	)
-	@Export("privateChatMode")
 	static PrivateChatMode privateChatMode;
 	@ObfuscatedName("aw")
 	final int field42;

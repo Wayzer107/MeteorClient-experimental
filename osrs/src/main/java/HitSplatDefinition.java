@@ -10,37 +10,30 @@ public class HitSplatDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("HitSplatDefinition_archive")
 	public static AbstractArchive HitSplatDefinition_archive;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("HitSplatDefinition_fontsArchive")
 	public static AbstractArchive HitSplatDefinition_fontsArchive;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("HitSplatDefinition_cached")
 	public static EvictingDualNodeHashTable HitSplatDefinition_cached;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("HitSplatDefinition_cachedSprites")
 	public static EvictingDualNodeHashTable HitSplatDefinition_cachedSprites;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("HitSplatDefinition_cachedFonts")
 	public static EvictingDualNodeHashTable HitSplatDefinition_cachedFonts;
 	@ObfuscatedName("at")
-	@Export("fontId")
 	int fontId;
 	@ObfuscatedName("ah")
-	@Export("textColor")
 	public int textColor;
 	@ObfuscatedName("ax")
 	public int field1687;
@@ -65,13 +58,10 @@ public class HitSplatDefinition extends DualNode {
 	@ObfuscatedName("af")
 	public int field1683;
 	@ObfuscatedName("ai")
-	@Export("transforms")
 	public int[] transforms;
 	@ObfuscatedName("al")
-	@Export("transformVarbit")
 	int transformVarbit;
 	@ObfuscatedName("bd")
-	@Export("transformVarp")
 	int transformVarp;
 
 	static {
@@ -103,7 +93,6 @@ public class HitSplatDefinition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "17891601"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -120,7 +109,6 @@ public class HitSplatDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "1627766366"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.fontId = var1.method2543();
@@ -189,7 +177,6 @@ public class HitSplatDefinition extends DualNode {
 		descriptor = "(I)Lhk;",
 		garbageValue = "-517578279"
 	)
-	@Export("transform")
 	public final HitSplatDefinition transform() {
 		int var1 = -1;
 		if (this.transformVarbit != -1) {
@@ -213,7 +200,6 @@ public class HitSplatDefinition extends DualNode {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "1987893545"
 	)
-	@Export("getString")
 	public String getString(int var1) {
 		String var2 = this.field1680;
 
@@ -324,7 +310,6 @@ public class HitSplatDefinition extends DualNode {
 		descriptor = "(I)Lpc;",
 		garbageValue = "-1649845453"
 	)
-	@Export("getFont")
 	public Font getFont() {
 		if (this.fontId == -1) {
 			return null;

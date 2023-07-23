@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("oy")
 public class class385 {
 	@ObfuscatedName("aw")
-	@Export("cp1252AsciiExtension")
 	public static final char[] cp1252AsciiExtension;
 
 	static {

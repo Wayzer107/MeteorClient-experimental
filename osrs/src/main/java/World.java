@@ -16,25 +16,19 @@ public class World {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("KitDefinition_archive")
 	static AbstractArchive KitDefinition_archive;
 	@ObfuscatedName("aj")
-	@Export("World_count")
 	static int World_count;
 	@ObfuscatedName("ag")
-	@Export("World_listCount")
 	static int World_listCount;
 	@ObfuscatedName("az")
-	@Export("World_sortOption2")
 	static int[] World_sortOption2;
 	@ObfuscatedName("av")
-	@Export("World_sortOption1")
 	static int[] World_sortOption1;
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
 		descriptor = "Lei;"
 	)
-	@Export("World_request")
 	static UrlRequest World_request;
 	@ObfuscatedName("cw")
 	static int field666;
@@ -44,25 +38,18 @@ public class World {
 	)
 	static Archive field670;
 	@ObfuscatedName("aq")
-	@Export("id")
 	int id;
 	@ObfuscatedName("at")
-	@Export("properties")
 	int properties;
 	@ObfuscatedName("ah")
-	@Export("population")
 	int population;
 	@ObfuscatedName("ax")
-	@Export("host")
 	String host;
 	@ObfuscatedName("aa")
-	@Export("activity")
 	String activity;
 	@ObfuscatedName("au")
-	@Export("location")
 	int location;
 	@ObfuscatedName("ae")
-	@Export("index")
 	int index;
 	@ObfuscatedName("ab")
 	String field677;
@@ -82,7 +69,6 @@ public class World {
 		descriptor = "(S)Z",
 		garbageValue = "18459"
 	)
-	@Export("isMembersOnly")
 	boolean isMembersOnly() {
 		return (1 & this.properties) != 0;
 	}
@@ -92,7 +78,6 @@ public class World {
 		descriptor = "(I)Z",
 		garbageValue = "1666523957"
 	)
-	@Export("isDeadman")
 	boolean isDeadman() {
 		return (65536 & this.properties) != 0;
 	}
@@ -111,7 +96,6 @@ public class World {
 		descriptor = "(I)Z",
 		garbageValue = "-2076610622"
 	)
-	@Export("isPvp")
 	boolean isPvp() {
 		return (4 & this.properties) != 0;
 	}
@@ -139,7 +123,6 @@ public class World {
 		descriptor = "(I)Z",
 		garbageValue = "1119201695"
 	)
-	@Export("isBeta")
 	boolean isBeta() {
 		return (33554432 & this.properties) != 0;
 	}

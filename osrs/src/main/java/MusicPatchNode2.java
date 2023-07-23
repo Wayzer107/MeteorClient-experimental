@@ -38,7 +38,6 @@ public class MusicPatchNode2 {
 		descriptor = "(IIIIIB)V",
 		garbageValue = "-19"
 	)
-	@Export("drawObject")
 	static final void drawObject(int var0, int var1, int var2, int var3, int var4) {
 		long var5 = UserComparator5.scene.getBoundaryObjectTag(var0, var1, var2);
 		int var7;

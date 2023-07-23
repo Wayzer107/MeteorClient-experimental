@@ -7,23 +7,19 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("SoundSystem")
 public class SoundSystem implements Runnable {
 	@ObfuscatedName("bb")
-	@Export("fontHelvetica13")
 	static java.awt.Font fontHelvetica13;
 	@ObfuscatedName("kl")
-	@Export("cameraZ")
 	static int cameraZ;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "[Lbk;"
 	)
-	@Export("players")
 	public volatile PcmPlayer[] players;
 
 	public SoundSystem() {
 		this.players = new PcmPlayer[2];
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		try {

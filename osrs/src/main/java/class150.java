@@ -8,7 +8,6 @@ public class class150 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lda;"
 	)
-	@Export("clientPreferences")
 	static ClientPreferences clientPreferences;
 	@ObfuscatedName("aw")
 	boolean field1346;
@@ -24,7 +23,6 @@ public class class150 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -40,7 +38,6 @@ public class class150 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1346 = var1.readUnsignedByte() == 1;
 		this.field1350 = var1.readByte();
@@ -54,7 +51,6 @@ public class class150 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.allowGuests = this.field1346;
 		var1.field1375 = this.field1350;
@@ -94,7 +90,6 @@ public class class150 extends class143 {
 		descriptor = "(IIIZIZS)V",
 		garbageValue = "-25741"
 	)
-	@Export("doWorldSorting")
 	static void doWorldSorting(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
 		if (var0 < var1) {
 			int var6 = (var0 + var1) / 2;

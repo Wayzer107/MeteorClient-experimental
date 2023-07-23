@@ -45,7 +45,6 @@ public enum class128 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field1219;
 	}

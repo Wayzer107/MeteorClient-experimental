@@ -19,7 +19,6 @@ public class class509 {
 		descriptor = "(IZB)Ljava/lang/String;",
 		garbageValue = "113"
 	)
-	@Export("intToString")
 	public static String intToString(int var0, boolean var1) {
 		return var1 && var0 >= 0 ? class327.method1676(var0, 10, var1) : Integer.toString(var0);
 	}

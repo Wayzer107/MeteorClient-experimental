@@ -133,7 +133,6 @@ public class class132 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field1279;
 	}
@@ -173,7 +172,6 @@ public class class132 implements class372 {
 		descriptor = "(IB)Lhx;",
 		garbageValue = "1"
 	)
-	@Export("KitDefinition_get")
 	public static KitDefinition KitDefinition_get(int var0) {
 		KitDefinition var1 = (KitDefinition)KitDefinition.KitDefinition_cached.get((long)var0);
 		if (var1 != null) {

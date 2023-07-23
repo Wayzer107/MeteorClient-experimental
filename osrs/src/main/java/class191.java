@@ -15,7 +15,6 @@ public class class191 {
 		descriptor = "(II)Ljava/lang/String;",
 		garbageValue = "-411156376"
 	)
-	@Export("formatItemStacks")
 	static final String formatItemStacks(int var0) {
 		String var1 = Integer.toString(var0);
 

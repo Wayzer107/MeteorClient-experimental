@@ -29,10 +29,8 @@ public class KeyHandler implements KeyListener, FocusListener {
 	)
 	class29[] field73;
 	@ObfuscatedName("as")
-	@Export("KeyHandler_pressedKeys")
 	boolean[] KeyHandler_pressedKeys;
 	@ObfuscatedName("aj")
-	@Export("KeyHandler_idleCycles")
 	volatile int KeyHandler_idleCycles;
 
 	KeyHandler() {
@@ -57,7 +55,6 @@ public class KeyHandler implements KeyListener, FocusListener {
 		descriptor = "(I)I",
 		garbageValue = "661246345"
 	)
-	@Export("getIdleCycles")
 	int getIdleCycles() {
 		return this.KeyHandler_idleCycles;
 	}
@@ -117,7 +114,6 @@ public class KeyHandler implements KeyListener, FocusListener {
 		this.field76 = var1;
 	}
 
-	@Export("keyPressed")
 	@ObfuscatedName("keyPressed")
 	public final synchronized void keyPressed(KeyEvent var1) {
 		int var2;
@@ -147,7 +143,6 @@ public class KeyHandler implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@Export("keyReleased")
 	@ObfuscatedName("keyReleased")
 	public final synchronized void keyReleased(KeyEvent var1) {
 		int var2;
@@ -172,7 +167,6 @@ public class KeyHandler implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@Export("keyTyped")
 	@ObfuscatedName("keyTyped")
 	public final synchronized void keyTyped(KeyEvent var1) {
 		char var2 = var1.getKeyChar();
@@ -210,7 +204,6 @@ public class KeyHandler implements KeyListener, FocusListener {
 		this.field76.add(new class33(4, 1));
 	}
 
-	@Export("focusLost")
 	@ObfuscatedName("focusLost")
 	public final synchronized void focusLost(FocusEvent var1) {
 		for (int var2 = 0; var2 < 112; ++var2) {

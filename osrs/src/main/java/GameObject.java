@@ -7,48 +7,35 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GameObject")
 public final class GameObject {
 	@ObfuscatedName("aw")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("ay")
-	@Export("z")
 	int z;
 	@ObfuscatedName("ar")
-	@Export("centerX")
 	int centerX;
 	@ObfuscatedName("am")
-	@Export("centerY")
 	int centerY;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("renderable")
 	public Renderable renderable;
 	@ObfuscatedName("aj")
-	@Export("orientation")
 	int orientation;
 	@ObfuscatedName("ag")
-	@Export("startX")
 	int startX;
 	@ObfuscatedName("az")
-	@Export("endX")
 	int endX;
 	@ObfuscatedName("av")
-	@Export("startY")
 	int startY;
 	@ObfuscatedName("ap")
-	@Export("endY")
 	int endY;
 	@ObfuscatedName("aq")
 	int field2282;
 	@ObfuscatedName("at")
-	@Export("lastDrawn")
 	int lastDrawn;
 	@ObfuscatedName("ah")
-	@Export("tag")
 	public long tag;
 	@ObfuscatedName("ax")
-	@Export("flags")
 	int flags;
 
 	GameObject() {

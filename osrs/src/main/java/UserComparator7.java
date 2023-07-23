@@ -12,7 +12,6 @@ public class UserComparator7 extends AbstractUserComparator {
 	)
 	public static class370 field1171;
 	@ObfuscatedName("aw")
-	@Export("reversed")
 	final boolean reversed;
 
 	public UserComparator7(boolean var1) {
@@ -24,7 +23,6 @@ public class UserComparator7 extends AbstractUserComparator {
 		descriptor = "(Lqa;Lqa;B)I",
 		garbageValue = "92"
 	)
-	@Export("compareBuddy")
 	int compareBuddy(Buddy var1, Buddy var2) {
 		if (var1.world != 0 && var2.world != 0) {
 			return this.reversed ? var1.int2 - var2.int2 : var2.int2 - var1.int2;
@@ -33,7 +31,6 @@ public class UserComparator7 extends AbstractUserComparator {
 		}
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compareBuddy((Buddy)var1, (Buddy)var2);

@@ -10,7 +10,6 @@ public final class DualNodeDeque {
 	@ObfuscatedSignature(
 		descriptor = "Lsh;"
 	)
-	@Export("sentinel")
 	DualNode sentinel;
 
 	public DualNodeDeque() {
@@ -53,7 +52,6 @@ public final class DualNodeDeque {
 	@ObfuscatedSignature(
 		descriptor = "()Lsh;"
 	)
-	@Export("removeLast")
 	public DualNode removeLast() {
 		DualNode var1 = this.sentinel.previousDual;
 		return var1 == this.sentinel ? null : var1;

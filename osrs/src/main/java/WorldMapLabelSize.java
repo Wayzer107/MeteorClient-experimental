@@ -10,31 +10,26 @@ public class WorldMapLabelSize {
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
 	)
-	@Export("WorldMapLabelSize_small")
 	public static final WorldMapLabelSize WorldMapLabelSize_small;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
 	)
-	@Export("WorldMapLabelSize_medium")
 	public static final WorldMapLabelSize WorldMapLabelSize_medium;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
 	)
-	@Export("WorldMapLabelSize_large")
 	public static final WorldMapLabelSize WorldMapLabelSize_large;
 	@ObfuscatedName("ah")
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("options_buttons_0Sprite")
 	static IndexedSprite options_buttons_0Sprite;
 	@ObfuscatedName("si")
 	@ObfuscatedSignature(
 		descriptor = "Lgh;"
 	)
-	@Export("guestClanChannel")
 	static ClanChannel guestClanChannel;
 	@ObfuscatedName("am")
 	final int field2299;
@@ -69,7 +64,6 @@ public class WorldMapLabelSize {
 		descriptor = "(IIII)Ldn;",
 		garbageValue = "977578301"
 	)
-	@Export("ifOpenSub")
 	static final InterfaceParent ifOpenSub(int var0, int var1, int var2) {
 		InterfaceParent var3 = new InterfaceParent();
 		var3.group = var1;

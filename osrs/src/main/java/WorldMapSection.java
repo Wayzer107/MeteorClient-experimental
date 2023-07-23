@@ -11,7 +11,6 @@ public interface WorldMapSection {
 		descriptor = "(Ljs;I)V",
 		garbageValue = "104966018"
 	)
-	@Export("expandBounds")
 	void expandBounds(WorldMapArea var1);
 
 	@ObfuscatedName("ay")
@@ -19,7 +18,6 @@ public interface WorldMapSection {
 		descriptor = "(IIIB)Z",
 		garbageValue = "37"
 	)
-	@Export("containsCoord")
 	boolean containsCoord(int var1, int var2, int var3);
 
 	@ObfuscatedName("ar")
@@ -27,7 +25,6 @@ public interface WorldMapSection {
 		descriptor = "(III)Z",
 		garbageValue = "-1055724816"
 	)
-	@Export("containsPosition")
 	boolean containsPosition(int var1, int var2);
 
 	@ObfuscatedName("am")
@@ -35,7 +32,6 @@ public interface WorldMapSection {
 		descriptor = "(IIII)[I",
 		garbageValue = "1968685542"
 	)
-	@Export("getBorderTileLengths")
 	int[] getBorderTileLengths(int var1, int var2, int var3);
 
 	@ObfuscatedName("as")
@@ -43,7 +39,6 @@ public interface WorldMapSection {
 		descriptor = "(IIB)Lmr;",
 		garbageValue = "119"
 	)
-	@Export("coord")
 	Coord coord(int var1, int var2);
 
 	@ObfuscatedName("aj")
@@ -51,6 +46,5 @@ public interface WorldMapSection {
 		descriptor = "(Lty;I)V",
 		garbageValue = "706418314"
 	)
-	@Export("read")
 	void read(Buffer var1);
 }

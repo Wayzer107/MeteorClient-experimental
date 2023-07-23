@@ -11,43 +11,31 @@ public class FloorOverlayDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("FloorOverlayDefinition_archive")
 	public static AbstractArchive FloorOverlayDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("FloorOverlayDefinition_cached")
 	public static EvictingDualNodeHashTable FloorOverlayDefinition_cached;
 	@ObfuscatedName("ar")
-	@Export("primaryRgb")
 	public int primaryRgb;
 	@ObfuscatedName("am")
-	@Export("texture")
 	public int texture;
 	@ObfuscatedName("as")
-	@Export("hideUnderlay")
 	public boolean hideUnderlay;
 	@ObfuscatedName("aj")
-	@Export("secondaryRgb")
 	public int secondaryRgb;
 	@ObfuscatedName("ag")
-	@Export("hue")
 	public int hue;
 	@ObfuscatedName("az")
-	@Export("saturation")
 	public int saturation;
 	@ObfuscatedName("av")
-	@Export("lightness")
 	public int lightness;
 	@ObfuscatedName("ap")
-	@Export("secondaryHue")
 	public int secondaryHue;
 	@ObfuscatedName("aq")
-	@Export("secondarySaturation")
 	public int secondarySaturation;
 	@ObfuscatedName("at")
-	@Export("secondaryLightness")
 	public int secondaryLightness;
 
 	static {
@@ -66,7 +54,6 @@ public class FloorOverlayDefinition extends DualNode {
 		descriptor = "(I)V",
 		garbageValue = "2116098894"
 	)
-	@Export("postDecode")
 	public void postDecode() {
 		if (this.secondaryRgb != -1) {
 			this.setHsl(this.secondaryRgb);
@@ -83,7 +70,6 @@ public class FloorOverlayDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-120471705"
 	)
-	@Export("decode")
 	public void decode(Buffer var1, int var2) {
 		while (true) {
 			int var3 = var1.readUnsignedByte();
@@ -100,7 +86,6 @@ public class FloorOverlayDefinition extends DualNode {
 		descriptor = "(Lty;IIB)V",
 		garbageValue = "25"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2, int var3) {
 		if (var2 == 1) {
 			this.primaryRgb = var1.readMedium();
@@ -120,7 +105,6 @@ public class FloorOverlayDefinition extends DualNode {
 		descriptor = "(II)V",
 		garbageValue = "-1944811115"
 	)
-	@Export("setHsl")
 	void setHsl(int var1) {
 		double var2 = (double)(var1 >> 16 & 255) / 256.0D;
 		double var4 = (double)(var1 >> 8 & 255) / 256.0D;
@@ -187,7 +171,6 @@ public class FloorOverlayDefinition extends DualNode {
 		descriptor = "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lot;I)I",
 		garbageValue = "-452810030"
 	)
-	@Export("compareStrings")
 	public static int compareStrings(CharSequence var0, CharSequence var1, Language var2) {
 		int var3 = var0.length();
 		int var4 = var1.length();

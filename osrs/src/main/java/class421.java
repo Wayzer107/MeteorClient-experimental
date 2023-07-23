@@ -10,7 +10,6 @@ class class421 implements Comparator {
 	@ObfuscatedSignature(
 		descriptor = "Lqb;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class420 this$0;
 
@@ -30,13 +29,11 @@ class class421 implements Comparator {
 		return ((Float)var2.getValue()).compareTo((Float)var1.getValue());
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.method2139((Entry)var1, (Entry)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);

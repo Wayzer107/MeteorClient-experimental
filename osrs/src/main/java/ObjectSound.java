@@ -10,40 +10,31 @@ public final class ObjectSound extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lod;"
 	)
-	@Export("objectSounds")
 	static NodeDeque objectSounds;
 	@ObfuscatedName("ay")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("ar")
-	@Export("x")
 	int x;
 	@ObfuscatedName("am")
-	@Export("y")
 	int y;
 	@ObfuscatedName("as")
-	@Export("maxX")
 	int maxX;
 	@ObfuscatedName("aj")
-	@Export("maxY")
 	int maxY;
 	@ObfuscatedName("ag")
 	int field687;
 	@ObfuscatedName("az")
-	@Export("soundEffectId")
 	int soundEffectId;
 	@ObfuscatedName("av")
 	@ObfuscatedSignature(
 		descriptor = "Lbt;"
 	)
-	@Export("stream1")
 	RawPcmStream stream1;
 	@ObfuscatedName("ap")
 	int field691;
 	@ObfuscatedName("aq")
 	int field692;
 	@ObfuscatedName("at")
-	@Export("soundEffectIds")
 	int[] soundEffectIds;
 	@ObfuscatedName("ah")
 	int field688;
@@ -51,13 +42,11 @@ public final class ObjectSound extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lbt;"
 	)
-	@Export("stream2")
 	RawPcmStream stream2;
 	@ObfuscatedName("aa")
 	@ObfuscatedSignature(
 		descriptor = "Lhb;"
 	)
-	@Export("obj")
 	ObjectComposition obj;
 
 	static {
@@ -72,7 +61,6 @@ public final class ObjectSound extends Node {
 		descriptor = "(I)V",
 		garbageValue = "1847013025"
 	)
-	@Export("set")
 	void set() {
 		int var1 = this.soundEffectId;
 		ObjectComposition var2 = this.obj.transform();

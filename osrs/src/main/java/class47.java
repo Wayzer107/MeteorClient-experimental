@@ -9,7 +9,6 @@ public class class47 {
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("worldSelectLeftSprite")
 	static IndexedSprite worldSelectLeftSprite;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
@@ -182,7 +181,6 @@ public class class47 {
 		descriptor = "(Ldx;II)V",
 		garbageValue = "-1729917411"
 	)
-	@Export("updateActorSequence")
 	static final void updateActorSequence(Actor var0, int var1) {
 		int var2;
 		int var3;
@@ -564,7 +562,6 @@ public class class47 {
 		descriptor = "([Lmt;IIIIIIIII)V",
 		garbageValue = "1798184407"
 	)
-	@Export("drawInterface")
 	static final void drawInterface(Widget[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Rasterizer2D.Rasterizer2D_setClip(var2, var3, var4, var5);
 		Rasterizer3D.method1176();

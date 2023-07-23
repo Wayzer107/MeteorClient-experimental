@@ -25,13 +25,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("CLANCHANNEL_DELTA")
 	public static final ServerPacket SEND_PING;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("IF_SETTEXT")
 	public static final ServerPacket UPDATE_REBOOT_TIMER;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
@@ -42,7 +40,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("REFLECTION_CHECK")
 	public static final ServerPacket NEW_PACKET_CAM_RESET_V2;
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
@@ -63,7 +60,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("CHAT_FILTER_SETTINGS")
 	public static final ServerPacket OPEN_URL;
 	@ObfuscatedName("at")
 	@ObfuscatedSignature(
@@ -119,7 +115,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("SPOTANIM_SPECIFIC")
 	public static final ServerPacket VARCLAN_ENABLE;
 	@ObfuscatedName("an")
 	@ObfuscatedSignature(
@@ -130,7 +125,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("NPC_INFO_LARGE")
 	public static final ServerPacket UPDATE_RUNENERGY;
 	@ObfuscatedName("ai")
 	@ObfuscatedSignature(
@@ -141,7 +135,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("ENTER_FREECAM")
 	public static final ServerPacket MESSAGE_CLANCHANNEL;
 	@ObfuscatedName("bd")
 	@ObfuscatedSignature(
@@ -152,7 +145,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("IF_SETPOSITION")
 	public static final ServerPacket IF_CLOSESUB;
 	@ObfuscatedName("bn")
 	@ObfuscatedSignature(
@@ -183,7 +175,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_INV_PARTIAL")
 	public static final ServerPacket HEAT_MAP;
 	@ObfuscatedName("bq")
 	@ObfuscatedSignature(
@@ -199,7 +190,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("PLAYER_INFO")
 	public static final ServerPacket OBJ_ADD;
 	@ObfuscatedName("bw")
 	@ObfuscatedSignature(
@@ -210,7 +200,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("IF_SETOBJECT")
 	public static final ServerPacket SPOTANIM_SPECIFIC;
 	@ObfuscatedName("bc")
 	@ObfuscatedSignature(
@@ -231,7 +220,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("RESET_ANIMS")
 	public static final ServerPacket UPDATE_ZONE_PARTIAL_FOLLOWS;
 	@ObfuscatedName("bz")
 	@ObfuscatedSignature(
@@ -247,13 +235,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_INV_FULL")
 	public static final ServerPacket MIDI_JINGLE;
 	@ObfuscatedName("bm")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("MESSAGE_CLANCHANNEL_SYSTEM")
 	public static final ServerPacket IF1_MODELROTATE;
 	@ObfuscatedName("bl")
 	@ObfuscatedSignature(
@@ -284,7 +270,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_UID192")
 	public static final ServerPacket MESSAGE_PRIVATE;
 	@ObfuscatedName("cf")
 	@ObfuscatedSignature(
@@ -305,13 +290,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_ZONE_PARTIAL_FOLLOWS")
 	public static final ServerPacket MESSAGE_GAME;
 	@ObfuscatedName("cj")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("IF_SETNPCHEAD")
 	public static final ServerPacket UPDATE_INV_FULL;
 	@ObfuscatedName("cn")
 	@ObfuscatedSignature(
@@ -322,19 +305,16 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("HEAT_MAP")
 	public static final ServerPacket IF_OPENSUB;
 	@ObfuscatedName("ce")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("TRIGGER_ONDIALOGABORT")
 	public static final ServerPacket IF_SETMODEL;
 	@ObfuscatedName("cq")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("IF_OPENSUB")
 	public static final ServerPacket UPDATE_UID192;
 	@ObfuscatedName("cm")
 	@ObfuscatedSignature(
@@ -350,7 +330,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("REBUILD_REGION")
 	public static final ServerPacket CAM_LOOKAT;
 	@ObfuscatedName("co")
 	@ObfuscatedSignature(
@@ -361,7 +340,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("CAM_LOOKAT")
 	public static final ServerPacket MINIMAP_TOGGLE;
 	@ObfuscatedName("cr")
 	@ObfuscatedSignature(
@@ -402,13 +380,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("GAMEFRAME_FULL")
 	public static final ServerPacket RESET_CLIENT_VARCACHE;
 	@ObfuscatedName("ci")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("VARCLAN")
 	public static final ServerPacket FRIENDLIST_LOADED;
 	@ObfuscatedName("cv")
 	@ObfuscatedSignature(
@@ -419,7 +395,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("LOGOUT_TRANSFER")
 	public static final ServerPacket MESSAGE_FRIENDCHANNEL;
 	@ObfuscatedName("dc")
 	@ObfuscatedSignature(
@@ -475,7 +450,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("NPC_INFO_SMALL")
 	public static final ServerPacket CLANCHANNEL_FULL;
 	@ObfuscatedName("dd")
 	@ObfuscatedSignature(
@@ -506,7 +480,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_INV_CLEAR")
 	public static final ServerPacket UPDATE_ZONE_FULL_FOLLOWS;
 	@ObfuscatedName("dx")
 	@ObfuscatedSignature(
@@ -517,13 +490,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("TRADING_POST_RESULTS")
 	public static final ServerPacket CLANCHANNEL_DELTA;
 	@ObfuscatedName("ds")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("MESSAGE_PRIVATE_ECHO")
 	public static final ServerPacket CAM_RESET;
 	@ObfuscatedName("da")
 	@ObfuscatedSignature(
@@ -579,13 +550,11 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("UPDATE_RUNENERGY")
 	public static final ServerPacket CAM_MOVETO;
 	@ObfuscatedName("ew")
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("MESSAGE_PRIVATE")
 	public static final ServerPacket UPDATE_SITESETTINGS;
 	@ObfuscatedName("eo")
 	@ObfuscatedSignature(
@@ -606,7 +575,6 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Lls;"
 	)
-	@Export("REBUILD_REGION_NORMAL")
 	public static final ServerPacket OBJ_DEL;
 	@ObfuscatedName("ei")
 	@ObfuscatedSignature(
@@ -649,10 +617,8 @@ public class ServerPacket {
 	)
 	public static final ServerPacket MIDI_SWAP;
 	@ObfuscatedName("ea")
-	@Export("id")
 	public final int id;
 	@ObfuscatedName("ex")
-	@Export("length")
 	public final int length;
 
 	static {

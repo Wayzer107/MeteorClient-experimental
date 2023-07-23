@@ -8,7 +8,6 @@ public class class177 {
 	@ObfuscatedSignature(
 		descriptor = "Lcd;"
 	)
-	@Export("friendSystem")
 	public static FriendSystem friendSystem;
 	@ObfuscatedName("am")
 	public String field1467;
@@ -24,7 +23,6 @@ public class class177 {
 	@ObfuscatedSignature(
 		descriptor = "Lgq;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class170 this$0;
 

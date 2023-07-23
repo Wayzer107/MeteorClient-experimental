@@ -45,7 +45,6 @@ public class class197 {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive2")
 	static Archive archive2;
 
 	static {

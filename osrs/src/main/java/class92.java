@@ -484,7 +484,6 @@ public class class92 {
 		descriptor = "(II)V",
 		garbageValue = "1637635386"
 	)
-	@Export("Widget_resetModelFrames")
 	static final void Widget_resetModelFrames(int var0) {
 		if (Login.loadInterface(var0)) {
 			Widget[] var1 = ArchiveLoader.Widget_interfaceComponents[var0];

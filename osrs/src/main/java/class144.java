@@ -14,7 +14,6 @@ public class class144 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -31,7 +30,6 @@ public class class144 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1324 = var1.readUnsignedShort();
 		this.field1323 = var1.readUnsignedByte() == 1;
@@ -42,7 +40,6 @@ public class class144 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method816(this.field1324, this.field1323);
 	}
@@ -93,7 +90,6 @@ public class class144 extends class143 {
 		descriptor = "(I)Z",
 		garbageValue = "2108978122"
 	)
-	@Export("getTapToDrop")
 	static boolean getTapToDrop() {
 		return Client.tapToDrop;
 	}

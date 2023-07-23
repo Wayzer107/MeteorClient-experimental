@@ -10,7 +10,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "Ltb;"
 	)
-	@Export("BZip2Decompressor_state")
 	static BZip2State BZip2Decompressor_state;
 
 	static {
@@ -18,7 +17,6 @@ public final class BZip2Decompressor {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("BZip2Decompressor_decompress")
 	public static int BZip2Decompressor_decompress(byte[] var0, int var1, byte[] var2, int var3, int var4) {
 		synchronized(BZip2Decompressor_state) {
 			BZip2Decompressor_state.inputArray = var2;
@@ -168,7 +166,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "(Ltb;)V"
 	)
-	@Export("BZip2Decompressor_decompress")
 	static void BZip2Decompressor_decompress(BZip2State var0) {
 		boolean var4 = false;
 		boolean var5 = false;
@@ -542,7 +539,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "(Ltb;)B"
 	)
-	@Export("BZip2Decompressor_readNextByte")
 	static byte BZip2Decompressor_readNextByte(BZip2State var0) {
 		return (byte)BZip2Decompressor_readBits(8, var0);
 	}
@@ -551,7 +547,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "(Ltb;)B"
 	)
-	@Export("BZip2Decompressor_readNextBit")
 	static byte BZip2Decompressor_readNextBit(BZip2State var0) {
 		return (byte)BZip2Decompressor_readBits(1, var0);
 	}
@@ -560,7 +555,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "(ILtb;)I"
 	)
-	@Export("BZip2Decompressor_readBits")
 	static int BZip2Decompressor_readBits(int var0, BZip2State var1) {
 		while (var1.bsLive < var0) {
 			var1.bsBuff = var1.bsBuff << 8 | var1.inputArray[var1.nextByte] & 255;
@@ -580,7 +574,6 @@ public final class BZip2Decompressor {
 	@ObfuscatedSignature(
 		descriptor = "(Ltb;)V"
 	)
-	@Export("makeMaps")
 	static void makeMaps(BZip2State var0) {
 		var0.nInUse = 0;
 
@@ -594,7 +587,6 @@ public final class BZip2Decompressor {
 	}
 
 	@ObfuscatedName("az")
-	@Export("BZip2Decompressor_createHuffmanTables")
 	static void BZip2Decompressor_createHuffmanTables(int[] var0, int[] var1, int[] var2, byte[] var3, int var4, int var5, int var6) {
 		int var7 = 0;
 

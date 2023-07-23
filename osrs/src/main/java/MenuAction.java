@@ -7,25 +7,18 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("MenuAction")
 public class MenuAction {
 	@ObfuscatedName("aw")
-	@Export("param0")
 	int param0;
 	@ObfuscatedName("ay")
-	@Export("param1")
 	int param1;
 	@ObfuscatedName("ar")
-	@Export("opcode")
 	int opcode;
 	@ObfuscatedName("am")
-	@Export("identifier")
 	int identifier;
 	@ObfuscatedName("as")
-	@Export("itemId")
 	int itemId;
 	@ObfuscatedName("aj")
-	@Export("action")
 	String action;
 	@ObfuscatedName("ag")
-	@Export("target")
 	String target;
 
 	MenuAction() {
@@ -54,7 +47,6 @@ public class MenuAction {
 		descriptor = "(II)V",
 		garbageValue = "-1834048836"
 	)
-	@Export("changeGameOptions")
 	static final void changeGameOptions(int var0) {
 		DbRowType.process();
 		class19.method67();

@@ -10,7 +10,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("MouseWheelHandler")
 public final class MouseWheelHandler implements class174, MouseWheelListener {
 	@ObfuscatedName("aw")
-	@Export("rotation")
 	int rotation;
 
 	MouseWheelHandler() {
@@ -22,7 +21,6 @@ public final class MouseWheelHandler implements class174, MouseWheelListener {
 		descriptor = "(Ljava/awt/Component;I)V",
 		garbageValue = "2110290044"
 	)
-	@Export("addTo")
 	void addTo(Component var1) {
 		var1.addMouseWheelListener(this);
 	}
@@ -41,14 +39,12 @@ public final class MouseWheelHandler implements class174, MouseWheelListener {
 		descriptor = "(I)I",
 		garbageValue = "496669737"
 	)
-	@Export("useRotation")
 	public synchronized int useRotation() {
 		int var1 = this.rotation;
 		this.rotation = 0;
 		return var1;
 	}
 
-	@Export("mouseWheelMoved")
 	@ObfuscatedName("mouseWheelMoved")
 	public synchronized void mouseWheelMoved(MouseWheelEvent var1) {
 		this.rotation += var1.getWheelRotation();

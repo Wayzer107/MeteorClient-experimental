@@ -12,13 +12,10 @@ public class WorldMapDecoration {
 	)
 	static Widget[] field2419;
 	@ObfuscatedName("aw")
-	@Export("objectDefinitionId")
 	final int objectDefinitionId;
 	@ObfuscatedName("ay")
-	@Export("decoration")
 	final int decoration;
 	@ObfuscatedName("ar")
-	@Export("rotation")
 	final int rotation;
 
 	WorldMapDecoration(int var1, int var2, int var3) {

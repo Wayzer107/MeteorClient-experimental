@@ -10,13 +10,10 @@ public class SoundEffect {
 	@ObfuscatedSignature(
 		descriptor = "[Lcq;"
 	)
-	@Export("instruments")
 	Instrument[] instruments;
 	@ObfuscatedName("ar")
-	@Export("start")
 	int start;
 	@ObfuscatedName("am")
-	@Export("end")
 	int end;
 
 	@ObfuscatedSignature(
@@ -42,14 +39,12 @@ public class SoundEffect {
 	@ObfuscatedSignature(
 		descriptor = "()Lbi;"
 	)
-	@Export("toRawSound")
 	public RawSound toRawSound() {
 		byte[] var1 = this.mix();
 		return new RawSound(22050, var1, this.start * 22050 / 1000, this.end * 22050 / 1000);
 	}
 
 	@ObfuscatedName("ar")
-	@Export("calculateDelay")
 	public final int calculateDelay() {
 		int var1 = 9999999;
 
@@ -84,7 +79,6 @@ public class SoundEffect {
 	}
 
 	@ObfuscatedName("am")
-	@Export("mix")
 	final byte[] mix() {
 		int var1 = 0;
 
@@ -126,7 +120,6 @@ public class SoundEffect {
 	@ObfuscatedSignature(
 		descriptor = "(Lnd;II)Lbc;"
 	)
-	@Export("readSoundEffect")
 	public static SoundEffect readSoundEffect(AbstractArchive var0, int var1, int var2) {
 		byte[] var3 = var0.takeFile(var1, var2);
 		return var3 == null ? null : new SoundEffect(new Buffer(var3));

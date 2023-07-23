@@ -14,7 +14,6 @@ public abstract class Clock {
 		descriptor = "(I)V",
 		garbageValue = "-1541664401"
 	)
-	@Export("mark")
 	public abstract void mark();
 
 	@ObfuscatedName("ay")
@@ -22,7 +21,6 @@ public abstract class Clock {
 		descriptor = "(IIB)I",
 		garbageValue = "64"
 	)
-	@Export("wait")
 	public abstract int wait(int var1, int var2);
 
 	@ObfuscatedName("aq")
@@ -30,7 +28,6 @@ public abstract class Clock {
 		descriptor = "(Lmt;IIIB)V",
 		garbageValue = "-28"
 	)
-	@Export("Widget_setKeyRate")
 	static final void Widget_setKeyRate(Widget var0, int var1, int var2, int var3) {
 		if (var0.field3028 == null) {
 			throw new RuntimeException();

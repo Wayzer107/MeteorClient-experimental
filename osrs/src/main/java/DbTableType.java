@@ -15,19 +15,15 @@ public class DbTableType extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("DBTableType_cache")
 	static EvictingDualNodeHashTable DBTableType_cache;
 	@ObfuscatedName("kr")
 	@ObfuscatedSignature(
 		descriptor = "[Lud;"
 	)
-	@Export("headIconPkSprites")
 	static SpritePixels[] headIconPkSprites;
 	@ObfuscatedName("ar")
-	@Export("types")
 	public int[][] types;
 	@ObfuscatedName("am")
-	@Export("defaultValues")
 	public Object[][] defaultValues;
 
 	static {

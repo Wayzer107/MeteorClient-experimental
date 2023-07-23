@@ -8,7 +8,6 @@ public abstract class SongTask {
 	@ObfuscatedSignature(
 		descriptor = "Lud;"
 	)
-	@Export("leftTitleSprite")
 	static SpritePixels leftTitleSprite;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(

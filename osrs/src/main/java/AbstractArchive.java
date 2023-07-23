@@ -10,64 +10,46 @@ public abstract class AbstractArchive {
 	@ObfuscatedSignature(
 		descriptor = "Lun;"
 	)
-	@Export("gzipDecompressor")
 	static GZipDecompressor gzipDecompressor;
 	@ObfuscatedName("bq")
-	@Export("maximumContainerSize")
 	static int maximumContainerSize;
 	@ObfuscatedName("jp")
-	@Export("baseX")
 	static int baseX;
 	@ObfuscatedName("ad")
-	@Export("groupCount")
 	int groupCount;
 	@ObfuscatedName("ao")
-	@Export("groupIds")
 	int[] groupIds;
 	@ObfuscatedName("ac")
-	@Export("groupNameHashes")
 	int[] groupNameHashes;
 	@ObfuscatedName("ak")
 	@ObfuscatedSignature(
 		descriptor = "Luj;"
 	)
-	@Export("groupNameHashTable")
 	IntHashTable groupNameHashTable;
 	@ObfuscatedName("an")
-	@Export("groupCrcs")
 	int[] groupCrcs;
 	@ObfuscatedName("af")
-	@Export("groupVersions")
 	int[] groupVersions;
 	@ObfuscatedName("ai")
-	@Export("fileCounts")
 	int[] fileCounts;
 	@ObfuscatedName("al")
-	@Export("fileIds")
 	int[][] fileIds;
 	@ObfuscatedName("bd")
-	@Export("fileNameHashes")
 	int[][] fileNameHashes;
 	@ObfuscatedName("bb")
 	@ObfuscatedSignature(
 		descriptor = "[Luj;"
 	)
-	@Export("fileNameHashTables")
 	IntHashTable[] fileNameHashTables;
 	@ObfuscatedName("bn")
-	@Export("groups")
 	Object[] groups;
 	@ObfuscatedName("ba")
-	@Export("files")
 	Object[][] files;
 	@ObfuscatedName("bs")
-	@Export("hash")
 	public int hash;
 	@ObfuscatedName("bp")
-	@Export("releaseGroups")
 	boolean releaseGroups;
 	@ObfuscatedName("bv")
-	@Export("shallowFiles")
 	boolean shallowFiles;
 
 	static {
@@ -85,7 +67,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)V",
 		garbageValue = "-664965088"
 	)
-	@Export("loadRegionFromGroup")
 	void loadRegionFromGroup(int var1) {
 	}
 
@@ -94,7 +75,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)V",
 		garbageValue = "-1837159139"
 	)
-	@Export("loadGroup")
 	void loadGroup(int var1) {
 	}
 
@@ -103,7 +83,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)I",
 		garbageValue = "1193931520"
 	)
-	@Export("groupLoadPercent")
 	int groupLoadPercent(int var1) {
 		return this.groups[var1] != null ? 100 : 0;
 	}
@@ -113,7 +92,6 @@ public abstract class AbstractArchive {
 		descriptor = "([BB)V",
 		garbageValue = "-62"
 	)
-	@Export("decodeIndex")
 	void decodeIndex(byte[] var1) {
 		this.hash = class313.method1646(var1, var1.length);
 		Buffer var2 = new Buffer(class304.decompressBytes(var1));
@@ -246,7 +224,6 @@ public abstract class AbstractArchive {
 		descriptor = "(III)[B",
 		garbageValue = "-1888233667"
 	)
-	@Export("takeFile")
 	public byte[] takeFile(int var1, int var2) {
 		return this.takeFileEncrypted(var1, var2, (int[])null);
 	}
@@ -256,7 +233,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II[II)[B",
 		garbageValue = "-979807337"
 	)
-	@Export("takeFileEncrypted")
 	public byte[] takeFileEncrypted(int var1, int var2, int[] var3) {
 		if (var1 >= 0 && var1 < this.files.length && this.files[var1] != null && var2 >= 0 && var2 < this.files[var1].length) {
 			if (this.files[var1][var2] == null) {
@@ -286,7 +262,6 @@ public abstract class AbstractArchive {
 		descriptor = "(III)Z",
 		garbageValue = "-100656912"
 	)
-	@Export("tryLoadFile")
 	public boolean tryLoadFile(int var1, int var2) {
 		if (var1 >= 0 && var1 < this.files.length && this.files[var1] != null && var2 >= 0 && var2 < this.files[var1].length) {
 			if (this.files[var1][var2] != null) {
@@ -322,7 +297,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)Z",
 		garbageValue = "-247725441"
 	)
-	@Export("tryLoadGroup")
 	public boolean tryLoadGroup(int var1) {
 		if (this.groups[var1] != null) {
 			return true;
@@ -337,7 +311,6 @@ public abstract class AbstractArchive {
 		descriptor = "(B)Z",
 		garbageValue = "-78"
 	)
-	@Export("isFullyLoaded")
 	public boolean isFullyLoaded() {
 		boolean var1 = true;
 
@@ -359,7 +332,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)[B",
 		garbageValue = "-2047218130"
 	)
-	@Export("takeFileFlat")
 	public byte[] takeFileFlat(int var1) {
 		if (this.files.length == 1) {
 			return this.takeFile(0, var1);
@@ -375,7 +347,6 @@ public abstract class AbstractArchive {
 		descriptor = "(IIB)[B",
 		garbageValue = "8"
 	)
-	@Export("getFile")
 	public byte[] getFile(int var1, int var2) {
 		if (var1 >= 0 && var1 < this.files.length && this.files[var1] != null && var2 >= 0 && var2 < this.files[var1].length) {
 			if (this.files[var1][var2] == null) {
@@ -401,7 +372,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)[B",
 		garbageValue = "2068434253"
 	)
-	@Export("getFileFlat")
 	public byte[] getFileFlat(int var1) {
 		if (this.files.length == 1) {
 			return this.getFile(0, var1);
@@ -417,7 +387,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)[I",
 		garbageValue = "1146410571"
 	)
-	@Export("getGroupFileIds")
 	public int[] getGroupFileIds(int var1) {
 		return var1 >= 0 && var1 < this.fileIds.length ? this.fileIds[var1] : null;
 	}
@@ -427,7 +396,6 @@ public abstract class AbstractArchive {
 		descriptor = "(II)I",
 		garbageValue = "-637205539"
 	)
-	@Export("getGroupFileCount")
 	public int getGroupFileCount(int var1) {
 		return this.files != null && var1 < this.files.length && this.files[var1] != null ? this.files[var1].length : 0;
 	}
@@ -437,7 +405,6 @@ public abstract class AbstractArchive {
 		descriptor = "(B)I",
 		garbageValue = "-76"
 	)
-	@Export("getGroupCount")
 	public int getGroupCount() {
 		return this.files.length;
 	}
@@ -447,7 +414,6 @@ public abstract class AbstractArchive {
 		descriptor = "(B)V",
 		garbageValue = "-120"
 	)
-	@Export("clearGroups")
 	public void clearGroups() {
 		for (int var1 = 0; var1 < this.groups.length; ++var1) {
 			this.groups[var1] = null;
@@ -460,7 +426,6 @@ public abstract class AbstractArchive {
 		descriptor = "(IB)V",
 		garbageValue = "-50"
 	)
-	@Export("clearFilesGroup")
 	public void clearFilesGroup(int var1) {
 		for (int var2 = 0; var2 < this.files[var1].length; ++var2) {
 			this.files[var1][var2] = null;
@@ -473,7 +438,6 @@ public abstract class AbstractArchive {
 		descriptor = "(I)V",
 		garbageValue = "321577490"
 	)
-	@Export("clearFiles")
 	public void clearFiles() {
 		for (int var1 = 0; var1 < this.files.length; ++var1) {
 			if (this.files[var1] != null) {
@@ -490,7 +454,6 @@ public abstract class AbstractArchive {
 		descriptor = "(I[II)Z",
 		garbageValue = "512786407"
 	)
-	@Export("buildFiles")
 	boolean buildFiles(int var1, int[] var2) {
 		if (this.groups[var1] == null) {
 			return false;
@@ -602,7 +565,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;B)I",
 		garbageValue = "-18"
 	)
-	@Export("getGroupId")
 	public int getGroupId(String var1) {
 		var1 = var1.toLowerCase();
 		return this.groupNameHashTable.get(PcmPlayer.hashString(var1));
@@ -613,7 +575,6 @@ public abstract class AbstractArchive {
 		descriptor = "(ILjava/lang/String;I)I",
 		garbageValue = "91721922"
 	)
-	@Export("getFileId")
 	public int getFileId(int var1, String var2) {
 		var2 = var2.toLowerCase();
 		return this.fileNameHashTables[var1].get(PcmPlayer.hashString(var2));
@@ -624,7 +585,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;I)Z",
 		garbageValue = "831469561"
 	)
-	@Export("isValidFileName")
 	public boolean isValidFileName(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -642,7 +602,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;B)[B",
 		garbageValue = "68"
 	)
-	@Export("takeFileByNames")
 	public byte[] takeFileByNames(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -656,7 +615,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;S)Z",
 		garbageValue = "238"
 	)
-	@Export("tryLoadFileByNames")
 	public boolean tryLoadFileByNames(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -670,7 +628,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;I)Z",
 		garbageValue = "656064124"
 	)
-	@Export("tryLoadGroupByName")
 	public boolean tryLoadGroupByName(String var1) {
 		var1 = var1.toLowerCase();
 		int var2 = this.groupNameHashTable.get(PcmPlayer.hashString(var1));
@@ -682,7 +639,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;I)V",
 		garbageValue = "-946943017"
 	)
-	@Export("loadRegionFromName")
 	public void loadRegionFromName(String var1) {
 		var1 = var1.toLowerCase();
 		int var2 = this.groupNameHashTable.get(PcmPlayer.hashString(var1));
@@ -696,7 +652,6 @@ public abstract class AbstractArchive {
 		descriptor = "(Ljava/lang/String;I)I",
 		garbageValue = "-1785019666"
 	)
-	@Export("groupLoadPercentByName")
 	public int groupLoadPercentByName(String var1) {
 		var1 = var1.toLowerCase();
 		int var2 = this.groupNameHashTable.get(PcmPlayer.hashString(var1));

@@ -21,13 +21,10 @@ public class RawPcmStream extends PcmStream {
 	@ObfuscatedName("ag")
 	int field233;
 	@ObfuscatedName("az")
-	@Export("numLoops")
 	int numLoops;
 	@ObfuscatedName("av")
-	@Export("start")
 	int start;
 	@ObfuscatedName("ap")
-	@Export("end")
 	int end;
 	@ObfuscatedName("aq")
 	boolean field231;
@@ -81,7 +78,6 @@ public class RawPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("firstSubStream")
 	protected PcmStream firstSubStream() {
 		return null;
 	}
@@ -90,19 +86,16 @@ public class RawPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "()Lby;"
 	)
-	@Export("nextSubStream")
 	protected PcmStream nextSubStream() {
 		return null;
 	}
 
 	@ObfuscatedName("az")
-	@Export("vmethod5648")
 	protected int vmethod5648() {
 		return this.field238 == 0 && this.field240 == 0 ? 0 : 1;
 	}
 
 	@ObfuscatedName("av")
-	@Export("fill")
 	public synchronized void fill(int[] var1, int var2, int var3) {
 		if (this.field238 == 0 && this.field240 == 0) {
 			this.skip(var3);
@@ -284,13 +277,11 @@ public class RawPcmStream extends PcmStream {
 	}
 
 	@ObfuscatedName("ap")
-	@Export("setNumLoops")
 	public synchronized void setNumLoops(int var1) {
 		this.numLoops = var1;
 	}
 
 	@ObfuscatedName("aq")
-	@Export("skip")
 	public synchronized void skip(int var1) {
 		if (this.field240 > 0) {
 			if (var1 >= this.field240) {
@@ -823,7 +814,6 @@ public class RawPcmStream extends PcmStream {
 	}
 
 	@ObfuscatedName("by")
-	@Export("vmethod1019")
 	int vmethod1019() {
 		int var1 = this.field239 * 3 >> 6;
 		var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
@@ -850,7 +840,6 @@ public class RawPcmStream extends PcmStream {
 	@ObfuscatedSignature(
 		descriptor = "(Lbi;II)Lbt;"
 	)
-	@Export("createRawPcmStream")
 	public static RawPcmStream createRawPcmStream(RawSound var0, int var1, int var2) {
 		return var0.samples != null && var0.samples.length != 0 ? new RawPcmStream(var0, (int)((long)var0.sampleRate * 256L * (long)var1 / (long)(PcmPlayer.field181 * 100)), var2 << 6) : null;
 	}

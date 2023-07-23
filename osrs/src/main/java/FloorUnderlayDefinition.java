@@ -10,34 +10,26 @@ public class FloorUnderlayDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("FloorUnderlayDefinition_archive")
 	public static AbstractArchive FloorUnderlayDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("FloorUnderlayDefinition_cached")
 	public static EvictingDualNodeHashTable FloorUnderlayDefinition_cached;
 	@ObfuscatedName("aq")
 	@ObfuscatedSignature(
 		descriptor = "Lhf;"
 	)
-	@Export("clock")
 	static Clock clock;
 	@ObfuscatedName("ar")
-	@Export("rgb")
 	int rgb;
 	@ObfuscatedName("am")
-	@Export("hue")
 	public int hue;
 	@ObfuscatedName("as")
-	@Export("saturation")
 	public int saturation;
 	@ObfuscatedName("aj")
-	@Export("lightness")
 	public int lightness;
 	@ObfuscatedName("ag")
-	@Export("hueMultiplier")
 	public int hueMultiplier;
 
 	static {
@@ -53,7 +45,6 @@ public class FloorUnderlayDefinition extends DualNode {
 		descriptor = "(I)V",
 		garbageValue = "-1194722068"
 	)
-	@Export("postDecode")
 	public void postDecode() {
 		this.setHsl(this.rgb);
 	}
@@ -63,7 +54,6 @@ public class FloorUnderlayDefinition extends DualNode {
 		descriptor = "(Lty;IB)V",
 		garbageValue = "1"
 	)
-	@Export("decode")
 	public void decode(Buffer var1, int var2) {
 		while (true) {
 			int var3 = var1.readUnsignedByte();
@@ -80,7 +70,6 @@ public class FloorUnderlayDefinition extends DualNode {
 		descriptor = "(Lty;IIS)V",
 		garbageValue = "1927"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2, int var3) {
 		if (var2 == 1) {
 			this.rgb = var1.readMedium();
@@ -93,7 +82,6 @@ public class FloorUnderlayDefinition extends DualNode {
 		descriptor = "(IS)V",
 		garbageValue = "-13737"
 	)
-	@Export("setHsl")
 	void setHsl(int var1) {
 		double var2 = (double)(var1 >> 16 & 255) / 256.0D;
 		double var4 = (double)(var1 >> 8 & 255) / 256.0D;

@@ -17,7 +17,6 @@ public class class153 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -33,7 +32,6 @@ public class class153 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1357 = var1.readInt();
 		this.field1358 = var1.readStringCp1252NullTerminated();
@@ -44,7 +42,6 @@ public class class153 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method821(this.field1357, this.field1358);
 	}
@@ -138,7 +135,6 @@ public class class153 extends class143 {
 		descriptor = "(IIIIII)V",
 		garbageValue = "1514663394"
 	)
-	@Export("drawScrollBar")
 	static final void drawScrollBar(int var0, int var1, int var2, int var3, int var4) {
 		class302.scrollBarSprites[0].drawAt(var0, var1);
 		class302.scrollBarSprites[1].drawAt(var0, var3 + var1 - 16);

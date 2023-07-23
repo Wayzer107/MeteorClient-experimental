@@ -9,17 +9,14 @@ public class VorbisCodebook {
 	@ObfuscatedName("aw")
 	int field255;
 	@ObfuscatedName("ay")
-	@Export("entries")
 	int entries;
 	@ObfuscatedName("ar")
-	@Export("lengthMap")
 	int[] lengthMap;
 	@ObfuscatedName("am")
 	int[] field258;
 	@ObfuscatedName("as")
 	float[][] field254;
 	@ObfuscatedName("aj")
-	@Export("keys")
 	int[] keys;
 
 	VorbisCodebook() {
@@ -230,7 +227,6 @@ public class VorbisCodebook {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("mapType1QuantValues")
 	static int mapType1QuantValues(int var0, int var1) {
 		int var2;
 		for (var2 = (int)Math.pow((double)var0, 1.0D / (double)var1) + 1; CollisionMap.method1091(var2, var1) > var0; --var2) {

@@ -12,7 +12,6 @@ public class class246 extends class229 {
 	}
 
 	@ObfuscatedName("aj")
-	@Export("vmethod1374")
 	void vmethod1374(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12) {
 		int var13 = var5 - var4;
 		int var14 = var2 - var1;
@@ -558,7 +557,6 @@ public class class246 extends class229 {
 	}
 
 	@ObfuscatedName("ag")
-	@Export("vmethod1366")
 	void vmethod1366(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10) {
 		int var11 = var5 - var4;
 		int var12 = var2 - var1;
@@ -1067,7 +1065,6 @@ public class class246 extends class229 {
 	}
 
 	@ObfuscatedName("az")
-	@Export("vmethod1378")
 	void vmethod1378(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22) {
 		int[] var23 = super.field2023.Rasterizer3D_textureLoader.getTexturePixels(var22);
 		int var24;
@@ -1729,7 +1726,6 @@ public class class246 extends class229 {
 	}
 
 	@ObfuscatedName("av")
-	@Export("vmethod1362")
 	void vmethod1362(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22) {
 		int[] var23 = super.field2023.Rasterizer3D_textureLoader.getTexturePixels(var22);
 		int var24;

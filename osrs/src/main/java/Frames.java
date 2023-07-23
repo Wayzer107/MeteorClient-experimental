@@ -10,7 +10,6 @@ public class Frames extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("ItemDefinition_archive")
 	static AbstractArchive ItemDefinition_archive;
 	@ObfuscatedName("tm")
 	@ObfuscatedSignature(
@@ -21,7 +20,6 @@ public class Frames extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "[Lim;"
 	)
-	@Export("frames")
 	Animation[] frames;
 
 	@ObfuscatedSignature(
@@ -67,7 +65,6 @@ public class Frames extends DualNode {
 		descriptor = "(II)Z",
 		garbageValue = "-844175799"
 	)
-	@Export("hasAlphaTransform")
 	public boolean hasAlphaTransform(int var1) {
 		return this.frames[var1].hasAlphaTransform;
 	}

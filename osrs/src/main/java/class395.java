@@ -821,7 +821,6 @@ public class class395 {
 		descriptor = "(Lpc;Lpc;Lpc;I)V",
 		garbageValue = "680551313"
 	)
-	@Export("drawTitle")
 	static void drawTitle(Font var0, Font var1, Font var2) {
 		Login.xPadding = (GrandExchangeOfferTotalQuantityComparator.canvasWidth - 765) / 2;
 		Login.loginBoxX = Login.xPadding + 202;

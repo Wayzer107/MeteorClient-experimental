@@ -8,7 +8,6 @@ public class class345 {
 	@ObfuscatedSignature(
 		descriptor = "[Lud;"
 	)
-	@Export("headIconHintSprites")
 	static SpritePixels[] headIconHintSprites;
 
 	static {
@@ -50,7 +49,6 @@ public class class345 {
 		descriptor = "(IB)Z",
 		garbageValue = "-115"
 	)
-	@Export("isWorldMapEvent")
 	public static boolean isWorldMapEvent(int var0) {
 		return var0 == 10 || var0 == 11 || var0 == 12 || var0 == 13 || var0 == 14 || var0 == 15 || var0 == 16 || var0 == 17;
 	}
@@ -60,7 +58,6 @@ public class class345 {
 		descriptor = "(Lby;I)V",
 		garbageValue = "1549991189"
 	)
-	@Export("PcmStream_disable")
 	static final void PcmStream_disable(PcmStream var0) {
 		var0.active = false;
 		if (var0.sound != null) {

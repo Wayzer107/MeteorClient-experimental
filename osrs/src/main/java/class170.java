@@ -12,7 +12,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("gq")
 public class class170 {
 	@ObfuscatedName("ja")
-	@Export("regionLandArchiveIds")
 	static int[] regionLandArchiveIds;
 	@ObfuscatedName("av")
 	int field1434;
@@ -418,7 +417,6 @@ public class class170 {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("base37DecodeLong")
 	public static String base37DecodeLong(long var0) {
 		if (var0 > 0L && var0 < 6582952005840035281L) {
 			if (var0 % 37L == 0L) {

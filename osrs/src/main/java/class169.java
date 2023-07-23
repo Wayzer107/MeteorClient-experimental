@@ -8,7 +8,6 @@ public class class169 extends class181 {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("SequenceDefinition_skeletonsArchive")
 	static AbstractArchive SequenceDefinition_skeletonsArchive;
 	@ObfuscatedName("aw")
 	String field1430;
@@ -16,7 +15,6 @@ public class class169 extends class181 {
 	@ObfuscatedSignature(
 		descriptor = "Lgq;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class170 this$0;
 
@@ -34,7 +32,6 @@ public class class169 extends class181 {
 		descriptor = "(S)I",
 		garbageValue = "-14721"
 	)
-	@Export("vmethod3379")
 	public int vmethod3379() {
 		return 1;
 	}
@@ -44,7 +41,6 @@ public class class169 extends class181 {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "-768896166"
 	)
-	@Export("vmethod3380")
 	public String vmethod3380() {
 		return this.field1430;
 	}

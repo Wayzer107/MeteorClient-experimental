@@ -10,7 +10,6 @@ public class LoginType {
 	@ObfuscatedSignature(
 		descriptor = "Lsi;"
 	)
-	@Export("oldscape")
 	public static final LoginType oldscape;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
@@ -82,7 +81,6 @@ public class LoginType {
 		this.field4065 = var4;
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.field4065;
@@ -93,7 +91,6 @@ public class LoginType {
 		descriptor = "([BIIB)Ljava/lang/String;",
 		garbageValue = "-10"
 	)
-	@Export("decodeStringCp1252")
 	public static String decodeStringCp1252(byte[] var0, int var1, int var2) {
 		char[] var3 = new char[var2];
 		int var4 = 0;

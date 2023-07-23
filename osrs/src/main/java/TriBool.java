@@ -10,19 +10,16 @@ public class TriBool {
 	@ObfuscatedSignature(
 		descriptor = "Lqj;"
 	)
-	@Export("TriBool_unknown")
 	public static final TriBool TriBool_unknown;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lqj;"
 	)
-	@Export("TriBool_true")
 	public static final TriBool TriBool_true;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lqj;"
 	)
-	@Export("TriBool_false")
 	public static final TriBool TriBool_false;
 
 	static {

@@ -7,22 +7,16 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("IsaacCipher")
 public final class IsaacCipher {
 	@ObfuscatedName("am")
-	@Export("valuesRemaining")
 	int valuesRemaining;
 	@ObfuscatedName("as")
-	@Export("results")
 	int[] results;
 	@ObfuscatedName("aj")
-	@Export("mm")
 	int[] mm;
 	@ObfuscatedName("ag")
-	@Export("aa")
 	int aa;
 	@ObfuscatedName("az")
-	@Export("bb")
 	int bb;
 	@ObfuscatedName("av")
-	@Export("cc")
 	int cc;
 
 	public IsaacCipher(int[] var1) {
@@ -41,7 +35,6 @@ public final class IsaacCipher {
 		descriptor = "(I)I",
 		garbageValue = "1840020352"
 	)
-	@Export("nextInt")
 	public final int nextInt() {
 		if (this.valuesRemaining == 0) {
 			this.generateMoreResults();
@@ -70,7 +63,6 @@ public final class IsaacCipher {
 		descriptor = "(B)V",
 		garbageValue = "3"
 	)
-	@Export("generateMoreResults")
 	final void generateMoreResults() {
 		this.bb += ++this.cc;
 

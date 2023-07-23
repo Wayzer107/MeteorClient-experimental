@@ -12,7 +12,6 @@ public class MusicTrack extends Node {
 	)
 	NodeHashTable field2826;
 	@ObfuscatedName("ay")
-	@Export("midi")
 	byte[] midi;
 
 	@ObfuscatedSignature(
@@ -371,7 +370,6 @@ public class MusicTrack extends Node {
 	@ObfuscatedSignature(
 		descriptor = "(Lnd;II)Lmp;"
 	)
-	@Export("readTrack")
 	public static MusicTrack readTrack(AbstractArchive var0, int var1, int var2) {
 		byte[] var3 = var0.takeFile(var1, var2);
 		return var3 == null ? null : new MusicTrack(new Buffer(var3));

@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedName;
 @ObfuscatedName("oi")
 public class class373 {
 	@ObfuscatedName("aj")
-	@Export("PcmPlayer_stereo")
 	public static boolean PcmPlayer_stereo;
 
 	static {

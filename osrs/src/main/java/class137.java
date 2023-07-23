@@ -311,7 +311,6 @@ public class class137 extends DualNode {
 		descriptor = "(Lcr;I)V",
 		garbageValue = "1214318405"
 	)
-	@Export("changeWorld")
 	static void changeWorld(World var0) {
 		if (var0.isMembersOnly() != Client.isMembersWorld) {
 			Client.isMembersWorld = var0.isMembersOnly();

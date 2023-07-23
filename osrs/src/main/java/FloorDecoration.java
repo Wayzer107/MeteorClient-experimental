@@ -10,28 +10,21 @@ public final class FloorDecoration {
 	@ObfuscatedSignature(
 		descriptor = "Lpc;"
 	)
-	@Export("ItemDefinition_fontPlain11")
 	static Font ItemDefinition_fontPlain11;
 	@ObfuscatedName("aw")
-	@Export("z")
 	int z;
 	@ObfuscatedName("ay")
-	@Export("x")
 	int x;
 	@ObfuscatedName("ar")
-	@Export("y")
 	int y;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("renderable")
 	public Renderable renderable;
 	@ObfuscatedName("as")
-	@Export("tag")
 	public long tag;
 	@ObfuscatedName("aj")
-	@Export("flags")
 	int flags;
 
 	FloorDecoration() {

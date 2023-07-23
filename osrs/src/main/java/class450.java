@@ -92,7 +92,6 @@ public final class class450 {
 		this.method2266(this.field3855 * var1.field3853 + this.field3853 * var1.field3855 + var1.field3856 * this.field3854 - this.field3856 * var1.field3854, this.field3853 * var1.field3856 + (var1.field3853 * this.field3856 - var1.field3855 * this.field3854) + this.field3855 * var1.field3854, var1.field3855 * this.field3856 + this.field3854 * var1.field3853 - var1.field3856 * this.field3855 + var1.field3854 * this.field3853, var1.field3853 * this.field3853 - this.field3855 * var1.field3855 - this.field3856 * var1.field3856 - this.field3854 * var1.field3854);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof class450)) {
@@ -103,7 +102,6 @@ public final class class450 {
 		}
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		boolean var1 = true;
@@ -115,7 +113,6 @@ public final class class450 {
 		return (int)var2;
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.field3855 + "," + this.field3856 + "," + this.field3854 + "," + this.field3853;

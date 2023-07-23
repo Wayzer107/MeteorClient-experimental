@@ -8,13 +8,11 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("PlayerComposition")
 public class PlayerComposition {
 	@ObfuscatedName("aa")
-	@Export("equipmentIndices")
 	static final int[] equipmentIndices;
 	@ObfuscatedName("ab")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("PlayerAppearance_cachedModels")
 	public static EvictingDualNodeHashTable PlayerAppearance_cachedModels;
 	@ObfuscatedName("ad")
 	@ObfuscatedSignature(
@@ -26,20 +24,16 @@ public class PlayerComposition {
 	@ObfuscatedName("aw")
 	int[] field2894;
 	@ObfuscatedName("ay")
-	@Export("equipment")
 	int[] equipment;
 	@ObfuscatedName("ar")
-	@Export("bodyColors")
 	int[] bodyColors;
 	@ObfuscatedName("am")
 	public int field2899;
 	@ObfuscatedName("as")
 	public int field2900;
 	@ObfuscatedName("aj")
-	@Export("npcTransformId")
 	public int npcTransformId;
 	@ObfuscatedName("ag")
-	@Export("hash")
 	long hash;
 	@ObfuscatedName("az")
 	long field2897;
@@ -47,10 +41,8 @@ public class PlayerComposition {
 	@ObfuscatedSignature(
 		descriptor = "[Lhv;"
 	)
-	@Export("customisations")
 	ObjTypeCustomisation[] customisations;
 	@ObfuscatedName("ap")
-	@Export("isFemale")
 	boolean isFemale;
 
 	static {
@@ -140,7 +132,6 @@ public class PlayerComposition {
 		descriptor = "(IZI)V",
 		garbageValue = "-2138181432"
 	)
-	@Export("changeAppearance")
 	public void changeAppearance(int var1, boolean var2) {
 		int var3 = this.equipment[equipmentIndices[var1]];
 		if (var3 != 0) {
@@ -224,7 +215,6 @@ public class PlayerComposition {
 		descriptor = "(Lty;I)V",
 		garbageValue = "-1001147090"
 	)
-	@Export("write")
 	public void write(Buffer var1) {
 		var1.writeByte(this.field2900);
 
@@ -249,7 +239,6 @@ public class PlayerComposition {
 		descriptor = "(B)V",
 		garbageValue = "-11"
 	)
-	@Export("setHash")
 	void setHash() {
 		long var1 = this.hash;
 		int var3 = this.equipment[5];
@@ -294,7 +283,6 @@ public class PlayerComposition {
 		descriptor = "(Lig;ILig;IB)Ljo;",
 		garbageValue = "-42"
 	)
-	@Export("getModel")
 	public Model getModel(SequenceDefinition var1, int var2, SequenceDefinition var3, int var4) {
 		if (this.npcTransformId != -1) {
 			return Tile.getNpcDefinition(this.npcTransformId).method966(var1, var2, var3, var4, (NewShit)null);
@@ -424,7 +412,6 @@ public class PlayerComposition {
 		descriptor = "(I)Lie;",
 		garbageValue = "-734942912"
 	)
-	@Export("getModelData")
 	ModelData getModelData() {
 		if (this.npcTransformId != -1) {
 			return Tile.getNpcDefinition(this.npcTransformId).method967((NewShit)null);
@@ -490,7 +477,6 @@ public class PlayerComposition {
 		descriptor = "(I)I",
 		garbageValue = "295497"
 	)
-	@Export("getChatHeadId")
 	public int getChatHeadId() {
 		long var1 = this.hash;
 		if (this.npcTransformId != -1) {
@@ -521,7 +507,6 @@ public class PlayerComposition {
 		descriptor = "(ZB)V",
 		garbageValue = "-121"
 	)
-	@Export("Login_promptCredentials")
 	static void Login_promptCredentials(boolean var0) {
 		if (!TileItem.client.method361() && !TileItem.client.method363() && !TileItem.client.method362()) {
 			Login.Login_response1 = "";

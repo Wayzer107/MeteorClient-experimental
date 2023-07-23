@@ -72,7 +72,6 @@ public class AddRequestTask extends SongTask {
 		descriptor = "(Lmt;I[B[BS)V",
 		garbageValue = "24138"
 	)
-	@Export("Widget_setKey")
 	static final void Widget_setKey(Widget var0, int var1, byte[] var2, byte[] var3) {
 		if (var0.field2960 == null) {
 			if (var2 == null) {

@@ -8,13 +8,11 @@ public class class335 {
 	@ObfuscatedSignature(
 		descriptor = "Lma;"
 	)
-	@Export("huffman")
 	public static Huffman huffman;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "[Lho;"
 	)
-	@Export("WorldMapElement_cached")
 	public static WorldMapElement[] WorldMapElement_cached;
 
 	@ObfuscatedName("br")
@@ -281,7 +279,6 @@ public class class335 {
 		descriptor = "(ZB)V",
 		garbageValue = "0"
 	)
-	@Export("setTapToDrop")
 	static void setTapToDrop(boolean var0) {
 		Client.tapToDrop = var0;
 	}

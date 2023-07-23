@@ -14,7 +14,6 @@ public class ApproximateRouteStrategy extends RouteStrategy {
 		descriptor = "(IIILij;I)Z",
 		garbageValue = "2142084611"
 	)
-	@Export("hasArrived")
 	protected boolean hasArrived(int var1, int var2, int var3, CollisionMap var4) {
 		return var2 == super.approxDestinationX && var3 == super.approxDestinationY;
 	}

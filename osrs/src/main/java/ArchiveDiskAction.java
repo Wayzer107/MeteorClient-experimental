@@ -16,25 +16,20 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ArchiveDiskAction")
 public class ArchiveDiskAction extends Node {
 	@ObfuscatedName("av")
-	@Export("SpriteBuffer_pixels")
 	public static byte[][] SpriteBuffer_pixels;
 	@ObfuscatedName("aw")
-	@Export("type")
 	int type;
 	@ObfuscatedName("ay")
-	@Export("data")
 	byte[] data;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lrg;"
 	)
-	@Export("archiveDisk")
 	ArchiveDisk archiveDisk;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive")
 	Archive archive;
 
 	ArchiveDiskAction() {
@@ -45,7 +40,6 @@ public class ArchiveDiskAction extends Node {
 		descriptor = "(Ltc;B)V",
 		garbageValue = "67"
 	)
-	@Export("performReflectionCheck")
 	public static void performReflectionCheck(PacketBuffer var0) {
 		ReflectionCheck var1 = (ReflectionCheck)class36.reflectionChecks.last();
 		if (var1 != null) {
@@ -165,7 +159,6 @@ public class ArchiveDiskAction extends Node {
 		descriptor = "(IIIII)V",
 		garbageValue = "-836117707"
 	)
-	@Export("selectSpell")
 	static void selectSpell(int var0, int var1, int var2, int var3) {
 		Widget var4 = MouseRecorder.getWidgetChild(var0, var1);
 		if (var4 != null && var4.onTargetEnter != null) {

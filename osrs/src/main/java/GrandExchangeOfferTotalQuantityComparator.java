@@ -8,7 +8,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GrandExchangeOfferTotalQuantityComparator")
 final class GrandExchangeOfferTotalQuantityComparator implements Comparator {
 	@ObfuscatedName("ac")
-	@Export("canvasWidth")
 	public static int canvasWidth;
 
 	@ObfuscatedName("aw")
@@ -16,18 +15,15 @@ final class GrandExchangeOfferTotalQuantityComparator implements Comparator {
 		descriptor = "(Lol;Lol;I)I",
 		garbageValue = "-1467178768"
 	)
-	@Export("compare_bridged")
 	int compare_bridged(GrandExchangeEvent var1, GrandExchangeEvent var2) {
 		return var1.grandExchangeOffer.totalQuantity < var2.grandExchangeOffer.totalQuantity ? -1 : (var2.grandExchangeOffer.totalQuantity == var1.grandExchangeOffer.totalQuantity ? 0 : 1);
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compare_bridged((GrandExchangeEvent)var1, (GrandExchangeEvent)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
@@ -51,7 +47,6 @@ final class GrandExchangeOfferTotalQuantityComparator implements Comparator {
 		descriptor = "(II)V",
 		garbageValue = "-2107301035"
 	)
-	@Export("getLoginError")
 	static void getLoginError(int var0) {
 		int var1 = Login.loginIndex;
 		if (var0 == -3) {

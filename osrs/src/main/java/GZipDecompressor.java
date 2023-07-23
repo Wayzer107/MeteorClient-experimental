@@ -8,7 +8,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GZipDecompressor")
 public class GZipDecompressor {
 	@ObfuscatedName("aw")
-	@Export("inflater")
 	Inflater inflater;
 
 	public GZipDecompressor() {
@@ -27,7 +26,6 @@ public class GZipDecompressor {
 		descriptor = "(Lty;[BB)V",
 		garbageValue = "0"
 	)
-	@Export("decompress")
 	public void decompress(Buffer var1, byte[] var2) {
 		if (var1.array[var1.offset] == 31 && var1.array[var1.offset + 1] == -117) {
 			if (this.inflater == null) {

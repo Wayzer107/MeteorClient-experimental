@@ -7,22 +7,17 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GrandExchangeEvent")
 public class GrandExchangeEvent {
 	@ObfuscatedName("aw")
-	@Export("world")
 	public final int world;
 	@ObfuscatedName("ay")
-	@Export("age")
 	public final long age;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Loc;"
 	)
-	@Export("grandExchangeOffer")
 	public final GrandExchangeOffer grandExchangeOffer;
 	@ObfuscatedName("am")
-	@Export("offerName")
 	String offerName;
 	@ObfuscatedName("as")
-	@Export("previousOfferName")
 	String previousOfferName;
 
 	@ObfuscatedSignature(
@@ -50,7 +45,6 @@ public class GrandExchangeEvent {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "1134198101"
 	)
-	@Export("getOfferName")
 	public String getOfferName() {
 		return this.offerName;
 	}
@@ -60,7 +54,6 @@ public class GrandExchangeEvent {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "1406199718"
 	)
-	@Export("getPreviousOfferName")
 	public String getPreviousOfferName() {
 		return this.previousOfferName;
 	}

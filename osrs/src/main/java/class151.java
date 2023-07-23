@@ -17,7 +17,6 @@ public class class151 extends class159 {
 	@ObfuscatedSignature(
 		descriptor = "Lgs;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class160 this$0;
 
@@ -34,7 +33,6 @@ public class class151 extends class159 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-43"
 	)
-	@Export("vmethod3238")
 	void vmethod3238(Buffer var1) {
 		this.field1353 = var1.readUnsignedShort();
 		var1.readUnsignedByte();
@@ -50,7 +48,6 @@ public class class151 extends class159 {
 		descriptor = "(Lgh;I)V",
 		garbageValue = "-2132107044"
 	)
-	@Export("vmethod3239")
 	void vmethod3239(ClanChannel var1) {
 		var1.removeMember(this.field1353);
 	}

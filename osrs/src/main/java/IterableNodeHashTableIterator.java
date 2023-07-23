@@ -11,22 +11,18 @@ public class IterableNodeHashTableIterator implements Iterator {
 	@ObfuscatedSignature(
 		descriptor = "Lsa;"
 	)
-	@Export("hashTable")
 	IterableNodeHashTable hashTable;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lsb;"
 	)
-	@Export("head")
 	Node head;
 	@ObfuscatedName("ar")
-	@Export("index")
 	int index;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lsb;"
 	)
-	@Export("last")
 	Node last;
 
 	@ObfuscatedSignature(
@@ -39,7 +35,6 @@ public class IterableNodeHashTableIterator implements Iterator {
 	}
 
 	@ObfuscatedName("aw")
-	@Export("start")
 	void start() {
 		this.head = this.hashTable.buckets[0].previous;
 		this.index = 1;
@@ -55,7 +50,6 @@ public class IterableNodeHashTableIterator implements Iterator {
 		return (Node)this.next();
 	}
 
-	@Export("next")
 	@ObfuscatedName("next")
 	public Object next() {
 		Node var1;
@@ -79,7 +73,6 @@ public class IterableNodeHashTableIterator implements Iterator {
 		}
 	}
 
-	@Export("hasNext")
 	@ObfuscatedName("hasNext")
 	public boolean hasNext() {
 		if (this.hashTable.buckets[this.index - 1] != this.head) {
@@ -98,7 +91,6 @@ public class IterableNodeHashTableIterator implements Iterator {
 		}
 	}
 
-	@Export("remove")
 	@ObfuscatedName("remove")
 	public void remove() {
 		this.last.remove();

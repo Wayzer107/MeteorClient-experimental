@@ -185,7 +185,6 @@ public class class420 {
 		descriptor = "([Lmt;II)V",
 		garbageValue = "658485102"
 	)
-	@Export("runComponentCloseListeners")
 	static final void runComponentCloseListeners(Widget[] var0, int var1) {
 		for (int var2 = 0; var2 < var0.length; ++var2) {
 			Widget var3 = var0[var2];

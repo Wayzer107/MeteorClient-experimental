@@ -93,7 +93,7 @@ public interface RSClient extends RSGameEngine, Client
 	@Override
 	void setCameraYawTarget(int cameraYawTarget);
 
-	@Import("Tiles_heights")
+	@Import("Tiles_heights") // Nigga wat  (?)
 	@Override
 	int[][][] getTileHeights();
 

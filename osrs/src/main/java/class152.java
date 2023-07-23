@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("fe")
 public class class152 extends class143 {
 	@ObfuscatedName("ad")
-	@Export("ByteArrayPool_arrays")
 	public static byte[][][] ByteArrayPool_arrays;
 	@ObfuscatedName("aw")
 	String field1355;
@@ -13,7 +12,6 @@ public class class152 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -29,7 +27,6 @@ public class class152 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		this.field1355 = var1.readStringCp1252NullTerminated();
 		var1.readInt();
@@ -40,7 +37,6 @@ public class class152 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.name = this.field1355;
 	}
@@ -68,7 +64,6 @@ public class class152 extends class143 {
 		descriptor = "(Ljava/lang/String;I)V",
 		garbageValue = "-2070877225"
 	)
-	@Export("Clan_joinChat")
 	static final void Clan_joinChat(String var0) {
 		if (!var0.equals("")) {
 			PacketBufferNode var1 = class503.getPacketBufferNode(ClientPacket.CLAN_JOINCHAT_LEAVECHAT, Client.packetWriter.isaacCipher);

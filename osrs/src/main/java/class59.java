@@ -111,7 +111,6 @@ public class class59 {
 		descriptor = "(IIB)V",
 		garbageValue = "-48"
 	)
-	@Export("VarbisFloor_sort")
 	void VarbisFloor_sort(int var1, int var2) {
 		if (var1 < var2) {
 			int var3 = var1;
@@ -178,7 +177,6 @@ public class class59 {
 		descriptor = "(IIIII)V",
 		garbageValue = "-1812783002"
 	)
-	@Export("addSceneMenuOptions")
 	static final void addSceneMenuOptions(int var0, int var1, int var2, int var3) {
 		if (Client.isItemSelected == 0 && !Client.isSpellSelected) {
 			JagexCache.insertMenuItemNoShift("Walk here", "", 23, 0, var0 - var2, var1 - var3);

@@ -10,40 +10,29 @@ public class KitDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("KitDefinition_modelsArchive")
 	static AbstractArchive KitDefinition_modelsArchive;
 	@ObfuscatedName("ar")
-	@Export("KitDefinition_fileCount")
 	public static int KitDefinition_fileCount;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("KitDefinition_cached")
 	public static EvictingDualNodeHashTable KitDefinition_cached;
 	@ObfuscatedName("as")
-	@Export("bodypartID")
 	public int bodypartID;
 	@ObfuscatedName("aj")
-	@Export("models2")
 	int[] models2;
 	@ObfuscatedName("ag")
-	@Export("recolorFrom")
 	short[] recolorFrom;
 	@ObfuscatedName("az")
-	@Export("recolorTo")
 	short[] recolorTo;
 	@ObfuscatedName("av")
-	@Export("retextureFrom")
 	short[] retextureFrom;
 	@ObfuscatedName("ap")
-	@Export("retextureTo")
 	short[] retextureTo;
 	@ObfuscatedName("aq")
-	@Export("models")
 	int[] models;
 	@ObfuscatedName("at")
-	@Export("nonSelectable")
 	public boolean nonSelectable;
 
 	static {
@@ -61,7 +50,6 @@ public class KitDefinition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1840765694"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -78,7 +66,6 @@ public class KitDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-1616518435"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.bodypartID = var1.readUnsignedByte();
@@ -124,7 +111,6 @@ public class KitDefinition extends DualNode {
 		descriptor = "(B)Z",
 		garbageValue = "39"
 	)
-	@Export("ready")
 	public boolean ready() {
 		if (this.models2 == null) {
 			return true;
@@ -146,7 +132,6 @@ public class KitDefinition extends DualNode {
 		descriptor = "(I)Lie;",
 		garbageValue = "-344960538"
 	)
-	@Export("getModelData")
 	public ModelData getModelData() {
 		if (this.models2 == null) {
 			return null;
@@ -203,7 +188,6 @@ public class KitDefinition extends DualNode {
 		descriptor = "(B)Lie;",
 		garbageValue = "-73"
 	)
-	@Export("getKitDefinitionModels")
 	public ModelData getKitDefinitionModels() {
 		ModelData[] var1 = new ModelData[5];
 		int var2 = 0;

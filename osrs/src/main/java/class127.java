@@ -8,7 +8,6 @@ public class class127 {
 	@ObfuscatedSignature(
 		descriptor = "Lsq;"
 	)
-	@Export("worldMap")
 	static WorldMap worldMap;
 	@ObfuscatedName("aw")
 	public final int field1213;

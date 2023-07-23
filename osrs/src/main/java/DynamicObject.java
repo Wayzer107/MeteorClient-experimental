@@ -13,37 +13,27 @@ public class DynamicObject extends Renderable {
 	)
 	static SpritePixels[] mapMarkerSprites;
 	@ObfuscatedName("se")
-	@Export("ClanChat_inClanChat")
 	static boolean ClanChat_inClanChat;
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("type")
 	int type;
 	@ObfuscatedName("ar")
-	@Export("orientation")
 	int orientation;
 	@ObfuscatedName("am")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("as")
-	@Export("x")
 	int x;
 	@ObfuscatedName("aj")
-	@Export("y")
 	int y;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
 		descriptor = "Lig;"
 	)
-	@Export("sequenceDefinition")
 	SequenceDefinition sequenceDefinition;
 	@ObfuscatedName("az")
-	@Export("frame")
 	int frame;
 	@ObfuscatedName("av")
-	@Export("cycleStart")
 	int cycleStart;
 
 	@ObfuscatedSignature(
@@ -86,7 +76,6 @@ public class DynamicObject extends Renderable {
 		descriptor = "(I)Ljo;",
 		garbageValue = "-983173466"
 	)
-	@Export("getModel")
 	protected final Model getModel() {
 		int var2;
 		if (this.sequenceDefinition != null) {
@@ -161,7 +150,6 @@ public class DynamicObject extends Renderable {
 		descriptor = "(I)Z",
 		garbageValue = "-1663341979"
 	)
-	@Export("loadWorlds")
 	static boolean loadWorlds() {
 		try {
 			if (World.World_request == null) {

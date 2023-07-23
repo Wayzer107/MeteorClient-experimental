@@ -16,15 +16,12 @@ public class ClanChannel extends Node {
 	@ObfuscatedName("ay")
 	boolean field1412;
 	@ObfuscatedName("ar")
-	@Export("members")
 	public List members;
 	@ObfuscatedName("am")
-	@Export("sortedMembers")
 	int[] sortedMembers;
 	@ObfuscatedName("as")
 	long field1414;
 	@ObfuscatedName("aj")
-	@Export("name")
 	public String name;
 	@ObfuscatedName("ag")
 	public byte field1415;
@@ -49,7 +46,6 @@ public class ClanChannel extends Node {
 		descriptor = "(I)[I",
 		garbageValue = "612198158"
 	)
-	@Export("getSortedMembers")
 	public int[] getSortedMembers() {
 		if (this.sortedMembers == null) {
 			String[] var1 = new String[this.members.size()];
@@ -71,7 +67,6 @@ public class ClanChannel extends Node {
 		descriptor = "(Lfv;I)V",
 		garbageValue = "-1094917033"
 	)
-	@Export("addMember")
 	void addMember(ClanChannelMember var1) {
 		this.members.add(var1);
 		this.sortedMembers = null;
@@ -82,7 +77,6 @@ public class ClanChannel extends Node {
 		descriptor = "(IB)V",
 		garbageValue = "-35"
 	)
-	@Export("removeMember")
 	void removeMember(int var1) {
 		this.members.remove(var1);
 		this.sortedMembers = null;

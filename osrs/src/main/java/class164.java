@@ -9,7 +9,6 @@ public class class164 {
 		descriptor = "(Ltc;S)V",
 		garbageValue = "15572"
 	)
-	@Export("updatePlayer")
 	static final void updatePlayer(PacketBuffer var0) {
 		var0.importIndex();
 		int var1 = Client.localPlayerIndex;
@@ -108,7 +107,6 @@ public class class164 {
 		descriptor = "(CB)Z",
 		garbageValue = "80"
 	)
-	@Export("isDigit")
 	public static boolean isDigit(char var0) {
 		return var0 >= '0' && var0 <= '9';
 	}

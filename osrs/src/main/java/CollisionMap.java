@@ -10,19 +10,14 @@ public class CollisionMap {
 	@ObfuscatedName("ac")
 	public static String field1871;
 	@ObfuscatedName("bv")
-	@Export("xInset")
 	int xInset;
 	@ObfuscatedName("bq")
-	@Export("yInset")
 	int yInset;
 	@ObfuscatedName("bo")
-	@Export("xSize")
 	int xSize;
 	@ObfuscatedName("br")
-	@Export("ySize")
 	int ySize;
 	@ObfuscatedName("bw")
-	@Export("flags")
 	public int[][] flags;
 
 	public CollisionMap(int var1, int var2) {
@@ -39,7 +34,6 @@ public class CollisionMap {
 		descriptor = "(I)V",
 		garbageValue = "1057196754"
 	)
-	@Export("clear")
 	public void clear() {
 		for (int var1 = 0; var1 < this.xSize; ++var1) {
 			for (int var2 = 0; var2 < this.ySize; ++var2) {
@@ -210,7 +204,6 @@ public class CollisionMap {
 		descriptor = "(IIIIZI)V",
 		garbageValue = "1569995917"
 	)
-	@Export("addGameObject")
 	public void addGameObject(int var1, int var2, int var3, int var4, boolean var5) {
 		int var6 = 256;
 		if (var5) {
@@ -237,7 +230,6 @@ public class CollisionMap {
 		descriptor = "(III)V",
 		garbageValue = "745791000"
 	)
-	@Export("setBlockedByFloor")
 	public void setBlockedByFloor(int var1, int var2) {
 		var1 -= this.xInset;
 		var2 -= this.yInset;
@@ -250,7 +242,6 @@ public class CollisionMap {
 		descriptor = "(III)V",
 		garbageValue = "-190738836"
 	)
-	@Export("setBlockedByFloorDec")
 	public void setBlockedByFloorDec(int var1, int var2) {
 		var1 -= this.xInset;
 		var2 -= this.yInset;
@@ -263,7 +254,6 @@ public class CollisionMap {
 		descriptor = "(IIIB)V",
 		garbageValue = "45"
 	)
-	@Export("setFlag")
 	void setFlag(int var1, int var2, int var3) {
 		int[] var10000 = this.flags[var1];
 		var10000[var2] |= var3;
@@ -426,7 +416,6 @@ public class CollisionMap {
 		descriptor = "(IIIIIZI)V",
 		garbageValue = "1718462800"
 	)
-	@Export("setFlagOffNonSquare")
 	public void setFlagOffNonSquare(int var1, int var2, int var3, int var4, int var5, boolean var6) {
 		int var7 = 256;
 		if (var6) {
@@ -459,7 +448,6 @@ public class CollisionMap {
 		descriptor = "(IIII)V",
 		garbageValue = "-866743118"
 	)
-	@Export("setFlagOff")
 	void setFlagOff(int var1, int var2, int var3) {
 		int[] var10000 = this.flags[var1];
 		var10000[var2] &= ~var3;

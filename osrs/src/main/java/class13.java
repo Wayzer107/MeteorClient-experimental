@@ -14,13 +14,11 @@ class class13 extends DefaultTlsClient {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive6")
 	static Archive archive6;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Lah;"
 	)
-	@Export("this$1")
 	@ObfuscatedName("this$1")
 	final class12 this$1;
 
@@ -31,7 +29,6 @@ class class13 extends DefaultTlsClient {
 		this.this$1 = var1;
 	}
 
-	@Export("getClientExtensions")
 	@ObfuscatedName("getClientExtensions")
 	public Hashtable getClientExtensions() throws IOException {
 		Hashtable var1 = super.getClientExtensions();
@@ -51,7 +48,6 @@ class class13 extends DefaultTlsClient {
 		return var1;
 	}
 
-	@Export("getAuthentication")
 	@ObfuscatedName("getAuthentication")
 	public TlsAuthentication getAuthentication() throws IOException {
 		return new class11(this);
@@ -124,7 +120,6 @@ class class13 extends DefaultTlsClient {
 		descriptor = "(Lmt;I)Ljava/lang/String;",
 		garbageValue = "169549382"
 	)
-	@Export("Widget_getSpellActionName")
 	static String Widget_getSpellActionName(Widget var0) {
 		if (class273.Widget_unpackTargetMask(UserComparator8.getWidgetFlags(var0)) == 0) {
 			return null;

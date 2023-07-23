@@ -10,28 +10,22 @@ public class ScriptFrame {
 	@ObfuscatedSignature(
 		descriptor = "Lud;"
 	)
-	@Export("rightTitleSprite")
 	static SpritePixels rightTitleSprite;
 	@ObfuscatedName("ac")
 	@ObfuscatedSignature(
 		descriptor = "Lkl;"
 	)
-	@Export("worldMapEvent")
 	static WorldMapEvent worldMapEvent;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "Ldc;"
 	)
-	@Export("script")
 	Script script;
 	@ObfuscatedName("ay")
-	@Export("pc")
 	int pc;
 	@ObfuscatedName("ar")
-	@Export("intLocals")
 	int[] intLocals;
 	@ObfuscatedName("am")
-	@Export("stringLocals")
 	String[] stringLocals;
 
 	ScriptFrame() {
@@ -43,7 +37,6 @@ public class ScriptFrame {
 		descriptor = "(II)V",
 		garbageValue = "-922438804"
 	)
-	@Export("runWidgetOnLoadListener")
 	static void runWidgetOnLoadListener(int var0) {
 		if (var0 != -1) {
 			if (Login.loadInterface(var0)) {

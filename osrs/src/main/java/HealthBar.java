@@ -10,13 +10,11 @@ public class HealthBar extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lha;"
 	)
-	@Export("definition")
 	HealthBarDefinition definition;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lor;"
 	)
-	@Export("updates")
 	IterableNodeDeque updates;
 
 	@ObfuscatedSignature(
@@ -32,7 +30,6 @@ public class HealthBar extends Node {
 		descriptor = "(IIIIB)V",
 		garbageValue = "-79"
 	)
-	@Export("put")
 	void put(int var1, int var2, int var3, int var4) {
 		HealthBarUpdate var5 = null;
 		int var6 = 0;
@@ -68,7 +65,6 @@ public class HealthBar extends Node {
 		descriptor = "(II)Ldp;",
 		garbageValue = "2046925775"
 	)
-	@Export("get")
 	HealthBarUpdate get(int var1) {
 		HealthBarUpdate var2 = (HealthBarUpdate)this.updates.last();
 		if (var2 != null && var2.cycle <= var1) {
@@ -93,7 +89,6 @@ public class HealthBar extends Node {
 		descriptor = "(I)Z",
 		garbageValue = "-2086945413"
 	)
-	@Export("isEmpty")
 	boolean isEmpty() {
 		return this.updates.method1971();
 	}

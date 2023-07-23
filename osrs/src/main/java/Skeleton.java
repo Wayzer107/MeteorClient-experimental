@@ -10,16 +10,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Skeleton")
 public class Skeleton extends Node {
 	@ObfuscatedName("aj")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ag")
-	@Export("count")
 	int count;
 	@ObfuscatedName("az")
-	@Export("transformTypes")
 	int[] transformTypes;
 	@ObfuscatedName("av")
-	@Export("labels")
 	int[][] labels;
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
@@ -81,7 +77,6 @@ public class Skeleton extends Node {
 		descriptor = "(Ljava/lang/CharSequence;I)Z",
 		garbageValue = "-442215173"
 	)
-	@Export("isNumber")
 	public static boolean isNumber(CharSequence var0) {
 		return UserComparator10.method681(var0, 10, true);
 	}
@@ -681,7 +676,6 @@ public class Skeleton extends Node {
 		descriptor = "(B)V",
 		garbageValue = "0"
 	)
-	@Export("Clan_leaveChat")
 	static final void Clan_leaveChat() {
 		PacketBufferNode var0 = class503.getPacketBufferNode(ClientPacket.CLAN_JOINCHAT_LEAVECHAT, Client.packetWriter.isaacCipher);
 		var0.packetBuffer.writeByte(0);

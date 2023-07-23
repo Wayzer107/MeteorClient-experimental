@@ -15,15 +15,12 @@ public class DbRowType extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("DBRowType_cache")
 	public static EvictingDualNodeHashTable DBRowType_cache;
 	@ObfuscatedName("ar")
-	@Export("columnTypes")
 	Object[][] columnTypes;
 	@ObfuscatedName("am")
 	int[][] field4106;
 	@ObfuscatedName("as")
-	@Export("tableId")
 	public int tableId;
 
 	static {
@@ -55,7 +52,6 @@ public class DbRowType extends DualNode {
 		descriptor = "(II)[Ljava/lang/Object;",
 		garbageValue = "-444511694"
 	)
-	@Export("getColumnType")
 	public Object[] getColumnType(int var1) {
 		return this.columnTypes == null ? null : this.columnTypes[var1];
 	}
@@ -311,7 +307,6 @@ public class DbRowType extends DualNode {
 		descriptor = "(I)V",
 		garbageValue = "1993931981"
 	)
-	@Export("process")
 	static void process() {
 		for (InterfaceParent var0 = (InterfaceParent)Client.interfaceParents.first(); var0 != null; var0 = (InterfaceParent)Client.interfaceParents.next()) {
 			int var1 = var0.group;

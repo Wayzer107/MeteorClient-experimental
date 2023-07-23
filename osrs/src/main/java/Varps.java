@@ -6,16 +6,12 @@ import net.runelite.mapping.ObfuscatedName;
 @Implements("Varps")
 public class Varps {
 	@ObfuscatedName("aw")
-	@Export("Varps_masks")
 	static int[] Varps_masks;
 	@ObfuscatedName("ay")
-	@Export("Varps_temp")
 	public static int[] Varps_temp;
 	@ObfuscatedName("ar")
-	@Export("Varps_main")
 	public static int[] Varps_main;
 	@ObfuscatedName("gv")
-	@Export("currentPort")
 	static int currentPort;
 
 	static {

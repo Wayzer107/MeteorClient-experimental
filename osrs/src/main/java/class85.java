@@ -9,7 +9,6 @@ public class class85 {
 		descriptor = "(Ltc;II)V",
 		garbageValue = "2138211638"
 	)
-	@Export("updatePlayers")
 	static final void updatePlayers(PacketBuffer var0, int var1) {
 		int var2 = var0.offset;
 		Players.Players_pendingUpdateCount = 0;
@@ -153,7 +152,6 @@ public class class85 {
 		descriptor = "(III)Lcx;",
 		garbageValue = "1077626874"
 	)
-	@Export("Messages_getByChannelAndID")
 	static Message Messages_getByChannelAndID(int var0, int var1) {
 		ChatChannel var2 = (ChatChannel)Messages.Messages_channels.get(var0);
 		return var2.getMessage(var1);

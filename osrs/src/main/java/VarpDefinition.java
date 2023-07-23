@@ -10,7 +10,6 @@ public class VarpDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("VarpDefinition_archive")
 	public static AbstractArchive VarpDefinition_archive;
 	@ObfuscatedName("ay")
 	public static int field1491;
@@ -18,12 +17,10 @@ public class VarpDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("VarpDefinition_cached")
 	public static EvictingDualNodeHashTable VarpDefinition_cached;
 	@ObfuscatedName("hr")
 	static String field1494;
 	@ObfuscatedName("am")
-	@Export("type")
 	public int type;
 
 	static {
@@ -39,7 +36,6 @@ public class VarpDefinition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1223419566"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -56,7 +52,6 @@ public class VarpDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "512935442"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 5) {
 			this.type = var1.readUnsignedShort();
@@ -69,7 +64,6 @@ public class VarpDefinition extends DualNode {
 		descriptor = "(Ldh;IIIB)V",
 		garbageValue = "79"
 	)
-	@Export("addNpcToMenu")
 	static final void addNpcToMenu(NPC var0, int var1, int var2, int var3) {
 		NPCComposition var4 = var0.definition;
 		if (Client.menuOptionsCount < 400) {

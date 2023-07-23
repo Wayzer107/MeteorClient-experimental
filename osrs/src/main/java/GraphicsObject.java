@@ -7,37 +7,27 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("GraphicsObject")
 public class GraphicsObject extends Renderable {
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("cycleStart")
 	int cycleStart;
 	@ObfuscatedName("ar")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("am")
-	@Export("x")
 	int x;
 	@ObfuscatedName("as")
-	@Export("y")
 	int y;
 	@ObfuscatedName("aj")
-	@Export("z")
 	int z;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
 		descriptor = "Lig;"
 	)
-	@Export("sequenceDefinition")
 	SequenceDefinition sequenceDefinition;
 	@ObfuscatedName("az")
-	@Export("frame")
 	int frame;
 	@ObfuscatedName("av")
-	@Export("frameCycle")
 	int frameCycle;
 	@ObfuscatedName("ap")
-	@Export("isFinished")
 	boolean isFinished;
 
 	GraphicsObject(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
@@ -65,7 +55,6 @@ public class GraphicsObject extends Renderable {
 		descriptor = "(IB)V",
 		garbageValue = "-1"
 	)
-	@Export("advance")
 	final void advance(int var1) {
 		if (!this.isFinished) {
 			this.frameCycle += var1;
@@ -93,7 +82,6 @@ public class GraphicsObject extends Renderable {
 		descriptor = "(I)Ljo;",
 		garbageValue = "-983173466"
 	)
-	@Export("getModel")
 	protected final Model getModel() {
 		SpotAnimationDefinition var1 = NPCComposition.SpotAnimationDefinition_get(this.id);
 		Model var2;
@@ -121,7 +109,6 @@ public class GraphicsObject extends Renderable {
 		descriptor = "(Lmt;II)V",
 		garbageValue = "762775056"
 	)
-	@Export("Widget_setKeyIgnoreHeld")
 	static final void Widget_setKeyIgnoreHeld(Widget var0, int var1) {
 		if (var0.field2960 == null) {
 			throw new RuntimeException();

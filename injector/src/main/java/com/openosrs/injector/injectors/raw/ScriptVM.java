@@ -104,22 +104,21 @@ public class ScriptVM extends AbstractInjector
 		 */
 		final ClassFile deobScript = inject.getDeobfuscated().findClass("Script");
 
-		final String scriptObName = InjectUtil.getObfuscatedName(deobScript);
+		final String scriptObName = deobScript.getName();
 
 		final Field scriptInstructions = InjectUtil.findField(inject, "opcodes", "Script");
 		final Field scriptStatePC = InjectUtil.findField(inject, "pc", "ScriptFrame");
 
-		final ClassFile vanillaClient = vanilla.findClass("client");
+		final ClassFile vanillaClient = vanilla.findClass("Client");
 
 		// Next 4 should be injected by mixins, so don't need fail fast
 		final Method runScript = vanillaClient.findStaticMethod("copy$runScript");
-		final Method runScriptLogic = vanillaClient.findStaticMethod("copy$runScriptLogic");
 		final Method vmExecuteOpcode = vanillaClient.findStaticMethod("vmExecuteOpcode");
 		final Method setCurrentScript = vanillaClient.findStaticMethod("setCurrentScript");
 		final Field currentScriptPCField = vanillaClient.findField("currentScriptPC");
 
 		Execution e = new Execution(inject.getVanilla());
-		e.addMethod(runScriptLogic);
+		e.addMethod(runScript);
 		e.noInvoke = true;
 
 		AtomicReference<MethodContext> pcontext = new AtomicReference<>(null);
@@ -127,7 +126,7 @@ public class ScriptVM extends AbstractInjector
 		e.addMethodContextVisitor(pcontext::set);
 		e.run();
 
-		Instructions instrs = runScriptLogic.getCode().getInstructions();
+		Instructions instrs = runScript.getCode().getInstructions();
 
 		Set<AStore> scriptStores = new HashSet<>();
 		Integer pcLocalVar = null;
@@ -136,6 +135,7 @@ public class ScriptVM extends AbstractInjector
 		ALoad localInstructionLoad = null;
 
 		MethodContext methodContext = pcontext.get();
+
 		for (InstructionContext instrCtx : methodContext.getInstructionContexts())
 		{
 			Instruction instr = instrCtx.getInstruction();
@@ -153,34 +153,28 @@ public class ScriptVM extends AbstractInjector
 
 				// Find AStores that store the instructions
 				InstructionContext pusherCtx = storedVarCtx.getPushed();
-				if (pusherCtx.getInstruction() instanceof GetField)
+				int index = 0;
+				if (pusherCtx.getInstruction() instanceof GetField getField)
 				{
-					GetField getField = (GetField) pusherCtx.getInstruction();
+					index++;
+					System.out.println(index + " : " + getField.getMyField() + " : " + getField.getMyField().getName());
 					if (getField.getMyField().equals(scriptInstructions))
 					{
 						instructionArrayLocalVar = store.getVariableIndex();
 					}
 				}
 			}
-
 			// Find the local that invokedFromPc is set from
-			if (instr instanceof PutField)
+			if (instr instanceof PutField put)
 			{
-				PutField put = (PutField) instr;
 				if (put.getMyField() == scriptStatePC)
 				{
-					StackContext pc = instrCtx.getPops().get(0);
-					assert Type.INT.equals(pc.getType()) : pc.getType();
-
-					InstructionContext mulctx = pc.pushed;
-					assert mulctx.getInstruction() instanceof IMul;
-
-					pcLocalVar = mulctx.getPops().stream()
+					pcLocalVar = instrCtx.getPops().stream()
 							.map(StackContext::getPushed)
 							.filter(i -> i.getInstruction() instanceof ILoad)
 							.map(i -> ((ILoad) i.getInstruction()).getVariableIndex())
 							.findFirst()
-							.orElse(null);
+							.orElseThrow(null);
 				}
 			}
 		}
@@ -212,7 +206,7 @@ public class ScriptVM extends AbstractInjector
 								.map(InstructionContext::getInstruction)
 								.filter(i -> i instanceof IStore)
 								.findFirst()
-								.orElse(null);
+								.orElseThrow(null);
 						if (istore != null)
 						{
 							currentOpcodeStore = istore;
@@ -229,7 +223,7 @@ public class ScriptVM extends AbstractInjector
 					.mapToInt(AStore::getVariableIndex)
 					.reduce(Math::min)
 					.orElseThrow(() -> new InjectException("Unable to find any Script AStores in runScript"));
-			log.debug("[DEBUG] Found script index {}", outerSciptIdx);
+			//log.debug("[DEBUG] Found script index {}", outerSciptIdx);
 
 			ListIterator<Instruction> instrIter = instrs.getInstructions().listIterator();
 			while (instrIter.hasNext())
@@ -256,7 +250,7 @@ public class ScriptVM extends AbstractInjector
 			{
 				throw new InjectException("Unable to find ILoad for invokedFromPc IStore");
 			}
-			log.debug("[DEBUG] Found pc index {}", pcLocalVar);
+			//log.debug("[DEBUG] Found pc index {}", pcLocalVar);
 
 			ListIterator<Instruction> instrIter = instrs.getInstructions().listIterator();
 			while (instrIter.hasNext())
@@ -288,7 +282,7 @@ public class ScriptVM extends AbstractInjector
 		}
 
 		// Inject call to vmExecuteOpcode
-		log.debug("[DEBUG] Found instruction array index {}", instructionArrayLocalVar);
+		//log.debug("[DEBUG] Found instruction array index {}", instructionArrayLocalVar);
 		if (currentOpcodeStore == null)
 		{
 			throw new InjectException("Unable to find IStore for current opcode");
@@ -301,21 +295,5 @@ public class ScriptVM extends AbstractInjector
 		instrs.addInstruction(istorepc + 1, new ILoad(instrs, currentOpcodeStore.getVariableIndex()));
 		instrs.addInstruction(istorepc + 2, new InvokeStatic(instrs, vmExecuteOpcode.getPoolMethod()));
 		instrs.addInstruction(istorepc + 3, new IfNe(instrs, nextIteration));
-
-		Instructions runScriptInstrs = runScript.getCode().getInstructions();
-		ListIterator<Instruction> instrIter = runScriptInstrs.getInstructions().listIterator();
-		while (instrIter.hasNext()) {
-			Instruction instr = instrIter.next();
-
-			if (instr instanceof InvokeStatic)
-			{
-				InvokeStatic invokeStatic = (InvokeStatic) instr;
-				if(invokeStatic.getMethod().getType().getReturnValue().toString().equals("L"+scriptObName+";")) {
-					instrIter.add(new Dup(instrs));
-					instrIter.add(new InvokeStatic(instrs, setCurrentScript.getPoolMethod()));
-					instrIter.next();
-				}
-			}
-		}
 	}
 }

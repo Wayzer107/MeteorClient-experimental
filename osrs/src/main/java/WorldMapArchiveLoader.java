@@ -7,22 +7,17 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapArchiveLoader")
 public class WorldMapArchiveLoader {
 	@ObfuscatedName("ak")
-	@Export("canvasHeight")
 	public static int canvasHeight;
 	@ObfuscatedName("as")
-	@Export("cacheName")
 	String cacheName;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("archive")
 	AbstractArchive archive;
 	@ObfuscatedName("ag")
-	@Export("percentLoaded")
 	int percentLoaded;
 	@ObfuscatedName("az")
-	@Export("loaded")
 	boolean loaded;
 
 	@ObfuscatedSignature(
@@ -39,7 +34,6 @@ public class WorldMapArchiveLoader {
 		descriptor = "(Ljava/lang/String;I)V",
 		garbageValue = "1672803687"
 	)
-	@Export("reset")
 	void reset(String var1) {
 		if (var1 != null && !var1.isEmpty()) {
 			if (var1 != this.cacheName) {
@@ -56,7 +50,6 @@ public class WorldMapArchiveLoader {
 		descriptor = "(S)I",
 		garbageValue = "6387"
 	)
-	@Export("load")
 	int load() {
 		if (this.cacheName == null) {
 			this.percentLoaded = 100;
@@ -96,7 +89,6 @@ public class WorldMapArchiveLoader {
 		descriptor = "(B)Z",
 		garbageValue = "114"
 	)
-	@Export("isLoaded")
 	boolean isLoaded() {
 		return this.loaded;
 	}
@@ -106,7 +98,6 @@ public class WorldMapArchiveLoader {
 		descriptor = "(B)I",
 		garbageValue = "125"
 	)
-	@Export("getPercentLoaded")
 	int getPercentLoaded() {
 		return this.percentLoaded;
 	}

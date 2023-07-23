@@ -10,46 +10,34 @@ public final class WallDecoration {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("Widget_fontsArchive")
 	public static AbstractArchive Widget_fontsArchive;
 	@ObfuscatedName("aw")
-	@Export("z")
 	int z;
 	@ObfuscatedName("ay")
-	@Export("x")
 	int x;
 	@ObfuscatedName("ar")
-	@Export("y")
 	int y;
 	@ObfuscatedName("am")
-	@Export("orientation")
 	int orientation;
 	@ObfuscatedName("as")
-	@Export("orientation2")
 	int orientation2;
 	@ObfuscatedName("aj")
-	@Export("xOffset")
 	int xOffset;
 	@ObfuscatedName("ag")
-	@Export("yOffset")
 	int yOffset;
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("renderable1")
 	public Renderable renderable1;
 	@ObfuscatedName("av")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("renderable2")
 	public Renderable renderable2;
 	@ObfuscatedName("ap")
-	@Export("tag")
 	public long tag;
 	@ObfuscatedName("aq")
-	@Export("flags")
 	int flags;
 
 	WallDecoration() {
@@ -62,7 +50,6 @@ public final class WallDecoration {
 		descriptor = "(IB)I",
 		garbageValue = "63"
 	)
-	@Export("getVarbit")
 	public static int getVarbit(int var0) {
 		VarbitComposition var2 = (VarbitComposition)VarbitComposition.VarbitDefinition_cached.get((long)var0);
 		VarbitComposition var1;

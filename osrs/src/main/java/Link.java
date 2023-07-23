@@ -10,17 +10,14 @@ public class Link {
 	@ObfuscatedSignature(
 		descriptor = "Lsp;"
 	)
-	@Export("previous")
 	public Link previous;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lsp;"
 	)
-	@Export("next")
 	public Link next;
 
 	@ObfuscatedName("aw")
-	@Export("remove")
 	public void remove() {
 		if (this.next != null) {
 			this.next.previous = this.previous;

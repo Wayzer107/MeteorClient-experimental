@@ -32,7 +32,6 @@ public class class317 implements Comparator {
 		descriptor = "(Ljava/lang/String;Ljava/lang/Throwable;B)V",
 		garbageValue = "-83"
 	)
-	@Export("RunException_sendStackTrace")
 	public static void RunException_sendStackTrace(String var0, Throwable var1) {
 		if (var1 != null) {
 			var1.printStackTrace();

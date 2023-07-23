@@ -12,16 +12,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("HealthBarUpdate")
 public class HealthBarUpdate extends Node {
 	@ObfuscatedName("aw")
-	@Export("cycle")
 	int cycle;
 	@ObfuscatedName("ay")
-	@Export("health")
 	int health;
 	@ObfuscatedName("ar")
-	@Export("health2")
 	int health2;
 	@ObfuscatedName("am")
-	@Export("cycleOffset")
 	int cycleOffset;
 
 	HealthBarUpdate(int var1, int var2, int var3, int var4) {
@@ -36,7 +32,6 @@ public class HealthBarUpdate extends Node {
 		descriptor = "(IIIII)V",
 		garbageValue = "-2011079863"
 	)
-	@Export("set")
 	void set(int var1, int var2, int var3, int var4) {
 		this.cycle = var1;
 		this.health = var2;

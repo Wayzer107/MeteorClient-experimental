@@ -8,7 +8,6 @@ public class class53 extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("SpotAnimationDefinition_modelArchive")
 	public static AbstractArchive SpotAnimationDefinition_modelArchive;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(

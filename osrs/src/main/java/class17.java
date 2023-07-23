@@ -14,13 +14,11 @@ class class17 implements SSLSession {
 	@ObfuscatedSignature(
 		descriptor = "[Lud;"
 	)
-	@Export("headIconPrayerSprites")
 	static SpritePixels[] headIconPrayerSprites;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Lah;"
 	)
-	@Export("this$1")
 	@ObfuscatedName("this$1")
 	final class12 this$1;
 
@@ -43,7 +41,6 @@ class class17 implements SSLSession {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("getId")
 	@ObfuscatedName("getId")
 	public byte[] getId() {
 		throw new UnsupportedOperationException();
@@ -81,7 +78,6 @@ class class17 implements SSLSession {
 		return 0;
 	}
 
-	@Export("getPeerPrincipal")
 	@ObfuscatedName("getPeerPrincipal")
 	public Principal getPeerPrincipal() throws SSLPeerUnverifiedException {
 		return null;
@@ -95,7 +91,6 @@ class class17 implements SSLSession {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("getValue")
 	@ObfuscatedName("getValue")
 	public Object getValue(String var1) {
 		throw new UnsupportedOperationException();
@@ -105,25 +100,21 @@ class class17 implements SSLSession {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("invalidate")
 	@ObfuscatedName("invalidate")
 	public void invalidate() {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("isValid")
 	@ObfuscatedName("isValid")
 	public boolean isValid() {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("putValue")
 	@ObfuscatedName("putValue")
 	public void putValue(String var1, Object var2) {
 		throw new UnsupportedOperationException();
 	}
 
-	@Export("removeValue")
 	@ObfuscatedName("removeValue")
 	public void removeValue(String var1) {
 		throw new UnsupportedOperationException();
@@ -157,7 +148,6 @@ class class17 implements SSLSession {
 		descriptor = "(IIIS)V",
 		garbageValue = "-16459"
 	)
-	@Export("queueSoundEffect")
 	static void queueSoundEffect(int var0, int var1, int var2) {
 		if (class150.clientPreferences.getCurrentSoundEffectsVolume() != 0 && var1 != 0 && Client.soundEffectCount < 50) {
 			Client.soundEffectIds[Client.soundEffectCount] = var0;
@@ -175,7 +165,6 @@ class class17 implements SSLSession {
 		descriptor = "(Lmt;III)V",
 		garbageValue = "232159402"
 	)
-	@Export("alignWidgetPosition")
 	static void alignWidgetPosition(Widget var0, int var1, int var2) {
 		if (var0.xAlignment == 0) {
 			var0.x = var0.rawX;

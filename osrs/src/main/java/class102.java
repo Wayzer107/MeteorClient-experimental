@@ -73,7 +73,6 @@ public class class102 {
 		descriptor = "(CLot;B)C",
 		garbageValue = "-1"
 	)
-	@Export("standardizeChar")
 	static char standardizeChar(char var0, Language var1) {
 		if (var0 >= 192 && var0 <= 255) {
 			if (var0 >= 192 && var0 <= 198) {
@@ -168,7 +167,6 @@ public class class102 {
 		descriptor = "(I)Lsq;",
 		garbageValue = "293868513"
 	)
-	@Export("getWorldMap")
 	static WorldMap getWorldMap() {
 		return class127.worldMap;
 	}

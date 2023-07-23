@@ -8,19 +8,15 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Calendar")
 public class Calendar {
 	@ObfuscatedName("aw")
-	@Export("MONTH_NAMES_ENGLISH_GERMAN")
 	public static final String[][] MONTH_NAMES_ENGLISH_GERMAN;
 	@ObfuscatedName("ay")
-	@Export("DAYS_OF_THE_WEEK")
 	public static final String[] DAYS_OF_THE_WEEK;
 	@ObfuscatedName("ar")
-	@Export("Calendar_calendar")
 	public static java.util.Calendar Calendar_calendar;
 	@ObfuscatedName("ik")
 	@ObfuscatedSignature(
 		descriptor = "Lpc;"
 	)
-	@Export("fontBold12")
 	static Font fontBold12;
 
 	static {

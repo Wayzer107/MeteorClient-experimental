@@ -13,7 +13,6 @@ public abstract class class181 {
 	@ObfuscatedSignature(
 		descriptor = "Lgq;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class170 this$0;
 
@@ -30,7 +29,6 @@ public abstract class class181 {
 		descriptor = "(S)I",
 		garbageValue = "-14721"
 	)
-	@Export("vmethod3379")
 	public abstract int vmethod3379();
 
 	@ObfuscatedName("ay")
@@ -38,7 +36,6 @@ public abstract class class181 {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "-768896166"
 	)
-	@Export("vmethod3380")
 	public String vmethod3380() {
 		return null;
 	}
@@ -48,7 +45,6 @@ public abstract class class181 {
 		descriptor = "(I)I",
 		garbageValue = "-400866400"
 	)
-	@Export("vmethod3378")
 	public int vmethod3378() {
 		return -1;
 	}

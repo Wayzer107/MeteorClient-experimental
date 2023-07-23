@@ -13,10 +13,8 @@ public class SecureRandomFuture {
 	@ObfuscatedName("ud")
 	static int cameraMoveToAcceleration;
 	@ObfuscatedName("aw")
-	@Export("executor")
 	ExecutorService executor;
 	@ObfuscatedName("ay")
-	@Export("future")
 	Future future;
 
 	SecureRandomFuture() {
@@ -29,7 +27,6 @@ public class SecureRandomFuture {
 		descriptor = "(I)V",
 		garbageValue = "527623643"
 	)
-	@Export("shutdown")
 	void shutdown() {
 		this.executor.shutdown();
 		this.executor = null;
@@ -40,7 +37,6 @@ public class SecureRandomFuture {
 		descriptor = "(I)Z",
 		garbageValue = "62920637"
 	)
-	@Export("isDone")
 	boolean isDone() {
 		return this.future.isDone();
 	}
@@ -50,7 +46,6 @@ public class SecureRandomFuture {
 		descriptor = "(I)Ljava/security/SecureRandom;",
 		garbageValue = "-1723376644"
 	)
-	@Export("get")
 	SecureRandom get() {
 		try {
 			return (SecureRandom)this.future.get();

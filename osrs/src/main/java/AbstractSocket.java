@@ -15,7 +15,6 @@ public abstract class AbstractSocket {
 		descriptor = "(II)Z",
 		garbageValue = "1802443781"
 	)
-	@Export("isAvailable")
 	public abstract boolean isAvailable(int var1) throws IOException;
 
 	@ObfuscatedName("ar")
@@ -23,7 +22,6 @@ public abstract class AbstractSocket {
 		descriptor = "(I)I",
 		garbageValue = "-1927697779"
 	)
-	@Export("available")
 	public abstract int available() throws IOException;
 
 	@ObfuscatedName("am")
@@ -31,7 +29,6 @@ public abstract class AbstractSocket {
 		descriptor = "(B)I",
 		garbageValue = "59"
 	)
-	@Export("readUnsignedByte")
 	public abstract int readUnsignedByte() throws IOException;
 
 	@ObfuscatedName("as")
@@ -39,7 +36,6 @@ public abstract class AbstractSocket {
 		descriptor = "([BIII)I",
 		garbageValue = "435794101"
 	)
-	@Export("read")
 	public abstract int read(byte[] var1, int var2, int var3) throws IOException;
 
 	@ObfuscatedName("aj")
@@ -47,7 +43,6 @@ public abstract class AbstractSocket {
 		descriptor = "([BIII)V",
 		garbageValue = "1992519516"
 	)
-	@Export("write")
 	public abstract void write(byte[] var1, int var2, int var3) throws IOException;
 
 	@ObfuscatedName("ag")
@@ -55,7 +50,6 @@ public abstract class AbstractSocket {
 		descriptor = "(I)V",
 		garbageValue = "1268085940"
 	)
-	@Export("close")
 	public abstract void close();
 
 	@ObfuscatedName("ay")
@@ -63,7 +57,6 @@ public abstract class AbstractSocket {
 		descriptor = "(IB)Ltk;",
 		garbageValue = "16"
 	)
-	@Export("getDbTableType")
 	public static DbTableType getDbTableType(int var0) {
 		DbTableType var1 = (DbTableType)DbTableType.DBTableType_cache.get((long)var0);
 		if (var1 != null) {

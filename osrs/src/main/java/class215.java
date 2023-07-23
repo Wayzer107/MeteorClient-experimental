@@ -85,7 +85,6 @@ public class class215 {
 		descriptor = "([Ljava/lang/String;[SIII)V",
 		garbageValue = "-2129316412"
 	)
-	@Export("sortItemsByName")
 	static void sortItemsByName(String[] var0, short[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var4 = (var3 + var2) / 2;

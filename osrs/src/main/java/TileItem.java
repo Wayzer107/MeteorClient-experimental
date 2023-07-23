@@ -7,7 +7,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("TileItem")
 public final class TileItem extends Renderable {
 	@ObfuscatedName("by")
-	@Export("client")
 	@ObfuscatedSignature(
 		descriptor = "Lclient;"
 	)
@@ -16,13 +15,10 @@ public final class TileItem extends Renderable {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive7")
 	static Archive archive7;
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("quantity")
 	int quantity;
 	@ObfuscatedName("am")
 	int field1096;
@@ -45,7 +41,6 @@ public final class TileItem extends Renderable {
 		descriptor = "(I)Ljo;",
 		garbageValue = "-983173466"
 	)
-	@Export("getModel")
 	protected final Model getModel() {
 		return class125.ItemDefinition_get(this.id).getModel(this.quantity);
 	}

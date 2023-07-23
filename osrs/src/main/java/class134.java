@@ -6,24 +6,20 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("fy")
 class class134 implements Callable {
 	@ObfuscatedName("as")
-	@Export("SpriteBuffer_yOffsets")
 	public static int[] SpriteBuffer_yOffsets;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Lfz;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class137 this$0;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Lty;"
 	)
-	@Export("val$p")
 	@ObfuscatedName("val$p")
 	final Buffer val$p;
 	// $FF: synthetic field
-	@Export("val$version")
 	@ObfuscatedName("val$version")
 	final int val$version;
 
@@ -36,7 +32,6 @@ class class134 implements Callable {
 		this.val$version = var3;
 	}
 
-	@Export("call")
 	@ObfuscatedName("call")
 	public Object call() {
 		this.this$0.method734(this.val$p, this.val$version);

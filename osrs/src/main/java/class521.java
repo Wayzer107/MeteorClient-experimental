@@ -9,6 +9,5 @@ public interface class521 {
 		descriptor = "(II)Ljava/lang/Object;",
 		garbageValue = "-692946397"
 	)
-	@Export("vmethod8697")
 	Object vmethod8697(int var1);
 }

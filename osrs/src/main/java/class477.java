@@ -81,7 +81,6 @@ public class class477 extends class480 {
 		descriptor = "(S)I",
 		garbageValue = "10605"
 	)
-	@Export("vmethod2320")
 	public int vmethod2320() {
 		double var1 = this.method2352();
 		return (int)Math.round((double)this.field3948 + var1 * (double)(this.field3949 - this.field3948));

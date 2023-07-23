@@ -10,28 +10,21 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("UserList")
 public abstract class UserList {
 	@ObfuscatedName("au")
-	@Export("cacheGamebuild")
 	static int cacheGamebuild;
 	@ObfuscatedName("av")
-	@Export("capacity")
 	final int capacity;
 	@ObfuscatedName("ap")
-	@Export("size")
 	int size;
 	@ObfuscatedName("aq")
 	@ObfuscatedSignature(
 		descriptor = "[Lqe;"
 	)
-	@Export("array")
 	User[] array;
 	@ObfuscatedName("at")
-	@Export("usernamesMap")
 	HashMap usernamesMap;
 	@ObfuscatedName("ah")
-	@Export("previousUsernamesMap")
 	HashMap previousUsernamesMap;
 	@ObfuscatedName("ax")
-	@Export("comparator")
 	Comparator comparator;
 
 	UserList(int var1) {
@@ -48,7 +41,6 @@ public abstract class UserList {
 		descriptor = "(S)Lqe;",
 		garbageValue = "3401"
 	)
-	@Export("newInstance")
 	abstract User newInstance();
 
 	@ObfuscatedName("ay")
@@ -56,7 +48,6 @@ public abstract class UserList {
 		descriptor = "(IB)[Lqe;",
 		garbageValue = "7"
 	)
-	@Export("newTypedArray")
 	abstract User[] newTypedArray(int var1);
 
 	@ObfuscatedName("bb")
@@ -64,7 +55,6 @@ public abstract class UserList {
 		descriptor = "(B)V",
 		garbageValue = "56"
 	)
-	@Export("clear")
 	public void clear() {
 		this.size = 0;
 		Arrays.fill(this.array, (Object)null);
@@ -77,7 +67,6 @@ public abstract class UserList {
 		descriptor = "(I)I",
 		garbageValue = "-1660680644"
 	)
-	@Export("getSize")
 	public int getSize() {
 		return this.size;
 	}
@@ -87,7 +76,6 @@ public abstract class UserList {
 		descriptor = "(I)Z",
 		garbageValue = "-541461543"
 	)
-	@Export("isFull")
 	public boolean isFull() {
 		return this.size == this.capacity;
 	}
@@ -97,7 +85,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Z",
 		garbageValue = "-442095941"
 	)
-	@Export("contains")
 	public boolean contains(Username var1) {
 		if (!var1.hasCleanName()) {
 			return false;
@@ -111,7 +98,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Lqe;",
 		garbageValue = "-1674504609"
 	)
-	@Export("getByUsername")
 	public User getByUsername(Username var1) {
 		User var2 = this.getByCurrentUsername(var1);
 		return var2 != null ? var2 : this.getByPreviousUsername(var1);
@@ -122,7 +108,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Lqe;",
 		garbageValue = "132205062"
 	)
-	@Export("getByCurrentUsername")
 	User getByCurrentUsername(Username var1) {
 		return !var1.hasCleanName() ? null : (User)this.usernamesMap.get(var1);
 	}
@@ -132,7 +117,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Lqe;",
 		garbageValue = "690241029"
 	)
-	@Export("getByPreviousUsername")
 	User getByPreviousUsername(Username var1) {
 		return !var1.hasCleanName() ? null : (User)this.previousUsernamesMap.get(var1);
 	}
@@ -142,7 +126,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Z",
 		garbageValue = "1922358891"
 	)
-	@Export("removeByUsername")
 	public final boolean removeByUsername(Username var1) {
 		User var2 = this.getByCurrentUsername(var1);
 		if (var2 == null) {
@@ -158,7 +141,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;I)V",
 		garbageValue = "-696802687"
 	)
-	@Export("remove")
 	final void remove(User var1) {
 		int var2 = this.indexOf(var1);
 		if (var2 != -1) {
@@ -172,7 +154,6 @@ public abstract class UserList {
 		descriptor = "(Lui;I)Lqe;",
 		garbageValue = "-1994669741"
 	)
-	@Export("addLastNoPreviousUsername")
 	User addLastNoPreviousUsername(Username var1) {
 		return this.addLast(var1, (Username)null);
 	}
@@ -182,7 +163,6 @@ public abstract class UserList {
 		descriptor = "(Lui;Lui;I)Lqe;",
 		garbageValue = "-1347062581"
 	)
-	@Export("addLast")
 	User addLast(Username var1, Username var2) {
 		User var3 = this.newInstance();
 		var3.set(var1, var2);
@@ -196,7 +176,6 @@ public abstract class UserList {
 		descriptor = "(II)Lqe;",
 		garbageValue = "260546627"
 	)
-	@Export("get")
 	public final User get(int var1) {
 		if (var1 >= 0 && var1 < this.size) {
 			return this.array[var1];
@@ -210,7 +189,6 @@ public abstract class UserList {
 		descriptor = "(I)V",
 		garbageValue = "1082858146"
 	)
-	@Export("sort")
 	public final void sort() {
 		if (this.comparator == null) {
 			Arrays.sort(this.array, 0, this.size);
@@ -225,7 +203,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;Lui;Lui;B)V",
 		garbageValue = "-42"
 	)
-	@Export("changeName")
 	final void changeName(User var1, Username var2, Username var3) {
 		this.mapRemove(var1);
 		var1.set(var2, var3);
@@ -237,7 +214,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;I)I",
 		garbageValue = "-2051354785"
 	)
-	@Export("indexOf")
 	final int indexOf(User var1) {
 		for (int var2 = 0; var2 < this.size; ++var2) {
 			if (this.array[var2] == var1) {
@@ -253,7 +229,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;I)V",
 		garbageValue = "858700951"
 	)
-	@Export("mapRemove")
 	final void mapRemove(User var1) {
 		if (var1.previousUsername != null) {
 			this.previousUsernamesMap.remove(var1.previousUsername);
@@ -266,7 +241,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;I)V",
 		garbageValue = "1263127165"
 	)
-	@Export("arrayAddLast")
 	final void arrayAddLast(User var1) {
 		this.array[++this.size - 1] = var1;
 	}
@@ -276,7 +250,6 @@ public abstract class UserList {
 		descriptor = "(Lqe;I)V",
 		garbageValue = "540764510"
 	)
-	@Export("mapPut")
 	final void mapPut(User var1) {
 		this.usernamesMap.put(var1.username, var1);
 		if (var1.previousUsername != null) {
@@ -293,7 +266,6 @@ public abstract class UserList {
 		descriptor = "(II)V",
 		garbageValue = "1297180412"
 	)
-	@Export("arrayRemove")
 	final void arrayRemove(int var1) {
 		--this.size;
 		if (var1 < this.size) {
@@ -307,7 +279,6 @@ public abstract class UserList {
 		descriptor = "(I)V",
 		garbageValue = "1813300749"
 	)
-	@Export("removeComparator")
 	public final void removeComparator() {
 		this.comparator = null;
 	}
@@ -317,7 +288,6 @@ public abstract class UserList {
 		descriptor = "(Ljava/util/Comparator;I)V",
 		garbageValue = "2145677034"
 	)
-	@Export("addComparator")
 	public final void addComparator(Comparator var1) {
 		if (this.comparator == null) {
 			this.comparator = var1;

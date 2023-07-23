@@ -47,19 +47,15 @@ public abstract class class229 extends Rasterizer2D {
 	}
 
 	@ObfuscatedName("aj")
-	@Export("vmethod1374")
 	abstract void vmethod1374(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12);
 
 	@ObfuscatedName("ag")
-	@Export("vmethod1366")
 	abstract void vmethod1366(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10);
 
 	@ObfuscatedName("az")
-	@Export("vmethod1378")
 	abstract void vmethod1378(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22);
 
 	@ObfuscatedName("av")
-	@Export("vmethod1362")
 	abstract void vmethod1362(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22);
 
 	@ObfuscatedName("ay")

@@ -7,17 +7,14 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Rasterizer3D")
 public class Rasterizer3D {
 	@ObfuscatedName("aw")
-	@Export("Rasterizer3D_colorPalette")
 	public static int[] Rasterizer3D_colorPalette;
 	@ObfuscatedName("ay")
 	static int[] field2015;
 	@ObfuscatedName("ar")
 	static int[] field2014;
 	@ObfuscatedName("am")
-	@Export("Rasterizer3D_sine")
 	public static int[] Rasterizer3D_sine;
 	@ObfuscatedName("as")
-	@Export("Rasterizer3D_cosine")
 	public static int[] Rasterizer3D_cosine;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
@@ -91,7 +88,6 @@ public class Rasterizer3D {
 	}
 
 	@ObfuscatedName("am")
-	@Export("Rasterizer3D_buildPalette")
 	static void Rasterizer3D_buildPalette(double var0, int var2, int var3) {
 		int var4 = var2 * 128;
 
@@ -170,7 +166,6 @@ public class Rasterizer3D {
 	}
 
 	@ObfuscatedName("as")
-	@Export("Rasterizer3D_brighten")
 	static int Rasterizer3D_brighten(int var0, double var1) {
 		double var3 = (double)(var0 >> 16) / 256.0D;
 		double var5 = (double)(var0 >> 8 & 255) / 256.0D;

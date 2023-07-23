@@ -13,7 +13,6 @@ public final class class387 {
 	@ObfuscatedSignature(
 		descriptor = "[Lcr;"
 	)
-	@Export("World_worlds")
 	static World[] World_worlds;
 	@ObfuscatedName("ah")
 	static int field3645;

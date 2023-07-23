@@ -9,7 +9,6 @@ public class class510 {
 		descriptor = "(ZB)V",
 		garbageValue = "24"
 	)
-	@Export("addNpcsToScene")
 	static final void addNpcsToScene(boolean var0) {
 		for (int var1 = 0; var1 < Client.npcCount; ++var1) {
 			NPC var2 = Client.npcs[Client.npcIndices[var1]];

@@ -52,7 +52,6 @@ public class class503 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field4094;
 	}
@@ -80,7 +79,6 @@ public class class503 implements class372 {
 		descriptor = "(Llw;Luy;B)Llv;",
 		garbageValue = "52"
 	)
-	@Export("getPacketBufferNode")
 	public static PacketBufferNode getPacketBufferNode(ClientPacket var0, IsaacCipher var1) {
 		PacketBufferNode var2 = class130.method708();
 		var2.clientPacket = var0;

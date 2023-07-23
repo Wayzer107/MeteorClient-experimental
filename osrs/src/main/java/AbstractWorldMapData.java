@@ -12,27 +12,20 @@ public abstract class AbstractWorldMapData {
 	@ObfuscatedName("aj")
 	int field2405;
 	@ObfuscatedName("ag")
-	@Export("regionX")
 	int regionX;
 	@ObfuscatedName("az")
-	@Export("regionY")
 	int regionY;
 	@ObfuscatedName("av")
 	int field2410;
 	@ObfuscatedName("ap")
-	@Export("planes")
 	int planes;
 	@ObfuscatedName("aq")
-	@Export("groupId")
 	int groupId;
 	@ObfuscatedName("at")
-	@Export("fileId")
 	int fileId;
 	@ObfuscatedName("ah")
-	@Export("floorUnderlayIds")
 	short[][][] floorUnderlayIds;
 	@ObfuscatedName("ax")
-	@Export("floorOverlayIds")
 	short[][][] floorOverlayIds;
 	@ObfuscatedName("aa")
 	byte[][][] field2402;
@@ -42,7 +35,6 @@ public abstract class AbstractWorldMapData {
 	@ObfuscatedSignature(
 		descriptor = "[[[[Lkk;"
 	)
-	@Export("decorations")
 	WorldMapDecoration[][][][] decorations;
 	@ObfuscatedName("ab")
 	boolean field2400;
@@ -62,7 +54,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(Lty;B)V",
 		garbageValue = "81"
 	)
-	@Export("readGeography")
 	abstract void readGeography(Buffer var1);
 
 	@ObfuscatedName("ac")
@@ -70,7 +61,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(B)Z",
 		garbageValue = "-4"
 	)
-	@Export("isFullyLoaded")
 	boolean isFullyLoaded() {
 		return this.field2400 && this.field2401;
 	}
@@ -80,7 +70,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(Lnd;I)V",
 		garbageValue = "-1020767316"
 	)
-	@Export("loadGeography")
 	void loadGeography(AbstractArchive var1) {
 		if (!this.isFullyLoaded()) {
 			byte[] var2 = var1.takeFile(this.groupId, this.fileId);
@@ -98,7 +87,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(B)V",
 		garbageValue = "0"
 	)
-	@Export("reset")
 	void reset() {
 		this.floorUnderlayIds = null;
 		this.floorOverlayIds = null;
@@ -114,7 +102,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(IILty;B)V",
 		garbageValue = "77"
 	)
-	@Export("readTile")
 	void readTile(int var1, int var2, Buffer var3) {
 		int var4 = var3.readUnsignedByte();
 		if (var4 != 0) {
@@ -190,7 +177,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(I)I",
 		garbageValue = "1822909116"
 	)
-	@Export("getRegionX")
 	int getRegionX() {
 		return this.regionX;
 	}
@@ -200,7 +186,6 @@ public abstract class AbstractWorldMapData {
 		descriptor = "(I)I",
 		garbageValue = "-903586613"
 	)
-	@Export("getRegionY")
 	int getRegionY() {
 		return this.regionY;
 	}

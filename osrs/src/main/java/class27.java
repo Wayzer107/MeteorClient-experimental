@@ -158,7 +158,6 @@ public class class27 {
 		descriptor = "(I)I",
 		garbageValue = "937542062"
 	)
-	@Export("getGcDuration")
 	protected static int getGcDuration() {
 		int var0 = 0;
 		if (UserComparator4.garbageCollector == null || !UserComparator4.garbageCollector.isValid()) {
@@ -218,7 +217,6 @@ public class class27 {
 		descriptor = "(IIIIB)V",
 		garbageValue = "-71"
 	)
-	@Export("drawEntities")
 	static final void drawEntities(int var0, int var1, int var2, int var3) {
 		++Client.viewportDrawCount;
 		if (class136.localPlayer.x >> 7 == Client.destinationX && class136.localPlayer.y >> 7 == Client.destinationY) {
@@ -506,7 +504,6 @@ public class class27 {
 		descriptor = "(Llo;B)V",
 		garbageValue = "-63"
 	)
-	@Export("processZoneOperation")
 	static final void processZoneOperation(ZoneOperation var0) {
 		PacketBuffer var1 = Client.packetWriter.packetBuffer;
 		int var2;

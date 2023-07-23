@@ -7,12 +7,10 @@ import net.runelite.mapping.ObfuscatedName;
 @Implements("RunException")
 public class RunException extends RuntimeException {
 	@ObfuscatedName("aw")
-	@Export("RunException_applet")
 	public static Applet RunException_applet;
 	@ObfuscatedName("ay")
 	public static String field4248;
 	@ObfuscatedName("ar")
-	@Export("RunException_revision")
 	public static int RunException_revision;
 	@ObfuscatedName("am")
 	public static int field4244;

@@ -10,55 +10,40 @@ public class SpotAnimationDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("SpotAnimationDefinition_archive")
 	public static AbstractArchive SpotAnimationDefinition_archive;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("SpotAnimationDefinition_cached")
 	static EvictingDualNodeHashTable SpotAnimationDefinition_cached;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("SpotAnimationDefinition_cachedModels")
 	static EvictingDualNodeHashTable SpotAnimationDefinition_cachedModels;
 	@ObfuscatedName("as")
-	@Export("id")
 	int id;
 	@ObfuscatedName("aj")
-	@Export("archive")
 	int archive;
 	@ObfuscatedName("ag")
-	@Export("sequence")
 	public int sequence;
 	@ObfuscatedName("az")
-	@Export("recolorFrom")
 	short[] recolorFrom;
 	@ObfuscatedName("av")
-	@Export("recolorTo")
 	short[] recolorTo;
 	@ObfuscatedName("ap")
-	@Export("retextureFrom")
 	short[] retextureFrom;
 	@ObfuscatedName("aq")
-	@Export("retextureTo")
 	short[] retextureTo;
 	@ObfuscatedName("at")
-	@Export("widthScale")
 	int widthScale;
 	@ObfuscatedName("ah")
-	@Export("heightScale")
 	int heightScale;
 	@ObfuscatedName("ax")
-	@Export("orientation")
 	int orientation;
 	@ObfuscatedName("aa")
-	@Export("ambient")
 	int ambient;
 	@ObfuscatedName("au")
-	@Export("contrast")
 	int contrast;
 
 	static {
@@ -80,7 +65,6 @@ public class SpotAnimationDefinition extends DualNode {
 		descriptor = "(Lty;B)V",
 		garbageValue = "26"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -97,7 +81,6 @@ public class SpotAnimationDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-797026654"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.archive = var1.readUnsignedShort();
@@ -144,7 +127,6 @@ public class SpotAnimationDefinition extends DualNode {
 		descriptor = "(II)Ljo;",
 		garbageValue = "-2055096855"
 	)
-	@Export("getModel")
 	public final Model getModel(int var1) {
 		Model var2 = this.method985();
 		Model var3;

@@ -124,7 +124,6 @@ public enum WorldMapDecorationType implements class372 {
 	field3117(22, 3);
 
 	@ObfuscatedName("af")
-	@Export("id")
 	public final int id;
 
 	@ObfuscatedSignature(
@@ -140,7 +139,6 @@ public enum WorldMapDecorationType implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}
@@ -161,7 +159,6 @@ public enum WorldMapDecorationType implements class372 {
 		descriptor = "(Lmt;I)Z",
 		garbageValue = "1084852448"
 	)
-	@Export("isComponentHidden")
 	static boolean isComponentHidden(Widget var0) {
 		return var0.isHidden;
 	}

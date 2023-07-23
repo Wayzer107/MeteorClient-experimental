@@ -12,32 +12,27 @@ public enum WorldMapSectionType implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lke;"
 	)
-	@Export("WORLDMAPSECTIONTYPE0")
 	WORLDMAPSECTIONTYPE0(1, (byte)0),
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lke;"
 	)
-	@Export("WORLDMAPSECTIONTYPE1")
 	WORLDMAPSECTIONTYPE1(0, (byte)1),
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lke;"
 	)
-	@Export("WORLDMAPSECTIONTYPE2")
 	WORLDMAPSECTIONTYPE2(3, (byte)2),
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lke;"
 	)
-	@Export("WORLDMAPSECTIONTYPE3")
 	WORLDMAPSECTIONTYPE3(2, (byte)3);
 
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
 		descriptor = "Lbx;"
 	)
-	@Export("soundSystem")
 	public static SoundSystem soundSystem;
 	@ObfuscatedName("ax")
 	public static short[][] field2391;
@@ -46,10 +41,8 @@ public enum WorldMapSectionType implements class372 {
 	@ObfuscatedName("jx")
 	static int ZONE_X;
 	@ObfuscatedName("as")
-	@Export("type")
 	final int type;
 	@ObfuscatedName("aj")
-	@Export("id")
 	final byte id;
 
 	WorldMapSectionType(int var3, byte var4) {
@@ -62,7 +55,6 @@ public enum WorldMapSectionType implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}
@@ -110,7 +102,6 @@ public enum WorldMapSectionType implements class372 {
 		descriptor = "(II)V",
 		garbageValue = "1940153519"
 	)
-	@Export("playSong")
 	static void playSong(int var0) {
 		if (var0 == -1 && !Client.playingJingle) {
 			RouteStrategy.method1107(0, 0);
@@ -143,7 +134,6 @@ public enum WorldMapSectionType implements class372 {
 		descriptor = "(Ldf;IIB)V",
 		garbageValue = "108"
 	)
-	@Export("performPlayerAnimation")
 	static void performPlayerAnimation(Player var0, int var1, int var2) {
 		if (var0.sequence == var1 && var1 != -1) {
 			int var3 = class135.SequenceDefinition_get(var1).replyMode;

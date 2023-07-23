@@ -17,10 +17,8 @@ public final class NPC extends Actor {
 	@ObfuscatedSignature(
 		descriptor = "Lhi;"
 	)
-	@Export("definition")
 	NPCComposition definition;
 	@ObfuscatedName("ay")
-	@Export("nameChange")
 	String nameChange;
 	@ObfuscatedName("am")
 	int field1073;
@@ -64,7 +62,6 @@ public final class NPC extends Actor {
 		descriptor = "(I)Ljo;",
 		garbageValue = "-983173466"
 	)
-	@Export("getModel")
 	protected final Model getModel() {
 		if (this.definition == null) {
 			return null;
@@ -152,7 +149,6 @@ public final class NPC extends Actor {
 		descriptor = "(ILio;I)V",
 		garbageValue = "69019912"
 	)
-	@Export("move")
 	final void move(int var1, MoveSpeed var2) {
 		int var3 = super.pathX[0];
 		int var4 = super.pathY[0];
@@ -336,7 +332,6 @@ public final class NPC extends Actor {
 		descriptor = "(B)Z",
 		garbageValue = "0"
 	)
-	@Export("isVisible")
 	final boolean isVisible() {
 		return this.definition != null;
 	}
@@ -364,7 +359,6 @@ public final class NPC extends Actor {
 		descriptor = "(Ljava/lang/String;ZZB)V",
 		garbageValue = "-9"
 	)
-	@Export("openURL")
 	public static void openURL(String var0, boolean var1, boolean var2) {
 		if (var1) {
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Action.BROWSE)) {

@@ -11,7 +11,6 @@ public class Language implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lot;"
 	)
-	@Export("Language_EN")
 	public static final Language Language_EN;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
@@ -22,7 +21,6 @@ public class Language implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lot;"
 	)
-	@Export("Language_FR")
 	public static final Language Language_FR;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
@@ -38,7 +36,6 @@ public class Language implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lot;"
 	)
-	@Export("Language_ES")
 	public static final Language Language_ES;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
@@ -51,15 +48,12 @@ public class Language implements class372 {
 	)
 	public static final Language[] field3593;
 	@ObfuscatedName("ah")
-	@Export("Tiles_hueMultiplier")
 	static int[] Tiles_hueMultiplier;
 	@ObfuscatedName("az")
 	final String field3601;
 	@ObfuscatedName("av")
-	@Export("language")
 	final String language;
 	@ObfuscatedName("ap")
-	@Export("id")
 	final int id;
 
 	static {
@@ -101,7 +95,6 @@ public class Language implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}
@@ -111,12 +104,10 @@ public class Language implements class372 {
 		descriptor = "(B)Ljava/lang/String;",
 		garbageValue = "57"
 	)
-	@Export("getLanguage")
 	String getLanguage() {
 		return this.language;
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.getLanguage().toLowerCase(Locale.ENGLISH);
@@ -252,7 +243,6 @@ public class Language implements class372 {
 		descriptor = "([BII)V",
 		garbageValue = "-1791629405"
 	)
-	@Export("VorbisSample_setData")
 	static void VorbisSample_setData(byte[] var0, int var1) {
 		if (Client.randomDatData == null) {
 			Client.randomDatData = new byte[24];

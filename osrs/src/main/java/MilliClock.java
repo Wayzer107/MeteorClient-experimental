@@ -37,7 +37,6 @@ public class MilliClock extends Clock {
 		descriptor = "(I)V",
 		garbageValue = "-1541664401"
 	)
-	@Export("mark")
 	public void mark() {
 		for (int var1 = 0; var1 < 10; ++var1) {
 			this.field1474[var1] = 0L;
@@ -50,7 +49,6 @@ public class MilliClock extends Clock {
 		descriptor = "(IIB)I",
 		garbageValue = "64"
 	)
-	@Export("wait")
 	public int wait(int var1, int var2) {
 		int var3 = this.field1472;
 		int var4 = this.field1470;

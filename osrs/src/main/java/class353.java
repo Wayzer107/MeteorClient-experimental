@@ -37,7 +37,6 @@ public enum class353 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field3471;
 	}
@@ -47,7 +46,6 @@ public enum class353 implements class372 {
 		descriptor = "(Lmt;III)V",
 		garbageValue = "-587359339"
 	)
-	@Export("clickWidget")
 	static final void clickWidget(Widget var0, int var1, int var2) {
 		if (Client.clickedWidget == null && !Client.isMenuOpen) {
 			if (var0 != null && class503.method2475(var0) != null) {

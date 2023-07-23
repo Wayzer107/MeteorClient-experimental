@@ -10,28 +10,21 @@ public class FriendsChat extends UserList {
 	@ObfuscatedSignature(
 		descriptor = "Lsi;"
 	)
-	@Export("loginType")
 	final LoginType loginType;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lqv;"
 	)
-	@Export("localUser")
 	final Usernamed localUser;
 	@ObfuscatedName("am")
-	@Export("name")
 	public String name;
 	@ObfuscatedName("as")
-	@Export("owner")
 	public String owner;
 	@ObfuscatedName("aj")
-	@Export("minKick")
 	public byte minKick;
 	@ObfuscatedName("ag")
-	@Export("rank")
 	public int rank;
 	@ObfuscatedName("az")
-	@Export("memberCount")
 	int memberCount;
 
 	@ObfuscatedSignature(
@@ -51,7 +44,6 @@ public class FriendsChat extends UserList {
 		descriptor = "(S)Lqe;",
 		garbageValue = "3401"
 	)
-	@Export("newInstance")
 	User newInstance() {
 		return new ClanMate();
 	}
@@ -61,7 +53,6 @@ public class FriendsChat extends UserList {
 		descriptor = "(IB)[Lqe;",
 		garbageValue = "7"
 	)
-	@Export("newTypedArray")
 	User[] newTypedArray(int var1) {
 		return new ClanMate[var1];
 	}
@@ -197,7 +188,6 @@ public class FriendsChat extends UserList {
 		descriptor = "(I)V",
 		garbageValue = "-157826721"
 	)
-	@Export("clearFriends")
 	public final void clearFriends() {
 		for (int var1 = 0; var1 < this.getSize(); ++var1) {
 			((ClanMate)this.get(var1)).clearIsFriend();
@@ -210,7 +200,6 @@ public class FriendsChat extends UserList {
 		descriptor = "(B)V",
 		garbageValue = "9"
 	)
-	@Export("invalidateIgnoreds")
 	public final void invalidateIgnoreds() {
 		for (int var1 = 0; var1 < this.getSize(); ++var1) {
 			((ClanMate)this.get(var1)).clearIsIgnored();
@@ -223,7 +212,6 @@ public class FriendsChat extends UserList {
 		descriptor = "(Lqg;B)V",
 		garbageValue = "115"
 	)
-	@Export("isLocalPlayer")
 	final void isLocalPlayer(ClanMate var1) {
 		if (var1.getUsername().equals(this.localUser.username())) {
 			this.rank = var1.rank;

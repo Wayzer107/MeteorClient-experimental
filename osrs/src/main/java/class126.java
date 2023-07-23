@@ -17,7 +17,6 @@ public class class126 {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive12")
 	static Archive archive12;
 
 	static {
@@ -67,7 +66,6 @@ public class class126 {
 		descriptor = "(CI)Z",
 		garbageValue = "-1080653526"
 	)
-	@Export("isAlphaNumeric")
 	public static boolean isAlphaNumeric(char var0) {
 		return var0 >= '0' && var0 <= '9' || var0 >= 'A' && var0 <= 'Z' || var0 >= 'a' && var0 <= 'z';
 	}

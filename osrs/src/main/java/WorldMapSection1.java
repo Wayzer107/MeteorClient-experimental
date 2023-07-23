@@ -7,22 +7,16 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapSection1")
 public class WorldMapSection1 implements WorldMapSection {
 	@ObfuscatedName("aw")
-	@Export("minPlane")
 	int minPlane;
 	@ObfuscatedName("ay")
-	@Export("planes")
 	int planes;
 	@ObfuscatedName("ar")
-	@Export("regionStartX")
 	int regionStartX;
 	@ObfuscatedName("am")
-	@Export("regionStartY")
 	int regionStartY;
 	@ObfuscatedName("as")
-	@Export("regionEndX")
 	int regionEndX;
 	@ObfuscatedName("aj")
-	@Export("regionEndY")
 	int regionEndY;
 
 	WorldMapSection1() {
@@ -33,7 +27,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(Ljs;I)V",
 		garbageValue = "104966018"
 	)
-	@Export("expandBounds")
 	public void expandBounds(WorldMapArea var1) {
 		if (var1.regionLowX > this.regionEndX) {
 			var1.regionLowX = this.regionEndX;
@@ -58,7 +51,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(IIIB)Z",
 		garbageValue = "37"
 	)
-	@Export("containsCoord")
 	public boolean containsCoord(int var1, int var2, int var3) {
 		if (var1 >= this.minPlane && var1 < this.minPlane + this.planes) {
 			return var2 >> 6 == this.regionStartX && var3 >> 6 == this.regionStartY;
@@ -72,7 +64,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(III)Z",
 		garbageValue = "-1055724816"
 	)
-	@Export("containsPosition")
 	public boolean containsPosition(int var1, int var2) {
 		return var1 >> 6 == this.regionEndX && var2 >> 6 == this.regionEndY;
 	}
@@ -82,7 +73,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(IIII)[I",
 		garbageValue = "1968685542"
 	)
-	@Export("getBorderTileLengths")
 	public int[] getBorderTileLengths(int var1, int var2, int var3) {
 		if (!this.containsCoord(var1, var2, var3)) {
 			return null;
@@ -97,7 +87,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(IIB)Lmr;",
 		garbageValue = "119"
 	)
-	@Export("coord")
 	public Coord coord(int var1, int var2) {
 		if (!this.containsPosition(var1, var2)) {
 			return null;
@@ -113,7 +102,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(Lty;I)V",
 		garbageValue = "706418314"
 	)
-	@Export("read")
 	public void read(Buffer var1) {
 		this.minPlane = var1.readUnsignedByte();
 		this.planes = var1.readUnsignedByte();
@@ -129,7 +117,6 @@ public class WorldMapSection1 implements WorldMapSection {
 		descriptor = "(I)V",
 		garbageValue = "-825270645"
 	)
-	@Export("postRead")
 	void postRead() {
 	}
 }

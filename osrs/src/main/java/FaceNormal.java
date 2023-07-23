@@ -7,13 +7,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("FaceNormal")
 public class FaceNormal {
 	@ObfuscatedName("aw")
-	@Export("x")
 	int x;
 	@ObfuscatedName("ay")
-	@Export("y")
 	int y;
 	@ObfuscatedName("ar")
-	@Export("z")
 	int z;
 
 	FaceNormal() {
@@ -24,7 +21,6 @@ public class FaceNormal {
 		descriptor = "(IIIIIZI)Lud;",
 		garbageValue = "1537290681"
 	)
-	@Export("getItemSprite")
 	public static final SpritePixels getItemSprite(int var0, int var1, int var2, int var3, int var4, boolean var5) {
 		if (var1 == -1) {
 			var4 = 0;

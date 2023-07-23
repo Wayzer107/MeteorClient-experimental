@@ -7,37 +7,29 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ItemLayer")
 public final class ItemLayer {
 	@ObfuscatedName("aw")
-	@Export("z")
 	int z;
 	@ObfuscatedName("ay")
-	@Export("x")
 	int x;
 	@ObfuscatedName("ar")
-	@Export("y")
 	int y;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("first")
 	Renderable first;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("second")
 	Renderable second;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lit;"
 	)
-	@Export("third")
 	Renderable third;
 	@ObfuscatedName("ag")
-	@Export("tag")
 	long tag;
 	@ObfuscatedName("az")
-	@Export("height")
 	int height;
 
 	ItemLayer() {
@@ -57,7 +49,6 @@ public final class ItemLayer {
 		descriptor = "(I)[Luc;",
 		garbageValue = "643907738"
 	)
-	@Export("FillMode_values")
 	public static FillMode[] FillMode_values() {
 		return new FillMode[]{FillMode.SOLID, FillMode.field4185, FillMode.field4184};
 	}

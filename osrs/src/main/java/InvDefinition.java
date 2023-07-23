@@ -10,18 +10,15 @@ public class InvDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("InvDefinition_archive")
 	public static AbstractArchive InvDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("InvDefinition_cached")
 	static EvictingDualNodeHashTable InvDefinition_cached;
 	@ObfuscatedName("az")
 	static byte[][][] field1488;
 	@ObfuscatedName("ar")
-	@Export("size")
 	public int size;
 
 	static {
@@ -37,7 +34,6 @@ public class InvDefinition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "-746767254"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -54,7 +50,6 @@ public class InvDefinition extends DualNode {
 		descriptor = "(Lty;IB)V",
 		garbageValue = "-96"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 2) {
 			this.size = var1.readUnsignedShort();

@@ -12,7 +12,6 @@ public class DefaultsGroup {
 	)
 	static final DefaultsGroup field3830;
 	@ObfuscatedName("ay")
-	@Export("group")
 	final int group;
 
 	static {

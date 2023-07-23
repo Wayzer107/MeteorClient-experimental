@@ -11,22 +11,18 @@ public class class306 {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("musicPatchesArchive")
 	static AbstractArchive musicPatchesArchive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("musicSamplesArchive")
 	static AbstractArchive musicSamplesArchive;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("soundEffectsArchive")
 	static AbstractArchive soundEffectsArchive;
 	@ObfuscatedName("am")
-	@Export("midiPcmStream")
 	public static ArrayList midiPcmStream;
 	@ObfuscatedName("as")
 	public static LinkedList field2758;
@@ -39,7 +35,6 @@ public class class306 {
 	@ObfuscatedName("av")
 	public static final List field2759;
 	@ObfuscatedName("ap")
-	@Export("musicPlayerStatus")
 	public static int musicPlayerStatus;
 	@ObfuscatedName("aq")
 	public static int field2753;
@@ -111,7 +106,6 @@ public class class306 {
 		descriptor = "(IIII)I",
 		garbageValue = "739300687"
 	)
-	@Export("getTileHeight")
 	static final int getTileHeight(int var0, int var1, int var2) {
 		int var3 = var0 >> 7;
 		int var4 = var1 >> 7;

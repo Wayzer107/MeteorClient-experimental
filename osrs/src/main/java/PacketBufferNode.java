@@ -10,10 +10,8 @@ public class PacketBufferNode extends Node {
 	@ObfuscatedSignature(
 		descriptor = "[Llv;"
 	)
-	@Export("PacketBufferNode_packetBufferNodes")
 	static PacketBufferNode[] PacketBufferNode_packetBufferNodes;
 	@ObfuscatedName("aj")
-	@Export("PacketBufferNode_packetBufferNodeCount")
 	static int PacketBufferNode_packetBufferNodeCount;
 	@ObfuscatedName("au")
 	@ObfuscatedSignature(
@@ -24,19 +22,15 @@ public class PacketBufferNode extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Llw;"
 	)
-	@Export("clientPacket")
 	public ClientPacket clientPacket;
 	@ObfuscatedName("ay")
-	@Export("clientPacketLength")
 	public int clientPacketLength;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Ltc;"
 	)
-	@Export("packetBuffer")
 	public PacketBuffer packetBuffer;
 	@ObfuscatedName("am")
-	@Export("index")
 	public int index;
 
 	static {
@@ -52,7 +46,6 @@ public class PacketBufferNode extends Node {
 		descriptor = "(I)V",
 		garbageValue = "488598402"
 	)
-	@Export("release")
 	public void release() {
 		if (PacketBufferNode_packetBufferNodeCount < PacketBufferNode_packetBufferNodes.length) {
 			PacketBufferNode_packetBufferNodes[++PacketBufferNode_packetBufferNodeCount - 1] = this;
@@ -78,7 +71,6 @@ public class PacketBufferNode extends Node {
 		descriptor = "(II)I",
 		garbageValue = "758333384"
 	)
-	@Export("Messages_getHistorySize")
 	static int Messages_getHistorySize(int var0) {
 		ChatChannel var1 = (ChatChannel)Messages.Messages_channels.get(var0);
 		return var1 == null ? 0 : var1.size();
@@ -89,7 +81,6 @@ public class PacketBufferNode extends Node {
 		descriptor = "(Ljava/lang/String;B)V",
 		garbageValue = "-33"
 	)
-	@Export("clanKickUser")
 	static final void clanKickUser(String var0) {
 		if (Canvas.friendsChat != null) {
 			PacketBufferNode var1 = class503.getPacketBufferNode(ClientPacket.CLAN_KICKUSER, Client.packetWriter.isaacCipher);

@@ -9,25 +9,20 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ArchiveDisk")
 public final class ArchiveDisk {
 	@ObfuscatedName("aw")
-	@Export("ArchiveDisk_buffer")
 	static byte[] ArchiveDisk_buffer;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lts;"
 	)
-	@Export("datFile")
 	BufferedFile datFile;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lts;"
 	)
-	@Export("idxFile")
 	BufferedFile idxFile;
 	@ObfuscatedName("am")
-	@Export("archive")
 	int archive;
 	@ObfuscatedName("as")
-	@Export("maxEntrySize")
 	int maxEntrySize;
 
 	static {
@@ -52,7 +47,6 @@ public final class ArchiveDisk {
 		descriptor = "(IB)[B",
 		garbageValue = "-29"
 	)
-	@Export("read")
 	public byte[] read(int var1) {
 		synchronized(this.datFile) {
 			Object var10000;
@@ -152,7 +146,6 @@ public final class ArchiveDisk {
 		descriptor = "(I[BIB)Z",
 		garbageValue = "36"
 	)
-	@Export("write")
 	public boolean write(int var1, byte[] var2, int var3) {
 		synchronized(this.datFile) {
 			if (var3 >= 0 && var3 <= this.maxEntrySize) {
@@ -173,7 +166,6 @@ public final class ArchiveDisk {
 		descriptor = "(I[BIZS)Z",
 		garbageValue = "-18346"
 	)
-	@Export("write0")
 	boolean write0(int var1, byte[] var2, int var3, boolean var4) {
 		synchronized(this.datFile) {
 			try {
@@ -329,7 +321,6 @@ public final class ArchiveDisk {
 		}
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return "" + this.archive;

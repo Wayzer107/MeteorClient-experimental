@@ -8,28 +8,23 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Login")
 public class Login {
 	@ObfuscatedName("ay")
-	@Export("clearLoginScreen")
 	static boolean clearLoginScreen;
 	@ObfuscatedName("ar")
-	@Export("xPadding")
 	static int xPadding;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("runesSprite")
 	static IndexedSprite[] runesSprite;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("titleboxSprite")
 	static IndexedSprite titleboxSprite;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("titlebuttonSprite")
 	static IndexedSprite titlebuttonSprite;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
@@ -40,41 +35,30 @@ public class Login {
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("logoSprite")
 	static IndexedSprite logoSprite;
 	@ObfuscatedName("ak")
-	@Export("loginBoxX")
 	static int loginBoxX;
 	@ObfuscatedName("af")
-	@Export("Login_loadingPercent")
 	static int Login_loadingPercent;
 	@ObfuscatedName("ai")
-	@Export("Login_loadingText")
 	static String Login_loadingText;
 	@ObfuscatedName("bh")
 	static int field746;
 	@ObfuscatedName("bt")
 	static int field747;
 	@ObfuscatedName("ct")
-	@Export("loginIndex")
 	static int loginIndex;
 	@ObfuscatedName("cf")
-	@Export("Login_response0")
 	static String Login_response0;
 	@ObfuscatedName("cz")
-	@Export("Login_response1")
 	static String Login_response1;
 	@ObfuscatedName("cb")
-	@Export("Login_response2")
 	static String Login_response2;
 	@ObfuscatedName("cs")
-	@Export("Login_response3")
 	static String Login_response3;
 	@ObfuscatedName("cj")
-	@Export("Login_username")
 	static String Login_username;
 	@ObfuscatedName("cn")
-	@Export("Login_password")
 	static String Login_password;
 	@ObfuscatedName("ce")
 	static int field748;
@@ -87,24 +71,18 @@ public class Login {
 	@ObfuscatedName("cg")
 	static boolean field740;
 	@ObfuscatedName("cv")
-	@Export("otp")
 	static String otp;
 	@ObfuscatedName("cc")
 	static boolean field739;
 	@ObfuscatedName("dc")
-	@Export("currentLoginField")
 	static int currentLoginField;
 	@ObfuscatedName("dy")
-	@Export("worldSelectOpen")
 	static boolean worldSelectOpen;
 	@ObfuscatedName("dt")
-	@Export("hoveredWorldIndex")
 	static int hoveredWorldIndex;
 	@ObfuscatedName("df")
-	@Export("worldSelectPage")
 	static int worldSelectPage;
 	@ObfuscatedName("dm")
-	@Export("worldSelectPagesCount")
 	static int worldSelectPagesCount;
 	@ObfuscatedName("dz")
 	static long field772;
@@ -117,7 +95,6 @@ public class Login {
 	@ObfuscatedName("da")
 	static String[] field768;
 	@ObfuscatedName("gt")
-	@Export("worldPort")
 	static int worldPort;
 	@ObfuscatedName("gn")
 	static String field766;
@@ -161,7 +138,6 @@ public class Login {
 		descriptor = "(II)Z",
 		garbageValue = "288446910"
 	)
-	@Export("loadInterface")
 	public static boolean loadInterface(int var0) {
 		if (Widget.Widget_loadedInterfaces[var0]) {
 			return true;

@@ -14,7 +14,6 @@ final class class106 implements class324 {
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("val$cc")
 	@ObfuscatedName("val$cc")
 	final Widget val$cc;
 
@@ -30,7 +29,6 @@ final class class106 implements class324 {
 		descriptor = "(B)V",
 		garbageValue = "-3"
 	)
-	@Export("vmethod5708")
 	public void vmethod5708() {
 		if (this.val$cc != null && this.val$cc.method1808().field2884 != null) {
 			ScriptEvent var1 = new ScriptEvent();

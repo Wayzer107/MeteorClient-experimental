@@ -7,7 +7,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("UserComparator8")
 public class UserComparator8 extends AbstractUserComparator {
 	@ObfuscatedName("aw")
-	@Export("reversed")
 	final boolean reversed;
 
 	public UserComparator8(boolean var1) {
@@ -19,7 +18,6 @@ public class UserComparator8 extends AbstractUserComparator {
 		descriptor = "(Lqa;Lqa;I)I",
 		garbageValue = "315336460"
 	)
-	@Export("compareBuddy")
 	int compareBuddy(Buddy var1, Buddy var2) {
 		if (Client.worldId == var1.world) {
 			if (var2.world != Client.worldId) {
@@ -32,7 +30,6 @@ public class UserComparator8 extends AbstractUserComparator {
 		return this.compareUser(var1, var2);
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compareBuddy((Buddy)var1, (Buddy)var2);
@@ -43,7 +40,6 @@ public class UserComparator8 extends AbstractUserComparator {
 		descriptor = "(Ldi;III)V",
 		garbageValue = "-574325390"
 	)
-	@Export("runScript")
 	static void runScript(ScriptEvent var0, int var1, int var2) {
 		Object[] var3 = var0.args;
 		Script var4;
@@ -67,7 +63,6 @@ public class UserComparator8 extends AbstractUserComparator {
 		descriptor = "(Lmt;B)I",
 		garbageValue = "-68"
 	)
-	@Export("getWidgetFlags")
 	static int getWidgetFlags(Widget var0) {
 		IntegerNode var1 = (IntegerNode)Client.widgetFlags.get((long)var0.childIndex + ((long)var0.id << 32));
 		return var1 != null ? var1.integer : var0.flags;

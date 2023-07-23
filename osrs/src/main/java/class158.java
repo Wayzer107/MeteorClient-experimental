@@ -9,7 +9,6 @@ public class class158 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lrg;"
 	)
-	@Export("masterDisk")
 	static ArchiveDisk masterDisk;
 	@ObfuscatedName("am")
 	static File field1398;
@@ -23,7 +22,6 @@ public class class158 extends class143 {
 	@ObfuscatedSignature(
 		descriptor = "Lfr;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class146 this$0;
 
@@ -42,7 +40,6 @@ public class class158 extends class143 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "1"
 	)
-	@Export("vmethod3254")
 	void vmethod3254(Buffer var1) {
 		if (var1.readUnsignedByte() != 255) {
 			--var1.offset;
@@ -58,7 +55,6 @@ public class class158 extends class143 {
 		descriptor = "(Lfx;B)V",
 		garbageValue = "-72"
 	)
-	@Export("vmethod3248")
 	void vmethod3248(ClanSettings var1) {
 		var1.method808(this.field1402, this.field1401, this.field1400);
 	}
@@ -68,7 +64,6 @@ public class class158 extends class143 {
 		descriptor = "(II)Lhg;",
 		garbageValue = "1969817280"
 	)
-	@Export("VarpDefinition_get")
 	public static VarpDefinition VarpDefinition_get(int var0) {
 		VarpDefinition var1 = (VarpDefinition)VarpDefinition.VarpDefinition_cached.get((long)var0);
 		if (var1 != null) {
@@ -90,7 +85,6 @@ public class class158 extends class143 {
 		descriptor = "(IIIILud;Lmi;I)V",
 		garbageValue = "-750705418"
 	)
-	@Export("worldToMinimap")
 	static final void worldToMinimap(int var0, int var1, int var2, int var3, SpritePixels var4, SpriteMask var5) {
 		int var6 = var3 * var3 + var2 * var2;
 		if (var6 > 4225 && var6 < 90000) {

@@ -12,44 +12,36 @@ public enum StudioGame implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("runescape")
 	runescape("runescape", "RuneScape", 0),
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("stellardawn")
 	stellardawn("stellardawn", "Stellar Dawn", 1),
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("game3")
 	game3("game3", "Game 3", 2),
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("game4")
 	game4("game4", "Game 4", 3),
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("game5")
 	game5("game5", "Game 5", 4),
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Lnu;"
 	)
-	@Export("oldscape")
 	oldscape("oldscape", "RuneScape 2007", 5);
 
 	@ObfuscatedName("ag")
-	@Export("name")
 	public final String name;
 	@ObfuscatedName("az")
-	@Export("id")
 	final int id;
 
 	StudioGame(String var3, String var4, int var5) {
@@ -62,7 +54,6 @@ public enum StudioGame implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

@@ -10,22 +10,17 @@ public class WorldMapLabel {
 	@ObfuscatedSignature(
 		descriptor = "Lej;"
 	)
-	@Export("urlRequester")
 	static UrlRequester urlRequester;
 	@ObfuscatedName("aw")
-	@Export("text")
 	String text;
 	@ObfuscatedName("ay")
-	@Export("width")
 	int width;
 	@ObfuscatedName("ar")
-	@Export("height")
 	int height;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
 	)
-	@Export("size")
 	WorldMapLabelSize size;
 
 	@ObfuscatedSignature(

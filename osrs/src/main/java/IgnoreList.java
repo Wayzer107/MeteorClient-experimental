@@ -25,7 +25,6 @@ public class IgnoreList extends UserList {
 		descriptor = "(S)Lqe;",
 		garbageValue = "3401"
 	)
-	@Export("newInstance")
 	User newInstance() {
 		return new Ignored();
 	}
@@ -35,7 +34,6 @@ public class IgnoreList extends UserList {
 		descriptor = "(IB)[Lqe;",
 		garbageValue = "7"
 	)
-	@Export("newTypedArray")
 	User[] newTypedArray(int var1) {
 		return new Ignored[var1];
 	}
@@ -45,7 +43,6 @@ public class IgnoreList extends UserList {
 		descriptor = "(Lty;II)V",
 		garbageValue = "1365602141"
 	)
-	@Export("read")
 	public void read(Buffer var1, int var2) {
 		while (var1.offset < var2) {
 			int var3 = var1.readUnsignedByte();

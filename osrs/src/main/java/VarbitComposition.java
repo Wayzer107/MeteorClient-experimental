@@ -10,27 +10,21 @@ public class VarbitComposition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("VarbitDefinition_archive")
 	public static AbstractArchive VarbitDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("VarbitDefinition_cached")
 	public static EvictingDualNodeHashTable VarbitDefinition_cached;
 	@ObfuscatedName("aj")
 	static final int[] field1655;
 	@ObfuscatedName("gy")
-	@Export("worldHost")
 	static String worldHost;
 	@ObfuscatedName("ar")
-	@Export("baseVar")
 	public int baseVar;
 	@ObfuscatedName("am")
-	@Export("startBit")
 	public int startBit;
 	@ObfuscatedName("as")
-	@Export("endBit")
 	public int endBit;
 
 	static {
@@ -50,7 +44,6 @@ public class VarbitComposition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1506861624"
 	)
-	@Export("decode")
 	public void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -67,7 +60,6 @@ public class VarbitComposition extends DualNode {
 		descriptor = "(Lty;IB)V",
 		garbageValue = "-7"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.baseVar = var1.readUnsignedShort();
@@ -82,7 +74,6 @@ public class VarbitComposition extends DualNode {
 		descriptor = "(II)Lmt;",
 		garbageValue = "-2070721746"
 	)
-	@Export("getWidget")
 	public static Widget getWidget(int var0) {
 		int var1 = var0 >> 16;
 		int var2 = var0 & 65535;
@@ -101,7 +92,6 @@ public class VarbitComposition extends DualNode {
 		descriptor = "([Lcr;II[I[II)V",
 		garbageValue = "-1873571758"
 	)
-	@Export("sortWorlds")
 	static void sortWorlds(World[] var0, int var1, int var2, int[] var3, int[] var4) {
 		if (var1 < var2) {
 			int var5 = var1 - 1;
@@ -213,7 +203,6 @@ public class VarbitComposition extends DualNode {
 		descriptor = "([BI)V",
 		garbageValue = "1174907654"
 	)
-	@Export("SpriteBuffer_decode")
 	public static void SpriteBuffer_decode(byte[] var0) {
 		Buffer var1 = new Buffer(var0);
 		var1.offset = var0.length - 2;

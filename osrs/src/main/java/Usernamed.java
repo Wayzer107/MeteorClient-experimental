@@ -11,6 +11,5 @@ public interface Usernamed {
 		descriptor = "(I)Lui;",
 		garbageValue = "466420447"
 	)
-	@Export("username")
 	Username username();
 }

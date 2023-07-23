@@ -20,7 +20,6 @@ public class class31 {
 		descriptor = "(IIIIZB)V",
 		garbageValue = "-36"
 	)
-	@Export("setViewportShape")
 	static final void setViewportShape(int var0, int var1, int var2, int var3, boolean var4) {
 		if (var2 < 1) {
 			var2 = 1;

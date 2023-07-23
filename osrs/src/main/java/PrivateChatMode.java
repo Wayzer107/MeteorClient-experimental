@@ -22,7 +22,6 @@ public class PrivateChatMode {
 	)
 	static final PrivateChatMode field4228;
 	@ObfuscatedName("am")
-	@Export("id")
 	public final int id;
 
 	static {

@@ -13,7 +13,6 @@ public class GrandExchangeOfferOwnWorldComparator implements Comparator {
 	)
 	static Archive field358;
 	@ObfuscatedName("aw")
-	@Export("filterWorlds")
 	boolean filterWorlds;
 
 	GrandExchangeOfferOwnWorldComparator() {
@@ -24,7 +23,6 @@ public class GrandExchangeOfferOwnWorldComparator implements Comparator {
 		descriptor = "(Lol;Lol;I)I",
 		garbageValue = "1985558289"
 	)
-	@Export("compare_bridged")
 	int compare_bridged(GrandExchangeEvent var1, GrandExchangeEvent var2) {
 		if (var2.world == var1.world) {
 			return 0;
@@ -43,13 +41,11 @@ public class GrandExchangeOfferOwnWorldComparator implements Comparator {
 		}
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compare_bridged((GrandExchangeEvent)var1, (GrandExchangeEvent)var2);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
@@ -60,7 +56,6 @@ public class GrandExchangeOfferOwnWorldComparator implements Comparator {
 		descriptor = "(Ldi;I)V",
 		garbageValue = "150868940"
 	)
-	@Export("runScriptEvent")
 	public static void runScriptEvent(ScriptEvent var0) {
 		UserComparator8.runScript(var0, 500000, 475000);
 	}
@@ -147,7 +142,6 @@ public class GrandExchangeOfferOwnWorldComparator implements Comparator {
 		descriptor = "(Lmt;I)Z",
 		garbageValue = "1778748581"
 	)
-	@Export("runCs1")
 	static final boolean runCs1(Widget var0) {
 		if (var0.cs1Comparisons == null) {
 			return false;

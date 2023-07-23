@@ -10,25 +10,19 @@ public class ParamComposition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("ParamDefinition_archive")
 	public static AbstractArchive ParamDefinition_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("ParamDefinition_cached")
 	public static EvictingDualNodeHashTable ParamDefinition_cached;
 	@ObfuscatedName("ar")
-	@Export("type")
 	char type;
 	@ObfuscatedName("am")
-	@Export("defaultInt")
 	public int defaultInt;
 	@ObfuscatedName("as")
-	@Export("defaultStr")
 	public String defaultStr;
 	@ObfuscatedName("aj")
-	@Export("autoDisable")
 	boolean autoDisable;
 
 	static {
@@ -44,7 +38,6 @@ public class ParamComposition extends DualNode {
 		descriptor = "(S)V",
 		garbageValue = "-17467"
 	)
-	@Export("postDecode")
 	void postDecode() {
 	}
 
@@ -53,7 +46,6 @@ public class ParamComposition extends DualNode {
 		descriptor = "(Lty;I)V",
 		garbageValue = "1931541536"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -70,7 +62,6 @@ public class ParamComposition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "243375101"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		if (var2 == 1) {
 			this.type = class17.method54(var1.readByte());
@@ -89,7 +80,6 @@ public class ParamComposition extends DualNode {
 		descriptor = "(I)Z",
 		garbageValue = "-791513096"
 	)
-	@Export("isString")
 	public boolean isString() {
 		return this.type == 's';
 	}

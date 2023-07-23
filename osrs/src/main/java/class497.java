@@ -9,7 +9,6 @@ class class497 implements Iterator {
 	@ObfuscatedSignature(
 		descriptor = "Lde;"
 	)
-	@Export("mouseRecorder")
 	static MouseRecorder mouseRecorder;
 	@ObfuscatedName("aw")
 	int field4083;
@@ -17,7 +16,6 @@ class class497 implements Iterator {
 	@ObfuscatedSignature(
 		descriptor = "Ltp;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class498 this$0;
 
@@ -28,13 +26,11 @@ class class497 implements Iterator {
 		this.this$0 = var1;
 	}
 
-	@Export("hasNext")
 	@ObfuscatedName("hasNext")
 	public boolean hasNext() {
 		return this.field4083 < this.this$0.method2298();
 	}
 
-	@Export("next")
 	@ObfuscatedName("next")
 	public Object next() {
 		int var1 = ++this.field4083 - 1;
@@ -42,7 +38,6 @@ class class497 implements Iterator {
 		return var2 != null ? var2 : this.this$0.method2457(var1);
 	}
 
-	@Export("remove")
 	@ObfuscatedName("remove")
 	public void remove() {
 		throw new UnsupportedOperationException();

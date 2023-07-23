@@ -16,7 +16,6 @@ public class class386 {
 	@ObfuscatedSignature(
 		descriptor = "Lny;"
 	)
-	@Export("archive8")
 	static Archive archive8;
 	@ObfuscatedName("gk")
 	static int field3640;

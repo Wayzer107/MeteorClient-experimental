@@ -9,6 +9,5 @@ public interface class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	int rsOrdinal();
 }

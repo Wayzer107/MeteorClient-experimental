@@ -12,13 +12,11 @@ public class MusicPatchNode extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Llm;"
 	)
-	@Export("table")
 	MusicPatch table;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lbi;"
 	)
-	@Export("rawSound")
 	RawSound rawSound;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
@@ -57,7 +55,6 @@ public class MusicPatchNode extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lbt;"
 	)
-	@Export("stream")
 	RawPcmStream stream;
 	@ObfuscatedName("ao")
 	int field2836;
@@ -101,7 +98,6 @@ public class MusicPatchNode extends Node {
 		descriptor = "(II)Lhq;",
 		garbageValue = "325991417"
 	)
-	@Export("getParamDefinition")
 	public static ParamComposition getParamDefinition(int var0) {
 		ParamComposition var1 = (ParamComposition)ParamComposition.ParamDefinition_cached.get((long)var0);
 		if (var1 != null) {

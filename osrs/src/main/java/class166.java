@@ -14,7 +14,6 @@ public class class166 extends class159 {
 	@ObfuscatedSignature(
 		descriptor = "Lgs;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class160 this$0;
 
@@ -30,7 +29,6 @@ public class class166 extends class159 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-43"
 	)
-	@Export("vmethod3238")
 	void vmethod3238(Buffer var1) {
 		this.field1425 = var1.readStringCp1252NullTerminatedOrNull();
 		if (this.field1425 != null) {
@@ -46,7 +44,6 @@ public class class166 extends class159 {
 		descriptor = "(Lgh;I)V",
 		garbageValue = "-2132107044"
 	)
-	@Export("vmethod3239")
 	void vmethod3239(ClanChannel var1) {
 		var1.name = this.field1425;
 		if (this.field1425 != null) {
@@ -61,7 +58,6 @@ public class class166 extends class159 {
 		descriptor = "(Lmt;III)V",
 		garbageValue = "1063442013"
 	)
-	@Export("checkIfMinimapClicked")
 	static final void checkIfMinimapClicked(Widget var0, int var1, int var2) {
 		if (Client.minimapState == 0 || Client.minimapState == 3) {
 			if (!Client.isMenuOpen && (MouseHandler.MouseHandler_lastButton == 1 || !class28.mouseCam && MouseHandler.MouseHandler_lastButton == 4)) {

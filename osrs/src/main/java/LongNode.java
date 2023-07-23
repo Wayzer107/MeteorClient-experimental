@@ -6,7 +6,6 @@ import net.runelite.mapping.ObfuscatedName;
 @Implements("LongNode")
 public class LongNode extends Node {
 	@ObfuscatedName("aw")
-	@Export("longValue")
 	public long longValue;
 
 	public LongNode(long var1) {

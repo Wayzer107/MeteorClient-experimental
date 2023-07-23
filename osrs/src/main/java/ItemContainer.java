@@ -10,13 +10,10 @@ public class ItemContainer extends Node {
 	@ObfuscatedSignature(
 		descriptor = "Lsm;"
 	)
-	@Export("itemContainers")
 	static NodeHashTable itemContainers;
 	@ObfuscatedName("ay")
-	@Export("ids")
 	int[] ids;
 	@ObfuscatedName("ar")
-	@Export("quantities")
 	int[] quantities;
 
 	static {

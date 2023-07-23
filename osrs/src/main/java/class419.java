@@ -40,7 +40,6 @@ public class class419 {
 		descriptor = "(I)Lcr;",
 		garbageValue = "1237545484"
 	)
-	@Export("getNextWorldListWorld")
 	static World getNextWorldListWorld() {
 		return World.World_listCount < World.World_count ? class387.World_worlds[++World.World_listCount - 1] : null;
 	}

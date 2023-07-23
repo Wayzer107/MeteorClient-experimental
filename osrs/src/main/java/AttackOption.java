@@ -10,13 +10,11 @@ public enum AttackOption implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Ldw;"
 	)
-	@Export("AttackOption_dependsOnCombatLevels")
 	AttackOption_dependsOnCombatLevels(0),
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Ldw;"
 	)
-	@Export("AttackOption_alwaysRightClick")
 	AttackOption_alwaysRightClick(1),
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
@@ -27,7 +25,6 @@ public enum AttackOption implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Ldw;"
 	)
-	@Export("AttackOption_hidden")
 	AttackOption_hidden(3),
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
@@ -36,7 +33,6 @@ public enum AttackOption implements class372 {
 	field1090(4);
 
 	@ObfuscatedName("aj")
-	@Export("id")
 	final int id;
 
 	AttackOption(int var3) {
@@ -48,7 +44,6 @@ public enum AttackOption implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

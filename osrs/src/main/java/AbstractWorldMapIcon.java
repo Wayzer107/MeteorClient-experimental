@@ -15,19 +15,15 @@ public abstract class AbstractWorldMapIcon {
 	@ObfuscatedSignature(
 		descriptor = "Lmr;"
 	)
-	@Export("coord2")
 	public final Coord coord2;
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
 		descriptor = "Lmr;"
 	)
-	@Export("coord1")
 	public final Coord coord1;
 	@ObfuscatedName("av")
-	@Export("screenX")
 	int screenX;
 	@ObfuscatedName("ap")
-	@Export("screenY")
 	int screenY;
 
 	@ObfuscatedSignature(
@@ -43,7 +39,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(I)I",
 		garbageValue = "1799088869"
 	)
-	@Export("getElement")
 	public abstract int getElement();
 
 	@ObfuscatedName("ar")
@@ -51,7 +46,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(S)Lka;",
 		garbageValue = "8220"
 	)
-	@Export("getLabel")
 	abstract WorldMapLabel getLabel();
 
 	@ObfuscatedName("am")
@@ -59,7 +53,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(B)I",
 		garbageValue = "81"
 	)
-	@Export("getSubWidth")
 	abstract int getSubWidth();
 
 	@ObfuscatedName("as")
@@ -67,7 +60,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(I)I",
 		garbageValue = "-565304787"
 	)
-	@Export("getSubHeight")
 	abstract int getSubHeight();
 
 	@ObfuscatedName("ao")
@@ -75,7 +67,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(III)Z",
 		garbageValue = "-2144265772"
 	)
-	@Export("fitsScreen")
 	boolean fitsScreen(int var1, int var2) {
 		if (this.elementFitsScreen(var1, var2)) {
 			return true;
@@ -89,7 +80,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(I)Z",
 		garbageValue = "-588256332"
 	)
-	@Export("hasValidElement")
 	boolean hasValidElement() {
 		return this.getElement() >= 0;
 	}
@@ -99,7 +89,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(III)Z",
 		garbageValue = "1786751810"
 	)
-	@Export("elementFitsScreen")
 	boolean elementFitsScreen(int var1, int var2) {
 		if (!this.hasValidElement()) {
 			return false;
@@ -153,7 +142,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(IIB)Z",
 		garbageValue = "-55"
 	)
-	@Export("labelFitsScreen")
 	boolean labelFitsScreen(int var1, int var2) {
 		WorldMapLabel var3 = this.getLabel();
 		if (var3 == null) {
@@ -170,7 +158,6 @@ public abstract class AbstractWorldMapIcon {
 		descriptor = "(IIIIIIIIIIB)V",
 		garbageValue = "-47"
 	)
-	@Export("updatePendingSpawn")
 	static final void updatePendingSpawn(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
 		PendingSpawn var10 = null;
 

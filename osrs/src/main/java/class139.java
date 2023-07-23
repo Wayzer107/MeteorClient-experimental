@@ -35,7 +35,6 @@ public enum class139 implements class372 {
 	@ObfuscatedName("aj")
 	public final int field1313;
 	@ObfuscatedName("ag")
-	@Export("id")
 	final int id;
 
 	class139(int var3, int var4) {
@@ -48,7 +47,6 @@ public enum class139 implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

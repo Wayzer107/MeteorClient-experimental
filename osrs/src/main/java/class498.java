@@ -33,7 +33,6 @@ public class class498 extends class456 implements class284 {
 		descriptor = "(II)Lrc;",
 		garbageValue = "-1481639468"
 	)
-	@Export("vmethod8207")
 	protected class458 vmethod8207(int var1) {
 		synchronized(this.field4085) {
 			class457 var2 = (class457)this.field4085.get((long)var1);
@@ -72,7 +71,6 @@ public class class498 extends class456 implements class284 {
 		}
 	}
 
-	@Export("iterator")
 	@ObfuscatedName("iterator")
 	public Iterator iterator() {
 		return new class497(this);

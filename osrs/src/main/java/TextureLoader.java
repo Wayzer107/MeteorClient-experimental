@@ -11,7 +11,6 @@ public interface TextureLoader {
 		descriptor = "(IB)[I",
 		garbageValue = "84"
 	)
-	@Export("getTexturePixels")
 	int[] getTexturePixels(int var1);
 
 	@ObfuscatedName("am")
@@ -19,7 +18,6 @@ public interface TextureLoader {
 		descriptor = "(II)I",
 		garbageValue = "-1542791475"
 	)
-	@Export("getAverageTextureRGB")
 	int getAverageTextureRGB(int var1);
 
 	@ObfuscatedName("as")
@@ -27,7 +25,6 @@ public interface TextureLoader {
 		descriptor = "(IB)Z",
 		garbageValue = "41"
 	)
-	@Export("vmethod3989")
 	boolean vmethod3989(int var1);
 
 	@ObfuscatedName("aj")
@@ -35,6 +32,5 @@ public interface TextureLoader {
 		descriptor = "(II)Z",
 		garbageValue = "1788191406"
 	)
-	@Export("isLowDetail")
 	boolean isLowDetail(int var1);
 }

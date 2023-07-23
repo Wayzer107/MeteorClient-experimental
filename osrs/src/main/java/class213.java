@@ -12,7 +12,6 @@ public class class213 implements class29 {
 	@ObfuscatedName("ar")
 	public int[] field1870;
 	@ObfuscatedName("am")
-	@Export("pressedKeysCount")
 	public int pressedKeysCount;
 	@ObfuscatedName("as")
 	int[] field1865;
@@ -55,7 +54,6 @@ public class class213 implements class29 {
 		descriptor = "(II)Z",
 		garbageValue = "-1364202239"
 	)
-	@Export("vmethod3949")
 	public boolean vmethod3949(int var1) {
 		this.method1082(var1);
 		this.field1857[var1] = true;
@@ -70,7 +68,6 @@ public class class213 implements class29 {
 		descriptor = "(II)Z",
 		garbageValue = "1960624058"
 	)
-	@Export("vmethod3989")
 	public boolean vmethod3989(int var1) {
 		this.field1857[var1] = false;
 		this.field1858[var1] = false;
@@ -84,7 +81,6 @@ public class class213 implements class29 {
 		descriptor = "(CI)Z",
 		garbageValue = "932068520"
 	)
-	@Export("vmethod3951")
 	public boolean vmethod3951(char var1) {
 		int var2 = this.field1864 + 1 & 127;
 		if (var2 != this.field1861) {
@@ -101,7 +97,6 @@ public class class213 implements class29 {
 		descriptor = "(ZB)Z",
 		garbageValue = "-93"
 	)
-	@Export("vmethod3953")
 	public boolean vmethod3953(boolean var1) {
 		return false;
 	}
@@ -165,7 +160,6 @@ public class class213 implements class29 {
 		descriptor = "(II)Z",
 		garbageValue = "1392271778"
 	)
-	@Export("getKeyPressed")
 	public boolean getKeyPressed(int var1) {
 		return var1 >= 0 && var1 < 112 ? this.field1857[var1] : false;
 	}
@@ -214,7 +208,6 @@ public class class213 implements class29 {
 		descriptor = "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;S)V",
 		garbageValue = "4430"
 	)
-	@Export("addChatMessage")
 	static void addChatMessage(int var0, String var1, String var2, String var3) {
 		ChatChannel var4 = (ChatChannel)Messages.Messages_channels.get(var0);
 		if (var4 == null) {

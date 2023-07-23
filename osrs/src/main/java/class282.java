@@ -8,7 +8,6 @@ public abstract class class282 implements class284 {
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("mapSceneSprites")
 	static IndexedSprite[] mapSceneSprites;
 	@ObfuscatedName("aw")
 	protected int field2464;
@@ -25,7 +24,6 @@ public abstract class class282 implements class284 {
 		descriptor = "(Ljava/lang/String;I)Ljava/lang/Class;",
 		garbageValue = "2019225375"
 	)
-	@Export("loadClassFromDescriptor")
 	static Class loadClassFromDescriptor(String var0) throws ClassNotFoundException {
 		if (var0.equals("B")) {
 			return Byte.TYPE;

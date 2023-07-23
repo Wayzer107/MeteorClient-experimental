@@ -8,16 +8,12 @@ public class class28 {
 	@ObfuscatedSignature(
 		descriptor = "Lng;"
 	)
-	@Export("grandExchangeEvents")
 	static GrandExchangeEvents grandExchangeEvents;
 	@ObfuscatedName("dn")
-	@Export("KeyHandler_keyCodes")
 	static int[] KeyHandler_keyCodes;
 	@ObfuscatedName("ed")
-	@Export("mouseCam")
 	static boolean mouseCam;
 	@ObfuscatedName("gl")
-	@Export("playerUUIDLength")
 	static int playerUUIDLength;
 
 	static {

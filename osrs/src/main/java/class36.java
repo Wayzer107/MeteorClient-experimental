@@ -8,22 +8,17 @@ public class class36 {
 	@ObfuscatedSignature(
 		descriptor = "Lor;"
 	)
-	@Export("reflectionChecks")
 	static IterableNodeDeque reflectionChecks;
 	@ObfuscatedName("aa")
 	@ObfuscatedSignature(
 		descriptor = "Lmt;"
 	)
-	@Export("scriptDotWidget")
 	static Widget scriptDotWidget;
 	@ObfuscatedName("cq")
-	@Export("param9")
 	static String param9;
 	@ObfuscatedName("le")
-	@Export("oculusOrbFocalPointY")
 	static int oculusOrbFocalPointY;
 	@ObfuscatedName("mo")
-	@Export("Client_plane")
 	static int Client_plane;
 
 	static {
@@ -61,7 +56,6 @@ public class class36 {
 		descriptor = "([Lmt;IIIZS)V",
 		garbageValue = "-18913"
 	)
-	@Export("resizeInterface")
 	static void resizeInterface(Widget[] var0, int var1, int var2, int var3, boolean var4) {
 		for (int var5 = 0; var5 < var0.length; ++var5) {
 			Widget var6 = var0[var5];

@@ -10,10 +10,8 @@ public class IntHashTable {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("NpcDefinition_archive")
 	public static AbstractArchive NpcDefinition_archive;
 	@ObfuscatedName("aw")
-	@Export("array")
 	int[] array;
 
 	public IntHashTable(int[] var1) {
@@ -43,7 +41,6 @@ public class IntHashTable {
 		descriptor = "(II)I",
 		garbageValue = "-1748231444"
 	)
-	@Export("get")
 	public int get(int var1) {
 		int var2 = (this.array.length >> 1) - 1;
 		int var3 = var1 & var2;

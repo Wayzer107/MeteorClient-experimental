@@ -9,19 +9,15 @@ public class WorldMapIcon_0 extends AbstractWorldMapIcon {
 	@ObfuscatedName("qo")
 	static int field2371;
 	@ObfuscatedName("aw")
-	@Export("element")
 	final int element;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lka;"
 	)
-	@Export("label")
 	final WorldMapLabel label;
 	@ObfuscatedName("ar")
-	@Export("subWidth")
 	final int subWidth;
 	@ObfuscatedName("am")
-	@Export("subHeight")
 	final int subHeight;
 
 	@ObfuscatedSignature(
@@ -48,7 +44,6 @@ public class WorldMapIcon_0 extends AbstractWorldMapIcon {
 		descriptor = "(I)I",
 		garbageValue = "1799088869"
 	)
-	@Export("getElement")
 	public int getElement() {
 		return this.element;
 	}
@@ -58,7 +53,6 @@ public class WorldMapIcon_0 extends AbstractWorldMapIcon {
 		descriptor = "(S)Lka;",
 		garbageValue = "8220"
 	)
-	@Export("getLabel")
 	WorldMapLabel getLabel() {
 		return this.label;
 	}
@@ -68,7 +62,6 @@ public class WorldMapIcon_0 extends AbstractWorldMapIcon {
 		descriptor = "(B)I",
 		garbageValue = "81"
 	)
-	@Export("getSubWidth")
 	int getSubWidth() {
 		return this.subWidth;
 	}
@@ -78,7 +71,6 @@ public class WorldMapIcon_0 extends AbstractWorldMapIcon {
 		descriptor = "(I)I",
 		garbageValue = "-565304787"
 	)
-	@Export("getSubHeight")
 	int getSubHeight() {
 		return this.subHeight;
 	}

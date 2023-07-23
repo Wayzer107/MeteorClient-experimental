@@ -12,7 +12,6 @@ public class class467 {
 	@ObfuscatedName("bp")
 	static Image field3902;
 	@ObfuscatedName("lz")
-	@Export("oculusOrbFocalPointX")
 	static int oculusOrbFocalPointX;
 
 	static {

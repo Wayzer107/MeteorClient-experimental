@@ -8,43 +8,31 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Interpreter")
 public class Interpreter {
 	@ObfuscatedName("am")
-	@Export("Interpreter_intLocals")
 	static int[] Interpreter_intLocals;
 	@ObfuscatedName("as")
-	@Export("Interpreter_stringLocals")
 	static String[] Interpreter_stringLocals;
 	@ObfuscatedName("aj")
-	@Export("Interpreter_arrayLengths")
 	static int[] Interpreter_arrayLengths;
 	@ObfuscatedName("ag")
-	@Export("Interpreter_arrays")
 	static int[][] Interpreter_arrays;
 	@ObfuscatedName("az")
-	@Export("Interpreter_intStack")
 	static int[] Interpreter_intStack;
 	@ObfuscatedName("av")
-	@Export("Interpreter_intStackSize")
 	static int Interpreter_intStackSize;
 	@ObfuscatedName("ap")
-	@Export("Interpreter_stringStack")
 	static String[] Interpreter_stringStack;
 	@ObfuscatedName("aq")
-	@Export("Interpreter_stringStackSize")
 	static int Interpreter_stringStackSize;
 	@ObfuscatedName("at")
-	@Export("Interpreter_frameDepth")
 	static int Interpreter_frameDepth;
 	@ObfuscatedName("ah")
 	@ObfuscatedSignature(
 		descriptor = "[Lca;"
 	)
-	@Export("Interpreter_frames")
 	static ScriptFrame[] Interpreter_frames;
 	@ObfuscatedName("ad")
-	@Export("Interpreter_calendar")
 	static java.util.Calendar Interpreter_calendar;
 	@ObfuscatedName("ao")
-	@Export("Interpreter_MONTHS")
 	static final String[] Interpreter_MONTHS;
 	@ObfuscatedName("ak")
 	static boolean field698;
@@ -60,7 +48,6 @@ public class Interpreter {
 	@ObfuscatedSignature(
 		descriptor = "Lot;"
 	)
-	@Export("clientLanguage")
 	static Language clientLanguage;
 	@ObfuscatedName("gp")
 	@ObfuscatedSignature(
@@ -116,7 +103,6 @@ public class Interpreter {
 		descriptor = "(IB)Ldc;",
 		garbageValue = "-81"
 	)
-	@Export("getScript")
 	static Script getScript(int var0) {
 		Script var1 = (Script)Script.Script_cached.get((long)var0);
 		if (var1 != null) {
@@ -147,7 +133,6 @@ public class Interpreter {
 		descriptor = "(IIB)V",
 		garbageValue = "81"
 	)
-	@Export("playJingle")
 	static void playJingle(int var0, int var1) {
 		if (class150.clientPreferences.getCurrentMusicVolume() != 0 && var0 != -1) {
 			ArrayList var2 = new ArrayList();

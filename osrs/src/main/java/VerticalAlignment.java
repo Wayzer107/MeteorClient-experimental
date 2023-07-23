@@ -15,7 +15,6 @@ public enum VerticalAlignment implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lhl;"
 	)
-	@Export("VerticalAlignment_centered")
 	VerticalAlignment_centered(2, 1),
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
@@ -29,13 +28,10 @@ public enum VerticalAlignment implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Lbk;"
 	)
-	@Export("pcmPlayer1")
 	static PcmPlayer pcmPlayer1;
 	@ObfuscatedName("am")
-	@Export("value")
 	public final int value;
 	@ObfuscatedName("as")
-	@Export("id")
 	final int id;
 
 	VerticalAlignment(int var3, int var4) {
@@ -48,7 +44,6 @@ public enum VerticalAlignment implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

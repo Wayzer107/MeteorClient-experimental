@@ -6,13 +6,11 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("oq")
 public class class370 {
 	@ObfuscatedName("aw")
-	@Export("spriteMap")
 	final HashMap spriteMap;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lrk;"
 	)
-	@Export("bounds")
 	Bounds bounds;
 	@ObfuscatedName("ar")
 	int[] field3582;

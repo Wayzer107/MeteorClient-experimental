@@ -13,19 +13,16 @@ public class SoundCache {
 	@ObfuscatedSignature(
 		descriptor = "Lud;"
 	)
-	@Export("redHintArrowSprite")
 	static SpritePixels redHintArrowSprite;
 	@ObfuscatedName("ul")
 	@ObfuscatedSignature(
 		descriptor = "Lcj;"
 	)
-	@Export("decimator")
 	static Decimator decimator;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("soundEffectIndex")
 	AbstractArchive soundEffectIndex;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
@@ -53,7 +50,6 @@ public class SoundCache {
 		descriptor = "(II[II)Lbi;",
 		garbageValue = "-446008293"
 	)
-	@Export("getSoundEffect0")
 	RawSound getSoundEffect0(int var1, int var2, int[] var3) {
 		long var4 = this.method227(var1, var2, false);
 		class53 var6 = (class53)this.field219.get(var4);
@@ -104,7 +100,6 @@ public class SoundCache {
 		descriptor = "(I[II)Lbi;",
 		garbageValue = "290841412"
 	)
-	@Export("getSoundEffect")
 	RawSound getSoundEffect(int var1, int[] var2) {
 		if (this.soundEffectIndex.getGroupCount() == 1) {
 			return this.getSoundEffect0(0, var1, var2);
@@ -155,7 +150,6 @@ public class SoundCache {
 		descriptor = "([BB)Ldc;",
 		garbageValue = "60"
 	)
-	@Export("newScript")
 	static Script newScript(byte[] var0) {
 		Script var1 = new Script();
 		Buffer var2 = new Buffer(var0);
@@ -242,7 +236,6 @@ public class SoundCache {
 		descriptor = "(B)V",
 		garbageValue = "-3"
 	)
-	@Export("Widget_runOnTargetLeave")
 	static void Widget_runOnTargetLeave() {
 		if (Client.isSpellSelected) {
 			Widget var0 = MouseRecorder.getWidgetChild(class33.selectedSpellWidget, Client.selectedSpellChildIndex);
@@ -264,7 +257,6 @@ public class SoundCache {
 		descriptor = "([Lmt;Lmt;ZI)V",
 		garbageValue = "1867193194"
 	)
-	@Export("revalidateWidgetScroll")
 	static void revalidateWidgetScroll(Widget[] var0, Widget var1, boolean var2) {
 		int var3 = var1.scrollWidth != 0 ? var1.scrollWidth * 1086068083 * 685053883 : var1.width * -1335812425 * 1247813383;
 		int var4 = var1.scrollHeight != 0 ? var1.scrollHeight * 257692207 * 1689285839 : var1.height * 1681849845 * -633207203;

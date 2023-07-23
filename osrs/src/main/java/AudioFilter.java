@@ -9,15 +9,12 @@ public class AudioFilter {
 	@ObfuscatedName("aj")
 	static float[][] field300;
 	@ObfuscatedName("ag")
-	@Export("coefficients")
 	static int[][] coefficients;
 	@ObfuscatedName("az")
 	static float field299;
 	@ObfuscatedName("av")
-	@Export("forwardMultiplier")
 	static int forwardMultiplier;
 	@ObfuscatedName("aw")
-	@Export("pairs")
 	int[] pairs;
 	@ObfuscatedName("ar")
 	int[][][] field306;
@@ -53,7 +50,6 @@ public class AudioFilter {
 	}
 
 	@ObfuscatedName("am")
-	@Export("compute")
 	int compute(int var1, float var2) {
 		float var3;
 		if (var1 == 0) {
@@ -151,7 +147,6 @@ public class AudioFilter {
 	}
 
 	@ObfuscatedName("ay")
-	@Export("normalize")
 	static float normalize(float var0) {
 		float var1 = 32.703197F * (float)Math.pow(2.0D, (double)var0);
 		return var1 * 3.1415927F / 11025.0F;

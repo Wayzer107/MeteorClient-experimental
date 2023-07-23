@@ -6,32 +6,23 @@ import net.runelite.mapping.ObfuscatedName;
 @Implements("IndexedSprite")
 public final class IndexedSprite extends Rasterizer2D {
 	@ObfuscatedName("aw")
-	@Export("pixels")
 	public byte[] pixels;
 	@ObfuscatedName("ay")
-	@Export("palette")
 	public int[] palette;
 	@ObfuscatedName("ar")
-	@Export("subWidth")
 	public int subWidth;
 	@ObfuscatedName("am")
-	@Export("subHeight")
 	public int subHeight;
 	@ObfuscatedName("as")
-	@Export("xOffset")
 	public int xOffset;
 	@ObfuscatedName("aj")
-	@Export("yOffset")
 	public int yOffset;
 	@ObfuscatedName("ag")
-	@Export("width")
 	public int width;
 	@ObfuscatedName("az")
-	@Export("height")
 	public int height;
 
 	@ObfuscatedName("aw")
-	@Export("normalize")
 	public void normalize() {
 		if (this.subWidth != this.width || this.subHeight != this.height) {
 			byte[] var1 = new byte[this.width * this.height];
@@ -52,7 +43,6 @@ public final class IndexedSprite extends Rasterizer2D {
 	}
 
 	@ObfuscatedName("ay")
-	@Export("shiftColors")
 	public void shiftColors(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.palette.length; ++var4) {
 			int var5 = this.palette[var4] >> 16 & 255;
@@ -85,7 +75,6 @@ public final class IndexedSprite extends Rasterizer2D {
 	}
 
 	@ObfuscatedName("ar")
-	@Export("drawAt")
 	public void drawAt(int var1, int var2) {
 		var1 += this.xOffset;
 		var2 += this.yOffset;
@@ -193,7 +182,6 @@ public final class IndexedSprite extends Rasterizer2D {
 	}
 
 	@ObfuscatedName("am")
-	@Export("IndexedSprite_two")
 	static void IndexedSprite_two(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int var9 = -(var5 >> 2);
 		var5 = -(var5 & 3);
@@ -247,7 +235,6 @@ public final class IndexedSprite extends Rasterizer2D {
 	}
 
 	@ObfuscatedName("aj")
-	@Export("IndexedSprite_something")
 	static void IndexedSprite_something(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
 		int var12 = var3;
 

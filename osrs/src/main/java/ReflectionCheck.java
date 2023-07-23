@@ -14,27 +14,20 @@ public class ReflectionCheck extends Node {
 	)
 	static Archive field151;
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("size")
 	int size;
 	@ObfuscatedName("ar")
-	@Export("operations")
 	int[] operations;
 	@ObfuscatedName("am")
-	@Export("creationErrors")
 	int[] creationErrors;
 	@ObfuscatedName("as")
 	Field[] fields;
 	@ObfuscatedName("aj")
-	@Export("intReplaceValues")
 	int[] intReplaceValues;
 	@ObfuscatedName("ag")
-	@Export("methods")
 	Method[] methods;
 	@ObfuscatedName("az")
-	@Export("arguments")
 	byte[][][] arguments;
 
 	ReflectionCheck() {
@@ -54,7 +47,6 @@ public class ReflectionCheck extends Node {
 		descriptor = "(IIIB)V",
 		garbageValue = "6"
 	)
-	@Export("worldToScreen")
 	static final void worldToScreen(int var0, int var1, int var2) {
 		if (var0 >= 128 && var1 >= 128 && var0 <= 13056 && var1 <= 13056) {
 			int var3 = class306.getTileHeight(var0, var1, class36.Client_plane) - var2;

@@ -10,7 +10,6 @@ public class class292 {
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("worldSelectFlagSprites")
 	static IndexedSprite[] worldSelectFlagSprites;
 
 	@ObfuscatedName("ay")
@@ -18,7 +17,6 @@ public class class292 {
 		descriptor = "(Lty;B)Ljava/lang/String;",
 		garbageValue = "-1"
 	)
-	@Export("readString")
 	public static String readString(Buffer var0) {
 		String var1;
 		try {

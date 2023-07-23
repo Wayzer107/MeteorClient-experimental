@@ -9,16 +9,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Decimator")
 public class Decimator {
 	@ObfuscatedName("ar")
-	@Export("WorldMapElement_count")
 	public static int WorldMapElement_count;
 	@ObfuscatedName("am")
-	@Export("inputRate")
 	int inputRate;
 	@ObfuscatedName("as")
-	@Export("outputRate")
 	int outputRate;
 	@ObfuscatedName("aj")
-	@Export("table")
 	int[][] table;
 
 	public Decimator(int var1, int var2) {
@@ -75,7 +71,6 @@ public class Decimator {
 		descriptor = "([BI)[B",
 		garbageValue = "-1075089216"
 	)
-	@Export("resample")
 	byte[] resample(byte[] var1) {
 		if (this.table != null) {
 			int var2 = (int)((long)this.outputRate * (long)var1.length / (long)this.inputRate) + 14;
@@ -121,7 +116,6 @@ public class Decimator {
 		descriptor = "(II)I",
 		garbageValue = "-396018153"
 	)
-	@Export("scaleRate")
 	int scaleRate(int var1) {
 		if (this.table != null) {
 			var1 = (int)((long)this.outputRate * (long)var1 / (long)this.inputRate);
@@ -135,7 +129,6 @@ public class Decimator {
 		descriptor = "(II)I",
 		garbageValue = "-1694829585"
 	)
-	@Export("scalePosition")
 	int scalePosition(int var1) {
 		if (this.table != null) {
 			var1 = (int)((long)var1 * (long)this.outputRate / (long)this.inputRate) + 6;
@@ -149,7 +142,6 @@ public class Decimator {
 		descriptor = "(Ljava/lang/String;Ljava/lang/String;ZB)Ltn;",
 		garbageValue = "0"
 	)
-	@Export("getPreferencesFile")
 	public static AccessFile getPreferencesFile(String var0, String var1, boolean var2) {
 		File var3 = new File(JagexCache.cacheDir, "preferences" + var0 + ".dat");
 		if (var3.exists()) {
@@ -190,7 +182,6 @@ public class Decimator {
 		descriptor = "(CLot;I)I",
 		garbageValue = "-316987264"
 	)
-	@Export("lowercaseChar")
 	static int lowercaseChar(char var0, Language var1) {
 		int var2 = var0 << 4;
 		if (Character.isUpperCase(var0) || Character.isTitleCase(var0)) {

@@ -10,7 +10,6 @@ public class class178 extends class181 {
 	@ObfuscatedSignature(
 		descriptor = "Lgq;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class170 this$0;
 
@@ -37,7 +36,6 @@ public class class178 extends class181 {
 		descriptor = "(I)I",
 		garbageValue = "-400866400"
 	)
-	@Export("vmethod3378")
 	public int vmethod3378() {
 		return this.field1468;
 	}

@@ -8,7 +8,6 @@ public class class156 extends class159 {
 	@ObfuscatedSignature(
 		descriptor = "Luk;"
 	)
-	@Export("rasterProvider")
 	public static AbstractRasterProvider rasterProvider;
 	@ObfuscatedName("aw")
 	int field1392;
@@ -22,7 +21,6 @@ public class class156 extends class159 {
 	@ObfuscatedSignature(
 		descriptor = "Lgs;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class160 this$0;
 
@@ -39,7 +37,6 @@ public class class156 extends class159 {
 		descriptor = "(Lty;B)V",
 		garbageValue = "-43"
 	)
-	@Export("vmethod3238")
 	void vmethod3238(Buffer var1) {
 		var1.readUnsignedByte();
 		this.field1392 = var1.readUnsignedShort();
@@ -55,7 +52,6 @@ public class class156 extends class159 {
 		descriptor = "(Lgh;I)V",
 		garbageValue = "-2132107044"
 	)
-	@Export("vmethod3239")
 	void vmethod3239(ClanChannel var1) {
 		ClanChannelMember var2 = (ClanChannelMember)var1.members.get(this.field1392);
 		var2.rank = this.field1390;

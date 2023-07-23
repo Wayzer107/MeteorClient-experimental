@@ -7,25 +7,18 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("MouseRecorder")
 public class MouseRecorder implements Runnable {
 	@ObfuscatedName("wo")
-	@Export("foundItemIds")
 	static short[] foundItemIds;
 	@ObfuscatedName("aw")
-	@Export("isRunning")
 	boolean isRunning;
 	@ObfuscatedName("ay")
-	@Export("lock")
 	Object lock;
 	@ObfuscatedName("ar")
-	@Export("index")
 	int index;
 	@ObfuscatedName("am")
-	@Export("xs")
 	int[] xs;
 	@ObfuscatedName("as")
-	@Export("ys")
 	int[] ys;
 	@ObfuscatedName("aj")
-	@Export("millis")
 	long[] millis;
 
 	MouseRecorder() {
@@ -37,7 +30,6 @@ public class MouseRecorder implements Runnable {
 		this.millis = new long[500];
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		for (; this.isRunning; class13.method44(50L)) {
@@ -76,7 +68,6 @@ public class MouseRecorder implements Runnable {
 		descriptor = "(III)Lmt;",
 		garbageValue = "-365664003"
 	)
-	@Export("getWidgetChild")
 	public static Widget getWidgetChild(int var0, int var1) {
 		Widget var2 = VarbitComposition.getWidget(var0);
 		if (var1 == -1) {

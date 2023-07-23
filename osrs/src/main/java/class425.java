@@ -31,7 +31,6 @@ public final class class425 implements Comparable {
 		}
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (var1 instanceof class425) {
@@ -41,13 +40,11 @@ public final class class425 implements Comparable {
 		}
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		return this.field3768.hashCode();
 	}
 
-	@Export("compareTo")
 	@ObfuscatedName("compareTo")
 	public int compareTo(Object var1) {
 		return this.method2152((class425)var1);

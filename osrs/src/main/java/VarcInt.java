@@ -10,16 +10,13 @@ public class VarcInt extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("VarcInt_archive")
 	public static AbstractArchive VarcInt_archive;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("VarcInt_cached")
 	static EvictingDualNodeHashTable VarcInt_cached;
 	@ObfuscatedName("ar")
-	@Export("persist")
 	public boolean persist;
 
 	static {

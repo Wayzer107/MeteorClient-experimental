@@ -8,16 +8,12 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("RouteStrategy")
 public abstract class RouteStrategy {
 	@ObfuscatedName("aw")
-	@Export("approxDestinationX")
 	public int approxDestinationX;
 	@ObfuscatedName("ay")
-	@Export("approxDestinationY")
 	public int approxDestinationY;
 	@ObfuscatedName("ar")
-	@Export("approxDestinationSizeX")
 	public int approxDestinationSizeX;
 	@ObfuscatedName("am")
-	@Export("approxDestinationSizeY")
 	public int approxDestinationSizeY;
 
 	protected RouteStrategy() {
@@ -28,7 +24,6 @@ public abstract class RouteStrategy {
 		descriptor = "(IIILij;I)Z",
 		garbageValue = "2142084611"
 	)
-	@Export("hasArrived")
 	protected abstract boolean hasArrived(int var1, int var2, int var3, CollisionMap var4);
 
 	@ObfuscatedName("aj")
@@ -67,7 +62,6 @@ public abstract class RouteStrategy {
 		descriptor = "(II)V",
 		garbageValue = "-774340966"
 	)
-	@Export("setWindowedMode")
 	static void setWindowedMode(int var0) {
 		Client.field611 = 0L;
 		if (var0 >= 2) {

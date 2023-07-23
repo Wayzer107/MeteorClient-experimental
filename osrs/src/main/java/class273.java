@@ -9,7 +9,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("kq")
 public class class273 {
 	@ObfuscatedName("az")
-	@Export("soundSystemExecutor")
 	public static ScheduledExecutorService soundSystemExecutor;
 
 	@ObfuscatedName("aw")
@@ -17,7 +16,6 @@ public class class273 {
 		descriptor = "(II)I",
 		garbageValue = "-644224068"
 	)
-	@Export("Widget_unpackTargetMask")
 	public static int Widget_unpackTargetMask(int var0) {
 		return var0 >> 11 & 63;
 	}

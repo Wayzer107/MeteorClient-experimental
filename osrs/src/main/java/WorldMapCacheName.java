@@ -33,7 +33,6 @@ public class WorldMapCacheName {
 	)
 	public static final WorldMapCacheName field2448;
 	@ObfuscatedName("aj")
-	@Export("name")
 	public final String name;
 
 	static {

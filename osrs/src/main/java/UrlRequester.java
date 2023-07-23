@@ -16,10 +16,8 @@ public abstract class UrlRequester implements Runnable {
 	@ObfuscatedName("aw")
 	final Thread field1156;
 	@ObfuscatedName("ay")
-	@Export("isClosed")
 	volatile boolean isClosed;
 	@ObfuscatedName("ar")
-	@Export("requests")
 	Queue requests;
 	@ObfuscatedName("am")
 	int field1154;
@@ -37,7 +35,6 @@ public abstract class UrlRequester implements Runnable {
 		descriptor = "(Lei;I)V",
 		garbageValue = "-1617729938"
 	)
-	@Export("vmethod2700")
 	abstract void vmethod2700(UrlRequest var1) throws IOException;
 
 	@ObfuscatedName("ay")
@@ -122,7 +119,6 @@ public abstract class UrlRequester implements Runnable {
 		descriptor = "(Ljava/net/URL;I)Lei;",
 		garbageValue = "1908448074"
 	)
-	@Export("request")
 	public UrlRequest request(URL var1) {
 		UrlRequest var2 = new UrlRequest(var1);
 		synchronized(this) {
@@ -137,7 +133,6 @@ public abstract class UrlRequester implements Runnable {
 		descriptor = "(S)V",
 		garbageValue = "29176"
 	)
-	@Export("close")
 	public void close() {
 		this.isClosed = true;
 
@@ -152,7 +147,6 @@ public abstract class UrlRequester implements Runnable {
 
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		while (!this.isClosed) {

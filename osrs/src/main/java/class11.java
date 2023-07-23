@@ -17,10 +17,8 @@ class class11 implements TlsAuthentication {
 	@ObfuscatedSignature(
 		descriptor = "Luu;"
 	)
-	@Export("options_buttons_2Sprite")
 	static IndexedSprite options_buttons_2Sprite;
 	@ObfuscatedName("gq")
-	@Export("js5Port")
 	static int js5Port;
 	@ObfuscatedName("gb")
 	static String field36;
@@ -28,13 +26,11 @@ class class11 implements TlsAuthentication {
 	@ObfuscatedSignature(
 		descriptor = "Lfx;"
 	)
-	@Export("guestClanSettings")
 	static ClanSettings guestClanSettings;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Lax;"
 	)
-	@Export("this$2")
 	@ObfuscatedName("this$2")
 	final class13 this$2;
 
@@ -45,7 +41,6 @@ class class11 implements TlsAuthentication {
 		this.this$2 = var1;
 	}
 
-	@Export("notifyServerCertificate")
 	@ObfuscatedName("notifyServerCertificate")
 	public void notifyServerCertificate(Certificate var1) throws IOException {
 		try {
@@ -64,7 +59,6 @@ class class11 implements TlsAuthentication {
 		}
 	}
 
-	@Export("getClientCredentials")
 	@ObfuscatedName("getClientCredentials")
 	public TlsCredentials getClientCredentials(CertificateRequest var1) throws IOException {
 		return null;

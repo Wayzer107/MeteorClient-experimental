@@ -9,7 +9,6 @@ public class class415 {
 		descriptor = "(ILjava/lang/String;Ljava/lang/String;I)V",
 		garbageValue = "1913054619"
 	)
-	@Export("addGameMessage")
 	static void addGameMessage(int var0, String var1, String var2) {
 		class213.addChatMessage(var0, var1, var2, (String)null);
 	}

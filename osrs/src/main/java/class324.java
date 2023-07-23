@@ -9,6 +9,5 @@ public interface class324 {
 		descriptor = "(B)V",
 		garbageValue = "-3"
 	)
-	@Export("vmethod5708")
 	void vmethod5708();
 }

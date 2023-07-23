@@ -77,12 +77,10 @@ public enum ModeWhere implements class372 {
 	@ObfuscatedName("ug")
 	static int field3604;
 	@ObfuscatedName("ng")
-	@Export("menuHeight")
 	static int menuHeight;
 	@ObfuscatedName("uc")
 	static int cameraMoveToHeight;
 	@ObfuscatedName("ax")
-	@Export("id")
 	final int id;
 	@ObfuscatedName("aa")
 	final Set field3619;
@@ -112,7 +110,6 @@ public enum ModeWhere implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.id;
 	}

@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("ev")
 public class class125 {
 	@ObfuscatedName("ab")
-	@Export("ByteArrayPool_altSizeArrayCounts")
 	public static int[] ByteArrayPool_altSizeArrayCounts;
 	@ObfuscatedName("aw")
 	int field1193;
@@ -51,7 +50,6 @@ public class class125 {
 		descriptor = "(II)Lhc;",
 		garbageValue = "-1218756149"
 	)
-	@Export("ItemDefinition_get")
 	public static ItemComposition ItemDefinition_get(int var0) {
 		ItemComposition var1 = (ItemComposition)ItemComposition.ItemDefinition_cached.get((long)var0);
 		if (var1 != null) {

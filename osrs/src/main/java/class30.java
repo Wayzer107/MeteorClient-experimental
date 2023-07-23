@@ -9,7 +9,6 @@ public class class30 {
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("worldSelectArrows")
 	static IndexedSprite[] worldSelectArrows;
 
 	static {

@@ -12,7 +12,6 @@ public class class113 extends UrlRequester {
 	@ObfuscatedSignature(
 		descriptor = "Lpc;"
 	)
-	@Export("fontPlain12")
 	static Font fontPlain12;
 	@ObfuscatedName("ms")
 	@ObfuscatedSignature(
@@ -32,7 +31,6 @@ public class class113 extends UrlRequester {
 		descriptor = "(Lei;I)V",
 		garbageValue = "-1617729938"
 	)
-	@Export("vmethod2700")
 	void vmethod2700(UrlRequest var1) throws IOException {
 		URLConnection var2 = null;
 		boolean var9 = false;
@@ -130,7 +128,6 @@ public class class113 extends UrlRequester {
 		descriptor = "(I)J",
 		garbageValue = "1625750201"
 	)
-	@Export("clockNow")
 	public static final synchronized long clockNow() {
 		long var0 = System.currentTimeMillis();
 		if (var0 < class302.field2735) {

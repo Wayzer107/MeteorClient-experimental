@@ -34,7 +34,6 @@ public class class449 {
 		return (float)Math.sqrt((double)(this.field3849 * this.field3849 + this.field3850 * this.field3850 + this.field3848 * this.field3848));
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.field3849 + ", " + this.field3850 + ", " + this.field3848;

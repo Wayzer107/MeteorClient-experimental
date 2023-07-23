@@ -10,10 +10,8 @@ public class ChatChannel {
 	@ObfuscatedSignature(
 		descriptor = "[Lcx;"
 	)
-	@Export("messages")
 	Message[] messages;
 	@ObfuscatedName("ar")
-	@Export("count")
 	int count;
 
 	ChatChannel() {
@@ -25,7 +23,6 @@ public class ChatChannel {
 		descriptor = "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;B)Lcx;",
 		garbageValue = "118"
 	)
-	@Export("addMessage")
 	Message addMessage(int var1, String var2, String var3, String var4) {
 		Message var5 = this.messages[99];
 
@@ -56,7 +53,6 @@ public class ChatChannel {
 		descriptor = "(II)Lcx;",
 		garbageValue = "1212172296"
 	)
-	@Export("getMessage")
 	Message getMessage(int var1) {
 		return var1 >= 0 && var1 < this.count ? this.messages[var1] : null;
 	}
@@ -66,7 +62,6 @@ public class ChatChannel {
 		descriptor = "(I)I",
 		garbageValue = "-1702570435"
 	)
-	@Export("size")
 	int size() {
 		return this.count;
 	}
@@ -76,7 +71,6 @@ public class ChatChannel {
 		descriptor = "(CI)Z",
 		garbageValue = "932818549"
 	)
-	@Export("isCharPrintable")
 	public static boolean isCharPrintable(char var0) {
 		if (var0 >= ' ' && var0 <= '~') {
 			return true;
@@ -92,7 +86,6 @@ public class ChatChannel {
 		descriptor = "(IIB)V",
 		garbageValue = "95"
 	)
-	@Export("runIntfCloseListeners")
 	static final void runIntfCloseListeners(int var0, int var1) {
 		if (Login.loadInterface(var0)) {
 			class420.runComponentCloseListeners(ArchiveLoader.Widget_interfaceComponents[var0], var1);

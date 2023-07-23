@@ -9,22 +9,18 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Messages")
 public class Messages {
 	@ObfuscatedName("aw")
-	@Export("Messages_channels")
 	static final Map Messages_channels;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lsa;"
 	)
-	@Export("Messages_hashTable")
 	static final IterableNodeHashTable Messages_hashTable;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Loz;"
 	)
-	@Export("Messages_queue")
 	static final IterableDualNodeQueue Messages_queue;
 	@ObfuscatedName("am")
-	@Export("Messages_count")
 	static int Messages_count;
 
 	static {

@@ -7,22 +7,17 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("WorldMapRectangle")
 public final class WorldMapRectangle {
 	@ObfuscatedName("aw")
-	@Export("width")
 	int width;
 	@ObfuscatedName("ay")
-	@Export("height")
 	int height;
 	@ObfuscatedName("ar")
-	@Export("x")
 	int x;
 	@ObfuscatedName("am")
-	@Export("y")
 	int y;
 	// $FF: synthetic field
 	@ObfuscatedSignature(
 		descriptor = "Ljf;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final WorldMapManager this$0;
 

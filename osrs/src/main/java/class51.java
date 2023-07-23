@@ -9,6 +9,5 @@ public interface class51 {
 		descriptor = "(I)Lbk;",
 		garbageValue = "415453075"
 	)
-	@Export("player")
 	PcmPlayer player();
 }

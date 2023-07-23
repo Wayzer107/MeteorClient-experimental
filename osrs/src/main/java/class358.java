@@ -22,7 +22,6 @@ public class class358 extends DualNode {
 		descriptor = "(IB)I",
 		garbageValue = "70"
 	)
-	@Export("Messages_getLastChatID")
 	static int Messages_getLastChatID(int var0) {
 		Message var1 = (Message)Messages.Messages_hashTable.get((long)var0);
 		if (var1 == null) {
@@ -53,7 +52,6 @@ public class class358 extends DualNode {
 		descriptor = "(ZLtc;I)V",
 		garbageValue = "-720645536"
 	)
-	@Export("updateNpcs")
 	static final void updateNpcs(boolean var0, PacketBuffer var1) {
 		Client.field488 = 0;
 		Client.field446 = 0;

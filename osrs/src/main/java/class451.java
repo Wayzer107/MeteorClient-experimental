@@ -396,7 +396,6 @@ public final class class451 {
 		return var1;
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		StringBuilder var1 = new StringBuilder();
@@ -423,7 +422,6 @@ public final class class451 {
 		return var1.toString();
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		boolean var1 = true;
@@ -432,7 +430,6 @@ public final class class451 {
 		return var3;
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof class451)) {
@@ -455,7 +452,6 @@ public final class class451 {
 		descriptor = "(Lnd;Ljava/lang/String;Ljava/lang/String;I)Luu;",
 		garbageValue = "1008669226"
 	)
-	@Export("SpriteBuffer_getIndexedSpriteByName")
 	public static IndexedSprite SpriteBuffer_getIndexedSpriteByName(AbstractArchive var0, String var1, String var2) {
 		if (!var0.isValidFileName(var1, var2)) {
 			return null;

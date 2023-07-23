@@ -9,28 +9,20 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("BufferedSink")
 public class BufferedSink implements Runnable {
 	@ObfuscatedName("aw")
-	@Export("thread")
 	Thread thread;
 	@ObfuscatedName("ay")
-	@Export("outputStream")
 	OutputStream outputStream;
 	@ObfuscatedName("ar")
-	@Export("capacity")
 	int capacity;
 	@ObfuscatedName("am")
-	@Export("buffer")
 	byte[] buffer;
 	@ObfuscatedName("as")
-	@Export("position")
 	int position;
 	@ObfuscatedName("aj")
-	@Export("limit")
 	int limit;
 	@ObfuscatedName("ag")
-	@Export("exception")
 	IOException exception;
 	@ObfuscatedName("az")
-	@Export("closed")
 	boolean closed;
 
 	BufferedSink(OutputStream var1, int var2) {
@@ -49,7 +41,6 @@ public class BufferedSink implements Runnable {
 		descriptor = "(I)Z",
 		garbageValue = "-1093105883"
 	)
-	@Export("isClosed")
 	boolean isClosed() {
 		if (this.closed) {
 			try {
@@ -74,7 +65,6 @@ public class BufferedSink implements Runnable {
 		descriptor = "([BIII)V",
 		garbageValue = "-1711047468"
 	)
-	@Export("write")
 	void write(byte[] var1, int var2, int var3) throws IOException {
 		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
 			synchronized(this) {
@@ -114,7 +104,6 @@ public class BufferedSink implements Runnable {
 		descriptor = "(I)V",
 		garbageValue = "2122797894"
 	)
-	@Export("close")
 	void close() {
 		synchronized(this) {
 			this.closed = true;
@@ -128,7 +117,6 @@ public class BufferedSink implements Runnable {
 
 	}
 
-	@Export("run")
 	@ObfuscatedName("run")
 	public void run() {
 		do {

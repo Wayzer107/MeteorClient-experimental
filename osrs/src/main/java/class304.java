@@ -10,7 +10,6 @@ public class class304 {
 	@ObfuscatedSignature(
 		descriptor = "[Luu;"
 	)
-	@Export("title_muteSprite")
 	static IndexedSprite[] title_muteSprite;
 
 	static {
@@ -40,7 +39,6 @@ public class class304 {
 		descriptor = "([BI)[B",
 		garbageValue = "754109388"
 	)
-	@Export("decompressBytes")
 	static final byte[] decompressBytes(byte[] var0) {
 		Buffer var1 = new Buffer(var0);
 		int var2 = var1.readUnsignedByte();

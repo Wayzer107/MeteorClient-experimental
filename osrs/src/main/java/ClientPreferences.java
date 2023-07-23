@@ -11,41 +11,30 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("ClientPreferences")
 public class ClientPreferences {
 	@ObfuscatedName("as")
-	@Export("roofsHidden")
 	boolean roofsHidden;
 	@ObfuscatedName("aj")
-	@Export("hideUsername")
 	boolean hideUsername;
 	@ObfuscatedName("ag")
-	@Export("titleMusicDisabled")
 	boolean titleMusicDisabled;
 	@ObfuscatedName("az")
-	@Export("displayFps")
 	boolean displayFps;
 	@ObfuscatedName("av")
 	int field1062;
 	@ObfuscatedName("ap")
-	@Export("brightness")
 	double brightness;
 	@ObfuscatedName("aq")
-	@Export("musicVolume")
 	int musicVolume;
 	@ObfuscatedName("at")
-	@Export("soundEffectsVolume")
 	int soundEffectsVolume;
 	@ObfuscatedName("ah")
-	@Export("areaSoundEffectsVolume")
 	int areaSoundEffectsVolume;
 	@ObfuscatedName("ax")
 	int field1063;
 	@ObfuscatedName("aa")
-	@Export("rememberedUsername")
 	String rememberedUsername;
 	@ObfuscatedName("au")
-	@Export("windowMode")
 	int windowMode;
 	@ObfuscatedName("ae")
-	@Export("parameters")
 	final Map parameters;
 
 	ClientPreferences() {
@@ -149,7 +138,6 @@ public class ClientPreferences {
 		descriptor = "(I)Lty;",
 		garbageValue = "-819930938"
 	)
-	@Export("toBuffer")
 	Buffer toBuffer() {
 		Buffer var1 = new Buffer(417, true);
 		var1.writeByte(10);
@@ -182,7 +170,6 @@ public class ClientPreferences {
 		descriptor = "(ZB)V",
 		garbageValue = "100"
 	)
-	@Export("setRoofsHidden")
 	void setRoofsHidden(boolean var1) {
 		this.roofsHidden = var1;
 		GrandExchangeEvents.savePreferences();
@@ -193,7 +180,6 @@ public class ClientPreferences {
 		descriptor = "(B)Z",
 		garbageValue = "-38"
 	)
-	@Export("getRoofsHidden")
 	boolean getRoofsHidden() {
 		return this.roofsHidden;
 	}
@@ -203,7 +189,6 @@ public class ClientPreferences {
 		descriptor = "(ZI)V",
 		garbageValue = "441049992"
 	)
-	@Export("setIsUsernameHidden")
 	void setIsUsernameHidden(boolean var1) {
 		this.hideUsername = var1;
 		GrandExchangeEvents.savePreferences();
@@ -214,7 +199,6 @@ public class ClientPreferences {
 		descriptor = "(I)Z",
 		garbageValue = "2023726507"
 	)
-	@Export("getIsUsernameHidden")
 	boolean getIsUsernameHidden() {
 		return this.hideUsername;
 	}
@@ -224,7 +208,6 @@ public class ClientPreferences {
 		descriptor = "(ZI)V",
 		garbageValue = "-1734059763"
 	)
-	@Export("getTitleMusicDisabled")
 	void getTitleMusicDisabled(boolean var1) {
 		this.titleMusicDisabled = var1;
 		GrandExchangeEvents.savePreferences();
@@ -235,7 +218,6 @@ public class ClientPreferences {
 		descriptor = "(I)Z",
 		garbageValue = "-1364267368"
 	)
-	@Export("getTitleMusicDisabled")
 	boolean getTitleMusicDisabled() {
 		return this.titleMusicDisabled;
 	}
@@ -288,7 +270,6 @@ public class ClientPreferences {
 	}
 
 	@ObfuscatedName("au")
-	@Export("setBrightness")
 	void setBrightness(double var1) {
 		this.brightness = var1;
 		GrandExchangeEvents.savePreferences();
@@ -299,7 +280,6 @@ public class ClientPreferences {
 		descriptor = "(B)D",
 		garbageValue = "49"
 	)
-	@Export("getBrightness")
 	double getBrightness() {
 		return this.brightness;
 	}
@@ -309,7 +289,6 @@ public class ClientPreferences {
 		descriptor = "(II)V",
 		garbageValue = "1354981451"
 	)
-	@Export("setCurrentMusicVolume")
 	void setCurrentMusicVolume(int var1) {
 		this.musicVolume = var1;
 		GrandExchangeEvents.savePreferences();
@@ -320,7 +299,6 @@ public class ClientPreferences {
 		descriptor = "(B)I",
 		garbageValue = "-54"
 	)
-	@Export("getCurrentMusicVolume")
 	int getCurrentMusicVolume() {
 		return this.musicVolume;
 	}
@@ -330,7 +308,6 @@ public class ClientPreferences {
 		descriptor = "(IB)V",
 		garbageValue = "-65"
 	)
-	@Export("setCurrentSoundEffectVolume")
 	void setCurrentSoundEffectVolume(int var1) {
 		this.soundEffectsVolume = var1;
 		GrandExchangeEvents.savePreferences();
@@ -341,7 +318,6 @@ public class ClientPreferences {
 		descriptor = "(I)I",
 		garbageValue = "-232317840"
 	)
-	@Export("getCurrentSoundEffectsVolume")
 	int getCurrentSoundEffectsVolume() {
 		return this.soundEffectsVolume;
 	}
@@ -351,7 +327,6 @@ public class ClientPreferences {
 		descriptor = "(IB)V",
 		garbageValue = "-58"
 	)
-	@Export("setAreaSoundEffectsVolume")
 	void setAreaSoundEffectsVolume(int var1) {
 		this.areaSoundEffectsVolume = var1;
 		GrandExchangeEvents.savePreferences();
@@ -362,7 +337,6 @@ public class ClientPreferences {
 		descriptor = "(I)I",
 		garbageValue = "160605956"
 	)
-	@Export("getAreaSoundEffectsVolume")
 	int getAreaSoundEffectsVolume() {
 		return this.areaSoundEffectsVolume;
 	}
@@ -372,7 +346,6 @@ public class ClientPreferences {
 		descriptor = "(Ljava/lang/String;S)V",
 		garbageValue = "-1250"
 	)
-	@Export("setUsernameToRemember")
 	void setUsernameToRemember(String var1) {
 		this.rememberedUsername = var1;
 		GrandExchangeEvents.savePreferences();
@@ -383,7 +356,6 @@ public class ClientPreferences {
 		descriptor = "(I)Ljava/lang/String;",
 		garbageValue = "575676245"
 	)
-	@Export("getUsernameToRemember")
 	String getUsernameToRemember() {
 		return this.rememberedUsername;
 	}
@@ -477,7 +449,6 @@ public class ClientPreferences {
 		descriptor = "([Los;II)Los;",
 		garbageValue = "-1385726051"
 	)
-	@Export("findEnumerated")
 	public static class372 findEnumerated(class372[] var0, int var1) {
 		class372[] var2 = var0;
 

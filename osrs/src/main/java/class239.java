@@ -5,7 +5,6 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("jh")
 public class class239 {
 	@ObfuscatedName("av")
-	@Export("ItemDefinition_fileCount")
 	public static int ItemDefinition_fileCount;
 
 	@ObfuscatedName("bv")

@@ -7,13 +7,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Coord")
 public class Coord {
 	@ObfuscatedName("aw")
-	@Export("plane")
 	public int plane;
 	@ObfuscatedName("ay")
-	@Export("x")
 	public int x;
 	@ObfuscatedName("ar")
-	@Export("y")
 	public int y;
 
 	@ObfuscatedSignature(
@@ -47,7 +44,6 @@ public class Coord {
 		descriptor = "(I)I",
 		garbageValue = "1164685435"
 	)
-	@Export("packed")
 	public int packed() {
 		return class492.method2438(this.plane, this.x, this.y);
 	}
@@ -57,7 +53,6 @@ public class Coord {
 		descriptor = "(Lmr;I)Z",
 		garbageValue = "916547059"
 	)
-	@Export("equalsCoord")
 	boolean equalsCoord(Coord var1) {
 		if (this.plane != var1.plane) {
 			return false;
@@ -73,12 +68,10 @@ public class Coord {
 		descriptor = "(Ljava/lang/String;B)Ljava/lang/String;",
 		garbageValue = "16"
 	)
-	@Export("toString")
 	String toString(String var1) {
 		return this.plane + var1 + (this.x >> 6) + var1 + (this.y >> 6) + var1 + (this.x & 63) + var1 + (this.y & 63);
 	}
 
-	@Export("equals")
 	@ObfuscatedName("equals")
 	public boolean equals(Object var1) {
 		if (this == var1) {
@@ -88,13 +81,11 @@ public class Coord {
 		}
 	}
 
-	@Export("hashCode")
 	@ObfuscatedName("hashCode")
 	public int hashCode() {
 		return this.packed();
 	}
 
-	@Export("toString")
 	@ObfuscatedName("toString")
 	public String toString() {
 		return this.toString(",");

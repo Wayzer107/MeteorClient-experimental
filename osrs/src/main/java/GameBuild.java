@@ -11,34 +11,27 @@ public class GameBuild {
 	@ObfuscatedSignature(
 		descriptor = "Lni;"
 	)
-	@Export("LIVE")
 	public static final GameBuild LIVE;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Lni;"
 	)
-	@Export("BUILDLIVE")
 	public static final GameBuild BUILDLIVE;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Lni;"
 	)
-	@Export("RC")
 	public static final GameBuild RC;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Lni;"
 	)
-	@Export("WIP")
 	public static final GameBuild WIP;
 	@ObfuscatedName("aq")
-	@Export("Tiles_saturation")
 	static int[] Tiles_saturation;
 	@ObfuscatedName("as")
-	@Export("name")
 	public final String name;
 	@ObfuscatedName("aj")
-	@Export("buildId")
 	public final int buildId;
 
 	static {
@@ -77,7 +70,6 @@ public class GameBuild {
 		descriptor = "(B)V",
 		garbageValue = "2"
 	)
-	@Export("FriendSystem_invalidateIgnoreds")
 	static final void FriendSystem_invalidateIgnoreds() {
 		Iterator var0 = Messages.Messages_hashTable.iterator();
 

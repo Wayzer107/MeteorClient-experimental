@@ -14,84 +14,61 @@ public class SequenceDefinition extends DualNode {
 	@ObfuscatedSignature(
 		descriptor = "Lnd;"
 	)
-	@Export("SequenceDefinition_archive")
 	static AbstractArchive SequenceDefinition_archive;
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("SequenceDefinition_cached")
 	static EvictingDualNodeHashTable SequenceDefinition_cached;
 	@ObfuscatedName("av")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("SequenceDefinition_cachedFrames")
 	static EvictingDualNodeHashTable SequenceDefinition_cachedFrames;
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
 		descriptor = "Lld;"
 	)
-	@Export("SequenceDefinition_cachedModel")
 	static EvictingDualNodeHashTable SequenceDefinition_cachedModel;
 	@ObfuscatedName("aq")
-	@Export("SequenceDefinition_cachedModelId")
 	public int SequenceDefinition_cachedModelId;
 	@ObfuscatedName("at")
-	@Export("animMayaFrameSounds")
 	public Map animMayaFrameSounds;
 	@ObfuscatedName("ah")
-	@Export("animMayaStart")
 	int animMayaStart;
 	@ObfuscatedName("ax")
-	@Export("animMayaEnd")
 	int animMayaEnd;
 	@ObfuscatedName("aa")
-	@Export("frameIds")
 	public int[] frameIds;
 	@ObfuscatedName("au")
-	@Export("chatFrameIds")
 	int[] chatFrameIds;
 	@ObfuscatedName("ae")
-	@Export("frameLengths")
 	public int[] frameLengths;
 	@ObfuscatedName("ab")
-	@Export("soundEffects")
 	public int[] soundEffects;
 	@ObfuscatedName("ad")
-	@Export("frameCount")
 	public int frameCount;
 	@ObfuscatedName("ao")
-	@Export("mergedBoneGroups")
 	int[] mergedBoneGroups;
 	@ObfuscatedName("ac")
-	@Export("animMayaMasks")
 	boolean[] animMayaMasks;
 	@ObfuscatedName("ak")
-	@Export("stretches")
 	public boolean stretches;
 	@ObfuscatedName("an")
-	@Export("forcedPriority")
 	public int forcedPriority;
 	@ObfuscatedName("af")
-	@Export("shield")
 	public int shield;
 	@ObfuscatedName("ai")
-	@Export("weapon")
 	public int weapon;
 	@ObfuscatedName("al")
-	@Export("iterations")
 	public int iterations;
 	@ObfuscatedName("bd")
 	public boolean field1819;
 	@ObfuscatedName("bb")
-	@Export("precedenceAnimating")
 	public int precedenceAnimating;
 	@ObfuscatedName("bn")
-	@Export("priority")
 	public int priority;
 	@ObfuscatedName("ba")
-	@Export("replyMode")
 	public int replyMode;
 
 	static {
@@ -122,7 +99,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Lty;S)V",
 		garbageValue = "-22539"
 	)
-	@Export("decode")
 	void decode(Buffer var1) {
 		while (true) {
 			int var2 = var1.readUnsignedByte();
@@ -139,7 +115,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Lty;II)V",
 		garbageValue = "1148727534"
 	)
-	@Export("decodeNext")
 	void decodeNext(Buffer var1, int var2) {
 		int var3;
 		int var4;
@@ -241,7 +216,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(B)V",
 		garbageValue = "121"
 	)
-	@Export("postDecode")
 	void postDecode() {
 		if (this.precedenceAnimating == -1) {
 			if (this.mergedBoneGroups == null && this.animMayaMasks == null) {
@@ -266,7 +240,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Ljo;II)Ljo;",
 		garbageValue = "509430466"
 	)
-	@Export("transformActorModel")
 	public Model transformActorModel(Model var1, int var2) {
 		Model var4;
 		if (!this.isCachedModelIdSet()) {
@@ -297,7 +270,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Ljo;IIB)Ljo;",
 		garbageValue = "-111"
 	)
-	@Export("transformObjectModel")
 	Model transformObjectModel(Model var1, int var2, int var3) {
 		Model var5;
 		if (!this.isCachedModelIdSet()) {
@@ -392,7 +364,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Ljo;ILig;II)Ljo;",
 		garbageValue = "-1383318725"
 	)
-	@Export("applyTransformations")
 	public Model applyTransformations(Model var1, int var2, SequenceDefinition var3, int var4) {
 		if (field1808 && !this.isCachedModelIdSet() && !var3.isCachedModelIdSet()) {
 			return this.method1064(var1, var2, var3, var4);
@@ -503,7 +474,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(Ljo;II)Ljo;",
 		garbageValue = "-2020208153"
 	)
-	@Export("transformWidgetModel")
 	public Model transformWidgetModel(Model var1, int var2) {
 		if (!this.isCachedModelIdSet()) {
 			int var3 = this.frameIds[var2];
@@ -542,7 +512,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(I)Z",
 		garbageValue = "2102518176"
 	)
-	@Export("isCachedModelIdSet")
 	public boolean isCachedModelIdSet() {
 		return this.SequenceDefinition_cachedModelId >= 0;
 	}
@@ -570,7 +539,6 @@ public class SequenceDefinition extends DualNode {
 		descriptor = "(II)Lho;",
 		garbageValue = "-1093606391"
 	)
-	@Export("WorldMapElement_get")
 	public static WorldMapElement WorldMapElement_get(int var0) {
 		return var0 >= 0 && var0 < class335.WorldMapElement_cached.length && class335.WorldMapElement_cached[var0] != null ? class335.WorldMapElement_cached[var0] : new WorldMapElement(var0);
 	}

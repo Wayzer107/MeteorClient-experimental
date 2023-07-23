@@ -7,7 +7,6 @@ public class class33 {
 	@ObfuscatedName("aq")
 	public static short[] field89;
 	@ObfuscatedName("oo")
-	@Export("selectedSpellWidget")
 	static int selectedSpellWidget;
 	@ObfuscatedName("ag")
 	int field91;

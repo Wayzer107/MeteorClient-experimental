@@ -18,7 +18,6 @@ public class class16 implements ThreadFactory {
 	@ObfuscatedSignature(
 		descriptor = "Laa;"
 	)
-	@Export("this$0")
 	@ObfuscatedName("this$0")
 	final class14 this$0;
 
@@ -32,7 +31,6 @@ public class class16 implements ThreadFactory {
 		this.field48 = var2 != null ? var2.getThreadGroup() : Thread.currentThread().getThreadGroup();
 	}
 
-	@Export("newThread")
 	@ObfuscatedName("newThread")
 	public Thread newThread(Runnable var1) {
 		Thread var2 = new Thread(this.field48, var1, this.this$0.field43 + "-rest-request-" + this.field49.getAndIncrement(), 0L);

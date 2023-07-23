@@ -8,7 +8,6 @@ public enum FillMode implements class372 {
 	@ObfuscatedSignature(
 		descriptor = "Luc;"
 	)
-	@Export("SOLID")
 	SOLID(0, 0),
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
@@ -36,7 +35,6 @@ public enum FillMode implements class372 {
 		descriptor = "(I)I",
 		garbageValue = "1644350448"
 	)
-	@Export("rsOrdinal")
 	public int rsOrdinal() {
 		return this.field4186;
 	}

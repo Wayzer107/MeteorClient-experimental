@@ -15,7 +15,6 @@ public class class219 {
 		descriptor = "(IB)Lht;",
 		garbageValue = "-74"
 	)
-	@Export("StructDefinition_getStructDefinition")
 	public static StructComposition StructDefinition_getStructDefinition(int var0) {
 		StructComposition var1 = (StructComposition)StructComposition.StructDefinition_cached.get((long)var0);
 		if (var1 != null) {

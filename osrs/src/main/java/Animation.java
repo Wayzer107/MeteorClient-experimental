@@ -18,25 +18,18 @@ public class Animation {
 	@ObfuscatedSignature(
 		descriptor = "Lik;"
 	)
-	@Export("skeleton")
 	Skeleton skeleton;
 	@ObfuscatedName("aj")
-	@Export("transformCount")
 	int transformCount;
 	@ObfuscatedName("ag")
-	@Export("transformSkeletonLabels")
 	int[] transformSkeletonLabels;
 	@ObfuscatedName("az")
-	@Export("transformXs")
 	int[] transformXs;
 	@ObfuscatedName("av")
-	@Export("transformYs")
 	int[] transformYs;
 	@ObfuscatedName("ap")
-	@Export("transformZs")
 	int[] transformZs;
 	@ObfuscatedName("aq")
-	@Export("hasAlphaTransform")
 	boolean hasAlphaTransform;
 
 	static {

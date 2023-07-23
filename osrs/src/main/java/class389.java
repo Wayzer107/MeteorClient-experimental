@@ -5,12 +5,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @ObfuscatedName("oa")
 public final class class389 {
 	@ObfuscatedName("aw")
-	@Export("base37Table")
 	public static final char[] base37Table;
 	@ObfuscatedName("ay")
 	static long[] field3649;
 	@ObfuscatedName("jt")
-	@Export("regionMapArchives")
 	static byte[][] regionMapArchives;
 
 	static {

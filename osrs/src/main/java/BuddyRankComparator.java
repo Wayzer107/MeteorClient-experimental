@@ -9,7 +9,6 @@ public class BuddyRankComparator extends AbstractUserComparator {
 	@ObfuscatedName("ha")
 	static String field1182;
 	@ObfuscatedName("aw")
-	@Export("reversed")
 	final boolean reversed;
 
 	public BuddyRankComparator(boolean var1) {
@@ -21,7 +20,6 @@ public class BuddyRankComparator extends AbstractUserComparator {
 		descriptor = "(Lqa;Lqa;I)I",
 		garbageValue = "1135205552"
 	)
-	@Export("compareBuddy")
 	int compareBuddy(Buddy var1, Buddy var2) {
 		if (var2.rank != var1.rank) {
 			return this.reversed ? var1.rank - var2.rank : var2.rank - var1.rank;
@@ -30,7 +28,6 @@ public class BuddyRankComparator extends AbstractUserComparator {
 		}
 	}
 
-	@Export("compare")
 	@ObfuscatedName("compare")
 	public int compare(Object var1, Object var2) {
 		return this.compareBuddy((Buddy)var1, (Buddy)var2);

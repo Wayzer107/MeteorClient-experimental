@@ -7,82 +7,57 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("Projectile")
 public final class Projectile extends Renderable {
 	@ObfuscatedName("aw")
-	@Export("id")
 	int id;
 	@ObfuscatedName("ay")
-	@Export("plane")
 	int plane;
 	@ObfuscatedName("ar")
-	@Export("sourceX")
 	int sourceX;
 	@ObfuscatedName("am")
-	@Export("sourceY")
 	int sourceY;
 	@ObfuscatedName("as")
-	@Export("sourceZ")
 	int sourceZ;
 	@ObfuscatedName("aj")
-	@Export("endHeight")
 	int endHeight;
 	@ObfuscatedName("ag")
-	@Export("cycleStart")
 	int cycleStart;
 	@ObfuscatedName("az")
-	@Export("cycleEnd")
 	int cycleEnd;
 	@ObfuscatedName("av")
-	@Export("slope")
 	int slope;
 	@ObfuscatedName("ap")
-	@Export("startHeight")
 	int startHeight;
 	@ObfuscatedName("aq")
-	@Export("targetIndex")
 	int targetIndex;
 	@ObfuscatedName("at")
-	@Export("isMoving")
 	boolean isMoving;
 	@ObfuscatedName("ah")
-	@Export("x")
 	double x;
 	@ObfuscatedName("ax")
-	@Export("y")
 	double y;
 	@ObfuscatedName("aa")
-	@Export("z")
 	double z;
 	@ObfuscatedName("au")
-	@Export("speedX")
 	double speedX;
 	@ObfuscatedName("ae")
-	@Export("speedY")
 	double speedY;
 	@ObfuscatedName("ab")
-	@Export("speed")
 	double speed;
 	@ObfuscatedName("ad")
-	@Export("speedZ")
 	double speedZ;
 	@ObfuscatedName("ao")
-	@Export("accelerationZ")
 	double accelerationZ;
 	@ObfuscatedName("ac")
-	@Export("yaw")
 	int yaw;
 	@ObfuscatedName("ak")
-	@Export("pitch")
 	int pitch;
 	@ObfuscatedName("an")
 	@ObfuscatedSignature(
 		descriptor = "Lig;"
 	)
-	@Export("sequenceDefinition")
 	SequenceDefinition sequenceDefinition;
 	@ObfuscatedName("af")
-	@Export("frame")
 	int frame;
 	@ObfuscatedName("ai")
-	@Export("frameCycle")
 	int frameCycle;
 
 	Projectile(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
@@ -115,7 +90,6 @@ public final class Projectile extends Renderable {
 		descriptor = "(IIIIB)V",
 		garbageValue = "1"
 	)
-	@Export("setDestination")
 	final void setDestination(int var1, int var2, int var3, int var4) {
 		double var5;
 		if (!this.isMoving) {
@@ -143,7 +117,6 @@ public final class Projectile extends Renderable {
 		descriptor = "(I)Ljo;",
 		garbageValue = "-983173466"
 	)
-	@Export("getModel")
 	protected final Model getModel() {
 		SpotAnimationDefinition var1 = NPCComposition.SpotAnimationDefinition_get(this.id);
 		Model var2 = var1.getModel(this.frame);
@@ -160,7 +133,6 @@ public final class Projectile extends Renderable {
 		descriptor = "(II)V",
 		garbageValue = "-1587354661"
 	)
-	@Export("advance")
 	final void advance(int var1) {
 		this.isMoving = true;
 		this.x += this.speedX * (double)var1;

@@ -14,7 +14,6 @@ public class class10 {
 	@ObfuscatedSignature(
 		descriptor = "Lud;"
 	)
-	@Export("compass")
 	static SpritePixels compass;
 	@ObfuscatedName("aw")
 	final HttpsURLConnection field32;
@@ -235,7 +234,6 @@ public class class10 {
 		descriptor = "(IIIIIIII)V",
 		garbageValue = "-1708450572"
 	)
-	@Export("updateRootInterface")
 	static final void updateRootInterface(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (Login.loadInterface(var0)) {
 			ClanChannelMember.updateInterface(ArchiveLoader.Widget_interfaceComponents[var0], -1, var1, var2, var3, var4, var5, var6);

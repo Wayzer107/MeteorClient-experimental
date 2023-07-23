@@ -20,7 +20,6 @@ public abstract class class458 implements class281 {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-546839154"
 	)
-	@Export("vmethod7769")
 	abstract void vmethod7769(Buffer var1, int var2);
 
 	@ObfuscatedName("as")
@@ -82,7 +81,6 @@ public abstract class class458 implements class281 {
 	}
 
 	@ObfuscatedName("aj")
-	@Export("Entity_unpackID")
 	public static int Entity_unpackID(long var0) {
 		return (int)(var0 >>> 17 & 4294967295L);
 	}

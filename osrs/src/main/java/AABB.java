@@ -9,22 +9,16 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("AABB")
 public class AABB {
 	@ObfuscatedName("aw")
-	@Export("xMid")
 	int xMid;
 	@ObfuscatedName("ay")
-	@Export("yMid")
 	int yMid;
 	@ObfuscatedName("ar")
-	@Export("zMid")
 	int zMid;
 	@ObfuscatedName("am")
-	@Export("xMidOffset")
 	int xMidOffset;
 	@ObfuscatedName("as")
-	@Export("yMidOffset")
 	int yMidOffset;
 	@ObfuscatedName("aj")
-	@Export("zMidOffset")
 	int zMidOffset;
 
 	AABB(int var1, int var2, int var3, int var4, int var5, int var6) {
@@ -41,7 +35,6 @@ public class AABB {
 		descriptor = "(Lty;II)V",
 		garbageValue = "-817024530"
 	)
-	@Export("readReflectionCheck")
 	public static void readReflectionCheck(Buffer var0, int var1) {
 		ReflectionCheck var2 = new ReflectionCheck();
 		var2.size = var0.readUnsignedByte();

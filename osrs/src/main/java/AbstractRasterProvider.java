@@ -7,13 +7,10 @@ import net.runelite.mapping.ObfuscatedSignature;
 @Implements("AbstractRasterProvider")
 public abstract class AbstractRasterProvider {
 	@ObfuscatedName("ar")
-	@Export("pixels")
 	public int[] pixels;
 	@ObfuscatedName("am")
-	@Export("width")
 	public int width;
 	@ObfuscatedName("as")
-	@Export("height")
 	public int height;
 	@ObfuscatedName("aj")
 	protected float[] field4179;
@@ -26,7 +23,6 @@ public abstract class AbstractRasterProvider {
 		descriptor = "(III)V",
 		garbageValue = "2103103659"
 	)
-	@Export("drawFull")
 	public abstract void drawFull(int var1, int var2);
 
 	@ObfuscatedName("ar")
@@ -34,7 +30,6 @@ public abstract class AbstractRasterProvider {
 		descriptor = "(IIIIB)V",
 		garbageValue = "-93"
 	)
-	@Export("draw")
 	public abstract void draw(int var1, int var2, int var3, int var4);
 
 	@ObfuscatedName("at")
@@ -42,7 +37,6 @@ public abstract class AbstractRasterProvider {
 		descriptor = "(I)V",
 		garbageValue = "-1721609371"
 	)
-	@Export("apply")
 	public final void apply() {
 		Rasterizer2D.method2601(this.pixels, this.width, this.height, this.field4179);
 	}

@@ -14,7 +14,6 @@ public class DevicePcmPlayerProvider implements class51 {
 		descriptor = "(I)Lbk;",
 		garbageValue = "415453075"
 	)
-	@Export("player")
 	public PcmPlayer player() {
 		return new DevicePcmPlayer();
 	}
@@ -42,7 +41,6 @@ public class DevicePcmPlayerProvider implements class51 {
 		descriptor = "(Lmt;IIII)V",
 		garbageValue = "-1524791147"
 	)
-	@Export("drawCompass")
 	static final void drawCompass(Widget var0, int var1, int var2, int var3) {
 		SpriteMask var4 = var0.getSpriteMask(false);
 		if (var4 != null) {

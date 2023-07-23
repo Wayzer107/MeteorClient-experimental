@@ -22,48 +22,34 @@ public final class SceneTileModel {
 	@ObfuscatedName("an")
 	static final int[][] field2131;
 	@ObfuscatedName("aw")
-	@Export("vertexX")
 	int[] vertexX;
 	@ObfuscatedName("ay")
-	@Export("vertexY")
 	int[] vertexY;
 	@ObfuscatedName("ar")
-	@Export("vertexZ")
 	int[] vertexZ;
 	@ObfuscatedName("am")
-	@Export("triangleColorA")
 	int[] triangleColorA;
 	@ObfuscatedName("as")
-	@Export("triangleColorB")
 	int[] triangleColorB;
 	@ObfuscatedName("aj")
-	@Export("triangleColorC")
 	int[] triangleColorC;
 	@ObfuscatedName("ag")
-	@Export("faceX")
 	int[] faceX;
 	@ObfuscatedName("az")
-	@Export("faceY")
 	int[] faceY;
 	@ObfuscatedName("av")
-	@Export("faceZ")
 	int[] faceZ;
 	@ObfuscatedName("ap")
-	@Export("triangleTextureId")
 	int[] triangleTextureId;
 	@ObfuscatedName("aq")
 	boolean isFlat;
 	@ObfuscatedName("at")
-	@Export("shape")
 	int shape;
 	@ObfuscatedName("ah")
-	@Export("rotation")
 	int rotation;
 	@ObfuscatedName("ax")
-	@Export("underlayRgb")
 	int underlayRgb;
 	@ObfuscatedName("aa")
-	@Export("overlayRgb")
 	int overlayRgb;
 
 	static {

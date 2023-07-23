@@ -62,7 +62,6 @@ public class LoginScreenAnimation {
 		descriptor = "(I)V",
 		garbageValue = "-1971878867"
 	)
-	@Export("initColors")
 	void initColors() {
 		this.field1047 = new int[256];
 
@@ -151,7 +150,6 @@ public class LoginScreenAnimation {
 		descriptor = "(III)V",
 		garbageValue = "2005060089"
 	)
-	@Export("draw")
 	void draw(int var1, int var2) {
 		if (this.field1043 == null) {
 			this.initColors();
