@@ -1,5 +1,5 @@
 import java.util.concurrent.Future;
-import net.runelite.mapping.Export;
+
 import net.runelite.mapping.ObfuscatedName;
 import net.runelite.mapping.ObfuscatedSignature;
 
@@ -174,7 +174,7 @@ public class class18 {
 		descriptor = "(Ldi;Ldc;III)V",
 		garbageValue = "-2007406926"
 	)
-	static void method64(ScriptEvent var0, Script var1, int var2, int var3) {
+	static void runScriptLogic(ScriptEvent var0, Script var1, int var2, int var3) {
 		Object[] var4 = var0.args;
 		Interpreter.Interpreter_intStackSize = 0;
 		Interpreter.Interpreter_stringStackSize = 0;

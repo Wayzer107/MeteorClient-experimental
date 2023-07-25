@@ -22,19 +22,17 @@ int readUnsignedByteAdd$api();
 @Override
 int readUnsignedByteNeg$api();
 
-
-
-@Import("method2432")
+@Import("readByteAdd") // method2432
 @Override
-byte readByteAdd();
+byte readByteAdd$api();
 
-@Import("method2396")
+@Import("readByteNeg") // method2396
 @Override
-byte readByteNeg();
+byte readByteNeg$api();
 
 @Import("readUnsignedByteSub")
 @Override
-byte readUnsignedByteSub$api();
+int readUnsignedByteSub$api();
 
 @Import("readUnsignedByte")
 @Override
@@ -108,10 +106,6 @@ int readUnsignedShortAdd$api();
 @Override
 int readUnsignedShortAddLE$api();
 
-@Import("readSignedShortAddLE")
-@Override
-int readSignedShortAddLE$api();
-
 @Import("readInt")
 @Override
 int readInt$api();
@@ -120,13 +114,13 @@ int readInt$api();
 @Override
 int readIntLE$api();
 
-@Import("readUnsignedByteS")
+@Import("readIntIME")
 @Override
-int readIntIME();
+int readIntIME$api();
 
-@Import("method2447")
+@Import("readIntME")
 @Override
-int readIntME();
+int readIntME$api();
 
 @Import("writeLong")
 @Override

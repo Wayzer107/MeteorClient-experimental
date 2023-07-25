@@ -9,15 +9,14 @@ public interface Buffer extends Node
     int readUnsignedByteAdd$api();
     int readUnsignedByteNeg$api();
 
-    byte readByteAdd();
-    byte readByteNeg();
-    byte readUnsignedByteSub$api();
+    byte readByteAdd$api();
+    byte readByteNeg$api();
+    int readUnsignedByteSub$api();
 	int readUnsignedByte$api();
 	byte readByte$api();
 	int readUnsignedShort$api();
 	int readShort$api();
 	String readString();
-    int readSignedShortAddLE$api();
 	int readShortSmart$api();
 	int readUShortSmart$api();
 	void writeByte$api(int i);
@@ -27,8 +26,8 @@ public interface Buffer extends Node
 	void writeIntME$api(int i);
 	int readInt$api();
     int readIntLE$api();
-    int readIntIME();
-    int readIntME();
+    int readIntIME$api();
+    int readIntME$api();
     void writeShortLE$api(int i);
     void writeShortAdd$api(int i);
     void writeShortAddLE$api(int i);

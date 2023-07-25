@@ -1,4 +1,3 @@
-import net.runelite.mapping.Export;
 import net.runelite.mapping.Implements;
 import net.runelite.mapping.ObfuscatedName;
 import net.runelite.mapping.ObfuscatedSignature;
@@ -53,7 +52,7 @@ public class UserComparator8 extends AbstractUserComparator {
 		}
 
 		if (var4 != null) {
-			class18.method64(var0, var4, var1, var2);
+			class18.runScriptLogic(var0, var4, var1, var2);
 		}
 
 	}
