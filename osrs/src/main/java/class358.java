@@ -143,16 +143,17 @@ public class class358 extends DualNode {
 			NPC var14 = Client.npcs[var3];
 			int var23 = var1.readUnsignedByte();
 			int var15;
+			// Excess Flag 8
 			if ((var23 & 32) != 0) {
 				var15 = var1.readUnsignedByte();
 				var23 += var15 << 8;
 			}
-
+			// Excess Flag 16
 			if ((var23 & 1024) != 0) {
 				var15 = var1.readUnsignedByte();
 				var23 += var15 << 16;
 			}
-
+			// Face Pawn
 			if ((var23 & 8) != 0) {
 				var14.targetIndex = var1.readUnsignedShort();
 				var14.targetIndex += var1.readUnsignedByte() << 16;
@@ -161,13 +162,13 @@ public class class358 extends DualNode {
 					var14.targetIndex = -1;
 				}
 			}
-
+			// appearance
 			if ((var23 & 1) != 0) {
 				var14.definition = Tile.getNpcDefinition(var1.readUnsignedShortAdd());
 				Client.method383(var14);
 				var14.method595();
 			}
-
+			// Animation
 			if ((var23 & 4) != 0) {
 				var15 = var1.readUnsignedShortLE();
 				if (var15 == 65535) {
@@ -196,7 +197,7 @@ public class class358 extends DualNode {
 					var14.field1018 = var14.pathLength;
 				}
 			}
-
+			// Legacy Gfx
 			if ((var23 & 64) != 0) {
 				var1.readUnsignedShortLE();
 				var1.readInt();
@@ -208,6 +209,7 @@ public class class358 extends DualNode {
 			long var19;
 			int var24;
 			boolean var25;
+			// model/chatmodel replacement
 			if ((var23 & 512) != 0) {
 				var15 = var1.readUnsignedByteSub();
 				if ((var15 & 1) == 1) {
@@ -262,7 +264,7 @@ public class class358 extends DualNode {
 					var14.method596(new NewShit(var19, var16, var17, var18, var25));
 				}
 			}
-
+			// model/chatmodel replacement v2?
 			if ((var23 & 256) != 0) {
 				var15 = var1.readUnsignedByteSub();
 				if ((var15 & 1) == 1) {
@@ -317,7 +319,7 @@ public class class358 extends DualNode {
 					var14.method598(new NewShit(var19, var16, var17, var18, var25));
 				}
 			}
-
+			// Dynamically set npc walk/crawl/run anims
 			if ((var23 & 262144) != 0) {
 				var15 = var1.readIntME();
 				var14.turnLeftSequence = (var15 & 1) != 0 ? var1.readUnsignedShortLE() : var14.definition.turnLeftSequence * -1164304999 * -740038999;
@@ -336,7 +338,7 @@ public class class358 extends DualNode {
 				var14.crawlRightSequence = (var15 & 8192) != 0 ? var1.readUnsignedShortAdd() : var14.definition.crawlRightSequence * 881727523 * 1352095627;
 				var14.idleSequence = (var15 & 16384) != 0 ? var1.readUnsignedShortLE() : var14.definition.idleSequence * -1626376685 * 1344848923;
 			}
-
+			// gfx @TODO
 			if ((var23 & 131072) != 0) {
 				var15 = var1.readUnsignedByteNeg();
 
@@ -347,7 +349,7 @@ public class class358 extends DualNode {
 					var14.updateSpotAnimation(var8, var9, var10 >> 16, var10 & 65535);
 				}
 			}
-
+			// force move
 			if ((var23 & 32768) != 0) {
 				var14.field1013 = var1.readSignedByteSub();
 				var14.field1007 = var1.readByteAdd();
@@ -363,7 +365,7 @@ public class class358 extends DualNode {
 				var14.field1011 += var14.pathX[0];
 				var14.field1010 += var14.pathY[0];
 			}
-
+			// face tile
 			if ((var23 & 2) != 0) {
 				var15 = var1.readUnsignedShortAddLE();
 				var7 = var1.readUnsignedShortAddLE();
@@ -380,7 +382,7 @@ public class class358 extends DualNode {
 					}
 				}
 			}
-
+			// Apply tint
 			if ((var23 & 4096) != 0) {
 				var14.recolourStartCycle = Client.cycle + var1.readUnsignedShortLE();
 				var14.recolourEndCycle = Client.cycle + var1.readUnsignedShort();
@@ -389,7 +391,7 @@ public class class358 extends DualNode {
 				var14.recolourLuminance = var1.readByteNeg();
 				var14.recolourAmount = (byte)var1.readUnsignedByte();
 			}
-
+			// Hitmark
 			if ((var23 & 16) != 0) {
 				var15 = var1.readUnsignedByte();
 				if (var15 > 0) {
@@ -430,15 +432,15 @@ public class class358 extends DualNode {
 					}
 				}
 			}
-
+			// 31
 			if ((var23 & 8192) != 0) {
 				var14.method584(var1.readUnsignedByteNeg());
 			}
-
+			// Combat Level Change
 			if ((var23 & 16384) != 0) {
 				var14.combatLevelChange = var1.readIntLE();
 			}
-
+			// Overhead icons
 			if ((var23 & 65536) != 0) {
 				var15 = var1.readUnsignedByteAdd();
 				var16 = new int[8];
@@ -456,11 +458,11 @@ public class class358 extends DualNode {
 
 				var14.method594(var16, var17);
 			}
-
+			// name change
 			if ((var23 & 2048) != 0) {
 				var14.method582(var1.readStringCp1252NullTerminated());
 			}
-
+			// force chat
 			if ((var23 & 128) != 0) {
 				var14.overheadText = var1.readStringCp1252NullTerminated();
 				var14.overheadTextCyclesRemaining = 100;

@@ -17,7 +17,6 @@ import net.runelite.mapping.Export;
 import net.runelite.mapping.Implements;
 import net.runelite.mapping.ObfuscatedName;
 import net.runelite.mapping.ObfuscatedSignature;
-import net.runelite.rs.api.RSClient;
 
 @Implements("Client")
 @ObfuscatedName("client")
@@ -951,7 +950,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 	)
 	class7 field654;
 	@ObfuscatedName("ia")
-	long field661;
+	long accountHash;
 
 	static {
 		lockMouseRecorder = true;
@@ -1260,7 +1259,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 
 	public Client() {
 		this.field655 = false;
-		this.field661 = -1L;
+		this.accountHash = -1L;
 	}
 
 	@ObfuscatedName("ao")
@@ -2113,8 +2112,10 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 				Buffer var10 = new Buffer(NPCComposition.field1570.size());
 				NPCComposition.field1570.write(var10);
 				var6.packetBuffer.writeBytes(var10.array, 0, var10.array.length);
+				System.out.println(" var10[size]: " + var10.array.length); // Should be 55
 
 				var6.packetBuffer.writeByte(clientType);
+				System.out.println("ClientType: " + clientType);
 
 				var6.packetBuffer.writeInt(0);
 				var6.packetBuffer.writeIntME(class197.archive2.hash);
@@ -2257,6 +2258,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 			} else {
 				if (loginState == 14 && var1.available() >= 1) {
 					class28.playerUUIDLength = var1.readUnsignedByte();
+					System.out.println("playerUUIDLength: " + class28.playerUUIDLength);
 					BuddyRankComparator.setLoginState(15);
 				}
 
@@ -2288,7 +2290,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 					isMembers = var1.readUnsignedByte();
 					var1.read(var2.array, 0, 8);
 					var2.offset = 0;
-					this.field661 = var2.readLong();
+					this.accountHash = var2.readLong();
 					var1.read(var2.array, 0, 8);
 					var2.offset = 0;
 					playerUUID = var2.readLong();
@@ -2755,15 +2757,17 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 					}
 
 					var5 = (int)var16;
-					var18 = class503.getPacketBufferNode(ClientPacket.F_EVENT_MOUSE_SCROLL, packetWriter.isaacCipher);
-					var18.packetBuffer.writeShort((var5 << 1) + (MouseHandler.MouseHandler_lastButton == 2 ? 1 : 0));
-					var18.packetBuffer.writeShort(var4);
-					var18.packetBuffer.writeShort(var3);
-					packetWriter.addNode(var18);
+					if (shouldProcessClick()) {
+						var18 = class503.getPacketBufferNode(ClientPacket.EVENT_MOUSE_CLICK, packetWriter.isaacCipher);
+						var18.packetBuffer.writeShort((var5 << 1) + (MouseHandler.MouseHandler_lastButton == 2 ? 1 : 0));
+						var18.packetBuffer.writeShort(var4);
+						var18.packetBuffer.writeShort(var3);
+						packetWriter.addNode(var18);
+					}
 				}
 
 				if (mouseWheelRotation != 0) {
-					var14 = class503.getPacketBufferNode(ClientPacket.EVENT_MOUSE_SCROLl, packetWriter.isaacCipher);
+					var14 = class503.getPacketBufferNode(ClientPacket.EVENT_MOUSE_SCROLL, packetWriter.isaacCipher);
 					var14.packetBuffer.writeShort(mouseWheelRotation);
 					packetWriter.addNode(var14);
 				}
@@ -3722,10 +3726,12 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 
 				if (ServerPacketsEnum.getById(var1.serverPacket.id) != null) {
 					String packet = ServerPacketsEnum.getById(var1.serverPacket.id).name();
-					System.out.println("Received-Packet : " + packet);
+					if (!packet.equals(ServerPacketsEnum.NPC_INFO_SMALL.name())) {
+					if (!packet.equals(ServerPacketsEnum.PLAYER_INFO.name())) {
+						System.out.println("Received-Packet : " + packet);
+					}
+					}
 				}
-
-
 
 				var3.offset = 0;
 				var2.read(var3.array, 0, var1.serverPacketLength);
@@ -4903,18 +4909,18 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 				}
 
 				if (ServerPacket.IF_SETEVENTS == var1.serverPacket) {
-					var20 = var3.readUnsignedShortAddLE();
+					var20 = var3.readUnsignedShortAddLE(); // from
 					if (var20 == 65535) {
 						var20 = -1;
 					}
 
-					var5 = var3.readIntIME();
-					flags = var3.readUnsignedShortLE();
+					var5 = var3.readIntIME(); // settings
+					flags = var3.readUnsignedShortLE(); // to
 					if (flags == 65535) {
 						flags = -1;
 					}
 
-					var7 = var3.readIntIME();
+					var7 = var3.readIntIME(); // Hash
 
 					for (var8 = var20; var8 <= flags; ++var8) {
 						var33 = (long)var8 + ((long)var7 << 32);
@@ -5411,6 +5417,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 
 				if (ServerPacket.IF_OPENTOP == var1.serverPacket) {
 					var20 = var3.readUnsignedShortAddLE();
+					System.out.println("IF_OPENTOP: " + var20);
 					if (var20 == 65535) {
 						var20 = -1;
 					}
@@ -5605,10 +5612,16 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 				}
 
 				if (ServerPacket.CAM_SHAKE == var1.serverPacket) {
-					var20 = var3.readUnsignedByte();
+					var20 = var3.readUnsignedByte(); // max 4
 					var5 = var3.readUnsignedByte();
 					flags = var3.readUnsignedByte();
 					var7 = var3.readUnsignedByte();
+
+					System.out.println("var20: " + var20);
+					System.out.println("var5: " + var5);
+					System.out.println("flags: " + flags);
+					System.out.println("var7: " + var7);
+
 					cameraShaking[var20] = true;
 					cameraShakeIntensity[var20] = var5;
 					cameraMoveIntensity[var20] = flags;
@@ -5892,12 +5905,12 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 
 					if (draggedOnWidget != null && WorldMapEvent.method1547(clickedWidget) != null) {
 						PacketBufferNode var13 = class503.getPacketBufferNode(ClientPacket.IF_BUTTOND, packetWriter.isaacCipher);
-						var13.packetBuffer.writeShort(clickedWidget.itemId);
-						var13.packetBuffer.writeShortLE(clickedWidget.childIndex);
-						var13.packetBuffer.writeShort(draggedOnWidget.childIndex);
-						var13.packetBuffer.writeShortAddLE(draggedOnWidget.itemId);
-						var13.packetBuffer.writeIntLE(clickedWidget.id);
-						var13.packetBuffer.writeIntME(draggedOnWidget.id);
+						var13.packetBuffer.writeShort(clickedWidget.itemId); // src item
+						var13.packetBuffer.writeShortLE(clickedWidget.childIndex); // src component id
+						var13.packetBuffer.writeShort(draggedOnWidget.childIndex); // Component id
+						var13.packetBuffer.writeShortAddLE(draggedOnWidget.itemId); // Dest item
+						var13.packetBuffer.writeIntLE(clickedWidget.id); // src hash
+						var13.packetBuffer.writeIntME(draggedOnWidget.id); // Dest hash
 						packetWriter.addNode(var13);
 					}
 				} else if (this.shouldLeftClickOpenMenu()) {
@@ -6075,7 +6088,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi, cla
 			}
 
 			TileItem.client = this;
-			RuneLiteMenuEntry.client = (RSClient) (Object) this;
+			//RuneLiteMenuEntry.client = (RSClient) (Object) this;
 			RunException.field4246 = clientType;
 			Actor.method527();
 			if (Boolean.parseBoolean(System.getProperty("jagex.disableBouncyCastle"))) {

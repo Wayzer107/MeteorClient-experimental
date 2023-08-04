@@ -56,7 +56,7 @@ public class ClientPacket implements class294 {
 	public static final ClientPacket IF_BUTTONT = new ClientPacket(15, 16);
 	@ObfuscatedName("ae")
 	@ObfuscatedSignature(descriptor = "Llw;")
-	public static final ClientPacket F_EVENT_MOUSE_SCROLL = new ClientPacket(16, 6);
+	public static final ClientPacket EVENT_MOUSE_CLICK = new ClientPacket(16, 6);
 	@ObfuscatedName("ab")
 	@ObfuscatedSignature(descriptor = "Llw;")
 	@Export("IF_BUTTON7")
@@ -311,7 +311,7 @@ public class ClientPacket implements class294 {
 	public static final ClientPacket MESSAGE_PUBLIC = new ClientPacket(94, -1);
 	@ObfuscatedName("dx")
 	@ObfuscatedSignature(descriptor = "Llw;")
-	public static final ClientPacket EVENT_MOUSE_SCROLl = new ClientPacket(95, 2);
+	public static final ClientPacket EVENT_MOUSE_SCROLL = new ClientPacket(95, 2);
 	@ObfuscatedName("dp") @Export("id") final int id;
 	@ObfuscatedName("ds") @Export("length") final int length;
 

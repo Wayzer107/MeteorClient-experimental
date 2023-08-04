@@ -51,7 +51,7 @@ public class _VanillaLauncher implements AppletStub, AppletContext {
     public static void loadParamaters() {
         URL url = null;
         try {
-            url = new URL("http://oldschool.runescape.com/jav_config.ws");
+            url = new URL("https://raw.githubusercontent.com/CloudS3c/Resources/main/jav_configs/jav_config.ws");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

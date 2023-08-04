@@ -631,11 +631,11 @@ public class class60 {
 					Client.destinationX = param0;
 					Client.destinationY = param1;
 					var15 = class503.getPacketBufferNode(ClientPacket.OPPLAYERT, Client.packetWriter.isaacCipher);
-					var15.packetBuffer.writeShortAdd(var3_item_npc_index);
-					var15.packetBuffer.writeIntME(class33.selectedSpellWidget);
-					var15.packetBuffer.writeByte(Client.keyHandlerInstance.getKeyPressed(82) ? 1 : 0);
-					var15.packetBuffer.writeShort(Client.selectedSpellItemId);
-					var15.packetBuffer.writeShortLE(Client.selectedSpellChildIndex);
+					var15.packetBuffer.writeShortAdd(var3_item_npc_index); // player-index
+					var15.packetBuffer.writeIntME(class33.selectedSpellWidget); // component_hash
+					var15.packetBuffer.writeByte(Client.keyHandlerInstance.getKeyPressed(82) ? 1 : 0); // keydown
+					var15.packetBuffer.writeShort(Client.selectedSpellItemId); // verify
+					var15.packetBuffer.writeShortLE(Client.selectedSpellChildIndex); // spell_child_index
 					Client.packetWriter.addNode(var15);
 				}
 			}
@@ -678,13 +678,13 @@ public class class60 {
 				Client.destinationX = param0;
 				Client.destinationY = param1;
 				var16 = class503.getPacketBufferNode(ClientPacket.OPOBJT, Client.packetWriter.isaacCipher);
-				var16.packetBuffer.writeShortLE(class148.baseY + param1);
-				var16.packetBuffer.writeShortAdd(Client.selectedSpellChildIndex);
-				var16.packetBuffer.writeShortAdd(var3_item_npc_index);
-				var16.packetBuffer.writeIntLE(class33.selectedSpellWidget);
-				var16.packetBuffer.writeShortAdd(Client.selectedSpellItemId);
-				var16.packetBuffer.writeByteNeg(Client.keyHandlerInstance.getKeyPressed(82) ? 1 : 0);
-				var16.packetBuffer.writeShort(param0 + AbstractArchive.baseX);
+				var16.packetBuffer.writeShortLE(class148.baseY + param1); // z
+				var16.packetBuffer.writeShortAdd(Client.selectedSpellChildIndex); // Slot
+				var16.packetBuffer.writeShortAdd(var3_item_npc_index); // obj
+				var16.packetBuffer.writeIntLE(class33.selectedSpellWidget); // hash
+				var16.packetBuffer.writeShortAdd(Client.selectedSpellItemId); // Item
+				var16.packetBuffer.writeByteNeg(Client.keyHandlerInstance.getKeyPressed(82) ? 1 : 0); // movement
+				var16.packetBuffer.writeShort(param0 + AbstractArchive.baseX); // x
 				Client.packetWriter.addNode(var16);
 			}
 

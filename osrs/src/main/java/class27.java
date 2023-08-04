@@ -783,19 +783,20 @@ public class class27 {
 					}
 
 					if (ZoneOperation.MAPPROJ_ANIM == var0) {
-						var2 = var1.readUnsignedShort();
-						var3 = var1.readSMed0();
-						var4 = var1.readUnsignedByteNeg();
-						byte var37 = var1.readSignedByteSub();
-						var6 = var1.readUnsignedByteNeg();
+						var2 = var1.readUnsignedShort(); // cycle_start aka delay
+						var3 = 80; // target_index
+						System.out.println("var3: " + var1.readSMediumMiddle());
+						var4 = var1.readUnsignedByteNeg(); // stepness
+						byte var37 = var1.readSignedByteSub(); // offset_x
+						var6 = var1.readUnsignedByteNeg(); // tile
 						var7 = (var6 >> 4 & 7) + WorldMapSectionType.ZONE_X;
 						var8 = (var6 & 7) + class387.ZONE_Y;
-						var9 = var1.readUnsignedByteAdd();
-						var10 = var1.readUnsignedShortAdd();
-						var11 = var1.readUnsignedShortAdd();
-						byte var39 = var1.readByteAdd();
-						var13 = var1.readUnsignedByteAdd() * 4;
-						var14 = var1.readUnsignedByteNeg() * 4;
+						var9 = var1.readUnsignedByteAdd(); // angle
+						var10 = var1.readUnsignedShortAdd(); // cycle_end aka lifespan
+						var11 = var1.readUnsignedShortAdd(); // id
+						byte var39 = var1.readByteAdd(); // offset_y
+						var13 = var1.readUnsignedByteAdd() * 4; // end_height
+						var14 = var1.readUnsignedByteNeg() * 4; // start_height
 						var5 = var37 + var7;
 						var12 = var39 + var8;
 						if (var7 >= 0 && var8 >= 0 && var7 < 104 && var8 < 104 && var5 >= 0 && var12 >= 0 && var5 < 104 && var12 < 104 && var11 != 65535) {

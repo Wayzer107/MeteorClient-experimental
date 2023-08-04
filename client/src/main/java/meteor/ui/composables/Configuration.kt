@@ -288,7 +288,7 @@ fun configPanelHeader() {
             ) {
                 TooltipArea(
                     modifier = Modifier.background(
-                        shape = RoundedCornerShape(16.dp), color = surface
+                        shape = RoundedCornerShape(0.dp), color = surface
                     ), tooltipPlacement = TooltipPlacement.ComponentRect(offset = DpOffset(x = 15.dp, y = 0.dp)), tooltip = {
                         val descriptionText = "Reset plugin configuration"
                         if (descriptionText.isNotEmpty()) {

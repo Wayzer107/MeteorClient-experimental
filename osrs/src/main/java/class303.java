@@ -698,6 +698,9 @@ public class class303 {
 		if (!Client.isInInstance) {
 			var2 = var1.readUnsignedShort(); // Z
 			var3 = var1.readUnsignedShort(); // X
+
+			System.out.println("Z: " + var2);
+			System.out.println("X: " + var3);
 			int var4 = var1.readUnsignedShort();
 			class18.xteaKeys = new int[var4][4];
 
@@ -730,6 +733,12 @@ public class class303 {
 			var3 = var1.readUnsignedShortLE();
 			boolean var15 = var1.readUnsignedByteSub() == 1;
 			var5 = var1.readUnsignedShort();
+			System.out.println("Rebuild_region:");
+			System.out.println("var2: " + var2);
+			System.out.println("var3: " + var3);
+			System.out.println("var15: " + var15);
+			System.out.println("var5: " + var5);
+
 			var1.importIndex();
 
 			int var8;

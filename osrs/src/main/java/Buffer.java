@@ -1025,7 +1025,7 @@ public class Buffer extends Node {
 		descriptor = "(B)I",
 		garbageValue = "25"
 	)
-	public int readSMed0() {
+	public int readSMediumMiddle() {
 		this.offset += 3;
 		int var1 = (this.array[this.offset - 1] & 255) + ((this.array[this.offset - 3] & 255) << 8) + ((this.array[this.offset - 2] & 255) << 16);
 		if (var1 > 8388607) {
@@ -1113,7 +1113,6 @@ public class Buffer extends Node {
 		for (int var4 = var3 + var2 - 1; var4 >= var2; --var4) {
 			var1[var4] = this.array[++this.offset - 1];
 		}
-
 	}
 
 	@ObfuscatedName("ee")

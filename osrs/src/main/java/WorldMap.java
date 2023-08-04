@@ -420,6 +420,7 @@ public class WorldMap {
 					if (var9) {
 						PacketBufferNode var13 = class503.getPacketBufferNode(ClientPacket.CLICKWORLDMAP, Client.packetWriter.isaacCipher);
 						var13.packetBuffer.writeIntIME(this.mouseCoord.packed());
+						System.out.println("ClickWorldMap: " + this.mouseCoord.packed());
 						Client.packetWriter.addNode(var13);
 						this.field4012 = 0L;
 					}
