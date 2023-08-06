@@ -11,17 +11,20 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":api"))
-    implementation(project(":logger"))
+    with(projects) {
+        implementation(api)
+        implementation(logger)
+    }
 
-    annotationProcessor(group = "org.projectlombok", name = "lombok", version = "_")
-    compileOnly(group = "org.projectlombok", name = "lombok", version = "_")
-    implementation(group = "com.google.code.gson", name = "gson", version = "_")
-    implementation(group = "com.google.guava", name = "guava", version = "_")
-    implementation("com.squareup.okhttp3:okhttp:_")
-    implementation(group = "org.apache.commons", name = "commons-csv", version = "_")
+    with(libs) {
+        annotationProcessor(lombok)
+        compileOnly(lombok)
+        implementation(gson)
+        implementation(guava)
+        implementation(okhttp)
+        implementation(commons.csv)
+    }
 }
-
 tasks.test {
     useJUnitPlatform()
 }

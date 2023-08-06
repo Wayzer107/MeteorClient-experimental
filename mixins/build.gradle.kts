@@ -1,5 +1,5 @@
 plugins {
-     java
+    java
 }
 
 group = "org.meteorlite"
@@ -16,19 +16,26 @@ repositories {
 }
 
 dependencies {
+
     compileOnly(gradleApi())
-    compileOnly(group = "com.google.guava", name = "guava", version = "_")
-    compileOnly(group = "javax.inject", name = "javax.inject", version = "_")
-    compileOnly(group = "commons-io", name = "commons-io", version = "_")
-    compileOnly(project(":annotations"))
-    compileOnly(project(":api-rs"))
-    compileOnly(project(":osrs"))
-    compileOnly(project(":api"))
-    compileOnly(project(":logger"))
-    compileOnly(project(":cache"))
+
+    with(libs){
+        compileOnly(guava)
+        compileOnly(java.inject)
+        compileOnly(commons.io)
+    }
+
+    with(projects){
+        compileOnly(api)
+        compileOnly(apiRs)
+        compileOnly(annotations)
+        compileOnly(logger)
+        compileOnly(osrs)
+        compileOnly(cache)
+    }
 }
 tasks{
-test {
-    useJUnitPlatform()
-}
+    test {
+        useJUnitPlatform()
+    }
 }

@@ -11,21 +11,26 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor(group = "org.projectlombok", name = "lombok", version = "_")
+    with(projects) {
+        implementation(annotations)
+        implementation(api)
+        implementation(apiRs)
+        implementation(logger)
+        implementation(cache)
+    }
 
-    implementation(project(":annotations"))
-    implementation(project(":api"))
-    implementation(project(":api-rs"))
-    implementation(project(":logger"))
-    implementation(group = "org.jetbrains", name = "annotations", version = "_")
-    implementation(group = "org.ow2.asm", name = "asm", version = "_")
-    implementation(group = "org.ow2.asm", name = "asm-util", version = "_")
-    implementation(group = "net.runelite", name = "fernflower", version = "07082019")
-    implementation(project(":cache"))
-    implementation(group = "com.google.code.gson", name = "gson", version = "_")
-    implementation(group = "com.google.guava", name = "guava", version = "_")
-    compileOnly("org.projectlombok:lombok:_")
+    with(libs) {
+        annotationProcessor(lombok)
+        implementation(annotations)
+        implementation(asm)
+        implementation(asm.util)
+        implementation(fernflower)
+        implementation(gson)
+        implementation(guava)
+        compileOnly(lombok)
+    }
 }
+
 
 tasks.test {
     useJUnitPlatform()

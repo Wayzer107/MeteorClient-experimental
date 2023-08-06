@@ -12,26 +12,31 @@ repositories{
 }
 
 dependencies{
-    compileOnly("org.projectlombok:lombok:_")
-    annotationProcessor("org.projectlombok:lombok:_")
+    with(projects){
+        implementation(annotations)
+        implementation(deobfuscator)
+        implementation(apiRs)
+        implementation(logger)
+        implementation(cache)
 
-    implementation(project(":annotations"))
-    implementation(project(":deobfuscator"))
-    implementation(project(":api-rs"))
-    implementation(project(":logger"))
-    implementation(project(":cache"))
-    implementation("javax.inject:javax.inject:1")
-    implementation(group = "com.google.code.gson", name = "gson", version = "_")
+    }
 
-    implementation(group = "org.ow2.asm", name = "asm", version = "_")
-    implementation(group = "org.ow2.asm", name = "asm-util", version = "_")
-    implementation(group = "org.jetbrains", name = "annotations", version = "_")
-    implementation(group = "com.google.guava", name = "guava", version = "_")
-    implementation(group = "net.sf.jopt-simple", name = "jopt-simple", version = "_")
-
+    with(libs){
+            compileOnly(lombok)
+            annotationProcessor(lombok)
+            implementation(gson)
+            implementation(java.inject)
+            implementation(asm)
+            implementation(asm.util)
+            implementation(guava)
+            implementation(jopt.simple)
+            implementation(annotations)
+    }
 }
 
 tasks{
+
+
     test {
         useJUnitPlatform()
     }
