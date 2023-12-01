@@ -29,3 +29,5 @@ jobs:
       - uses: burrunan/gradle-cache-action@v1
       - name: Build with Gradle
         run: ./gradlew -Dorg.gradle.jvmargs=-Xmx2048m build -x test
+      - name: Publish
+        run: ./gradlew -Dorg.gradle.jvmargs=-Xmx2048m publish -x test
